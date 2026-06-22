@@ -1,0 +1,5862 @@
+{
+  "status": "success",
+  "data": [
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58425.40532410005,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333889,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.506367",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.189899444580078
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58425.40532410005,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590140,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.189899444580078
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58425.405798600055,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333890,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.506429",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.615800857543945
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58425.405798600055,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590141,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.615800857543945
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58425.427233799826,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333891,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.506450",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.203100204467773
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58425.427233799826,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590142,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.203100204467773
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58425.42868060013,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333892,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.506467",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.258499145507812
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58425.42868060013,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590143,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.258499145507812
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58426.36869210005,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333893,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.506483",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.50790023803711
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58426.36869210005,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590144,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.50790023803711
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58427.34902779991,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333894,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.506498",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.767499923706055
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58427.34902779991,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590145,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.767499923706055
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58428.3251852002,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333895,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.506513",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.57670021057129
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58428.3251852002,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590146,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.57670021057129
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58428.325659700204,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333896,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.506527",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.630199432373047
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58428.325659700204,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590147,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.630199432373047
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58429.34318289999,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333897,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.506542",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.103300094604492
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58429.34318289999,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590148,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.103300094604492
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58430.326481500175,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333898,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.506557",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.714399337768555
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58430.326481500175,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590149,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.714399337768555
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58431.322384300176,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333899,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.506572",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.554000854492188
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58431.322384300176,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590150,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.554000854492188
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58431.36662039999,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333900,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.506586",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.551300048828125
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58431.36662039999,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590151,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.551300048828125
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58431.39182869997,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333901,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.506600",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.643299102783203
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58431.39182869997,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590152,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.643299102783203
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58431.44846059987,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333902,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.506620",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.082199096679688
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58431.44846059987,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590153,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.082199096679688
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58431.45445600012,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333903,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.506644",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.144500732421875
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58431.45445600012,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590154,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.144500732421875
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58432.33789349999,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333904,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.506667",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.14579963684082
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58432.33789349999,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590155,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.14579963684082
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58434.36070600012,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333905,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.506689",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.8075008392334
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58434.36070600012,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590156,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.8075008392334
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58434.37734950008,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333906,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.506712",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.170700073242188
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58434.37734950008,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590157,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.170700073242188
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58434.403680600226,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333907,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.506727",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.233999252319336
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58434.403680600226,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590158,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.233999252319336
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58434.445486099925,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333908,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.506741",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.684499740600586
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58434.445486099925,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590159,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.684499740600586
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58435.34162040008,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333909,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.506755",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.50029945373535
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58435.34162040008,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590160,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.50029945373535
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58436.32258100016,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333910,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.506769",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.292699813842773
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58436.32258100016,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590161,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.292699813842773
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58437.36400459986,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333911,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.506789",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.195100784301758
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58437.36400459986,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590162,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.195100784301758
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58437.38313659979,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333912,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.506811",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.266300201416016
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58437.38313659979,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590163,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.266300201416016
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58437.42348380014,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333913,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.506833",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.467899322509766
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58437.42348380014,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590164,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.467899322509766
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58437.443240699824,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333914,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.506860",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.268600463867188
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58437.443240699824,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590165,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.268600463867188
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58438.380671299994,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333915,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.506884",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.359699249267578
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58438.380671299994,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590166,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.359699249267578
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58440.415416699834,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333916,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.506901",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.690000534057617
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58440.415416699834,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590167,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.690000534057617
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58440.42813660018,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333917,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.506922",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.01140022277832
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58440.42813660018,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590168,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.01140022277832
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58443.37954859994,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333918,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.506946",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.881799697875977
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58443.37954859994,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590169,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.881799697875977
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58443.4148380002,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333919,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.506971",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.951400756835938
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58443.4148380002,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590170,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.951400756835938
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58443.496099499986,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333920,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.506999",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.801000595092773
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58443.496099499986,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590171,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.801000595092773
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58443.50516200019,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333921,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.507021",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.977100372314453
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58443.50516200019,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590172,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.977100372314453
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58447.30959489988,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333922,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.507047",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.16790008544922
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58447.30959489988,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590173,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.16790008544922
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58447.31098379986,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333923,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.507072",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.324800491333008
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58447.31098379986,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590174,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.324800491333008
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58447.41166670015,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333924,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.507096",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.15019989013672
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58447.41166670015,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590175,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.15019989013672
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58447.4125926001,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333925,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.507121",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.026399612426758
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58447.4125926001,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590176,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.026399612426758
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58448.2662037001,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618334010,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.856886",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.074800491333008
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58448.306481500156,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618334011,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.856941",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.362300872802734
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58448.32871530019,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618334012,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.856960",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.57819938659668
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58450.36479170015,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333926,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.507136",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.57159996032715
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58450.36479170015,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590177,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.57159996032715
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58450.386377300136,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333927,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.507149",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.961200714111328
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58450.386377300136,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590178,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.961200714111328
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58450.452106500044,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333928,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.507163",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.97559928894043
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58450.452106500044,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590179,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.97559928894043
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58450.45258100005,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333929,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.507178",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.94930076599121
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58450.45258100005,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590180,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.94930076599121
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": 96.15738,
+      "dec": 50.9749767,
+      "filter": "ztfr",
+      "mjd": 58455.27601849986,
+      "snr": 7.579945663158241,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333930,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.507192",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.584200191928986,
+      "magerr": 0.14323799312114716,
+      "magsys": "ab",
+      "limiting_mag": 20.035940412096803
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": 96.15738,
+      "dec": 50.9749767,
+      "filter": "ztfr",
+      "mjd": 58455.27601849986,
+      "snr": 7.579945663158241,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590181,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": 19.584199905395508,
+      "magerr": 0.14323799312114716,
+      "magsys": "ab",
+      "limiting_mag": 20.170900344848633
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": 96.1573901,
+      "dec": 50.9750033,
+      "filter": "ztfr",
+      "mjd": 58455.34819439985,
+      "snr": 7.450327160388605,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333931,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.507207",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.433000839641377,
+      "magerr": 0.14573000371456146,
+      "magsys": "ab",
+      "limiting_mag": 19.866014188803543
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": 96.1573901,
+      "dec": 50.9750033,
+      "filter": "ztfr",
+      "mjd": 58455.34819439985,
+      "snr": 7.450327160388604,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590182,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": 19.433000564575195,
+      "magerr": 0.14573000371456146,
+      "magsys": "ab",
+      "limiting_mag": 20.041500091552734
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": 96.1573326,
+      "dec": 50.9749739,
+      "filter": "ztfr",
+      "mjd": 58455.36148149986,
+      "snr": 7.003800944854568,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333932,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.507221",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.5372013930795,
+      "magerr": 0.15502099692821503,
+      "magsys": "ab",
+      "limiting_mag": 19.90311086847938
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": 96.1573326,
+      "dec": 50.9749739,
+      "filter": "ztfr",
+      "mjd": 58455.36148149986,
+      "snr": 7.003800944854567,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590183,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": 19.537200927734375,
+      "magerr": 0.15502099692821503,
+      "magsys": "ab",
+      "limiting_mag": 20.32159996032715
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": 96.1573631,
+      "dec": 50.975015,
+      "filter": "ztfr",
+      "mjd": 58455.36835649982,
+      "snr": 9.890739793840936,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333933,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.507238",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.535400738536723,
+      "magerr": 0.10977300256490706,
+      "magsys": "ab",
+      "limiting_mag": 20.27604766911807
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": 96.1573631,
+      "dec": 50.975015,
+      "filter": "ztfr",
+      "mjd": 58455.36835649982,
+      "snr": 9.890739793840934,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590184,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": 19.535400390625,
+      "magerr": 0.10977300256490707,
+      "magsys": "ab",
+      "limiting_mag": 20.36199951171875
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": 96.1574183,
+      "dec": 50.9750567,
+      "filter": "ztfr",
+      "mjd": 58455.4921875,
+      "snr": 6.413242059287908,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333934,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.507253",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.46509968975903,
+      "magerr": 0.169295996427536,
+      "magsys": "ab",
+      "limiting_mag": 19.7353687591538
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": 96.1574183,
+      "dec": 50.9750567,
+      "filter": "ztfr",
+      "mjd": 58455.4921875,
+      "snr": 6.413242059287907,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590185,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": 19.465099334716797,
+      "magerr": 0.169295996427536,
+      "magsys": "ab",
+      "limiting_mag": 19.599899291992188
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": 96.1574161,
+      "dec": 50.9750259,
+      "filter": "ztfr",
+      "mjd": 58461.514097199775,
+      "snr": 8.895248440896712,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590186,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": 18.717300415039062,
+      "magerr": 0.12205799669027326,
+      "magsys": "ab",
+      "limiting_mag": 19.6737003326416
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": 96.1574161,
+      "dec": 50.9750259,
+      "filter": "ztfr",
+      "mjd": 58461.514097199775,
+      "snr": 8.895248440896712,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333935,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.507267",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 18.717300414420038,
+      "magerr": 0.12205799669027326,
+      "magsys": "ab",
+      "limiting_mag": 19.342770609251478
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58462.32203700021,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333936,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.507280",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.618000030517578
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58462.32203700021,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590187,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.618000030517578
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": 96.1574096,
+      "dec": 50.9749745,
+      "filter": "ztfr",
+      "mjd": 58464.3021296002,
+      "snr": 13.626891082716718,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333937,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.507294",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 18.590200631866153,
+      "magerr": 0.07967600226402281,
+      "magsys": "ab",
+      "limiting_mag": 19.678767582764536
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": 96.1574096,
+      "dec": 50.9749745,
+      "filter": "ztfr",
+      "mjd": 58464.3021296002,
+      "snr": 13.626891082716714,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590188,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": 18.590200424194336,
+      "magerr": 0.07967600226402283,
+      "magsys": "ab",
+      "limiting_mag": 20.020099639892578
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": 96.1574127,
+      "dec": 50.9749947,
+      "filter": "ztfg",
+      "mjd": 58464.32686340017,
+      "snr": 9.86297668906621,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333938,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.507309",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.140699617031323,
+      "magerr": 0.11008200049400328,
+      "magsys": "ab",
+      "limiting_mag": 19.878294622889115
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": 96.1574127,
+      "dec": 50.9749947,
+      "filter": "ztfg",
+      "mjd": 58464.32686340017,
+      "snr": 9.862976689066208,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590189,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": 19.14069938659668,
+      "magerr": 0.11008200049400331,
+      "magsys": "ab",
+      "limiting_mag": 20.390499114990234
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": 96.1574405,
+      "dec": 50.9749842,
+      "filter": "ztfg",
+      "mjd": 58465.244907400105,
+      "snr": 9.060032800135765,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333939,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.507348",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.066200744029757,
+      "magerr": 0.11983799934387207,
+      "magsys": "ab",
+      "limiting_mag": 19.711600158091507
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": 96.1574405,
+      "dec": 50.9749842,
+      "filter": "ztfg",
+      "mjd": 58465.244907400105,
+      "snr": 9.060032800135765,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590190,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": 19.066200256347656,
+      "magerr": 0.11983799934387207,
+      "magsys": "ab",
+      "limiting_mag": 20.26020050048828
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": 96.1573506,
+      "dec": 50.9749777,
+      "filter": "ztfr",
+      "mjd": 58465.47748839995,
+      "snr": 12.031784096069538,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333940,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.507364",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 18.554701323868763,
+      "magerr": 0.09023900330066681,
+      "magsys": "ab",
+      "limiting_mag": 19.508101388366942
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": 96.1573506,
+      "dec": 50.9749777,
+      "filter": "ztfr",
+      "mjd": 58465.47748839995,
+      "snr": 12.031784096069536,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590191,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": 18.55470085144043,
+      "magerr": 0.09023900330066681,
+      "magsys": "ab",
+      "limiting_mag": 20.0487003326416
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58467.42767360015,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333941,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.507380",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 18.254100799560547
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58467.42767360015,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590192,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 18.254100799560547
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": 96.1573462,
+      "dec": 50.975011,
+      "filter": "ztfg",
+      "mjd": 58468.41403939994,
+      "snr": 10.80237764240112,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333942,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.507396",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.255400167493995,
+      "magerr": 0.10050900280475614,
+      "magsys": "ab",
+      "limiting_mag": 20.091773546141518
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": 96.1573462,
+      "dec": 50.975011,
+      "filter": "ztfg",
+      "mjd": 58468.41403939994,
+      "snr": 10.802377642401119,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590193,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": 19.255399703979492,
+      "magerr": 0.10050900280475616,
+      "magsys": "ab",
+      "limiting_mag": 20.621299743652344
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": 96.1573136,
+      "dec": 50.9750094,
+      "filter": "ztfg",
+      "mjd": 58468.42480320018,
+      "snr": 9.826378557360572,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333943,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.507410",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.272600600655906,
+      "magerr": 0.11049199849367142,
+      "magsys": "ab",
+      "limiting_mag": 20.0061593176779
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": 96.1573136,
+      "dec": 50.9750094,
+      "filter": "ztfg",
+      "mjd": 58468.42480320018,
+      "snr": 9.826378557360572,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590194,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": 19.272600173950195,
+      "magerr": 0.11049199849367142,
+      "magsys": "ab",
+      "limiting_mag": 20.573200225830078
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": 96.1573561,
+      "dec": 50.9750035,
+      "filter": "ztfr",
+      "mjd": 58468.47305560019,
+      "snr": 12.356164590925989,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333944,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.507424",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 18.59169968780124,
+      "magerr": 0.08787000179290771,
+      "magsys": "ab",
+      "limiting_mag": 19.57398388873601
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": 96.1573561,
+      "dec": 50.9750035,
+      "filter": "ztfr",
+      "mjd": 58468.47305560019,
+      "snr": 12.356164590925987,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590195,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": 18.591699600219727,
+      "magerr": 0.08787000179290771,
+      "magsys": "ab",
+      "limiting_mag": 20.101299285888672
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": 96.157504,
+      "dec": 50.9749248,
+      "filter": "ztfr",
+      "mjd": 58471.199224499986,
+      "snr": 6.960695054255378,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333945,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.507438",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 18.68700039790901,
+      "magerr": 0.15598100423812866,
+      "magsys": "ab",
+      "limiting_mag": 19.046206906769342
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": 96.157504,
+      "dec": 50.9749248,
+      "filter": "ztfr",
+      "mjd": 58471.199224499986,
+      "snr": 6.960695054255378,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590196,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": 18.687000274658203,
+      "magerr": 0.15598100423812866,
+      "magsys": "ab",
+      "limiting_mag": 19.002199172973633
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": 96.1572226,
+      "dec": 50.975123,
+      "filter": "ztfr",
+      "mjd": 58471.258206000086,
+      "snr": 4.789519748951973,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333946,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.507452",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 18.822500233347345,
+      "magerr": 0.22668999433517456,
+      "magsys": "ab",
+      "limiting_mag": 18.77580514339415
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": 96.1572226,
+      "dec": 50.975123,
+      "filter": "ztfr",
+      "mjd": 58471.258206000086,
+      "snr": 4.789519748951973,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590197,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": 18.822500228881836,
+      "magerr": 0.22668999433517456,
+      "magsys": "ab",
+      "limiting_mag": 18.455799102783203
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": 96.1573709,
+      "dec": 50.9750041,
+      "filter": "ztfr",
+      "mjd": 58471.28678240022,
+      "snr": 12.47628428932838,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333947,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.507465",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 18.718099755781978,
+      "magerr": 0.0870240032672882,
+      "magsys": "ab",
+      "limiting_mag": 19.710887900432006
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": 96.1573709,
+      "dec": 50.9750041,
+      "filter": "ztfr",
+      "mjd": 58471.28678240022,
+      "snr": 12.476284289328378,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590198,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": 18.71809959411621,
+      "magerr": 0.08702400326728821,
+      "magsys": "ab",
+      "limiting_mag": 19.918800354003906
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": 96.157338,
+      "dec": 50.9750133,
+      "filter": "ztfr",
+      "mjd": 58472.27799770003,
+      "snr": 9.015047196825648,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333948,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.507479",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 18.784500532686856,
+      "magerr": 0.12043599784374236,
+      "magsys": "ab",
+      "limiting_mag": 19.424495533704533
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": 96.157338,
+      "dec": 50.9750133,
+      "filter": "ztfr",
+      "mjd": 58472.27799770003,
+      "snr": 9.015047196825646,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590199,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": 18.784500122070312,
+      "magerr": 0.12043599784374237,
+      "magsys": "ab",
+      "limiting_mag": 19.79199981689453
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": 96.1573687,
+      "dec": 50.974973,
+      "filter": "ztfr",
+      "mjd": 58474.29490739992,
+      "snr": 7.089827938480549,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333949,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.507492",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.105101107426638,
+      "magerr": 0.15313999354839325,
+      "magsys": "ab",
+      "limiting_mag": 19.484265335364007
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": 96.1573687,
+      "dec": 50.974973,
+      "filter": "ztfr",
+      "mjd": 58474.29490739992,
+      "snr": 7.089827938480549,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590200,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": 19.105100631713867,
+      "magerr": 0.15313999354839325,
+      "magsys": "ab",
+      "limiting_mag": 19.223400115966797
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": 96.1572808,
+      "dec": 50.9750071,
+      "filter": "ztfr",
+      "mjd": 58474.32182870014,
+      "snr": 5.912017947455897,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333950,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.507507",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.045799534227704,
+      "magerr": 0.18364900350570676,
+      "magsys": "ab",
+      "limiting_mag": 19.227713882891976
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": 96.1572808,
+      "dec": 50.9750071,
+      "filter": "ztfr",
+      "mjd": 58474.32182870014,
+      "snr": 5.9120179474558965,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590201,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": 19.045799255371094,
+      "magerr": 0.1836490035057068,
+      "magsys": "ab",
+      "limiting_mag": 19.006399154663086
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58474.50785879977,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333951,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.507522",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 18.313899993896484
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58474.50785879977,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590202,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 18.313899993896484
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58474.5087731001,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333952,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.507535",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 18.147300720214844
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58474.5087731001,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590203,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 18.147300720214844
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58480.27982639987,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333953,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.507549",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.989099502563477
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58480.27982639987,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590204,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.989099502563477
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58480.28123839991,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333954,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.507564",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.249300003051758
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58480.28123839991,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590205,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.249300003051758
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58480.3229398001,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333955,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.507578",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.1343994140625
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58480.3229398001,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590206,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.1343994140625
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58483.18733800016,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333956,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.507591",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.265199661254883
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58483.18733800016,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590207,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.265199661254883
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": 96.157183,
+      "dec": 50.9749711,
+      "filter": "ztfr",
+      "mjd": 58486.444641199894,
+      "snr": 3.778484712342059,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333957,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.507605",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.869699944189644,
+      "magerr": 0.2873469889163971,
+      "magsys": "ab",
+      "limiting_mag": 19.565569106880496
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": 96.157183,
+      "dec": 50.9749711,
+      "filter": "ztfr",
+      "mjd": 58486.444641199894,
+      "snr": 3.778484712342059,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590208,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": 19.869699478149414,
+      "magerr": 0.2873469889163971,
+      "magsys": "ab",
+      "limiting_mag": 19.739200592041016
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58486.44510419993,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333958,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.507620",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.782100677490234
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 58486.44510419993,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590209,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.782100677490234
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58488.22516199993,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333959,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.507634",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.76420021057129
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58488.22516199993,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590210,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.76420021057129
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": 96.157289,
+      "dec": 50.9749657,
+      "filter": "ztfr",
+      "mjd": 58490.19509259984,
+      "snr": 4.811466087667968,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333960,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.507648",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 20.025200107465363,
+      "magerr": 0.22565600275993347,
+      "magsys": "ab",
+      "limiting_mag": 19.98346866945633
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": 96.157289,
+      "dec": 50.9749657,
+      "filter": "ztfr",
+      "mjd": 58490.19509259984,
+      "snr": 4.811466087667968,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590211,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": 20.02519989013672,
+      "magerr": 0.22565600275993347,
+      "magsys": "ab",
+      "limiting_mag": 20.236000061035156
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": 96.157439,
+      "dec": 50.9749293,
+      "filter": "ztfr",
+      "mjd": 58490.22084489977,
+      "snr": 6.651002449630119,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333961,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.507662",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.75350040739139,
+      "magerr": 0.16324399411678314,
+      "magsys": "ab",
+      "limiting_mag": 20.063293166024195
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": 96.157439,
+      "dec": 50.9749293,
+      "filter": "ztfr",
+      "mjd": 58490.22084489977,
+      "snr": 6.65100244963012,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590212,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": 19.75349998474121,
+      "magerr": 0.16324399411678314,
+      "magsys": "ab",
+      "limiting_mag": 20.25279998779297
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58492.22003469989,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333962,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.507675",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 17.483400344848633
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58492.22003469989,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590213,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 17.483400344848633
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58493.21359949978,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333963,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.507689",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.583499908447266
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58493.21359949978,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590214,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 20.583499908447266
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58493.23754630005,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333964,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.507702",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.873699188232422
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 58493.23754630005,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590215,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.873699188232422
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": 96.1572848,
+      "dec": 50.9749178,
+      "filter": "ztfr",
+      "mjd": 58493.25281250011,
+      "snr": 5.391319056401594,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333965,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.507716",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.96419952804179,
+      "magerr": 0.20138600468635556,
+      "magsys": "ab",
+      "limiting_mag": 20.046012102168646
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": 96.1572848,
+      "dec": 50.9749178,
+      "filter": "ztfr",
+      "mjd": 58493.25281250011,
+      "snr": 5.391319056401593,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590216,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": 19.96419906616211,
+      "magerr": 0.2013860046863556,
+      "magsys": "ab",
+      "limiting_mag": 20.365699768066406
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": 96.1574605,
+      "dec": 50.9749183,
+      "filter": "ztfr",
+      "mjd": 58493.283171299845,
+      "snr": 5.551300076538353,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 618333966,
+      "altdata": null,
+      "created_at": "2024-08-22T19:26:36.507732",
+      "groups": [
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 20.260774923748958,
+      "magerr": 0.19558233022689817,
+      "magsys": "ab",
+      "limiting_mag": 20.374336672493477
+    },
+    {
+      "obj_id": "ZTF18acsjrbc",
+      "ra": 96.1574605,
+      "dec": 50.9749183,
+      "filter": "ztfr",
+      "mjd": 58493.283171299845,
+      "snr": 5.551300076538353,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "",
+      "id": 1590217,
+      "altdata": null,
+      "created_at": "2020-11-04T21:05:36.113703",
+      "groups": [
+        {
+          "id": 22,
+          "name": "yssharma",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 37,
+          "name": "andytzanidakis",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 41,
+          "name": "Redshift Completeness Factor",
+          "nickname": "rcf",
+          "single_user_group": false
+        },
+        {
+          "id": 43,
+          "name": "Census of the Local Universe Caltech",
+          "nickname": "clu",
+          "single_user_group": false
+        }
+      ],
+      "mag": 20.260774612426758,
+      "magerr": 0.19558233022689822,
+      "magsys": "ab",
+      "limiting_mag": 20.393949508666992
+    }
+  ],
+  "version": "1.4.0+fritz.143bd07"
+}

@@ -1,0 +1,433 @@
+ZTFID,n_raw,n_clean,n_removed,ref_band,t_peak_mjd,win_lo,win_hi,n_g,n_r,corroborated,verdict,reason
+ZTF18aaexyql,14,14,0.0,r,58795.53,58785.5,58837.5,7.0,7.0,True,ok,good for colour
+ZTF18aakkrjm,29,29,0.0,r,58970.98,58954.2,59017.2,14.0,15.0,True,ok,good for colour
+ZTF18aaqjovh,264,35,229.0,r,58251.08,58243.2,58288.2,4.0,31.0,False,check_peak,g/r peaks disagree (>30 d)
+ZTF18aaxiuyp,521,240,281.0,r,58281.34,58232.4,58378.1,84.0,156.0,True,ok,good for colour
+ZTF18abdffeo,30,11,19.0,r,58308.28,58297.3,58337.2,4.0,7.0,True,ok,good for colour
+ZTF18abdkkwa,933,372,561.0,r,58322.1,58300.3,58400.2,167.0,205.0,True,ok,good for colour
+ZTF18abeamgv,114,96,18.0,r,58315.45,58303.3,58346.2,34.0,62.0,True,ok,good for colour
+ZTF18abecbks,259,208,51.0,r,58316.29,58303.4,58385.2,85.0,123.0,True,ok,good for colour
+ZTF18abeyqpr,240,163,77.0,r,58325.31,58307.4,58378.2,52.0,111.0,True,ok,good for colour
+ZTF18abfcmjw,81,52,29.0,g,58583.17,58581.5,58599.3,23.0,29.0,True,ok,good for colour
+ZTF18abfzhct,379,226,153.0,r,58327.24,58311.2,58383.1,89.0,137.0,True,ok,good for colour
+ZTF18abhhnnv,133,78,55.0,r,58329.27,58316.2,58372.2,20.0,58.0,True,ok,good for colour
+ZTF18abjyjdz,57,10,47.0,r,58344.14,58328.2,58361.1,2.0,8.0,True,ok_single,ok but one band sparse for colour
+ZTF18abkjnqy,73,10,63.0,r,58345.76,58330.3,58365.1,2.0,8.0,True,ok_single,ok but one band sparse for colour
+ZTF18aboabxv,54,25,29.0,r,58363.23,58350.1,58363.2,6.0,19.0,True,insufficient,"ref r: 19 epochs, bracketed=False"
+ZTF18abukavn,338,97,241.0,g,58373.85,58371.2,58390.1,49.0,48.0,True,ok,good for colour
+ZTF18abvkmgw,17,7,10.0,g,58377.79,58373.4,58382.4,4.0,3.0,True,insufficient,"ref g: 4 epochs, bracketed=True"
+ZTF18acbvpzj,49,9,40.0,g,58422.4,58422.4,58441.3,5.0,4.0,True,insufficient,"ref g: 5 epochs, bracketed=False"
+ZTF18aceqrrs,105,20,85.0,r,58438.96,58429.5,58511.4,4.0,16.0,False,check_peak,g/r peaks disagree (>30 d)
+ZTF18achcpwu,103,24,79.0,r,58458.39,58434.4,58567.1,3.0,21.0,True,ok_single,ok but one band sparse for colour
+ZTF18achdidy,56,22,34.0,g,58432.49,58432.5,58538.8,11.0,11.0,True,insufficient,"ref g: 11 epochs, bracketed=False"
+ZTF18acizepv,1554,86,1468.0,r,60624.04,60608.3,60671.1,37.0,49.0,True,ok,good for colour
+ZTF18acnncve,68,17,51.0,r,58450.08,58438.5,58493.5,3.0,14.0,True,ok_single,ok but one band sparse for colour
+ZTF18acsjrbc,48,24,24.0,r,58466.33,58455.3,58493.3,4.0,20.0,True,ok,good for colour
+ZTF18acyxnyw,328,225,103.0,g,58506.86,58471.5,58628.2,112.0,113.0,True,ok,good for colour
+ZTF18aczcumi,10,6,4.0,r,58479.73,58472.4,58486.5,0.0,6.0,True,ok_single,ok but one band sparse for colour
+ZTF18aczqzrj,63,45,18.0,r,58487.16,58476.4,58526.2,7.0,38.0,True,ok,good for colour
+ZTF18adasisj,155,21,134.0,r,58509.12,58482.2,58538.1,10.0,11.0,True,ok,good for colour
+ZTF18adaykvg,23,5,18.0,r,58480.42,58480.4,58481.5,1.0,4.0,True,insufficient,"ref r: 4 epochs, bracketed=False"
+ZTF19aadnhdo,137,68,69.0,r,58505.79,58502.4,58606.2,9.0,59.0,True,ok,good for colour
+ZTF19aafmyow,759,410,349.0,r,58531.44,58526.5,58744.1,186.0,224.0,True,ok,good for colour
+ZTF19aailcgs,33,21,12.0,g,58522.41,58522.4,58601.2,9.0,12.0,True,insufficient,"ref g: 9 epochs, bracketed=False"
+ZTF19aailsge,21,17,4.0,r,58526.7,58522.5,58641.3,4.0,13.0,True,ok,good for colour
+ZTF19aakirwj,184,37,147.0,r,58580.53,58513.4,58662.2,16.0,21.0,False,check_peak,g/r peaks disagree (>30 d)
+ZTF19aakpcuw,541,242,299.0,r,58538.51,58538.5,58727.1,97.0,145.0,True,insufficient,"ref r: 145 epochs, bracketed=False"
+ZTF19aalfsqm,39,3,36.0,r,58541.54,58541.5,58560.4,0.0,3.0,True,insufficient,"ref r: 3 epochs, bracketed=False"
+ZTF19aalouag,914,258,656.0,r,58589.04,58540.3,58682.2,138.0,120.0,True,ok,good for colour
+ZTF19aamgghn,207,78,129.0,r,58571.58,58556.2,58649.2,37.0,41.0,True,ok,good for colour
+ZTF19aamsetj,212,46,166.0,r,58593.71,58556.2,58642.2,22.0,24.0,True,ok,good for colour
+ZTF19aanesgt,78,13,65.0,r,58585.48,58567.2,58606.2,6.0,7.0,True,ok,good for colour
+ZTF19aanfukh,107,21,86.0,r,58577.39,58559.2,58608.2,10.0,11.0,True,ok,good for colour
+ZTF19aanijpu,274,47,227.0,r,58618.85,58572.4,58716.1,22.0,25.0,True,ok,good for colour
+ZTF19aaoxvfe,55,21,34.0,r,58594.66,58580.2,58612.2,10.0,11.0,True,ok,good for colour
+ZTF19aarfyvc,271,155,116.0,r,58614.12,58572.4,58663.3,48.0,107.0,True,ok,good for colour
+ZTF19aarphwc,531,300,231.0,g,58641.2,58596.5,58703.3,144.0,156.0,True,ok,good for colour
+ZTF19aatheus,400,305,95.0,r,58616.82,58605.4,58725.2,161.0,144.0,True,ok,good for colour
+ZTF19aavitlq,283,128,155.0,r,58642.72,58632.5,58732.3,12.0,116.0,True,ok,good for colour
+ZTF19aavouyw,97,21,76.0,g,58644.43,58632.3,58672.2,12.0,9.0,True,ok,good for colour
+ZTF19aavoweu,173,106,67.0,r,58646.16,58635.3,58668.2,41.0,65.0,True,ok,good for colour
+ZTF19aawfbtg,349,121,228.0,r,58692.55,58634.4,58791.1,53.0,68.0,True,ok,good for colour
+ZTF19aawhzsh,154,41,113.0,r,60053.88,60032.2,60101.3,27.0,14.0,True,ok,good for colour
+ZTF19aawqcgy,647,46,601.0,r,58647.75,58636.3,58697.1,26.0,20.0,True,ok,good for colour
+ZTF19aawsday,59,15,44.0,r,58645.72,58636.4,58706.4,5.0,10.0,True,ok,good for colour
+ZTF19aaxfcpq,195,93,102.0,r,58650.47,58638.3,58699.9,12.0,81.0,True,ok,good for colour
+ZTF19aaxzdtw,163,107,56.0,r,58660.1,58641.3,58684.2,48.0,59.0,True,ok,good for colour
+ZTF19abafmwj,280,109,171.0,r,58666.19,58652.3,58727.1,48.0,61.0,True,ok,good for colour
+ZTF19abauylg,231,58,173.0,r,58671.89,58663.3,58736.2,28.0,30.0,True,ok,good for colour
+ZTF19abcegvm,289,43,246.0,r,58711.39,58662.5,58789.2,19.0,24.0,True,ok,good for colour
+ZTF19abdoior,361,142,219.0,r,58680.99,58668.3,58747.3,79.0,63.0,True,ok,good for colour
+ZTF19abfiqjg,53,16,37.0,r,58688.69,58676.5,58709.4,6.0,10.0,True,ok,good for colour
+ZTF19abfsxpw,132,30,102.0,r,58689.04,58674.2,58776.1,15.0,15.0,True,ok,good for colour
+ZTF19abfvnns,436,165,271.0,g,58707.17,58672.4,58813.9,78.0,87.0,True,ok,good for colour
+ZTF19ablesob,287,95,192.0,r,58711.44,58695.5,58779.2,38.0,57.0,True,ok,good for colour
+ZTF19abnacvf,110,36,74.0,g,58732.4,58699.5,58777.7,17.0,19.0,True,ok,good for colour
+ZTF19abpbopt,559,191,368.0,g,58730.14,58706.2,58785.2,118.0,73.0,True,ok,good for colour
+ZTF19abqmsbk,89,15,74.0,r,58730.27,58728.2,58761.1,10.0,5.0,True,ok,good for colour
+ZTF19abqqrgy,64,19,45.0,r,58727.74,58710.4,58812.2,6.0,13.0,True,ok,good for colour
+ZTF19abqshry,114,37,77.0,r,58738.13,58720.3,58795.1,20.0,17.0,True,ok,good for colour
+ZTF19abqwtfu,448,128,320.0,r,58736.25,58716.4,58878.1,50.0,78.0,True,ok,good for colour
+ZTF19abqxibq,73,36,37.0,r,58744.03,58719.4,58831.1,15.0,21.0,True,ok,good for colour
+ZTF19abtsnyy,846,152,694.0,r,58770.76,58716.5,58903.2,50.0,102.0,True,ok,good for colour
+ZTF19abupned,387,117,270.0,r,58741.79,58724.4,58812.2,54.0,63.0,True,ok,good for colour
+ZTF19abvdgqo,196,72,124.0,r,58738.98,58730.1,58759.3,37.0,35.0,True,ok,good for colour
+ZTF19abzqywg,43,8,35.0,r,58760.5,58745.5,58760.5,4.0,4.0,True,insufficient,"ref r: 4 epochs, bracketed=False"
+ZTF19abztknu,486,154,332.0,r,58770.25,58747.4,58899.1,42.0,112.0,True,ok,good for colour
+ZTF19abzwaen,48,22,26.0,r,58750.26,58750.3,58791.1,6.0,16.0,True,insufficient,"ref r: 16 epochs, bracketed=False"
+ZTF19acbmojx,40,23,17.0,r,58768.28,58756.5,58793.5,5.0,18.0,True,ok,good for colour
+ZTF19acbonaa,455,126,329.0,r,58796.41,58756.5,58896.1,19.0,107.0,True,ok,good for colour
+ZTF19acdabep,46,21,25.0,r,58773.24,58757.5,58791.5,6.0,15.0,True,ok,good for colour
+ZTF19aceqjqw,65,22,43.0,r,58784.59,58769.5,58812.5,5.0,17.0,True,ok,good for colour
+ZTF19aceqvhl,15,7,8.0,r,58774.67,58770.5,58791.5,0.0,7.0,True,ok_single,ok but one band sparse for colour
+ZTF19acfwynw,146,29,117.0,g,58820.36,58775.2,58863.1,14.0,15.0,True,ok,good for colour
+ZTF19acgjosf,151,45,106.0,r,58803.6,58776.5,58899.3,17.0,28.0,True,ok,good for colour
+ZTF19acgjpgh,55,48,7.0,r,58844.88,58776.5,58912.2,20.0,28.0,True,ok,good for colour
+ZTF19ackjjwf,1104,216,888.0,r,58801.55,58783.5,58912.2,44.0,172.0,True,ok,good for colour
+ZTF19ackjrru,214,66,148.0,g,58814.63,58785.5,58876.2,28.0,38.0,True,ok,good for colour
+ZTF19acllsbq,72,14,58.0,r,58817.11,58788.2,58863.1,4.0,10.0,True,ok,good for colour
+ZTF19acmelor,115,19,96.0,r,58804.41,58792.1,58863.1,7.0,12.0,True,ok,good for colour
+ZTF19acxmpnz,54,16,38.0,r,58833.36,58833.4,58874.2,4.0,12.0,True,insufficient,"ref r: 12 epochs, bracketed=False"
+ZTF19acyogrm,143,55,88.0,r,58846.3,58831.1,58904.2,22.0,33.0,True,ok,good for colour
+ZTF19adaivcf,238,126,112.0,r,58873.26,58836.5,58915.4,56.0,70.0,True,ok,good for colour
+ZTF19adcfsad,65,20,45.0,r,58857.96,58846.6,58914.4,7.0,13.0,True,ok,good for colour
+ZTF20aadzbcf,294,87,207.0,r,59002.01,58936.4,59077.9,42.0,45.0,True,ok,good for colour
+ZTF20aaekkuv,56,13,43.0,r,58869.79,58855.4,58894.3,5.0,8.0,True,ok,good for colour
+ZTF20aaelulu,1067,151,916.0,r,58866.35,58855.2,58915.4,71.0,80.0,True,ok,good for colour
+ZTF20aaertpj,59,18,41.0,r,58872.86,58856.6,58898.5,8.0,10.0,True,ok,good for colour
+ZTF20aaetirf,32,3,29.0,r,58859.22,58859.2,58891.1,0.0,3.0,True,insufficient,"ref r: 3 epochs, bracketed=False"
+ZTF20aafmdzj,108,18,90.0,r,58871.07,58863.2,58905.1,7.0,11.0,True,ok,good for colour
+ZTF20aagewqr,74,8,66.0,r,58875.12,58864.3,58881.3,1.0,7.0,True,ok_single,ok but one band sparse for colour
+ZTF20aahbfmf,101,30,71.0,g,58893.91,58867.4,58939.9,12.0,18.0,True,ok,good for colour
+ZTF20aaiahra,37,4,33.0,r,58875.81,58873.3,58900.3,0.0,4.0,True,insufficient,"ref r: 4 epochs, bracketed=True"
+ZTF20aaiftgi,68,12,56.0,r,58886.69,58873.5,58912.4,6.0,6.0,True,ok,good for colour
+ZTF20aaifybu,91,31,60.0,g,58883.27,58851.6,58925.5,16.0,15.0,True,ok,good for colour
+ZTF20aaiqiti,360,132,228.0,r,58887.76,58873.3,58915.4,57.0,75.0,True,ok,good for colour
+ZTF20aajcdad,138,47,91.0,r,58888.65,58875.5,58997.3,23.0,24.0,True,ok,good for colour
+ZTF20aakodyh,35,13,22.0,r,58888.48,58875.5,58911.5,3.0,10.0,True,ok_single,ok but one band sparse for colour
+ZTF20aalcyih,100,23,77.0,r,58898.38,58878.2,58915.1,8.0,15.0,True,ok,good for colour
+ZTF20aalxlis,503,204,299.0,r,58897.5,58884.6,59051.2,98.0,106.0,True,ok,good for colour
+ZTF20aamdyln,29,11,18.0,r,58900.74,58885.5,58965.3,3.0,8.0,True,ok_single,ok but one band sparse for colour
+ZTF20aammtwx,110,25,85.0,r,58900.31,58890.2,58915.1,12.0,13.0,True,ok,good for colour
+ZTF20aamqmhj,61,23,38.0,r,58902.65,58893.3,58915.4,6.0,17.0,True,ok,good for colour
+ZTF20aanvmdt,47,6,41.0,r,58894.5,58894.5,59019.2,2.0,4.0,True,insufficient,"ref r: 4 epochs, bracketed=False"
+ZTF20aaoflta,13,11,2.0,r,58897.22,58890.2,58915.1,5.0,6.0,True,ok,good for colour
+ZTF20aapcbmc,39,9,30.0,r,58912.01,58898.5,58936.4,4.0,5.0,True,ok,good for colour
+ZTF20aattyuz,111,47,64.0,g,58946.21,58936.5,58997.2,25.0,22.0,True,ok,good for colour
+ZTF20aaurexl,104,45,59.0,r,58963.26,58953.5,59023.3,15.0,30.0,True,ok,good for colour
+ZTF20aaurfnl,49,7,42.0,r,58964.64,58953.4,58967.4,2.0,5.0,True,ok_single,ok but one band sparse for colour
+ZTF20aavcvrm,380,124,256.0,r,58969.38,58955.4,59023.3,42.0,82.0,True,ok,good for colour
+ZTF20aavgcnu,111,7,104.0,r,58963.44,58956.3,58987.3,2.0,5.0,True,ok_single,ok but one band sparse for colour
+ZTF20aavhyel,146,34,112.0,r,58973.69,58956.3,59045.2,14.0,20.0,True,ok,good for colour
+ZTF20aavzffg,366,56,310.0,r,58976.33,58972.4,59051.2,27.0,29.0,True,ok,good for colour
+ZTF20aaxvzja,64,21,43.0,r,58983.83,58970.4,59019.2,8.0,13.0,True,ok,good for colour
+ZTF20aazkjfv,140,23,117.0,r,58996.53,58980.3,59043.2,9.0,14.0,True,ok,good for colour
+ZTF20aazpyhy,397,120,277.0,r,59001.32,58984.4,59085.2,48.0,72.0,True,ok,good for colour
+ZTF20abaszgh,73,25,48.0,r,58996.66,58991.2,59023.2,13.0,12.0,True,ok,good for colour
+ZTF20abbpkng,94,31,63.0,r,59006.45,58994.3,59023.3,15.0,16.0,True,ok,good for colour
+ZTF20abbplei,579,189,390.0,r,59004.71,58994.3,59128.1,99.0,90.0,True,ok,good for colour
+ZTF20abcjdwu,310,66,244.0,r,59392.12,59379.3,59451.2,26.0,40.0,True,ok,good for colour
+ZTF20abdnpdo,23,0,,,,,,,,,insufficient,<3 pts in every band
+ZTF20abefbpl,154,48,106.0,r,59024.25,59009.2,59069.2,20.0,28.0,True,ok,good for colour
+ZTF20abhlncz,278,102,176.0,r,59038.54,59015.3,59117.1,45.0,57.0,True,ok,good for colour
+ZTF20abjpvce,89,27,62.0,r,59053.26,59036.3,59066.2,12.0,15.0,True,ok,good for colour
+ZTF20abkiarz,204,114,90.0,r,59042.75,59031.4,59144.2,63.0,51.0,True,ok,good for colour
+ZTF20abobpcb,1183,108,1075.0,g,59138.83,59053.4,59188.1,55.0,53.0,True,ok,good for colour
+ZTF20aborzxc,141,24,117.0,r,59110.59,59090.5,59136.3,6.0,18.0,True,ok,good for colour
+ZTF20abpuwxl,323,92,231.0,g,59116.46,59084.4,59203.8,45.0,47.0,True,ok,good for colour
+ZTF20abqdkne,163,69,94.0,r,59076.86,59064.4,59134.3,25.0,44.0,True,ok,good for colour
+ZTF20abrcnbr,27,10,17.0,g,59071.48,59071.5,59080.5,7.0,3.0,True,insufficient,"ref g: 7 epochs, bracketed=False"
+ZTF20abrmmah,66,10,56.0,r,59086.23,59073.4,59111.3,4.0,6.0,True,ok,good for colour
+ZTF20abswdbg,385,137,248.0,r,59092.11,59072.5,59220.2,57.0,80.0,True,ok,good for colour
+ZTF20abtkjfw,92,30,62.0,r,59088.8,59077.5,59164.3,10.0,20.0,True,ok,good for colour
+ZTF20abusrwm,101,37,64.0,r,59099.27,59081.4,59169.3,10.0,27.0,True,ok,good for colour
+ZTF20abvquuo,142,46,96.0,r,59098.64,59082.5,59173.2,16.0,30.0,True,ok,good for colour
+ZTF20abvvnqh,107,32,75.0,r,59100.09,59081.4,59141.2,13.0,19.0,True,ok,good for colour
+ZTF20abwxywy,306,119,187.0,r,59101.68,59087.4,59220.1,49.0,70.0,True,ok,good for colour
+ZTF20abxpoxd,1467,293,1174.0,r,59127.51,59088.4,59321.1,123.0,170.0,True,ok,good for colour
+ZTF20abysxbk,48,4,44.0,r,59111.24,59111.2,59129.1,1.0,3.0,True,insufficient,"ref r: 3 epochs, bracketed=False"
+ZTF20abywsut,105,36,69.0,r,59115.31,59102.4,59144.2,16.0,20.0,True,ok,good for colour
+ZTF20abzjcdg,83,20,63.0,g,59115.31,59107.3,59165.2,6.0,14.0,True,ok,good for colour
+ZTF20abzoeiw,143,33,110.0,r,59119.14,59111.2,59173.1,17.0,16.0,True,ok,good for colour
+ZTF20accbsxa,52,24,28.0,r,59125.41,59113.3,59145.2,11.0,13.0,True,ok,good for colour
+ZTF20acfqngt,117,47,70.0,r,59140.11,59120.5,59232.3,14.0,33.0,True,ok,good for colour
+ZTF20achvlbs,56,36,20.0,g,59139.77,59130.5,59163.2,16.0,20.0,True,ok,good for colour
+ZTF20acjbzrh,71,19,52.0,r,59151.55,59136.3,59176.3,4.0,15.0,True,ok,good for colour
+ZTF20aclnplo,152,28,124.0,r,59156.0,59142.5,59198.5,10.0,18.0,True,ok,good for colour
+ZTF20acphdcg,2431,302,2129.0,g,59230.6,59163.4,59335.2,149.0,153.0,True,ok,good for colour
+ZTF20acpjqxp,463,55,408.0,r,59180.08,59164.2,59251.1,24.0,31.0,True,ok,good for colour
+ZTF20acpyldh,669,148,521.0,g,59283.73,59165.5,59344.2,71.0,77.0,True,ok,good for colour
+ZTF20acpzaoa,37,10,27.0,r,59170.81,59168.5,59184.5,6.0,4.0,True,insufficient,"ref r: 4 epochs, bracketed=True"
+ZTF20actekrw,215,55,160.0,r,59192.57,59176.3,59226.2,20.0,35.0,True,ok,good for colour
+ZTF20actpqgc,308,78,230.0,r,59200.07,59178.2,59276.1,31.0,47.0,True,ok,good for colour
+ZTF20acueziy,144,25,119.0,r,59193.55,59182.1,59229.1,10.0,15.0,True,ok,good for colour
+ZTF20acvcxkz,420,131,289.0,r,59199.64,59185.4,59234.5,50.0,81.0,True,ok,good for colour
+ZTF20acvebcu,160,56,104.0,r,59205.37,59188.4,59307.2,20.0,36.0,True,ok,good for colour
+ZTF20acvmzfv,139,30,109.0,r,59202.69,59190.2,59255.1,9.0,21.0,True,ok,good for colour
+ZTF20acwofhd,543,144,399.0,r,59206.47,59193.4,59356.3,39.0,105.0,True,ok,good for colour
+ZTF20acxqxyw,106,36,70.0,r,59215.86,59198.4,59265.3,8.0,28.0,True,ok,good for colour
+ZTF20adadrhw,895,158,737.0,r,59219.38,59210.4,59348.2,68.0,90.0,True,ok,good for colour
+ZTF21aaaosoq,205,60,145.0,r,59221.53,59221.5,59349.3,20.0,40.0,True,insufficient,"ref r: 40 epochs, bracketed=False"
+ZTF21aaarmti,213,38,175.0,g,59236.17,59218.2,59260.1,20.0,18.0,True,ok,good for colour
+ZTF21aaaubig,440,144,296.0,r,59229.24,59216.4,59363.2,69.0,75.0,True,ok,good for colour
+ZTF21aacufip,213,45,168.0,r,59233.11,59226.5,59317.4,18.0,27.0,True,ok,good for colour
+ZTF21aagpymw,786,115,671.0,g,59262.34,59248.4,59369.2,56.0,59.0,True,ok,good for colour
+ZTF21aagtpro,562,87,475.0,r,59268.46,59268.5,59438.2,35.0,52.0,True,insufficient,"ref r: 52 epochs, bracketed=False"
+ZTF21aahdqrg,189,26,163.0,r,59261.1,59250.4,59312.3,11.0,15.0,True,ok,good for colour
+ZTF21aalhgqi,106,19,87.0,r,59275.26,59262.3,59317.2,5.0,14.0,True,ok,good for colour
+ZTF21aalhtgv,256,48,208.0,r,59307.33,59262.4,59363.2,25.0,23.0,True,ok,good for colour
+ZTF21aannoix,198,44,154.0,r,59293.04,59272.5,59370.3,17.0,27.0,True,ok,good for colour
+ZTF21aanvncv,504,87,417.0,r,59291.04,59275.3,59387.2,26.0,61.0,True,ok,good for colour
+ZTF21aaocrlm,146,28,118.0,r,59292.81,59275.2,59335.2,9.0,19.0,True,ok,good for colour
+ZTF21aapecxb,52,15,37.0,r,59290.24,59290.2,59317.2,5.0,10.0,True,insufficient,"ref r: 10 epochs, bracketed=False"
+ZTF21aaqhhfu,460,54,406.0,r,59307.12,59293.9,59376.3,19.0,35.0,True,ok,good for colour
+ZTF21aaqldsk,798,130,668.0,r,59312.41,59294.3,59377.3,44.0,86.0,True,ok,good for colour
+ZTF21aaqwfqe,422,103,319.0,r,59312.59,59298.4,59379.2,38.0,65.0,True,ok,good for colour
+ZTF21aarmuxl,97,28,69.0,r,59314.81,59304.2,59344.2,12.0,16.0,True,ok,good for colour
+ZTF21aarnjyd,947,132,815.0,r,59341.18,59303.3,59375.2,64.0,68.0,True,ok,good for colour
+ZTF21aartgiv,142,21,121.0,r,59319.88,59309.2,59346.2,10.0,11.0,True,ok,good for colour
+ZTF21aaufwyh,157,21,136.0,r,59336.98,59322.2,59365.2,9.0,12.0,True,ok,good for colour
+ZTF21aavdqgf,410,78,332.0,g,59336.6,59317.3,59435.3,39.0,39.0,True,ok,good for colour
+ZTF21aawogdl,270,54,216.0,r,59335.58,59323.4,59370.3,21.0,33.0,True,ok,good for colour
+ZTF21aaxtctv,353,37,316.0,r,59354.76,59334.3,59396.2,16.0,21.0,True,ok,good for colour
+ZTF21aaxxihx,119,22,97.0,r,59347.1,59335.2,59373.2,8.0,14.0,True,ok,good for colour
+ZTF21aayqrgx,259,34,225.0,r,59348.76,59338.4,59379.4,12.0,22.0,True,ok,good for colour
+ZTF21abahiow,361,62,299.0,r,59359.24,59341.4,59436.2,22.0,40.0,True,ok,good for colour
+ZTF21abbqeea,547,82,465.0,r,59394.93,59349.3,59473.2,39.0,43.0,True,ok,good for colour
+ZTF21abccaue,243,19,224.0,r,59377.76,59367.4,59381.4,9.0,10.0,True,ok,good for colour
+ZTF21abcgaln,482,59,423.0,r,59366.08,59356.4,59477.2,33.0,26.0,True,ok,good for colour
+ZTF21abcgnql,203,37,166.0,r,59371.93,59356.9,59401.3,14.0,23.0,True,ok,good for colour
+ZTF21abchjer,175,56,119.0,r,59363.4,59357.5,59470.3,35.0,21.0,True,ok,good for colour
+ZTF21abcpsjy,357,80,277.0,r,59427.31,59364.3,59473.2,43.0,37.0,True,ok,good for colour
+ZTF21abdkojo,105,22,83.0,r,59375.16,59367.2,59393.2,8.0,14.0,True,ok,good for colour
+ZTF21abdxhgv,311,60,251.0,r,59396.15,59369.3,59434.2,24.0,36.0,True,ok,good for colour
+ZTF21abieuta,131,38,93.0,r,59406.92,59392.4,59453.3,9.0,29.0,True,ok,good for colour
+ZTF21abimeun,25,8,17.0,r,59402.73,59394.4,59410.4,1.0,7.0,True,ok_single,ok but one band sparse for colour
+ZTF21abimnii,115,37,78.0,r,59416.72,59394.4,59486.2,13.0,24.0,True,ok,good for colour
+ZTF21abklcjq,544,146,398.0,r,59425.69,59404.4,59480.2,59.0,87.0,True,ok,good for colour
+ZTF21abmjgwf,952,221,731.0,r,59431.89,59412.4,59525.2,90.0,131.0,True,ok,good for colour
+ZTF21abmlldj,988,138,850.0,r,59452.06,59403.4,59561.2,60.0,78.0,True,ok,good for colour
+ZTF21abmxiuf,332,151,181.0,r,59446.11,59417.5,59629.2,55.0,96.0,True,ok,good for colour
+ZTF21abngbrl,50,18,32.0,r,59427.54,59412.4,59470.4,7.0,11.0,True,ok,good for colour
+ZTF21abplhpw,161,45,116.0,r,59442.24,59424.4,59526.2,18.0,27.0,True,ok,good for colour
+ZTF21abpwtde,122,34,88.0,r,59446.03,59424.4,59517.2,9.0,25.0,True,ok,good for colour
+ZTF21abraccv,710,212,498.0,r,59446.93,59430.3,59532.1,89.0,123.0,True,ok,good for colour
+ZTF21abrqria,210,42,168.0,g,59460.21,59460.2,59532.4,21.0,21.0,True,insufficient,"ref g: 21 epochs, bracketed=False"
+ZTF21abrqrsz,83,13,70.0,r,59442.81,59434.5,59451.5,0.0,13.0,True,ok_single,ok but one band sparse for colour
+ZTF21absyjff,302,84,218.0,g,59488.22,59434.2,59529.1,45.0,39.0,True,ok,good for colour
+ZTF21abvcugy,66,20,46.0,r,59460.77,59451.5,59477.4,10.0,10.0,True,ok,good for colour
+ZTF21abvcuhk,173,47,126.0,r,59459.09,59454.5,59474.3,17.0,30.0,True,ok,good for colour
+ZTF21acbnfos,119,38,81.0,r,59480.93,59468.5,59537.4,15.0,23.0,True,ok,good for colour
+ZTF21accwovq,101,35,66.0,r,59518.37,59468.5,59540.3,18.0,17.0,True,ok,good for colour
+ZTF21acdqgns,37,12,25.0,r,59478.24,59478.2,59494.3,2.0,10.0,True,insufficient,"ref r: 10 epochs, bracketed=False"
+ZTF21acdxhuv,510,147,363.0,r,59496.8,59484.2,59550.2,63.0,84.0,True,ok,good for colour
+ZTF21aceehxt,119,29,90.0,r,59498.9,59484.5,59540.3,10.0,19.0,True,ok,good for colour
+ZTF21acekmmm,142,30,112.0,r,59502.74,59488.1,59543.1,13.0,17.0,True,ok,good for colour
+ZTF21acgxypn,102,20,82.0,r,59515.03,59497.3,59540.2,6.0,14.0,True,ok,good for colour
+ZTF21achgfbk,189,47,142.0,r,59518.35,59498.4,59560.2,20.0,27.0,True,ok,good for colour
+ZTF21aciuhqw,416,107,309.0,r,59526.74,59512.1,59599.1,47.0,60.0,True,ok,good for colour
+ZTF21aciwixf,61,19,42.0,r,59527.18,59514.9,59548.3,6.0,13.0,True,ok,good for colour
+ZTF21acizqkx,17,7,10.0,r,59509.27,59509.3,59523.3,2.0,5.0,True,insufficient,"ref r: 5 epochs, bracketed=False"
+ZTF21acjxzsa,76,12,64.0,r,59539.1,59522.5,59550.3,6.0,6.0,True,ok,good for colour
+ZTF21aclzzhu,18,4,14.0,r,59525.52,59525.5,59532.5,1.0,3.0,True,insufficient,"ref r: 3 epochs, bracketed=False"
+ZTF22aadeuwu,536,135,401.0,r,59692.99,59670.4,59823.3,49.0,86.0,True,ok,good for colour
+ZTF22aadnjsh,68,24,44.0,r,59687.72,59671.3,59710.2,10.0,14.0,True,ok,good for colour
+ZTF22aadoihx,186,45,141.0,r,59683.24,59674.3,59740.2,10.0,35.0,True,ok,good for colour
+ZTF22aadqlhy,805,90,715.0,r,59691.7,59671.5,59808.2,34.0,56.0,True,ok,good for colour
+ZTF22aaebkwd,143,48,95.0,r,59685.27,59676.4,59702.3,20.0,28.0,True,ok,good for colour
+ZTF22aaezyos,901,217,684.0,r,59713.35,59675.3,59792.0,84.0,133.0,True,ok,good for colour
+ZTF22aagzmcz,72,34,38.0,r,59704.58,59688.3,59738.2,8.0,26.0,True,ok,good for colour
+ZTF22aahxaiv,195,59,136.0,r,59709.39,59694.2,59736.2,26.0,33.0,True,ok,good for colour
+ZTF22aajakms,98,29,69.0,r,59713.06,59702.4,59737.3,8.0,21.0,True,ok,good for colour
+ZTF22aakpyqw,131,35,96.0,r,59740.22,59724.3,59778.2,15.0,20.0,True,ok,good for colour
+ZTF22aakyeps,436,101,335.0,g,60888.02,60880.2,60948.1,46.0,55.0,True,ok,good for colour
+ZTF22aalfmec,127,34,93.0,r,59738.2,59727.4,59786.4,7.0,27.0,True,ok,good for colour
+ZTF22aaolhhl,170,61,109.0,r,59759.53,59748.3,59818.2,25.0,36.0,True,ok,good for colour
+ZTF22aaoolua,76,27,49.0,r,59761.22,59754.4,59824.4,7.0,20.0,True,ok,good for colour
+ZTF22aarbard,158,53,105.0,r,59774.25,59761.4,59823.3,22.0,31.0,True,ok,good for colour
+ZTF22aarqrxf,176,91,85.0,r,59807.82,59755.4,59866.1,39.0,52.0,True,ok,good for colour
+ZTF22aarwwyy,139,50,89.0,r,59773.66,59764.4,59821.3,18.0,32.0,True,ok,good for colour
+ZTF22aasxgjp,376,118,258.0,r,59784.42,59771.3,59831.0,46.0,72.0,True,ok,good for colour
+ZTF22aatunnt,159,41,118.0,r,59795.96,59776.4,59855.3,14.0,27.0,True,ok,good for colour
+ZTF22aazuotw,23,14,9.0,r,59809.66,59795.4,59829.4,6.0,8.0,True,ok,good for colour
+ZTF22abbdxho,122,41,81.0,r,59824.02,59810.2,59829.2,15.0,26.0,True,ok,good for colour
+ZTF22abbtqnp,61,30,31.0,r,60952.21,60939.2,60989.1,12.0,18.0,True,ok,good for colour
+ZTF22abcsgeq,10,3,7.0,g,59824.44,59815.4,59824.4,3.0,0.0,True,insufficient,"ref g: 3 epochs, bracketed=False"
+ZTF22abcvfgs,205,81,124.0,g,59871.99,59789.4,59907.1,49.0,32.0,True,ok,good for colour
+ZTF22abfrkoh,67,32,35.0,r,59843.26,59843.3,59910.2,18.0,14.0,True,insufficient,"ref r: 14 epochs, bracketed=False"
+ZTF22abfuwel,385,164,221.0,r,59850.74,59842.2,59913.2,73.0,91.0,True,ok,good for colour
+ZTF22abfyqsc,90,36,54.0,r,59854.12,59843.4,59909.2,11.0,25.0,True,ok,good for colour
+ZTF22abivebe,66,23,43.0,r,59861.08,59848.2,59881.2,11.0,12.0,True,ok,good for colour
+ZTF22abjafpr,102,41,61.0,r,59863.63,59850.5,59914.4,16.0,25.0,True,ok,good for colour
+ZTF22abkabeh,274,102,172.0,r,59870.69,59853.5,59934.4,32.0,70.0,True,ok,good for colour
+ZTF22abkbmob,470,105,365.0,g,59900.84,59839.5,60045.2,50.0,55.0,True,ok,good for colour
+ZTF22abllclb,97,38,59.0,r,59865.26,59858.4,59883.4,14.0,24.0,True,ok,good for colour
+ZTF22abmonux,61,22,39.0,r,59878.77,59866.1,59922.1,8.0,14.0,True,ok,good for colour
+ZTF22abnpsou,675,248,427.0,r,60062.28,59869.5,60124.2,109.0,139.0,False,check_peak,g/r peaks disagree (>30 d)
+ZTF22abnvurz,625,181,444.0,r,59950.36,59870.5,60120.7,73.0,108.0,True,ok,good for colour
+ZTF22absibqa,33,18,15.0,r,59898.53,59883.4,59922.4,4.0,14.0,True,ok,good for colour
+ZTF22absphuu,169,80,89.0,r,59900.46,59889.3,59937.2,33.0,47.0,True,ok,good for colour
+ZTF22abvcnnl,77,40,37.0,r,59939.77,59902.2,59984.1,19.0,21.0,True,ok,good for colour
+ZTF22abwtqeb,27,14,13.0,r,59909.08,59906.5,59993.4,6.0,8.0,True,ok,good for colour
+ZTF22abzejiv,21,11,10.0,r,59942.31,59932.2,59967.2,2.0,9.0,True,ok_single,ok but one band sparse for colour
+ZTF23aaahtnj,77,41,36.0,r,59967.12,59956.5,60093.2,11.0,30.0,True,ok,good for colour
+ZTF23aaaplam,13,5,8.0,r,59968.38,59968.4,59972.4,1.0,4.0,True,insufficient,"ref r: 4 epochs, bracketed=False"
+ZTF23aaazffe,92,46,46.0,r,59986.03,59969.5,60091.4,13.0,33.0,True,ok,good for colour
+ZTF23aaccacy,449,52,397.0,r,60042.54,59969.3,60094.2,17.0,35.0,True,ok,good for colour
+ZTF23aadaxfn,240,82,158.0,r,60032.32,60016.3,60105.3,25.0,57.0,True,ok,good for colour
+ZTF23aadtrzd,83,40,43.0,r,60058.41,60044.2,60137.2,15.0,25.0,True,ok,good for colour
+ZTF23aaecgwh,113,55,58.0,r,60043.5,60032.4,60091.4,11.0,44.0,True,ok,good for colour
+ZTF23aaemnzd,59,22,37.0,r,60056.95,60044.3,60088.2,7.0,15.0,True,ok,good for colour
+ZTF23aafwykt,86,37,49.0,r,60063.31,60053.4,60120.2,10.0,27.0,True,ok,good for colour
+ZTF23aahnmag,336,151,185.0,r,60097.51,60058.4,60194.2,62.0,89.0,True,ok,good for colour
+ZTF23aajakys,140,63,77.0,r,60086.53,60075.3,60122.3,16.0,47.0,True,ok,good for colour
+ZTF23aakmewi,431,127,304.0,r,60097.4,60083.4,60207.2,58.0,69.0,True,ok,good for colour
+ZTF23aakstht,655,281,374.0,r,60107.87,60084.4,60226.2,93.0,188.0,True,ok,good for colour
+ZTF23aamzljd,81,31,50.0,r,60110.0,60101.4,60121.3,14.0,17.0,True,ok,good for colour
+ZTF23aandvzg,336,149,187.0,r,60117.43,60101.4,60174.2,47.0,102.0,True,ok,good for colour
+ZTF23aanqoyo,422,113,309.0,r,60126.06,60108.4,60268.1,44.0,69.0,True,ok,good for colour
+ZTF23aapbrrq,166,53,113.0,r,60136.42,60118.3,60220.1,22.0,31.0,True,ok,good for colour
+ZTF23aaqekiu,148,46,102.0,r,60139.14,60133.4,60195.4,15.0,31.0,True,ok,good for colour
+ZTF23aaspcfl,246,77,169.0,r,60164.07,60143.4,60234.1,28.0,49.0,True,ok,good for colour
+ZTF23aawtmcf,173,89,84.0,r,60179.57,60165.2,60231.1,38.0,51.0,True,ok,good for colour
+ZTF23aaxuvkn,523,137,386.0,r,60250.03,60170.5,60334.7,47.0,90.0,True,ok,good for colour
+ZTF23aazodoj,414,86,328.0,g,60193.17,60183.4,60291.2,40.0,46.0,True,ok,good for colour
+ZTF23aazuzip,26,14,12.0,r,60194.08,60182.3,60206.2,6.0,8.0,True,ok,good for colour
+ZTF23abadhsw,83,29,54.0,r,60198.87,60183.5,60261.3,8.0,21.0,True,ok,good for colour
+ZTF23abaxlrz,189,71,118.0,r,60208.82,60193.4,60294.2,33.0,38.0,True,ok,good for colour
+ZTF23abbpswf,64,37,27.0,r,60206.13,60195.4,60268.1,19.0,18.0,True,ok,good for colour
+ZTF23abbskff,22,11,11.0,r,60209.27,60195.5,60215.3,1.0,10.0,True,ok_single,ok but one band sparse for colour
+ZTF23abcglga,104,53,51.0,r,60212.8,60198.3,60261.2,20.0,33.0,True,ok,good for colour
+ZTF23abfmlft,98,46,52.0,r,60226.06,60206.5,60262.3,17.0,29.0,True,ok,good for colour
+ZTF23abhyxpr,77,17,60.0,g,60231.39,60220.4,60262.4,8.0,9.0,True,ok,good for colour
+ZTF23abjhbcr,101,34,67.0,g,60231.42,60231.4,60267.0,15.0,19.0,True,insufficient,"ref g: 15 epochs, bracketed=False"
+ZTF23abjrolk,57,25,32.0,r,60238.77,60230.5,60262.5,8.0,17.0,True,ok,good for colour
+ZTF23abjzkmx,53,21,32.0,r,60244.22,60232.5,60262.5,8.0,13.0,True,ok,good for colour
+ZTF23abnpoqp,27,14,13.0,r,60252.09,60245.2,60260.2,7.0,7.0,True,ok,good for colour
+ZTF23abochfb,139,41,98.0,g,60260.96,60249.3,60319.8,22.0,19.0,True,ok,good for colour
+ZTF23abomtjc,265,19,246.0,r,60262.33,60251.4,60262.3,10.0,9.0,True,insufficient,"ref r: 9 epochs, bracketed=False"
+ZTF23abovaur,63,34,29.0,g,60264.99,60252.5,60354.3,17.0,17.0,True,ok,good for colour
+ZTF23abvokyz,257,19,238.0,g,60332.13,60306.1,60374.8,11.0,8.0,True,ok,good for colour
+ZTF24aaabybk,39,14,25.0,r,60318.81,60315.3,60354.3,5.0,9.0,True,ok,good for colour
+ZTF24aabuaij,36,13,23.0,r,60326.23,60315.5,60355.2,3.0,10.0,True,ok_single,ok but one band sparse for colour
+ZTF24aacjcwl,20,9,11.0,r,60336.67,60325.2,60354.2,1.0,8.0,True,ok_single,ok but one band sparse for colour
+ZTF24aacrbua,742,94,648.0,r,60406.04,60353.5,60502.2,43.0,51.0,True,ok,good for colour
+ZTF24aadfmaf,436,87,349.0,r,60394.94,60355.5,60501.3,38.0,49.0,True,ok,good for colour
+ZTF24aaeczdw,221,34,187.0,r,60351.24,60351.2,60374.3,15.0,19.0,True,insufficient,"ref r: 19 epochs, bracketed=False"
+ZTF24aagfeti,1439,201,1238.0,r,60427.29,60390.4,60576.8,92.0,109.0,True,ok,good for colour
+ZTF24aagkjca,84,10,74.0,r,60374.37,60374.4,60438.2,2.0,8.0,True,insufficient,"ref r: 8 epochs, bracketed=False"
+ZTF24aagterj,189,45,144.0,r,60396.89,60369.4,60423.4,27.0,18.0,True,ok,good for colour
+ZTF24aagtmbq,159,46,113.0,r,60387.46,60387.5,60463.2,12.0,34.0,True,insufficient,"ref r: 34 epochs, bracketed=False"
+ZTF24aahuzig,130,19,111.0,r,60410.76,60397.2,60435.2,11.0,8.0,True,ok,good for colour
+ZTF24aajdqbw,236,53,183.0,r,60430.24,60411.5,60490.3,24.0,29.0,True,ok,good for colour
+ZTF24aajivqf,118,35,83.0,r,60426.18,60417.5,60500.3,8.0,27.0,True,ok,good for colour
+ZTF24aajqamj,215,80,135.0,r,60430.1,60408.4,60550.2,30.0,50.0,True,ok,good for colour
+ZTF24aakaiqs,2436,459,1977.0,r,60444.86,60417.4,60597.1,205.0,254.0,True,ok,good for colour
+ZTF24aakftxp,78,13,65.0,r,60440.35,60440.3,60473.2,6.0,7.0,True,insufficient,"ref r: 7 epochs, bracketed=False"
+ZTF24aancgyl,146,40,106.0,r,60451.39,60434.7,60535.3,12.0,28.0,True,ok,good for colour
+ZTF24aaowjlw,804,83,721.0,g,60514.09,60442.4,60533.2,40.0,43.0,True,ok,good for colour
+ZTF24aapadbb,942,128,814.0,r,60504.66,60455.3,60606.8,54.0,74.0,True,ok,good for colour
+ZTF24aateouu,224,57,167.0,r,60502.01,60487.3,60527.2,18.0,39.0,True,ok,good for colour
+ZTF24aawjwxx,229,73,156.0,r,60527.32,60507.3,60636.1,33.0,40.0,True,ok,good for colour
+ZTF24aawtoiv,1025,250,775.0,r,60530.63,60513.5,60640.2,116.0,134.0,True,ok,good for colour
+ZTF24aayikbu,30,12,18.0,r,60534.31,60525.3,60554.3,2.0,10.0,True,ok_single,ok but one band sparse for colour
+ZTF24aayimjt,149,58,91.0,r,60537.53,60525.3,60592.1,24.0,34.0,True,ok,good for colour
+ZTF24aaymkrs,443,120,323.0,r,60542.15,60525.4,60688.1,48.0,72.0,True,ok,good for colour
+ZTF24aaysowl,1177,133,1044.0,g,60606.61,60526.4,60706.1,86.0,47.0,True,ok,good for colour
+ZTF24aazmqbf,140,45,95.0,r,60541.81,60527.4,60604.2,15.0,30.0,True,ok,good for colour
+ZTF24aazqavh,468,120,348.0,r,60540.61,60529.3,60592.1,51.0,69.0,True,ok,good for colour
+ZTF24aaztbct,86,23,63.0,r,60549.15,60538.4,60588.2,6.0,17.0,True,ok,good for colour
+ZTF24abajmau,312,79,233.0,r,60553.11,60527.4,60651.1,24.0,55.0,True,ok,good for colour
+ZTF24abavusp,176,84,92.0,r,60533.32,60533.3,60562.3,36.0,48.0,True,insufficient,"ref r: 48 epochs, bracketed=False"
+ZTF24abbsuhu,77,15,62.0,g,60549.27,60539.4,60568.3,13.0,2.0,True,ok_single,ok but one band sparse for colour
+ZTF24abchdsc,46,11,35.0,g,60553.73,60547.3,60568.4,10.0,1.0,True,ok_single,ok but one band sparse for colour
+ZTF24abdiwwv,538,81,457.0,r,60571.14,60545.4,60646.2,44.0,37.0,True,ok,good for colour
+ZTF24abhhzrp,144,40,104.0,r,60577.88,60568.4,60637.3,14.0,26.0,True,ok,good for colour
+ZTF24abhsqly,68,20,48.0,r,60577.28,60577.3,60586.5,11.0,9.0,True,insufficient,"ref r: 9 epochs, bracketed=False"
+ZTF24abiifei,68,20,48.0,r,60598.42,60572.2,60621.1,6.0,14.0,True,ok,good for colour
+ZTF24abimpmc,75,12,63.0,r,60588.98,60581.2,60602.3,8.0,4.0,True,insufficient,"ref r: 4 epochs, bracketed=True"
+ZTF24abiwzzc,72,15,57.0,r,60588.22,60588.2,60632.2,12.0,3.0,True,insufficient,"ref r: 3 epochs, bracketed=False"
+ZTF24abkiblx,213,22,191.0,r,60596.29,60593.4,60636.4,9.0,13.0,True,ok,good for colour
+ZTF24ablmayf,39,14,25.0,r,60599.85,60591.5,60613.4,4.0,10.0,True,ok,good for colour
+ZTF24ablsxza,78,25,53.0,r,60607.34,60598.3,60643.2,9.0,16.0,True,ok,good for colour
+ZTF24abltheg,62,18,44.0,r,60593.12,60592.4,60623.3,6.0,12.0,True,ok,good for colour
+ZTF24abnafgr,259,58,201.0,r,60609.43,60597.5,60636.5,26.0,32.0,True,ok,good for colour
+ZTF24abncuhj,411,72,339.0,r,60614.27,60598.3,60706.2,33.0,39.0,True,ok,good for colour
+ZTF24abnsght,63,19,44.0,r,60623.53,60607.2,60653.1,10.0,9.0,True,ok,good for colour
+ZTF24abpqghw,115,23,92.0,r,60622.72,60614.1,60640.2,10.0,13.0,True,ok,good for colour
+ZTF24abqbyxd,64,13,51.0,r,60631.13,60615.4,60652.2,2.0,11.0,True,ok_single,ok but one band sparse for colour
+ZTF24abroqvs,121,30,91.0,r,60635.71,60628.5,60759.3,4.0,26.0,True,ok,good for colour
+ZTF24absrpsn,85,19,66.0,r,60637.22,60628.3,60654.3,8.0,11.0,True,ok,good for colour
+ZTF24absznoi,140,34,106.0,r,60657.67,60635.5,60680.4,24.0,10.0,True,ok,good for colour
+ZTF24abtlppf,142,33,109.0,r,60686.79,60649.2,60711.2,16.0,17.0,True,ok,good for colour
+ZTF24abtmueg,502,68,434.0,r,60694.89,60636.4,60753.1,31.0,37.0,True,ok,good for colour
+ZTF24abtnkbi,171,35,136.0,r,60647.88,60639.4,60731.2,16.0,19.0,True,ok,good for colour
+ZTF24abwmzop,277,58,219.0,r,60670.8,60650.2,60761.1,26.0,32.0,True,ok,good for colour
+ZTF24abxxniy,85,9,76.0,r,60685.94,60680.4,60693.4,4.0,5.0,True,ok,good for colour
+ZTF24abygyka,166,21,145.0,r,60665.19,60664.4,60729.2,6.0,15.0,True,ok,good for colour
+ZTF24abzgggz,126,34,92.0,r,60677.86,60667.4,60694.3,17.0,17.0,True,ok,good for colour
+ZTF24abzmhtv,233,37,196.0,r,60688.15,60665.1,60733.2,16.0,21.0,True,ok,good for colour
+ZTF25aaadytl,389,128,261.0,r,60698.39,60676.6,60804.2,55.0,73.0,True,ok,good for colour
+ZTF25aaaecsu,411,105,306.0,r,60710.13,60673.3,60760.3,41.0,64.0,True,ok,good for colour
+ZTF25aaaeykb,93,16,77.0,r,60680.38,60680.4,60698.5,7.0,9.0,True,insufficient,"ref r: 9 epochs, bracketed=False"
+ZTF25aabzbve,54,14,40.0,r,60709.82,60694.2,60759.1,1.0,13.0,True,ok_single,ok but one band sparse for colour
+ZTF25aaccmjq,287,98,189.0,r,60705.05,60692.3,60816.2,36.0,62.0,True,ok,good for colour
+ZTF25aadnogd,305,89,216.0,r,60727.54,60707.3,60821.2,33.0,56.0,True,ok,good for colour
+ZTF25aafdnuf,196,63,133.0,r,60728.36,60710.5,60795.4,12.0,51.0,True,ok,good for colour
+ZTF25aafedas,97,31,66.0,r,60718.52,60710.5,60824.4,7.0,24.0,True,ok,good for colour
+ZTF25aafkxdu,79,21,58.0,r,60721.49,60721.5,60757.5,8.0,13.0,True,insufficient,"ref r: 13 epochs, bracketed=False"
+ZTF25aajbcmc,176,24,152.0,g,60776.08,60751.2,60803.2,11.0,13.0,True,ok,good for colour
+ZTF25aajgfsk,105,26,79.0,g,60766.21,60757.3,60820.9,7.0,19.0,True,ok,good for colour
+ZTF25aajuqtp,154,20,134.0,r,60767.6,60750.9,60795.2,7.0,13.0,True,ok,good for colour
+ZTF25aakbbof,34,9,25.0,r,60769.21,60757.2,60777.3,2.0,7.0,True,ok_single,ok but one band sparse for colour
+ZTF25aakeqyr,291,68,223.0,r,60807.07,60743.4,60857.3,30.0,38.0,True,ok,good for colour
+ZTF25aamplge,58,11,47.0,g,60792.98,60776.3,60829.2,9.0,2.0,True,ok_single,ok but one band sparse for colour
+ZTF25aankyie,29,6,23.0,r,60785.39,60785.4,60787.4,1.0,5.0,True,insufficient,"ref r: 5 epochs, bracketed=False"
+ZTF25aanxtou,139,45,94.0,r,60820.54,60787.5,60858.4,15.0,30.0,True,ok,good for colour
+ZTF25aaomnws,141,47,94.0,g,60813.55,60788.3,60859.2,24.0,23.0,True,ok,good for colour
+ZTF25aarmzhx,226,81,145.0,r,60835.99,60818.4,60908.2,17.0,64.0,True,ok,good for colour
+ZTF25aaurzyo,80,26,54.0,g,60839.33,60839.3,60856.3,12.0,14.0,True,insufficient,"ref g: 12 epochs, bracketed=False"
+ZTF25aavahfn,80,22,58.0,r,60849.66,60838.3,60860.3,6.0,16.0,True,ok,good for colour
+ZTF25aawaobl,188,51,137.0,r,60854.19,60846.4,60902.2,18.0,33.0,True,ok,good for colour
+ZTF25aaxegmh,277,66,211.0,g,60866.44,60852.4,60887.4,34.0,32.0,True,ok,good for colour
+ZTF25abbzsku,236,55,181.0,r,60887.98,60875.4,60933.2,23.0,32.0,True,ok,good for colour
+ZTF25abclliu,204,64,140.0,r,60925.42,60879.4,60988.1,33.0,31.0,True,ok,good for colour
+ZTF25abcydiy,490,100,390.0,g,60906.72,60878.3,60944.2,46.0,54.0,True,ok,good for colour
+ZTF25abecvml,174,67,107.0,r,60894.14,60882.4,60960.3,24.0,43.0,True,ok,good for colour
+ZTF25abixhdc,303,71,232.0,g,60937.81,60903.2,60970.9,41.0,30.0,True,ok,good for colour
+ZTF25abkwytp,154,39,115.0,r,60921.8,60914.2,60980.1,16.0,23.0,True,ok,good for colour
+ZTF25ablgkgi,237,60,177.0,r,60926.45,60910.4,60990.3,17.0,43.0,True,ok,good for colour
+ZTF25ablulax,776,182,594.0,r,60947.85,60912.4,61031.1,75.0,107.0,True,ok,good for colour
+ZTF25abmjfcf,261,67,194.0,g,60932.01,60917.3,60973.2,30.0,37.0,True,ok,good for colour
+ZTF25abmsmeg,175,77,98.0,r,60930.08,60917.4,61030.1,36.0,41.0,True,ok,good for colour
+ZTF25abmtiec,53,20,33.0,r,60922.66,60917.3,60942.3,9.0,11.0,True,ok,good for colour
+ZTF25aboftol,386,124,262.0,r,60946.14,60918.4,61029.2,51.0,73.0,True,ok,good for colour
+ZTF25abqsbxy,95,33,62.0,r,60949.21,60933.2,60980.1,10.0,23.0,True,ok,good for colour
+ZTF25abvbjre,298,75,223.0,r,60962.49,60949.3,60989.2,28.0,47.0,True,ok,good for colour
+ZTF25abvcnay,72,23,49.0,r,60957.69,60954.5,60982.4,9.0,14.0,True,ok,good for colour
+ZTF25abweqoj,22,12,10.0,r,60956.52,60956.5,60975.5,3.0,9.0,True,insufficient,"ref r: 9 epochs, bracketed=False"
+ZTF25abwophe,108,31,77.0,r,60976.44,60960.3,61030.1,12.0,19.0,True,ok,good for colour
+ZTF25abxfsza,481,110,371.0,g,61040.84,61037.5,61185.3,54.0,56.0,True,ok,good for colour
+ZTF25abyevmr,731,162,569.0,r,60984.94,60968.5,61146.2,64.0,98.0,True,ok,good for colour
+ZTF25abyrwhz,593,158,435.0,g,60990.95,60969.5,61085.3,78.0,80.0,True,ok,good for colour
+ZTF25abzudli,86,31,55.0,r,60988.01,60972.5,61031.4,7.0,24.0,True,ok,good for colour
+ZTF25acbzkov,35,15,20.0,r,60990.12,60974.2,60990.1,6.0,9.0,True,insufficient,"ref r: 9 epochs, bracketed=False"
+ZTF25accmopr,553,90,463.0,g,61037.94,61005.4,61147.0,43.0,47.0,True,ok,good for colour
+ZTF25acdktzt,100,33,67.0,r,61007.26,60988.5,61058.4,13.0,20.0,True,ok,good for colour
+ZTF25acemaph,1129,261,868.0,g,61036.93,61003.5,61181.2,118.0,143.0,True,ok,good for colour
+ZTF25aceopyo,41,12,29.0,r,61004.36,61004.4,61010.4,4.0,8.0,True,insufficient,"ref r: 8 epochs, bracketed=False"
+ZTF25acgdfwz,185,44,141.0,r,61030.61,61016.2,61059.1,20.0,24.0,True,ok,good for colour
+ZTF26aaakmmc,199,49,150.0,g,61072.11,61054.2,61096.2,26.0,23.0,True,ok,good for colour
+ZTF26aadqfik,139,29,110.0,r,61082.71,61073.2,61117.2,9.0,20.0,True,ok,good for colour
+ZTF26aadqwlb,132,28,104.0,g,61072.52,61065.3,61095.3,13.0,15.0,True,ok,good for colour
+ZTF26aagbzrh,112,21,91.0,r,61093.64,61080.5,61111.5,6.0,15.0,True,ok,good for colour
+ZTF26aagrmky,140,28,112.0,r,61095.74,61085.5,61129.4,7.0,21.0,True,ok,good for colour
+ZTF26aahinar,533,88,445.0,r,61104.16,61094.5,61184.3,36.0,52.0,True,ok,good for colour
+ZTF26aahjdpb,232,55,177.0,g,61103.12,61094.4,61152.9,29.0,26.0,True,ok,good for colour
+ZTF26aajnayv,197,38,159.0,r,61113.5,61105.4,61140.2,12.0,26.0,True,ok,good for colour
+ZTF26aakdoou,199,23,176.0,r,61119.64,61111.2,61139.2,8.0,15.0,True,ok,good for colour
+ZTF26aalsmpp,757,113,644.0,r,61134.59,61115.4,61179.2,63.0,50.0,True,ok,good for colour
+ZTF26aaqxhgb,87,8,79.0,r,61140.17,61135.2,61140.2,4.0,4.0,True,insufficient,"ref r: 4 epochs, bracketed=False"
+ZTF26aarkqap,525,23,502.0,r,61153.89,61137.2,61168.2,12.0,11.0,True,ok,good for colour
+ZTF26aatlolu,309,58,251.0,g,61158.12,61150.3,61185.3,28.0,30.0,True,ok,good for colour
+ZTF26aaulhci,106,14,92.0,g,61162.78,61159.3,61170.2,7.0,7.0,True,ok,good for colour

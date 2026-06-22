@@ -1,0 +1,2362 @@
+{
+  "status": "success",
+  "data": [
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3616057,
+      "dec": 63.2618953,
+      "filter": "ztfg",
+      "mjd": 59671.28896989999,
+      "snr": 4.6730491388149265,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 198009727,
+      "altdata": null,
+      "created_at": "2022-04-02T10:32:19.980418",
+      "groups": [
+        {
+          "id": 3,
+          "name": "kowalski-bot",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 20.22170109832648,
+      "magerr": 0.23233999311923978,
+      "magsys": "ab",
+      "limiting_mag": 20.148276957019167
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3616057,
+      "dec": 63.2618953,
+      "filter": "ztfg",
+      "mjd": 59671.28896989999,
+      "snr": 4.673049138814926,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 199659052,
+      "altdata": null,
+      "created_at": "2022-04-08T01:26:31.635365",
+      "groups": [
+        {
+          "id": 1,
+          "name": "Sitewide Group",
+          "nickname": null,
+          "single_user_group": false
+        },
+        {
+          "id": 20,
+          "name": "ampelbot-jvs",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 20.22170066833496,
+      "magerr": 0.2323399931192398,
+      "magsys": "ab",
+      "limiting_mag": 20.458799362182617
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3616085,
+      "dec": 63.261896,
+      "filter": "ztfg",
+      "mjd": 59671.28896989999,
+      "snr": 4.671460633920097,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 203314771,
+      "altdata": null,
+      "created_at": "2022-04-19T04:48:19.535285",
+      "groups": [
+        {
+          "id": 3,
+          "name": "kowalski-bot",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 20.22100104858156,
+      "magerr": 0.23241899907588953,
+      "magsys": "ab",
+      "limiting_mag": 20.14720777131435
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3616085,
+      "dec": 63.261896,
+      "filter": "ztfg",
+      "mjd": 59671.28896989999,
+      "snr": 4.671460633920097,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 203440245,
+      "altdata": null,
+      "created_at": "2022-04-19T05:33:47.249434",
+      "groups": [
+        {
+          "id": 1,
+          "name": "Sitewide Group",
+          "nickname": null,
+          "single_user_group": false
+        },
+        {
+          "id": 20,
+          "name": "ampelbot-jvs",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 20.22100067138672,
+      "magerr": 0.2324189990758896,
+      "magsys": "ab",
+      "limiting_mag": 20.466100692749023
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3615322,
+      "dec": 63.261939,
+      "filter": "ztfr",
+      "mjd": 59671.34434030019,
+      "snr": 7.03042229365513,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 199053907,
+      "altdata": null,
+      "created_at": "2022-04-05T07:41:20.676814",
+      "groups": [
+        {
+          "id": 3,
+          "name": "kowalski-bot",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.88430071977907,
+      "magerr": 0.15443399548530576,
+      "magsys": "ab",
+      "limiting_mag": 20.254329239943758
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3615322,
+      "dec": 63.261939,
+      "filter": "ztfr",
+      "mjd": 59671.34434030019,
+      "snr": 7.030435182470861,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 198009728,
+      "altdata": null,
+      "created_at": "2022-04-02T10:32:19.980476",
+      "groups": [
+        {
+          "id": 3,
+          "name": "kowalski-bot",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.8842699574093,
+      "magerr": 0.15443371236324308,
+      "magsys": "ab",
+      "limiting_mag": 20.25430046804347
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3615322,
+      "dec": 63.261939,
+      "filter": "ztfr",
+      "mjd": 59671.34434030019,
+      "snr": 7.0304351824708595,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 199659053,
+      "altdata": null,
+      "created_at": "2022-04-08T01:26:31.635430",
+      "groups": [
+        {
+          "id": 1,
+          "name": "Sitewide Group",
+          "nickname": null,
+          "single_user_group": false
+        },
+        {
+          "id": 20,
+          "name": "ampelbot-jvs",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.88426971435547,
+      "magerr": 0.1544337123632431,
+      "magsys": "ab",
+      "limiting_mag": 20.378419876098633
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3615224,
+      "dec": 63.2619366,
+      "filter": "ztfr",
+      "mjd": 59671.34434030019,
+      "snr": 6.962391136855216,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 203314772,
+      "altdata": null,
+      "created_at": "2022-04-19T04:48:19.535337",
+      "groups": [
+        {
+          "id": 3,
+          "name": "kowalski-bot",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.866699459993946,
+      "magerr": 0.15594300627708435,
+      "magsys": "ab",
+      "limiting_mag": 20.226170493295008
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3615224,
+      "dec": 63.2619366,
+      "filter": "ztfr",
+      "mjd": 59671.34434030019,
+      "snr": 6.962391136855215,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 203440246,
+      "altdata": null,
+      "created_at": "2022-04-19T05:33:47.249499",
+      "groups": [
+        {
+          "id": 1,
+          "name": "Sitewide Group",
+          "nickname": null,
+          "single_user_group": false
+        },
+        {
+          "id": 20,
+          "name": "ampelbot-jvs",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.86669921875,
+      "magerr": 0.15594300627708435,
+      "magsys": "ab",
+      "limiting_mag": 20.380699157714844
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3616254,
+      "dec": 63.2619143,
+      "filter": "ztfr",
+      "mjd": 59674.312673599925,
+      "snr": 10.808688945203501,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 199053908,
+      "altdata": null,
+      "created_at": "2022-04-05T07:41:20.676868",
+      "groups": [
+        {
+          "id": 3,
+          "name": "kowalski-bot",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.18602594777672,
+      "magerr": 0.10045031458139418,
+      "magsys": "ab",
+      "limiting_mag": 20.023033483939678
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3616254,
+      "dec": 63.2619143,
+      "filter": "ztfr",
+      "mjd": 59674.312673599925,
+      "snr": 10.8086889452035,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 199659054,
+      "altdata": null,
+      "created_at": "2022-04-08T01:26:31.635449",
+      "groups": [
+        {
+          "id": 1,
+          "name": "Sitewide Group",
+          "nickname": null,
+          "single_user_group": false
+        },
+        {
+          "id": 20,
+          "name": "ampelbot-jvs",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.186025619506836,
+      "magerr": 0.1004503145813942,
+      "magsys": "ab",
+      "limiting_mag": 20.279043197631836
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3616254,
+      "dec": 63.2619143,
+      "filter": "ztfr",
+      "mjd": 59674.312673599925,
+      "snr": 10.808722616704605,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 199075824,
+      "altdata": null,
+      "created_at": "2022-04-05T09:00:40.805819",
+      "groups": [
+        {
+          "id": 3,
+          "name": "kowalski-bot",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.186001261515635,
+      "magerr": 0.10045000165700911,
+      "magsys": "ab",
+      "limiting_mag": 20.0230121799862
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3616073,
+      "dec": 63.2619095,
+      "filter": "ztfg",
+      "mjd": 59674.36825230019,
+      "snr": 6.880196221857725,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 200317178,
+      "altdata": null,
+      "created_at": "2022-04-09T05:59:30.222870",
+      "groups": [
+        {
+          "id": 3,
+          "name": "kowalski-bot",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.637899815260575,
+      "magerr": 0.15780599415302277,
+      "magsys": "ab",
+      "limiting_mag": 19.984476865436207
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3616073,
+      "dec": 63.2619095,
+      "filter": "ztfg",
+      "mjd": 59674.36825230019,
+      "snr": 6.88020011992148,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 199075825,
+      "altdata": null,
+      "created_at": "2022-04-05T09:00:40.805878",
+      "groups": [
+        {
+          "id": 3,
+          "name": "kowalski-bot",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.637882571843583,
+      "magerr": 0.15780590474605558,
+      "magsys": "ab",
+      "limiting_mag": 19.984460237156867
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3616073,
+      "dec": 63.2619095,
+      "filter": "ztfg",
+      "mjd": 59674.36825230019,
+      "snr": 6.880200119921479,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 199659055,
+      "altdata": null,
+      "created_at": "2022-04-08T01:26:31.635466",
+      "groups": [
+        {
+          "id": 1,
+          "name": "Sitewide Group",
+          "nickname": null,
+          "single_user_group": false
+        },
+        {
+          "id": 20,
+          "name": "ampelbot-jvs",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.637882232666016,
+      "magerr": 0.1578059047460556,
+      "magsys": "ab",
+      "limiting_mag": 20.093814849853516
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3615677,
+      "dec": 63.2618345,
+      "filter": "ztfg",
+      "mjd": 59676.305983799975,
+      "snr": 3.926173430683695,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 200317179,
+      "altdata": null,
+      "created_at": "2022-04-09T05:59:30.222925",
+      "groups": [
+        {
+          "id": 3,
+          "name": "kowalski-bot",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.304800509716255,
+      "magerr": 0.2765380144119262,
+      "magsys": "ab",
+      "limiting_mag": 19.042299198272385
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3615677,
+      "dec": 63.2618345,
+      "filter": "ztfg",
+      "mjd": 59676.305983799975,
+      "snr": 3.926173430683694,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 199659056,
+      "altdata": null,
+      "created_at": "2022-04-08T01:26:31.635481",
+      "groups": [
+        {
+          "id": 1,
+          "name": "Sitewide Group",
+          "nickname": null,
+          "single_user_group": false
+        },
+        {
+          "id": 20,
+          "name": "ampelbot-jvs",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.304800033569336,
+      "magerr": 0.27653801441192627,
+      "magsys": "ab",
+      "limiting_mag": 19.41119956970215
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3615655,
+      "dec": 63.2617155,
+      "filter": "ztfr",
+      "mjd": 59676.373356500175,
+      "snr": 5.558812874072184,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 200317180,
+      "altdata": null,
+      "created_at": "2022-04-09T05:59:30.222942",
+      "groups": [
+        {
+          "id": 3,
+          "name": "kowalski-bot",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 18.691499941464233,
+      "magerr": 0.1953179985284805,
+      "magsys": "ab",
+      "limiting_mag": 18.806530067274053
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3615655,
+      "dec": 63.2617155,
+      "filter": "ztfr",
+      "mjd": 59676.373356500175,
+      "snr": 5.55881244998039,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 199659057,
+      "altdata": null,
+      "created_at": "2022-04-08T01:26:31.635496",
+      "groups": [
+        {
+          "id": 1,
+          "name": "Sitewide Group",
+          "nickname": null,
+          "single_user_group": false
+        },
+        {
+          "id": 20,
+          "name": "ampelbot-jvs",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 18.69146156311035,
+      "magerr": 0.19531801342964172,
+      "magsys": "ab",
+      "limiting_mag": 19.0413761138916
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3615599,
+      "dec": 63.2618886,
+      "filter": "ztfr",
+      "mjd": 59678.242337999865,
+      "snr": 11.424303604542354,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 200317181,
+      "altdata": null,
+      "created_at": "2022-04-09T05:59:30.222956",
+      "groups": [
+        {
+          "id": 3,
+          "name": "kowalski-bot",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 18.770824807790234,
+      "magerr": 0.09503740817308426,
+      "magsys": "ab",
+      "limiting_mag": 19.667974137202656
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3615599,
+      "dec": 63.2618886,
+      "filter": "ztfr",
+      "mjd": 59678.242337999865,
+      "snr": 11.424303604542352,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 200318897,
+      "altdata": null,
+      "created_at": "2022-04-09T06:05:15.441392",
+      "groups": [
+        {
+          "id": 1,
+          "name": "Sitewide Group",
+          "nickname": null,
+          "single_user_group": false
+        },
+        {
+          "id": 20,
+          "name": "ampelbot-jvs",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 18.770824432373047,
+      "magerr": 0.09503740817308426,
+      "magsys": "ab",
+      "limiting_mag": 20.12076187133789
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3615599,
+      "dec": 63.2618886,
+      "filter": "ztfr",
+      "mjd": 59678.242337999865,
+      "snr": 11.424352864023309,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 200358884,
+      "altdata": null,
+      "created_at": "2022-04-09T07:30:10.981477",
+      "groups": [
+        {
+          "id": 3,
+          "name": "kowalski-bot",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 18.770799803286877,
+      "magerr": 0.09503699839115143,
+      "magsys": "ab",
+      "limiting_mag": 19.667953814182606
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3615669,
+      "dec": 63.2619219,
+      "filter": "ztfg",
+      "mjd": 59678.30645829998,
+      "snr": 6.8714872958738145,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 200970918,
+      "altdata": null,
+      "created_at": "2022-04-11T05:30:34.350529",
+      "groups": [
+        {
+          "id": 3,
+          "name": "kowalski-bot",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.228399530272444,
+      "magerr": 0.1580059975385666,
+      "magsys": "ab",
+      "limiting_mag": 19.573601389185534
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3615669,
+      "dec": 63.2619219,
+      "filter": "ztfg",
+      "mjd": 59678.30645829998,
+      "snr": 6.8714743352332945,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 200358885,
+      "altdata": null,
+      "created_at": "2022-04-09T07:30:10.981538",
+      "groups": [
+        {
+          "id": 3,
+          "name": "kowalski-bot",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.228376551677425,
+      "magerr": 0.15800629556179044,
+      "magsys": "ab",
+      "limiting_mag": 19.573576362729646
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3615669,
+      "dec": 63.2619219,
+      "filter": "ztfg",
+      "mjd": 59678.30645829998,
+      "snr": 6.871474335233293,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 200372072,
+      "altdata": null,
+      "created_at": "2022-04-09T08:03:50.144131",
+      "groups": [
+        {
+          "id": 1,
+          "name": "Sitewide Group",
+          "nickname": null,
+          "single_user_group": false
+        },
+        {
+          "id": 20,
+          "name": "ampelbot-jvs",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.228376388549805,
+      "magerr": 0.15800629556179047,
+      "magsys": "ab",
+      "limiting_mag": 19.981325149536133
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3616611,
+      "dec": 63.2618913,
+      "filter": "ztfr",
+      "mjd": 59680.22305560019,
+      "snr": 12.304632857228892,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 201505399,
+      "altdata": null,
+      "created_at": "2022-04-14T06:02:12.299591",
+      "groups": [
+        {
+          "id": 3,
+          "name": "kowalski-bot",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 18.65500105817353,
+      "magerr": 0.08823800086975098,
+      "magsys": "ab",
+      "limiting_mag": 19.63274769696968
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3616611,
+      "dec": 63.2618913,
+      "filter": "ztfr",
+      "mjd": 59680.22305560019,
+      "snr": 12.30469935168495,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 200970919,
+      "altdata": null,
+      "created_at": "2022-04-11T05:30:34.350588",
+      "groups": [
+        {
+          "id": 3,
+          "name": "kowalski-bot",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 18.65496470266403,
+      "magerr": 0.08823752403259276,
+      "magsys": "ab",
+      "limiting_mag": 19.632717208782203
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3616611,
+      "dec": 63.2618913,
+      "filter": "ztfr",
+      "mjd": 59680.22305560019,
+      "snr": 12.304699351684947,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 200985907,
+      "altdata": null,
+      "created_at": "2022-04-11T06:07:38.000207",
+      "groups": [
+        {
+          "id": 1,
+          "name": "Sitewide Group",
+          "nickname": null,
+          "single_user_group": false
+        },
+        {
+          "id": 20,
+          "name": "ampelbot-jvs",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 18.654964447021484,
+      "magerr": 0.08823752403259277,
+      "magsys": "ab",
+      "limiting_mag": 19.57048797607422
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3615495,
+      "dec": 63.2619014,
+      "filter": "ztfr",
+      "mjd": 59683.24517360004,
+      "snr": 13.993429942461926,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 201515380,
+      "altdata": null,
+      "created_at": "2022-04-14T06:28:38.049223",
+      "groups": [
+        {
+          "id": 3,
+          "name": "kowalski-bot",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 18.519699112538483,
+      "magerr": 0.07758899778127672,
+      "magsys": "ab",
+      "limiting_mag": 19.63708454634657
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3615495,
+      "dec": 63.2619014,
+      "filter": "ztfr",
+      "mjd": 59683.24517360004,
+      "snr": 13.993452786021754,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 201505848,
+      "altdata": null,
+      "created_at": "2022-04-14T06:04:52.224303",
+      "groups": [
+        {
+          "id": 1,
+          "name": "Sitewide Group",
+          "nickname": null,
+          "single_user_group": false
+        },
+        {
+          "id": 20,
+          "name": "ampelbot-jvs",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 18.519689559936523,
+      "magerr": 0.07758887112140656,
+      "magsys": "ab",
+      "limiting_mag": 19.84088134765625
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3615495,
+      "dec": 63.2619014,
+      "filter": "ztfr",
+      "mjd": 59683.24517360004,
+      "snr": 13.993452786021754,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 201505400,
+      "altdata": null,
+      "created_at": "2022-04-14T06:02:12.299654",
+      "groups": [
+        {
+          "id": 3,
+          "name": "kowalski-bot",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 18.51968954200884,
+      "magerr": 0.07758887112140657,
+      "magsys": "ab",
+      "limiting_mag": 19.637076748224395
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3614524,
+      "dec": 63.2619472,
+      "filter": "ztfg",
+      "mjd": 59683.2633795999,
+      "snr": 6.951647963888314,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 202055866,
+      "altdata": null,
+      "created_at": "2022-04-16T05:31:26.970674",
+      "groups": [
+        {
+          "id": 3,
+          "name": "kowalski-bot",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.095800676052832,
+      "magerr": 0.15618400275707245,
+      "magsys": "ab",
+      "limiting_mag": 19.4535950927974
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3614524,
+      "dec": 63.2619472,
+      "filter": "ztfg",
+      "mjd": 59683.2633795999,
+      "snr": 6.951660565489269,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 201515381,
+      "altdata": null,
+      "created_at": "2022-04-14T06:28:38.049301",
+      "groups": [
+        {
+          "id": 3,
+          "name": "kowalski-bot",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.095781628811547,
+      "magerr": 0.15618371963500977,
+      "magsys": "ab",
+      "limiting_mag": 19.453578013722804
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3614524,
+      "dec": 63.2619472,
+      "filter": "ztfg",
+      "mjd": 59683.2633795999,
+      "snr": 6.951660565489269,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 201529697,
+      "altdata": null,
+      "created_at": "2022-04-14T07:04:46.651363",
+      "groups": [
+        {
+          "id": 1,
+          "name": "Sitewide Group",
+          "nickname": null,
+          "single_user_group": false
+        },
+        {
+          "id": 20,
+          "name": "ampelbot-jvs",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.095781326293945,
+      "magerr": 0.15618371963500977,
+      "magsys": "ab",
+      "limiting_mag": 19.586767196655273
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3615534,
+      "dec": 63.2619231,
+      "filter": "ztfr",
+      "mjd": 59685.22348379996,
+      "snr": 11.856121414615972,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 203314773,
+      "altdata": null,
+      "created_at": "2022-04-19T04:48:19.535353",
+      "groups": [
+        {
+          "id": 3,
+          "name": "kowalski-bot",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 18.49090050474468,
+      "magerr": 0.0915760025382042,
+      "magsys": "ab",
+      "limiting_mag": 19.428332089214877
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3615534,
+      "dec": 63.2619231,
+      "filter": "ztfr",
+      "mjd": 59685.22348379996,
+      "snr": 11.85612623766031,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 202055867,
+      "altdata": null,
+      "created_at": "2022-04-16T05:31:26.970730",
+      "groups": [
+        {
+          "id": 3,
+          "name": "kowalski-bot",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 18.490852882584687,
+      "magerr": 0.09157596528530121,
+      "magsys": "ab",
+      "limiting_mag": 19.428284908729914
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3615534,
+      "dec": 63.2619231,
+      "filter": "ztfr",
+      "mjd": 59685.22348379996,
+      "snr": 11.85612623766031,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 202059951,
+      "altdata": null,
+      "created_at": "2022-04-16T05:40:50.679613",
+      "groups": [
+        {
+          "id": 1,
+          "name": "Sitewide Group",
+          "nickname": null,
+          "single_user_group": false
+        },
+        {
+          "id": 20,
+          "name": "ampelbot-jvs",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 18.49085235595703,
+      "magerr": 0.09157596528530121,
+      "magsys": "ab",
+      "limiting_mag": 19.67056655883789
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3617006,
+      "dec": 63.261767,
+      "filter": "ztfg",
+      "mjd": 59685.329097200185,
+      "snr": 4.452001122615112,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 203314774,
+      "altdata": null,
+      "created_at": "2022-04-19T04:48:19.535367",
+      "groups": [
+        {
+          "id": 3,
+          "name": "kowalski-bot",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.224501143661932,
+      "magerr": 0.2438759952783584,
+      "magsys": "ab",
+      "limiting_mag": 19.098464295757474
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3617006,
+      "dec": 63.261767,
+      "filter": "ztfg",
+      "mjd": 59685.329097200185,
+      "snr": 4.45200112261511,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 203440247,
+      "altdata": null,
+      "created_at": "2022-04-19T05:33:47.249520",
+      "groups": [
+        {
+          "id": 1,
+          "name": "Sitewide Group",
+          "nickname": null,
+          "single_user_group": false
+        },
+        {
+          "id": 20,
+          "name": "ampelbot-jvs",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.22450065612793,
+      "magerr": 0.2438759952783585,
+      "magsys": "ab",
+      "limiting_mag": 18.95669937133789
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3616381,
+      "dec": 63.2619513,
+      "filter": "ztfg",
+      "mjd": 59688.1846758998,
+      "snr": 8.861009170874249,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 203314775,
+      "altdata": null,
+      "created_at": "2022-04-19T04:48:19.535379",
+      "groups": [
+        {
+          "id": 3,
+          "name": "kowalski-bot",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.362844617821466,
+      "magerr": 0.12252963334321974,
+      "magsys": "ab",
+      "limiting_mag": 19.984127572078158
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3616381,
+      "dec": 63.2619513,
+      "filter": "ztfg",
+      "mjd": 59688.1846758998,
+      "snr": 8.861009170874249,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 203440248,
+      "altdata": null,
+      "created_at": "2022-04-19T05:33:47.249535",
+      "groups": [
+        {
+          "id": 1,
+          "name": "Sitewide Group",
+          "nickname": null,
+          "single_user_group": false
+        },
+        {
+          "id": 20,
+          "name": "ampelbot-jvs",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.362844467163086,
+      "magerr": 0.12252963334321976,
+      "magsys": "ab",
+      "limiting_mag": 20.480106353759766
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3616381,
+      "dec": 63.2619513,
+      "filter": "ztfg",
+      "mjd": 59688.1846758998,
+      "snr": 8.86098276947436,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 203723420,
+      "altdata": null,
+      "created_at": "2022-04-19T07:56:22.352624",
+      "groups": [
+        {
+          "id": 3,
+          "name": "kowalski-bot",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.362800849228844,
+      "magerr": 0.12252999842166899,
+      "magsys": "ab",
+      "limiting_mag": 19.984080568526867
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3615331,
+      "dec": 63.261941,
+      "filter": "ztfr",
+      "mjd": 59688.324004599825,
+      "snr": 12.69933165327589,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 203723421,
+      "altdata": null,
+      "created_at": "2022-04-19T07:56:22.352682",
+      "groups": [
+        {
+          "id": 3,
+          "name": "kowalski-bot",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 18.438545625512287,
+      "magerr": 0.08549553900957106,
+      "magsys": "ab",
+      "limiting_mag": 19.45057277790227
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3615331,
+      "dec": 63.261941,
+      "filter": "ztfr",
+      "mjd": 59688.324004599825,
+      "snr": 12.699331653275888,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 203792849,
+      "altdata": null,
+      "created_at": "2022-04-19T08:34:15.212107",
+      "groups": [
+        {
+          "id": 1,
+          "name": "Sitewide Group",
+          "nickname": null,
+          "single_user_group": false
+        },
+        {
+          "id": 20,
+          "name": "ampelbot-jvs",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 18.43854522705078,
+      "magerr": 0.08549553900957108,
+      "magsys": "ab",
+      "limiting_mag": 19.534603118896484
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3615331,
+      "dec": 63.261941,
+      "filter": "ztfr",
+      "mjd": 59688.324004599825,
+      "snr": 12.699263038622995,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 205388278,
+      "altdata": null,
+      "created_at": "2022-04-21T06:23:17.960031",
+      "groups": [
+        {
+          "id": 3,
+          "name": "kowalski-bot",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 18.438499703669045,
+      "magerr": 0.08549600094556808,
+      "magsys": "ab",
+      "limiting_mag": 19.45052098979645
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3615888,
+      "dec": 63.2619347,
+      "filter": "ztfg",
+      "mjd": 59690.25905090012,
+      "snr": 7.799884890380885,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 206706722,
+      "altdata": null,
+      "created_at": "2022-04-25T06:44:35.600195",
+      "groups": [
+        {
+          "id": 3,
+          "name": "kowalski-bot",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.517299982950256,
+      "magerr": 0.13919900357723236,
+      "magsys": "ab",
+      "limiting_mag": 20.00009545581036
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3615888,
+      "dec": 63.2619347,
+      "filter": "ztfg",
+      "mjd": 59690.25905090012,
+      "snr": 7.799882385464145,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 205388279,
+      "altdata": null,
+      "created_at": "2022-04-21T06:23:17.960086",
+      "groups": [
+        {
+          "id": 3,
+          "name": "kowalski-bot",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.517269560678788,
+      "magerr": 0.13919904828071594,
+      "magsys": "ab",
+      "limiting_mag": 20.00006468485692
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3615888,
+      "dec": 63.2619347,
+      "filter": "ztfg",
+      "mjd": 59690.25905090012,
+      "snr": 7.799882385464145,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 205469035,
+      "altdata": null,
+      "created_at": "2022-04-21T06:37:21.477408",
+      "groups": [
+        {
+          "id": 1,
+          "name": "Sitewide Group",
+          "nickname": null,
+          "single_user_group": false
+        },
+        {
+          "id": 20,
+          "name": "ampelbot-jvs",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.517269134521484,
+      "magerr": 0.13919904828071594,
+      "magsys": "ab",
+      "limiting_mag": 20.2479248046875
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3615735,
+      "dec": 63.2619002,
+      "filter": "ztfg",
+      "mjd": 59694.268912000116,
+      "snr": 6.386984126447516,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 207550404,
+      "altdata": null,
+      "created_at": "2022-04-27T04:29:41.521941",
+      "groups": [
+        {
+          "id": 3,
+          "name": "kowalski-bot",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.766399695529056,
+      "magerr": 0.16999199986457825,
+      "magsys": "ab",
+      "limiting_mag": 20.032214276710395
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3615735,
+      "dec": 63.2619002,
+      "filter": "ztfg",
+      "mjd": 59694.268912000116,
+      "snr": 6.386971809323627,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 206706723,
+      "altdata": null,
+      "created_at": "2022-04-25T06:44:35.600265",
+      "groups": [
+        {
+          "id": 3,
+          "name": "kowalski-bot",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.76636152002871,
+      "magerr": 0.1699923276901245,
+      "magsys": "ab",
+      "limiting_mag": 20.032174007395508
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3615735,
+      "dec": 63.2619002,
+      "filter": "ztfg",
+      "mjd": 59694.268912000116,
+      "snr": 6.386971809323627,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 206732341,
+      "altdata": null,
+      "created_at": "2022-04-25T07:35:11.739920",
+      "groups": [
+        {
+          "id": 1,
+          "name": "Sitewide Group",
+          "nickname": null,
+          "single_user_group": false
+        },
+        {
+          "id": 20,
+          "name": "ampelbot-jvs",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.766361236572266,
+      "magerr": 0.1699923276901245,
+      "magsys": "ab",
+      "limiting_mag": 20.172365188598633
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3616475,
+      "dec": 63.2618561,
+      "filter": "ztfg",
+      "mjd": 59696.1787963002,
+      "snr": 5.825483738259947,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 209902516,
+      "altdata": null,
+      "created_at": "2022-05-01T04:36:54.801910",
+      "groups": [
+        {
+          "id": 3,
+          "name": "kowalski-bot",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.865101168661923,
+      "magerr": 0.18637700378894806,
+      "magsys": "ab",
+      "limiting_mag": 20.031006143498004
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3616475,
+      "dec": 63.2618561,
+      "filter": "ztfg",
+      "mjd": 59696.1787963002,
+      "snr": 5.8254851355325385,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 207550405,
+      "altdata": null,
+      "created_at": "2022-04-27T04:29:41.522013",
+      "groups": [
+        {
+          "id": 3,
+          "name": "kowalski-bot",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.8650668150525,
+      "magerr": 0.18637695908546448,
+      "magsys": "ab",
+      "limiting_mag": 20.030972050308026
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3616475,
+      "dec": 63.2618561,
+      "filter": "ztfg",
+      "mjd": 59696.1787963002,
+      "snr": 5.8254851355325385,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 207614233,
+      "altdata": null,
+      "created_at": "2022-04-27T05:40:46.211141",
+      "groups": [
+        {
+          "id": 1,
+          "name": "Sitewide Group",
+          "nickname": null,
+          "single_user_group": false
+        },
+        {
+          "id": 20,
+          "name": "ampelbot-jvs",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.865066528320312,
+      "magerr": 0.18637695908546448,
+      "magsys": "ab",
+      "limiting_mag": 20.49541473388672
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3615293,
+      "dec": 63.2619219,
+      "filter": "ztfr",
+      "mjd": 59699.17569439998,
+      "snr": 14.031405941127804,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 209902517,
+      "altdata": null,
+      "created_at": "2022-05-01T04:36:54.801991",
+      "groups": [
+        {
+          "id": 3,
+          "name": "kowalski-bot",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 18.79700139850126,
+      "magerr": 0.07737900316715239,
+      "magsys": "ab",
+      "limiting_mag": 19.91732936100583
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3615293,
+      "dec": 63.2619219,
+      "filter": "ztfr",
+      "mjd": 59699.17569439998,
+      "snr": 14.031434313023114,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 212170103,
+      "altdata": null,
+      "created_at": "2022-05-04T07:41:58.790998",
+      "groups": [
+        {
+          "id": 1,
+          "name": "Sitewide Group",
+          "nickname": null,
+          "single_user_group": false
+        },
+        {
+          "id": 20,
+          "name": "ampelbot-jvs",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 18.796958923339844,
+      "magerr": 0.07737884670495987,
+      "magsys": "ab",
+      "limiting_mag": 20.336511611938477
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3616827,
+      "dec": 63.261834,
+      "filter": "ztfg",
+      "mjd": 59699.2213773001,
+      "snr": 4.452585233560102,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 209902518,
+      "altdata": null,
+      "created_at": "2022-05-01T04:36:54.802030",
+      "groups": [
+        {
+          "id": 3,
+          "name": "kowalski-bot",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 20.27269976375552,
+      "magerr": 0.24384400248527524,
+      "magsys": "ab",
+      "limiting_mag": 20.146805357145045
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3616827,
+      "dec": 63.261834,
+      "filter": "ztfg",
+      "mjd": 59699.2213773001,
+      "snr": 4.452585233560101,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 212170104,
+      "altdata": null,
+      "created_at": "2022-05-04T07:41:58.791065",
+      "groups": [
+        {
+          "id": 1,
+          "name": "Sitewide Group",
+          "nickname": null,
+          "single_user_group": false
+        },
+        {
+          "id": 20,
+          "name": "ampelbot-jvs",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 20.2726993560791,
+      "magerr": 0.24384400248527527,
+      "magsys": "ab",
+      "limiting_mag": 20.38629913330078
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3615263,
+      "dec": 63.2618691,
+      "filter": "ztfr",
+      "mjd": 59701.227314800024,
+      "snr": 9.290357584775494,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 212111619,
+      "altdata": null,
+      "created_at": "2022-05-04T07:05:33.721951",
+      "groups": [
+        {
+          "id": 3,
+          "name": "kowalski-bot",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 18.97320018888439,
+      "magerr": 0.11686699837446211,
+      "magsys": "ab",
+      "limiting_mag": 19.645856253692088
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3615263,
+      "dec": 63.2618691,
+      "filter": "ztfr",
+      "mjd": 59701.227314800024,
+      "snr": 9.290332708876475,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 212170105,
+      "altdata": null,
+      "created_at": "2022-05-04T07:41:58.791086",
+      "groups": [
+        {
+          "id": 1,
+          "name": "Sitewide Group",
+          "nickname": null,
+          "single_user_group": false
+        },
+        {
+          "id": 20,
+          "name": "ampelbot-jvs",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 18.973161697387695,
+      "magerr": 0.11686731129884718,
+      "magsys": "ab",
+      "limiting_mag": 19.938770294189453
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 59703.26557870023,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 212111620,
+      "altdata": null,
+      "created_at": "2022-05-04T07:05:33.722008",
+      "groups": [
+        {
+          "id": 3,
+          "name": "kowalski-bot",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.909700393676758
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 59703.26557870023,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 212170106,
+      "altdata": null,
+      "created_at": "2022-05-04T07:41:58.791119",
+      "groups": [
+        {
+          "id": 1,
+          "name": "Sitewide Group",
+          "nickname": null,
+          "single_user_group": false
+        },
+        {
+          "id": 20,
+          "name": "ampelbot-jvs",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.909700393676758
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3618157,
+      "dec": 63.2618606,
+      "filter": "ztfr",
+      "mjd": 59703.28856479982,
+      "snr": 8.809670824615088,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 212111621,
+      "altdata": null,
+      "created_at": "2022-05-04T07:05:33.722027",
+      "groups": [
+        {
+          "id": 3,
+          "name": "kowalski-bot",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.038448761466633,
+      "magerr": 0.12324367463588713,
+      "magsys": "ab",
+      "limiting_mag": 19.65342295363058
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3618157,
+      "dec": 63.2618606,
+      "filter": "ztfr",
+      "mjd": 59703.28856479982,
+      "snr": 8.809670824615088,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 212170107,
+      "altdata": null,
+      "created_at": "2022-05-04T07:41:58.791135",
+      "groups": [
+        {
+          "id": 1,
+          "name": "Sitewide Group",
+          "nickname": null,
+          "single_user_group": false
+        },
+        {
+          "id": 20,
+          "name": "ampelbot-jvs",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.038448333740234,
+      "magerr": 0.12324367463588713,
+      "magsys": "ab",
+      "limiting_mag": 19.741451263427734
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3618157,
+      "dec": 63.2618606,
+      "filter": "ztfr",
+      "mjd": 59703.28856479982,
+      "snr": 8.8096473911409,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 213313898,
+      "altdata": null,
+      "created_at": "2022-05-09T04:55:57.958891",
+      "groups": [
+        {
+          "id": 3,
+          "name": "kowalski-bot",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.038401053345208,
+      "magerr": 0.12324400246143341,
+      "magsys": "ab",
+      "limiting_mag": 19.653372357477846
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3616336,
+      "dec": 63.2618767,
+      "filter": "ztfr",
+      "mjd": 59708.19820600003,
+      "snr": 5.917044168075384,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 215748288,
+      "altdata": null,
+      "created_at": "2022-05-15T04:32:39.031949",
+      "groups": [
+        {
+          "id": 3,
+          "name": "kowalski-bot",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.174801235317275,
+      "magerr": 0.18349300324916842,
+      "magsys": "ab",
+      "limiting_mag": 19.357638252232807
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3616336,
+      "dec": 63.2618767,
+      "filter": "ztfr",
+      "mjd": 59708.19820600003,
+      "snr": 5.917058102993968,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 213313899,
+      "altdata": null,
+      "created_at": "2022-05-09T04:55:57.958948",
+      "groups": [
+        {
+          "id": 3,
+          "name": "kowalski-bot",
+          "nickname": null,
+          "single_user_group": true
+        },
+        {
+          "id": 1421,
+          "name": "tdulaz",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.174787792114664,
+      "magerr": 0.18349257111549377,
+      "magsys": "ab",
+      "limiting_mag": 19.357627365987245
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3616336,
+      "dec": 63.2618767,
+      "filter": "ztfr",
+      "mjd": 59708.19820600003,
+      "snr": 5.917058102993968,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 213335661,
+      "altdata": null,
+      "created_at": "2022-05-09T05:38:53.500786",
+      "groups": [
+        {
+          "id": 1,
+          "name": "Sitewide Group",
+          "nickname": null,
+          "single_user_group": false
+        },
+        {
+          "id": 20,
+          "name": "ampelbot-jvs",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.174787521362305,
+      "magerr": 0.18349257111549377,
+      "magsys": "ab",
+      "limiting_mag": 19.62801742553711
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3617184,
+      "dec": 63.2618745,
+      "filter": "ztfr",
+      "mjd": 59708.22196759982,
+      "snr": 4.297307422889681,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 215748289,
+      "altdata": null,
+      "created_at": "2022-05-15T04:32:39.032005",
+      "groups": [
+        {
+          "id": 3,
+          "name": "kowalski-bot",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.520099918721783,
+      "magerr": 0.2526549994945526,
+      "magsys": "ab",
+      "limiting_mag": 19.355665966799933
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 59710.187627300154,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 215748290,
+      "altdata": null,
+      "created_at": "2022-05-15T04:32:39.032021",
+      "groups": [
+        {
+          "id": 3,
+          "name": "kowalski-bot",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.527999877929688
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": 127.3615298,
+      "dec": 63.2619135,
+      "filter": "ztfr",
+      "mjd": 59710.226793999784,
+      "snr": 6.326212290728398,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 215748291,
+      "altdata": null,
+      "created_at": "2022-05-15T04:32:39.032035",
+      "groups": [
+        {
+          "id": 3,
+          "name": "kowalski-bot",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": 19.437500410346203,
+      "magerr": 0.1716250032186508,
+      "magsys": "ab",
+      "limiting_mag": 19.692934803463697
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfg",
+      "mjd": 59712.17942130007,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 215748292,
+      "altdata": null,
+      "created_at": "2022-05-15T04:32:39.032055",
+      "groups": [
+        {
+          "id": 3,
+          "name": "kowalski-bot",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.707199096679688
+    },
+    {
+      "obj_id": "ZTF22aadnjsh",
+      "ra": null,
+      "dec": null,
+      "filter": "ztfr",
+      "mjd": 59712.221527799964,
+      "snr": null,
+      "instrument_id": 1,
+      "instrument_name": "ZTF",
+      "ra_unc": null,
+      "dec_unc": null,
+      "origin": "None",
+      "id": 215748293,
+      "altdata": null,
+      "created_at": "2022-05-15T04:32:39.032067",
+      "groups": [
+        {
+          "id": 3,
+          "name": "kowalski-bot",
+          "nickname": null,
+          "single_user_group": true
+        }
+      ],
+      "mag": null,
+      "magerr": null,
+      "magsys": "ab",
+      "limiting_mag": 19.705699920654297
+    }
+  ],
+  "version": "1.4.0+fritz.143bd07"
+}
