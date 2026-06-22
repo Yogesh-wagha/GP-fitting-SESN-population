@@ -6,8 +6,10 @@ overlap -- one row each.
 
 predict_slice(name, wave_um) must return (phase_grid, mu, sd) in DATA units.
 """
-
+import os
 import numpy as np
+import matplotlib
+matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 # ---- MNRAS-style ----
@@ -93,5 +95,12 @@ def plot_fit(obj, predict_slice, metrics, kernel_name, mean_name, gri=False):
     # ---- to save instead of (or as well as) showing, uncomment: ----
     # fig.savefig(f"{obj['name']}_{kernel_name}_{mean_name}.pdf", bbox_inches="tight")
 
-    plt.show()
+    figdir = os.path.join(os.path.dirname(__file__), "figs")   # your folder
+    os.makedirs(figdir, exist_ok=True)
+    out = os.path.join(figdir, f"{obj['name']}_{kernel_name}_{mean_name}.png")
+    fig.savefig(out, dpi=300, bbox_inches="tight")
+    print(f"saved {out}")
+
+    # plt.show()   # only works with X11 forwarding; leave off for remote SSH
+    # plt.show()
     return fig
