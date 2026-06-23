@@ -28,8 +28,19 @@ os.environ["CUDA_VISIBLE_DEVICES"] = "-1"   # don't even probe for a GPU
 warnings.filterwarnings("ignore")     # quiet optimizer chatter for now
 
 
-def fit_object(name, kernel_name, mean_name, gri=False):
+def fit_object(name, kernel_name, mean_name, gri=False, left=None, right=None):
     obj = config.load_object(name)
+    t = obj["t"]
+    mask = np.ones(len(t), dtype=bool)
+    if left  is not None: mask &= (t >= -left)
+    if right is not None: mask &= (t <=  right)
+    # subset every per-point array consistently
+    for key in ("t", "w", "y", "yerr"):
+        obj[key] = obj[key][mask]
+    obj["df"] = obj["df"].iloc[mask].reset_index(drop=True)
+    obj["bands"] = sorted(obj["df"]["filter"].unique(),
+                          key=lambda f: config.WAVE_EFF_UM[f])
+    obj["n_bands"] = len(obj["bands"])
 
     # ---- standardize the two input axes (store transforms to map back) ----
     tstd = config.Standardizer(obj["t"])
@@ -97,9 +108,13 @@ def main():
                     choices=["constant", "polynomial", "bazin"])
     ap.add_argument("--gri", action="store_true",
                     help="show only the six g/r/i bands on a 3x2 grid")
+    ap.add_argument("--left",  type=float, default=None,
+                help="keep phase >= peak - left (accepts negatives)")
+    ap.add_argument("--right", type=float, default=None,
+                    help="keep phase <= peak + right (accepts negatives)")                
     
     args = ap.parse_args()
-    fit_object(args.name, args.kernel, args.mean_func, gri=args.gri)
+    fit_object(args.name, args.kernel, args.mean_func, gri=args.gri, left=args.left, right=args.right)
 
 
 if __name__ == "__main__":
