@@ -23,7 +23,7 @@ from flask import (Flask, request, redirect, url_for,
                    send_file, render_template_string, abort)
 
 # ---- paths ----
-BASE     = "/home/yogesh1729/myWork/air_phd/gaussian_process_BTS"
+BASE     = "/users/ariywagh/GP_SN"
 SITE_DIR = os.path.join(BASE, "review_site")
 PLOT_DIR = os.path.join(SITE_DIR, "plots")
 OLD_CSV  = os.path.join(SITE_DIR, "review_flags.csv")   # previous review (READ ONLY)
