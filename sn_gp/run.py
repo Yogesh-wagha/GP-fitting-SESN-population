@@ -95,7 +95,13 @@ def fit_object(name, kernel_name, mean_name, gri=False, left=None, right=None):
         mu, var = model.predict_f(Xs)
         return tg, mu.numpy().ravel(), np.sqrt(var.numpy().ravel())
 
-    plotting.plot_fit(obj, predict_slice, m, kernel_name, mean_name, gri=gri)
+    t0_phase = None
+    if hasattr(model.mean_function, "t0"):
+        t0_std = float(np.ravel(model.mean_function.t0.numpy())[0])
+        t0_phase = tstd.inverse(t0_std)        # standardized time -> phase [days]
+
+    plotting.plot_fit(obj, predict_slice, m, kernel_name, mean_name,
+                      gri=gri, t0_phase=t0_phase)
     return model, m
 
 
@@ -105,7 +111,7 @@ def main():
     ap.add_argument("--kernel", required=True,
                     choices=["se", "matern32", "matern52", "rq", "rq_se", "changepoint"])
     ap.add_argument("--mean_func", required=True,
-                    choices=["constant", "polynomial", "bazin"])
+                    choices=["constant", "polynomial", "bazin", "bazin_shared"])
     ap.add_argument("--gri", action="store_true",
                     help="show only the six g/r/i bands on a 3x2 grid")
     ap.add_argument("--left",  type=float, default=None,
