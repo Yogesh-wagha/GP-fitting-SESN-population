@@ -29,59 +29,89 @@ plt.rcParams.update({
 })
 
 
-def plot_fit(obj, predict_slice, metrics, kernel_name, mean_name, gri=False):
-    """obj: dict from config.load_object; predict_slice: callable;
-       metrics: dict from metrics.compute_aic_bic.
-       gri=True -> fixed 3x2 grid of the six g/r/i bands (those present).
-       gri=False -> dynamic grid sized to however many bands the object has."""
+# band -> colour (consistent across panels: "g-like" is always green, etc.)
+BAND_COLORS = {
+    "g": "green", "r": "red", "i": "saddlebrown", "z": "black",
+    "u": "blue",  "o": "orange", "c": "cyan",
+    "b": "darkblue", "v": "olive",
+    "uvw1": "violet", "uvw2": "darkviolet", "uvm2": "indigo",
+}
+
+def _family(filt):
+    """Instrument family from the filter name prefix."""
+    if filt.startswith("sdss"):  return "SDSS"
+    if filt.startswith("ztf"):   return "ZTF"
+    if filt.startswith("atlas"): return "ATLAS"
+    if filt.startswith("uvot"):  return "UVOT"
+    return "OTHER"
+
+def _band_letter(filt):
+    """The photometric band label used for colour (e.g. ztfg -> g, uvot::uvw1 -> uvw1)."""
+    name = filt.split("::")[-1]            # uvot::uvw1 -> uvw1
+    for pre in ("sdss", "ztf", "atlas"):
+        if name.startswith(pre):
+            name = name[len(pre):]
+    return name                            # 'g','r','i','uvw1',...
+
+
+def plot_fit(obj, predict_slice, metrics, kernel_name, mean_name,
+             gri=False, peak_phase=0.0, t0_phase=None):
     import math
-    from config import GRI_FILTERS
-
     df = obj["df"]
+    present = obj["bands"]                  # blue -> red
 
-    # choose which bands to show
+    # ---- decide panels and which filters go in each ----
     if gri:
-        bands = [b for b in GRI_FILTERS if b in obj["bands"]]   # keep g/r/i order
-        nrows, ncols = 3, 2
+        gri_keep = {"g", "r", "i"}
+        panels = ["SDSS", "ZTF"]            # left, right
+        panel_filters = {
+            "SDSS": [f for f in present if _family(f) == "SDSS" and _band_letter(f) in gri_keep],
+            "ZTF":  [f for f in present if _family(f) == "ZTF"  and _band_letter(f) in gri_keep],
+        }
+        panels = [p for p in panels if panel_filters[p]]    # drop empty side
+        nrows, ncols = 1, max(1, len(panels))
     else:
-        bands = obj["bands"]                                    # blue -> red
-        n = len(bands)
-        ncols = 1 if n == 1 else (2 if n <= 6 else 3)           # near-square
+        fam_order = ["UVOT", "SDSS", "ZTF", "ATLAS", "OTHER"]
+        fams = [f for f in fam_order if any(_family(b) == f for b in present)]
+        panels = fams
+        panel_filters = {fam: [b for b in present if _family(b) == fam] for fam in fams}
+        n = len(panels)
+        ncols = 1 if n == 1 else (2 if n <= 4 else 3)
         nrows = math.ceil(n / ncols)
 
-    if not bands:
+    if not panels:
         raise ValueError(f"{obj['name']}: no bands to plot")
 
-    # width scales with columns; height with rows (single-column-ish panels)
-    fig, axes = plt.subplots(nrows, ncols, sharex=True,
-                             figsize=(3.3 * ncols, 1.8 * nrows),
-                             squeeze=False)
+    fig, axes = plt.subplots(nrows, ncols, sharex=True, sharey=False,
+                             figsize=(6 * ncols, 4 * nrows), squeeze=False)
     flat = axes.ravel()
-    cmap = plt.cm.turbo(np.linspace(0.05, 0.95, len(bands)))
 
-    for ax, band, col in zip(flat, bands, cmap):
-        sub = df[df["filter"] == band]
-        wave = sub["wave_um"].iloc[0]
-        tg, mu, sd = predict_slice(band, wave)
-        ax.fill_between(tg, mu - 2 * sd, mu + 2 * sd, color=col, alpha=0.15)
-        ax.fill_between(tg, mu - sd, mu + sd, color=col, alpha=0.30)
-        ax.plot(tg, mu, color=col, lw=1.0)
-        ax.errorbar(sub["phase"], sub["flux"], yerr=sub["fluxerr"],
-                    fmt="o", ms=2.5, color="k", elinewidth=0.6, capsize=1.2)
-        ax.axhline(0, color="grey", lw=0.5, ls=":")
-        ax.text(0.97, 0.90, band, transform=ax.transAxes, ha="right", va="top",
-                fontsize=8, bbox=dict(boxstyle="round,pad=0.2",
-                                      fc="white", ec=col, lw=0.8))
+    for ax, fam in zip(flat, panels):
+        for band in panel_filters[fam]:
+            sub = df[df["filter"] == band]
+            wave = sub["wave_um"].iloc[0]
+            col = BAND_COLORS.get(_band_letter(band), "grey")
+            tg, mu, sd = predict_slice(band, wave)
+            ax.fill_between(tg, mu - 2 * sd, mu + 2 * sd, color=col, alpha=0.12)
+            ax.fill_between(tg, mu - sd, mu + sd, color=col, alpha=0.25)
+            ax.plot(tg, mu, color=col, lw=1.0, label=band)
+            ax.errorbar(sub["phase"], sub["flux"], yerr=sub["fluxerr"],
+                        fmt="o", ms=2.5, color=col, mfc="none",
+                        elinewidth=0.6, capsize=1.2)
 
-    # hide any unused panels in the grid
-    for ax in flat[len(bands):]:
+        ax.axvline(peak_phase, color="grey", lw=0.8, ls="--")
+        if t0_phase is not None:
+            ax.axvline(t0_phase, color="purple", lw=0.8, ls=":")
+        ax.set_ylim(bottom=0)
+        ax.set_title(fam, fontsize=8)
+        ax.legend(fontsize=7, loc="best")
+
+    for ax in flat[len(panels):]:
         ax.set_visible(False)
 
-    # shared axis labels (one per side, not per panel)
     fig.supxlabel("phase from peak [days]", fontsize=9)
     fig.supylabel("flux [mJy]", fontsize=9)
 
-    # AIC/BIC box OUTSIDE the axes, to the right
     txt = (f"{kernel_name} × wave\nmean: {mean_name}\n"
            f"k = {metrics['k']}\nlnL = {metrics['lnL']:.1f}\n"
            f"AIC = {metrics['AIC']:.1f}\nBIC = {metrics['BIC']:.1f}")
@@ -89,18 +119,11 @@ def plot_fit(obj, predict_slice, metrics, kernel_name, mean_name, gri=False):
              bbox=dict(boxstyle="round,pad=0.4", fc="white", ec="k", lw=0.8))
 
     fig.suptitle(obj["name"], fontsize=9)
-    # leave room on the right for the box
     fig.tight_layout(rect=[0, 0, 0.82, 0.96])
 
-    # ---- to save instead of (or as well as) showing, uncomment: ----
-    # fig.savefig(f"{obj['name']}_{kernel_name}_{mean_name}.pdf", bbox_inches="tight")
-
-    figdir = os.path.join(os.path.dirname(__file__), "figs")   # your folder
+    figdir = os.path.join(os.path.dirname(__file__), "figs")
     os.makedirs(figdir, exist_ok=True)
     out = os.path.join(figdir, f"{obj['name']}_{kernel_name}_{mean_name}.png")
     fig.savefig(out, dpi=300, bbox_inches="tight")
     print(f"saved {out}")
-
-    # plt.show()   # only works with X11 forwarding; leave off for remote SSH
-    # plt.show()
     return fig
