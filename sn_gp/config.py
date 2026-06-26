@@ -93,7 +93,7 @@ def load_object(name):
        peak = brightest point across the g/r bands (the reference)."""
     df = pd.read_csv(os.path.join(CSV_DIR, f"{name}.csv"))
     df = df[df["origin"] != "alert_fp"].copy()
-
+    df = df[df["magerr"] <= 0.3].copy()        # drop zero-error points (bad data)
     # keep only filters we have a wavelength for
     df = df[df["filter"].isin(WAVE_EFF_UM.keys())].copy()
     if df.empty:
