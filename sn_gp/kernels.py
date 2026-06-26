@@ -15,7 +15,27 @@ active_dims tells gpflow which input column a kernel acts on:
 import numpy as np
 import gpflow
 from gpflow.kernels import (SquaredExponential, Matern32, Matern52,
-                            RationalQuadratic, Constant, Linear, ChangePoints)
+                            RationalQuadratic, Constant, Linear, ChangePoints, Kernel)
+
+import tensorflow as tf
+
+
+class _TimeOnly(Kernel):
+    """Wraps a kernel so it only ever sees the time column (index 0) of a
+       2-D [time, wavelength] input. This lets gpflow's ChangePoints (which
+       switches along ONE axis) work inside our 2-D model without the
+       reshape error you get from putting active_dims on its sub-kernels."""
+    def __init__(self, base):
+        super().__init__()
+        self.base = base
+
+    def K(self, X, X2=None):
+        X = X[:, :1]                       # keep time only
+        X2 = None if X2 is None else X2[:, :1]
+        return self.base.K(X, X2)
+
+    def K_diag(self, X):
+        return self.base.K_diag(X[:, :1])
 
 
 def _time_kernel(name):
@@ -36,18 +56,19 @@ def _time_kernel(name):
 
 
 def _changepoint_time_kernel():
-    """Non-stationary changepoint kernel on the time axis.
+    """Non-stationary changepoint kernel on the time axis (3 segments):
+         Constant   -> quiescent pre-explosion (flat, ~zero variability)
+         Matern32   -> rise to peak
+         Linear     -> radioactive decay tail
+       Two learned changepoint locations. Inner kernels are PLAIN (no
+       active_dims); _TimeOnly handles the slicing to 1-D time.
 
-    SE-SNe adaptation of the SN II scheme (no hydrogen plateau):
-      baseline (Constant) -> rise+decline (Matern32) -> Ni tail (Linear).
-    Two changepoints whose locations are learned. NOTE: many parameters and
-    fragile to optimize on sparse data -- here only so AIC/BIC can judge it.
-    Locations are in STANDARDIZED time (data are standardized in run.py), so 0
-    is roughly the mean epoch; init just inside that.
+       Locations are in STANDARDIZED time (run.py z-scores the time axis),
+       so 0 ~ mean epoch; init just inside on each side.
     """
-    base = Constant(active_dims=[0])
-    rise = Matern32(active_dims=[0])
-    tail = Linear(active_dims=[0])
+    base = Constant()
+    rise = Matern32()
+    tail = Linear()
     return ChangePoints(
         kernels=[base, rise, tail],
         locations=[-0.5, 0.5],     # standardized-time guesses
@@ -56,14 +77,16 @@ def _changepoint_time_kernel():
 
 
 def build_kernel(name, free_lambda):
-    """Return k_time * k_wave. If free_lambda is False, the wavelength length
-       scale is fixed (sparse-band objects); otherwise it is optimized."""
-    k_time = _time_kernel(name)
+    """Return k_time * k_wave. The changepoint is wrapped so it only sees the
+       time axis; all other kernels use active_dims=[0] directly."""
+    if name == "changepoint":
+        k_time = _TimeOnly(_changepoint_time_kernel())
+    else:
+        k_time = _time_kernel(name)
+
     k_wave = Matern32(active_dims=[1])
 
     if not free_lambda:
-        # fix the wavelength length scale (value set/standardized in run.py,
-        # which assigns k_wave.lengthscales before calling set_trainable)
         gpflow.set_trainable(k_wave.lengthscales, False)
 
     return k_time * k_wave
