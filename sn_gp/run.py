@@ -20,6 +20,7 @@ import gpflow
 import config
 import kernels
 import means
+import json
 import metrics as metrics_mod
 import plotting
 import os
@@ -82,6 +83,13 @@ def fit_object(name, kernel_name, mean_name, gri=False, left=None, right=None):
     )
 
     m = metrics_mod.compute_aic_bic(model, n=len(obj["y"]))
+
+# write a machine-readable sidecar so the batch driver can collect metrics
+    _figdir = os.path.join(os.path.dirname(__file__), "figs")
+    os.makedirs(_figdir, exist_ok=True)
+    with open(os.path.join(_figdir, f"{name}_{kernel_name}_{mean_name}.json"), "w") as _jf:
+        json.dump(dict(name=name, kernel=kernel_name, mean=mean_name, **m), _jf)
+
     print(f"\n{name}  kernel={kernel_name}  mean={mean_name}  "
           f"(free_lambda={free_lambda})")
     print(f"  k={m['k']}  lnL={m['lnL']:.2f}  AIC={m['AIC']:.2f}  BIC={m['BIC']:.2f}")
@@ -111,7 +119,7 @@ def main():
     ap.add_argument("--kernel", required=True,
                     choices=["se", "matern32", "matern52", "rq", "rq_se", "changepoint"])
     ap.add_argument("--mean_func", required=True,
-                    choices=["constant", "polynomial", "bazin", "bazin_shared"])
+                    choices=["constant", "polynomial", "bazin"])
     ap.add_argument("--gri", action="store_true",
                     help="show only the six g/r/i bands on a 3x2 grid")
     ap.add_argument("--left",  type=float, default=None,
