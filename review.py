@@ -27,7 +27,7 @@ from flask import (Flask, request, redirect, url_for,
 import plot_detections as plotter     # reuses CSV_DIR + the plotting function
 
 # ---- paths ----
-BASE       = "/home/yogesh1729/myWork/air_phd/gaussian_process_BTS"
+BASE       = "/users/ariywagh/GP_SN"
 CSV_DIR    = os.path.join(BASE, "BTS_csv")
 SITE_DIR   = os.path.join(BASE, "review_site")
 PLOT_CACHE = os.path.join(SITE_DIR, "plots")
