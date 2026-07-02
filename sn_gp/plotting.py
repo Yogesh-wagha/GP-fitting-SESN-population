@@ -55,7 +55,7 @@ def _band_letter(filt):
 
 
 def plot_fit(obj, predict_slice, metrics, kernel_name, mean_name,
-             gri=False, peak_phase=0.0, t0_phase=None):
+             gri=False, peak_phase=0.0, t0_phase=None, outdir="figs"):
     import math
     df = obj["df"]
     present = obj["bands"]                  # blue -> red
@@ -109,6 +109,11 @@ def plot_fit(obj, predict_slice, metrics, kernel_name, mean_name,
     for ax in flat[len(panels):]:
         ax.set_visible(False)
 
+    shown = [b for fl in panel_filters.values() for b in fl]
+    used = df[df["filter"].isin(shown)]
+    xpad = 0.05 * (used["phase"].max() - used["phase"].min() + 1e-9)
+    flat[0].set_xlim(used["phase"].min() - xpad, used["phase"].max() + xpad)
+
     fig.supxlabel("phase from peak [days]", fontsize=9)
     fig.supylabel("flux [mJy]", fontsize=9)
 
@@ -121,7 +126,7 @@ def plot_fit(obj, predict_slice, metrics, kernel_name, mean_name,
     fig.suptitle(obj["name"], fontsize=9)
     fig.tight_layout(rect=[0, 0, 0.82, 0.96])
 
-    figdir = os.path.join(os.path.dirname(__file__), "figs")
+    figdir = os.path.join(os.path.dirname(__file__), outdir)
     os.makedirs(figdir, exist_ok=True)
     out = os.path.join(figdir, f"{obj['name']}_{kernel_name}_{mean_name}.png")
     fig.savefig(out, dpi=300, bbox_inches="tight")

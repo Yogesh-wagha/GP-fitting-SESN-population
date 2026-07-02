@@ -17,6 +17,10 @@ import pandas as pd
 # ----------------------------------------------------------------------
 BASE    = "/users/ariywagh/GP_SN/"
 CSV_DIR = os.path.join(BASE, "BTS_csv")
+FIT_ROOT = os.path.expanduser("~/GP_SN/sn_gp/fit")
+FIG_DIR  = os.path.join(FIT_ROOT, "fig")
+JSON_DIR = os.path.join(FIT_ROOT, "json")
+CP_OVERRIDES = os.path.join(FIT_ROOT, "cp_overrides.csv")   # ZTFID,cp_days_1,cp_days_2
 
 # ----------------------------------------------------------------------
 # effective wavelengths  [Angstrom]   <-- PASTE YOUR sncosmo VALUES HERE
@@ -87,17 +91,16 @@ class Standardizer:
 # ----------------------------------------------------------------------
 # data loader: one object -> arrays ready for the MOGP
 # ----------------------------------------------------------------------
-def load_object(name):
-    """Returns a dict with raw arrays and metadata. Drops alert_fp only
-       (no manual cuts, no isolation algorithm). Flux in mJy; phase = MJD - peak,
-       peak = brightest point across the g/r bands (the reference)."""
+def load_object(name, gri=False):
     df = pd.read_csv(os.path.join(CSV_DIR, f"{name}.csv"))
     df = df[df["origin"] != "alert_fp"].copy()
-    df = df[df["magerr"] <= 0.3].copy()        # drop zero-error points (bad data)
-    # keep only filters we have a wavelength for
-    df = df[df["filter"].isin(WAVE_EFF_UM.keys())].copy()
+    df = df[df["magerr"] <= 0.3].copy()
+    if gri:
+        df = df[df["filter"].isin(GRI_FILTERS)].copy()    # FIT only g/r/i
+    else:
+        df = df[df["filter"].isin(WAVE_EFF_UM.keys())].copy()
     if df.empty:
-        raise ValueError(f"{name}: no points in filters with known wavelengths")
+        raise ValueError(f"{name}: no points after filter cuts")
 
     flux, fluxerr = mag_to_flux(df["mag"].to_numpy(), df["magerr"].to_numpy())
     df["flux"], df["fluxerr"] = flux, fluxerr
@@ -121,3 +124,19 @@ def load_object(name):
         peak_mjd=float(peak_mjd),
         n_bands=len(bands),
     )
+
+def load_cp_override(name):
+    """Return per-object changepoint location(s) in PHASE DAYS, or None.
+    CSV columns: ZTFID, cp_days_1, cp_days_2  (cp_days_2 blank for 1-loc kernels).
+    Most events won't be listed -> returns None -> use kernel defaults."""
+    import pandas as pd
+    if not os.path.exists(CP_OVERRIDES):
+        return None
+    d = pd.read_csv(CP_OVERRIDES, dtype=str).fillna("")
+    row = d[d["ZTFID"] == name]
+    if row.empty:
+        return None
+    r = row.iloc[0]
+    d1 = float(r["cp_days_1"]) if r["cp_days_1"].strip() else None
+    d2 = float(r["cp_days_2"]) if ("cp_days_2" in r and r["cp_days_2"].strip()) else None
+    return (d1, d2)

@@ -29,7 +29,8 @@ os.environ["CUDA_VISIBLE_DEVICES"] = "-1"   # don't even probe for a GPU
 warnings.filterwarnings("ignore")     # quiet optimizer chatter for now
 
 
-def fit_object(name, kernel_name, mean_name, gri=False, left=None, right=None):
+def fit_object(name, kernel_name, mean_name, gri=False, left=None, right=None,
+               gap_l=None, gap_r=None, cp_days=None):
     obj = config.load_object(name)
     t = obj["t"]
     mask = np.ones(len(t), dtype=bool)
@@ -44,6 +45,7 @@ def fit_object(name, kernel_name, mean_name, gri=False, left=None, right=None):
     obj["n_bands"] = len(obj["bands"])
 
     # ---- standardize the two input axes (store transforms to map back) ----
+
     tstd = config.Standardizer(obj["t"])
     wstd = config.Standardizer(obj["w"])
     Xt = tstd.forward(obj["t"])
@@ -51,12 +53,39 @@ def fit_object(name, kernel_name, mean_name, gri=False, left=None, right=None):
     X = np.column_stack([Xt, Xw]).astype(np.float64)
     Y = obj["y"].reshape(-1, 1).astype(np.float64)
 
+
+    cp_locs_std = None          # for changepoint kernels
+    gibbs_peak_std = 0.0        # default Gibbs anchor = phase 0 (peak)
+    if cp_days is not None:
+        d1, d2 = cp_days
+        if d1 is not None:
+            cp_locs_std = [float(tstd.forward(np.array([d1]))[0])]
+            gibbs_peak_std = float(tstd.forward(np.array([d1]))[0])   # re-anchor Gibbs to the real peak
+        if d2 is not None:
+            cp_locs_std.append(float(tstd.forward(np.array([d2]))[0]))
+
     # standardized wavelength of each band (blue->red), for the mean functions
     band_waves_std = wstd.forward([config.WAVE_EFF_UM[b] for b in obj["bands"]])
 
     # ---- lambda policy: free if enough bands, else fixed ----
     free_lambda = obj["n_bands"] >= config.N_BANDS_FREE_LAMBDA
-    kernel = kernels.build_kernel(kernel_name, free_lambda)
+    # kernel = kernels.build_kernel(kernel_name, free_lambda)
+
+    kernel = kernels.build_kernel(kernel_name, free_lambda, cp_locs=cp_locs_std)
+
+    # bound changepoint locations so they can't wander off-data
+    if kernel_name in ("changepoint", "changepoint_1"):
+        cp = kernel.kernels[0].base
+        kernels.bound_cp_locations(
+            cp,
+            lo=float(tstd.forward(np.array([-10.0]))[0]),
+            hi=float(tstd.forward(np.array([ 10.0]))[0]),
+        )
+    # re-anchor Gibbs dip to the (possibly overridden) peak
+    if kernel_name == "gibbs":
+        gk = kernel.kernels[0].base                 # _TimeOnly wraps GibbsTime
+        gk.t_peak.assign(gibbs_peak_std)
+    
     # set the wavelength length scale (standardized units); fix it if sparse
     k_wave = kernel.kernels[1]
     k_wave.lengthscales.assign(config.LAMBDA_SCALE_FIXED / wstd.sd)
@@ -85,10 +114,25 @@ def fit_object(name, kernel_name, mean_name, gri=False, left=None, right=None):
     m = metrics_mod.compute_aic_bic(model, n=len(obj["y"]))
 
 # write a machine-readable sidecar so the batch driver can collect metrics
-    _figdir = os.path.join(os.path.dirname(__file__), "figs")
-    os.makedirs(_figdir, exist_ok=True)
-    with open(os.path.join(_figdir, f"{name}_{kernel_name}_{mean_name}.json"), "w") as _jf:
-        json.dump(dict(name=name, kernel=kernel_name, mean=mean_name, **m), _jf)
+    def _params(mdl):
+        return {path: np.array(p).tolist()
+                for path, p in gpflow.utilities.parameter_dict(mdl).items()}
+
+    os.makedirs(config.JSON_DIR, exist_ok=True)
+    record = dict(
+        name=name, kernel=kernel_name, mean=mean_name, gri=bool(gri),
+        left=left, right=right, gap_l=gap_l, gap_r=gap_r,
+        cp_days=list(cp_days) if cp_days else None,
+        t_mean=float(tstd.mu), t_sd=float(tstd.sd),
+        w_mean=float(wstd.mu), w_sd=float(wstd.sd),
+        free_lambda=bool(free_lambda),
+        bands=list(obj["bands"]),
+        k=m["k"], lnL=m["lnL"], n=m["n"], AIC=m["AIC"], BIC=m["BIC"],
+        params=_params(model),
+    )
+    with open(os.path.join(config.JSON_DIR,
+              f"{name}_{kernel_name}_{mean_name}.json"), "w") as f:
+        json.dump(record, f, indent=2)
 
     print(f"\n{name}  kernel={kernel_name}  mean={mean_name}  "
           f"(free_lambda={free_lambda})")
@@ -109,15 +153,16 @@ def fit_object(name, kernel_name, mean_name, gri=False, left=None, right=None):
         t0_phase = tstd.inverse(t0_std)        # standardized time -> phase [days]
 
     plotting.plot_fit(obj, predict_slice, m, kernel_name, mean_name,
-                      gri=gri, t0_phase=t0_phase)
+                      gri=gri, t0_phase=t0_phase, outdir=config.FIG_DIR)
     return model, m
+
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--name", required=True, help="ZTF id, e.g. ZTF25acemaph")
     ap.add_argument("--kernel", required=True,
-                    choices=["se", "matern32", "matern52", "rq", "rq_se", "changepoint"])
+        choices=["se", "matern32", "matern52", "rq", "rq_se", "changepoint", "gibbs", "changepoint_1"])
     ap.add_argument("--mean_func", required=True,
                     choices=["constant", "polynomial", "bazin"])
     ap.add_argument("--gri", action="store_true",
@@ -125,10 +170,25 @@ def main():
     ap.add_argument("--left",  type=float, default=None,
                 help="keep phase >= peak - left (accepts negatives)")
     ap.add_argument("--right", type=float, default=None,
-                    help="keep phase <= peak + right (accepts negatives)")                
+                    help="keep phase <= peak + right (accepts negatives)")  
+    ap.add_argument("--outdir", default="figs",
+                    help="subfolder under sn_gp/ for the PNG + JSON (default figs)") 
+    ap.add_argument("--gap_l", type=float, default=None,
+                    help="left edge (phase, days) of an interior region to EXCLUDE from the fit")
+    ap.add_argument("--gap_r", type=float, default=None,
+                    help="right edge (phase, days) of the excluded region")  
+    ap.add_argument("--cp_loc", default=None,
+        help="changepoint location(s) in PHASE DAYS, comma-separated "
+             "(e.g. '3' or '-1,6'). Overrides kernel default; also re-anchors Gibbs.")
     
     args = ap.parse_args()
-    fit_object(args.name, args.kernel, args.mean_func, gri=args.gri, left=args.left, right=args.right)
+    cp_days = None
+    if args.cp_loc:
+        parts = [float(x) for x in args.cp_loc.split(",")]
+        cp_days = (parts[0], parts[1] if len(parts) > 1 else None)
+    fit_object(args.name, args.kernel, args.mean_func, gri=args.gri,
+               left=args.left, right=args.right,
+               gap_l=args.gap_l, gap_r=args.gap_r, cp_days=cp_days)
 
 
 if __name__ == "__main__":
