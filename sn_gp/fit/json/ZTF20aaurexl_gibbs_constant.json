@@ -1,0 +1,41 @@
+{
+  "name": "ZTF20aaurexl",
+  "kernel": "gibbs",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 17.852670604705807,
+  "t_sd": 19.19106047180207,
+  "w_mean": 0.6335568193921505,
+  "w_sd": 0.07490649588030211,
+  "free_lambda": false,
+  "bands": [
+    "ztfg",
+    "ztfr",
+    "atlaso"
+  ],
+  "k": 9,
+  "lnL": 268.5043747429607,
+  "n": 87,
+  "AIC": -519.0087494859214,
+  "BIC": -496.8155764180301,
+  "params": {
+    ".mean_function.c": [
+      0.04718078865499934,
+      0.06403817468695806,
+      0.07094284324490108
+    ],
+    ".kernel.kernels[0].base.variance": 0.039878122319964154,
+    ".kernel.kernels[0].base.l_min": 0.6207989651614765,
+    ".kernel.kernels[0].base.l_relax": 0.000803009169897972,
+    ".kernel.kernels[0].base.width": 72.16628288151357,
+    ".kernel.kernels[0].base.t_peak": 0.0,
+    ".kernel.kernels[1].variance": 0.03987812231481365,
+    ".kernel.kernels[1].lengthscales": 2.002496555701853,
+    ".likelihood.variance": 5.5797258759587265e-05
+  }
+}

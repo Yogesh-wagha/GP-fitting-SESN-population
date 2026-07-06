@@ -1,0 +1,40 @@
+{
+  "name": "ZTF24abavusp",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 10.373265228644446,
+  "t_sd": 8.656198374608671,
+  "w_mean": 0.5895556438151861,
+  "w_sd": 0.09562245649030479,
+  "free_lambda": true,
+  "bands": [
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "ztfi"
+  ],
+  "k": 9,
+  "lnL": 349.1836078618274,
+  "n": 116,
+  "AIC": -680.3672157236548,
+  "BIC": -655.5849040036975,
+  "params": {
+    ".mean_function.c": [
+      0.047705439469211235,
+      0.2294840253060659,
+      0.10513573326110785,
+      0.11433529388569229
+    ],
+    ".kernel.kernels[0].variance": 0.03205267588662436,
+    ".kernel.kernels[0].lengthscales": 1.2229635131175107,
+    ".kernel.kernels[1].variance": 0.03205267588752659,
+    ".kernel.kernels[1].lengthscales": 4.74482030743873,
+    ".likelihood.variance": 9.30774862597372e-05
+  }
+}

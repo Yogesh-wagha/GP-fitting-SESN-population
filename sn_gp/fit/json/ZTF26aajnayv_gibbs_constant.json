@@ -1,0 +1,43 @@
+{
+  "name": "ZTF26aajnayv",
+  "kernel": "gibbs",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 2.0258989563702556,
+  "t_sd": 8.452891380904417,
+  "w_mean": 0.6661792804556951,
+  "w_sd": 0.1140227978814069,
+  "free_lambda": true,
+  "bands": [
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "ztfi"
+  ],
+  "k": 11,
+  "lnL": 638.2258575731175,
+  "n": 167,
+  "AIC": -1254.451715146235,
+  "BIC": -1220.1537832096508,
+  "params": {
+    ".mean_function.c": [
+      0.05140946207826151,
+      0.06771423321426101,
+      0.06789631904081812,
+      0.0776525355669718
+    ],
+    ".kernel.kernels[0].base.variance": 0.019696620212814295,
+    ".kernel.kernels[0].base.l_min": 1.2583755809738097,
+    ".kernel.kernels[0].base.l_relax": 5.364136523892039e-05,
+    ".kernel.kernels[0].base.width": 78.35300733531354,
+    ".kernel.kernels[0].base.t_peak": 0.0,
+    ".kernel.kernels[1].variance": 0.019696620251706536,
+    ".kernel.kernels[1].lengthscales": 0.8300103185473612,
+    ".likelihood.variance": 1.971045721801221e-05
+  }
+}

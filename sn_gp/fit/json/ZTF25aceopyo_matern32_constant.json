@@ -1,0 +1,42 @@
+{
+  "name": "ZTF25aceopyo",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 2.244252031945838,
+  "t_sd": 6.876345188992192,
+  "w_mean": 0.5873545263806564,
+  "w_sd": 0.08876657954440594,
+  "free_lambda": true,
+  "bands": [
+    "sdssg",
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "sdssi"
+  ],
+  "k": 10,
+  "lnL": 83.80541808884621,
+  "n": 22,
+  "AIC": -147.61083617769242,
+  "BIC": -136.70041164410927,
+  "params": {
+    ".mean_function.c": [
+      -0.015214526418491137,
+      0.0066662179584998,
+      0.10893862548009504,
+      0.15693678419619042,
+      0.22265825509880502
+    ],
+    ".kernel.kernels[0].variance": 0.07022958503414072,
+    ".kernel.kernels[0].lengthscales": 0.6824829554575144,
+    ".kernel.kernels[1].variance": 0.07022958503027309,
+    ".kernel.kernels[1].lengthscales": 21.069497790064638,
+    ".likelihood.variance": 1.0000000001508188e-06
+  }
+}

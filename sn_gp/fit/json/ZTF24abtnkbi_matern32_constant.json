@@ -1,0 +1,40 @@
+{
+  "name": "ZTF24abtnkbi",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 21.880421147225416,
+  "t_sd": 29.023077136462955,
+  "w_mean": 0.6223996844319716,
+  "w_sd": 0.11391921786932142,
+  "free_lambda": true,
+  "bands": [
+    "ztfg",
+    "ztfr",
+    "atlaso",
+    "ztfi"
+  ],
+  "k": 9,
+  "lnL": 245.63066928503352,
+  "n": 104,
+  "AIC": -473.26133857006704,
+  "BIC": -449.4618204777947,
+  "params": {
+    ".mean_function.c": [
+      0.029622401854332226,
+      0.09533517614576062,
+      0.05224784206292102,
+      0.08611820036819125
+    ],
+    ".kernel.kernels[0].variance": 0.14919721988545365,
+    ".kernel.kernels[0].lengthscales": 0.6223942224611819,
+    ".kernel.kernels[1].variance": 0.1491972198849686,
+    ".kernel.kernels[1].lengthscales": 6.305269926671473,
+    ".likelihood.variance": 0.0001400146016179133
+  }
+}

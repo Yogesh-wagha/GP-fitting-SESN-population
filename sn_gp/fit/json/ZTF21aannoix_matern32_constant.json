@@ -1,0 +1,42 @@
+{
+  "name": "ZTF21aannoix",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 25.465872262064433,
+  "t_sd": 27.10148252266108,
+  "w_mean": 0.626171576005747,
+  "w_sd": 0.09268194272497055,
+  "free_lambda": true,
+  "bands": [
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "atlaso",
+    "ztfi"
+  ],
+  "k": 10,
+  "lnL": 476.26395873146646,
+  "n": 169,
+  "AIC": -932.5279174629329,
+  "BIC": -901.2289303137022,
+  "params": {
+    ".mean_function.c": [
+      0.0692120448600918,
+      0.08077364956549325,
+      0.09103862025828592,
+      0.08876572386363456,
+      0.09001773285422741
+    ],
+    ".kernel.kernels[0].variance": 0.10210575572678932,
+    ".kernel.kernels[0].lengthscales": 1.119931491581927,
+    ".kernel.kernels[1].variance": 0.10210575572851649,
+    ".kernel.kernels[1].lengthscales": 4.624935561018706,
+    ".likelihood.variance": 9.80499970141126e-05
+  }
+}

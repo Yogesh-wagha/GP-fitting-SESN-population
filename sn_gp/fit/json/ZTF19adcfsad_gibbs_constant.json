@@ -1,0 +1,41 @@
+{
+  "name": "ZTF19adcfsad",
+  "kernel": "gibbs",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 12.683477251249519,
+  "t_sd": 18.812929246213532,
+  "w_mean": 0.6413276845816269,
+  "w_sd": 0.07313572861364315,
+  "free_lambda": false,
+  "bands": [
+    "ztfg",
+    "ztfr",
+    "atlaso"
+  ],
+  "k": 9,
+  "lnL": 126.10688989565833,
+  "n": 49,
+  "AIC": -234.21377979131665,
+  "BIC": -217.18739710832102,
+  "params": {
+    ".mean_function.c": [
+      0.05251713734168043,
+      0.07660401713084525,
+      0.08662774149864999
+    ],
+    ".kernel.kernels[0].base.variance": 0.05179414105607563,
+    ".kernel.kernels[0].base.l_min": 0.6753504419198554,
+    ".kernel.kernels[0].base.l_relax": 0.013819852454662737,
+    ".kernel.kernels[0].base.width": 63.17476390839736,
+    ".kernel.kernels[0].base.t_peak": 0.0,
+    ".kernel.kernels[1].variance": 0.0517941410540829,
+    ".kernel.kernels[1].lengthscales": 2.0509811393609083,
+    ".likelihood.variance": 0.00013177346823031112
+  }
+}

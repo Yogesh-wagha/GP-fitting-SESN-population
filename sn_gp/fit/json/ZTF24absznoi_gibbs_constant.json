@@ -1,0 +1,39 @@
+{
+  "name": "ZTF24absznoi",
+  "kernel": "gibbs",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": -11.73812776687489,
+  "t_sd": 14.028697413404661,
+  "w_mean": 0.5252457187448064,
+  "w_sd": 0.07160824246024329,
+  "free_lambda": false,
+  "bands": [
+    "ztfg",
+    "ztfr"
+  ],
+  "k": 8,
+  "lnL": 209.76969321152808,
+  "n": 66,
+  "AIC": -403.53938642305616,
+  "BIC": -386.02214848684474,
+  "params": {
+    ".mean_function.c": [
+      0.04176728908769849,
+      0.07028167184210951
+    ],
+    ".kernel.kernels[0].base.variance": 0.028299495233579965,
+    ".kernel.kernels[0].base.l_min": 1.1166733404319036,
+    ".kernel.kernels[0].base.l_relax": 0.0009438005778906356,
+    ".kernel.kernels[0].base.width": 70.33878535182983,
+    ".kernel.kernels[0].base.t_peak": 0.0,
+    ".kernel.kernels[1].variance": 0.028299495234443098,
+    ".kernel.kernels[1].lengthscales": 2.094730925469643,
+    ".likelihood.variance": 6.397054833728294e-05
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "ZTF24aayimjt",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 9.00141680800657,
+  "t_sd": 15.314659800490727,
+  "w_mean": 0.5707213295785002,
+  "w_sd": 0.07844746026369191,
+  "free_lambda": true,
+  "bands": [
+    "sdssg",
+    "ztfg",
+    "sdssr",
+    "ztfr"
+  ],
+  "k": 9,
+  "lnL": 318.2940149110742,
+  "n": 98,
+  "AIC": -618.5880298221484,
+  "BIC": -595.3233225141133,
+  "params": {
+    ".mean_function.c": [
+      0.07557118418539098,
+      0.057688162563796504,
+      0.10044279092906575,
+      0.0982479491149883
+    ],
+    ".kernel.kernels[0].variance": 0.0948952850514651,
+    ".kernel.kernels[0].lengthscales": 0.709213230197255,
+    ".kernel.kernels[1].variance": 0.09489528505519372,
+    ".kernel.kernels[1].lengthscales": 4.49815488697768,
+    ".likelihood.variance": 1.1646519465107954e-05
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "ZTF25aarmzhx",
+  "kernel": "gibbs",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 10.247259127445304,
+  "t_sd": 20.240136360038054,
+  "w_mean": 0.6057082101157748,
+  "w_sd": 0.06683135666108421,
+  "free_lambda": false,
+  "bands": [
+    "ztfg",
+    "sdssr",
+    "ztfr"
+  ],
+  "k": 9,
+  "lnL": 527.3224161879389,
+  "n": 143,
+  "AIC": -1036.6448323758777,
+  "BIC": -1009.9792307035386,
+  "params": {
+    ".mean_function.c": [
+      0.015451407597816519,
+      0.042900221145568795,
+      0.04445040890110428
+    ],
+    ".kernel.kernels[0].base.variance": 0.0392068199270544,
+    ".kernel.kernels[0].base.l_min": 0.6545747456803432,
+    ".kernel.kernels[0].base.l_relax": 13.754716659984371,
+    ".kernel.kernels[0].base.width": 15.386912207242295,
+    ".kernel.kernels[0].base.t_peak": 0.0,
+    ".kernel.kernels[1].variance": 0.039206819861204355,
+    ".kernel.kernels[1].lengthscales": 2.244455409766427,
+    ".likelihood.variance": 2.239155869474387e-05
+  }
+}

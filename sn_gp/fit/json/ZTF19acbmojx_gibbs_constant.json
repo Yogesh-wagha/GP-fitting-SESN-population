@@ -1,0 +1,39 @@
+{
+  "name": "ZTF19acbmojx",
+  "kernel": "gibbs",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": -1.2813203525374774,
+  "t_sd": 10.441938442635822,
+  "w_mean": 0.5939454837784692,
+  "w_sd": 0.0736817150726989,
+  "free_lambda": false,
+  "bands": [
+    "ztfg",
+    "ztfr"
+  ],
+  "k": 8,
+  "lnL": 131.77684177200155,
+  "n": 40,
+  "AIC": -247.5536835440031,
+  "BIC": -234.0426479110916,
+  "params": {
+    ".mean_function.c": [
+      0.04032154874577016,
+      0.06718949416621317
+    ],
+    ".kernel.kernels[0].base.variance": 0.021154348312641843,
+    ".kernel.kernels[0].base.l_min": 0.8385023179608605,
+    ".kernel.kernels[0].base.l_relax": 0.00046565858357469967,
+    ".kernel.kernels[0].base.width": 73.09763012337527,
+    ".kernel.kernels[0].base.t_peak": 0.0,
+    ".kernel.kernels[1].variance": 0.021154348309431675,
+    ".kernel.kernels[1].lengthscales": 2.0357832313213775,
+    ".likelihood.variance": 3.817168869270902e-05
+  }
+}

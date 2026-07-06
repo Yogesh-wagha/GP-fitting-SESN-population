@@ -1,0 +1,38 @@
+{
+  "name": "ZTF20abysxbk",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 4.747618906686594,
+  "t_sd": 10.056747101710625,
+  "w_mean": 0.6649386338532274,
+  "w_sd": 0.05910512130517696,
+  "free_lambda": false,
+  "bands": [
+    "ztfg",
+    "ztfr",
+    "atlaso"
+  ],
+  "k": 7,
+  "lnL": 118.02715978512485,
+  "n": 44,
+  "AIC": -222.0543195702497,
+  "BIC": -209.56499213282189,
+  "params": {
+    ".mean_function.c": [
+      0.029360353299591028,
+      0.06612210007946244,
+      0.07834228836225293
+    ],
+    ".kernel.kernels[0].variance": 0.014167762012583398,
+    ".kernel.kernels[0].lengthscales": 0.42739544525764267,
+    ".kernel.kernels[1].variance": 0.014167762012751052,
+    ".kernel.kernels[1].lengthscales": 2.537851148727135,
+    ".likelihood.variance": 0.00018218904131278796
+  }
+}

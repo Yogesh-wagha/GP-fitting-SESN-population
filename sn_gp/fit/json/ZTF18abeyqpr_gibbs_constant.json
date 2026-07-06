@@ -1,0 +1,41 @@
+{
+  "name": "ZTF18abeyqpr",
+  "kernel": "gibbs",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 11.388368894851354,
+  "t_sd": 20.531489260970375,
+  "w_mean": 0.5969852951490068,
+  "w_sd": 0.07889495697373093,
+  "free_lambda": false,
+  "bands": [
+    "ztfg",
+    "ztfr",
+    "atlaso"
+  ],
+  "k": 9,
+  "lnL": 738.0337449530875,
+  "n": 228,
+  "AIC": -1458.067489906175,
+  "BIC": -1427.203379245585,
+  "params": {
+    ".mean_function.c": [
+      0.032547307645933284,
+      0.06298135647177322,
+      0.09640661253583772
+    ],
+    ".kernel.kernels[0].base.variance": 0.035723061448082065,
+    ".kernel.kernels[0].base.l_min": 0.30418649115113283,
+    ".kernel.kernels[0].base.l_relax": 2.8898998761921034e-05,
+    ".kernel.kernels[0].base.width": 74.96170840504722,
+    ".kernel.kernels[0].base.t_peak": 0.0,
+    ".kernel.kernels[1].variance": 0.03572306146342553,
+    ".kernel.kernels[1].lengthscales": 1.9012622067839442,
+    ".likelihood.variance": 5.468002951770314e-05
+  }
+}

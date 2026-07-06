@@ -1,0 +1,41 @@
+{
+  "name": "ZTF20abdnpdo",
+  "kernel": "gibbs",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 7.967813813765216,
+  "t_sd": 14.355782813389308,
+  "w_mean": 0.67325723074165,
+  "w_sd": 0.04376515049277593,
+  "free_lambda": false,
+  "bands": [
+    "ztfg",
+    "ztfr",
+    "atlaso"
+  ],
+  "k": 9,
+  "lnL": 56.450323129586394,
+  "n": 22,
+  "AIC": -94.90064625917279,
+  "BIC": -85.08126417894795,
+  "params": {
+    ".mean_function.c": [
+      0.023264783913264298,
+      0.06609711297713844,
+      0.0626733358211149
+    ],
+    ".kernel.kernels[0].base.variance": 0.017190345069080508,
+    ".kernel.kernels[0].base.l_min": 1.209282651764471,
+    ".kernel.kernels[0].base.l_relax": 13.896004401501145,
+    ".kernel.kernels[0].base.width": 14.722460209096974,
+    ".kernel.kernels[0].base.t_peak": 0.0,
+    ".kernel.kernels[1].variance": 0.017190345067989814,
+    ".kernel.kernels[1].lengthscales": 3.4273845356651904,
+    ".likelihood.variance": 0.000256318003161107
+  }
+}

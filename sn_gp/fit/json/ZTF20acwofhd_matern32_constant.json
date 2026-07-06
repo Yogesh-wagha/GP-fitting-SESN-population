@@ -1,0 +1,42 @@
+{
+  "name": "ZTF20acwofhd",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": 200.0,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 38.3076216728856,
+  "t_sd": 41.15457958157548,
+  "w_mean": 0.642827832849136,
+  "w_sd": 0.09468185108223144,
+  "free_lambda": true,
+  "bands": [
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "atlaso",
+    "ztfi"
+  ],
+  "k": 10,
+  "lnL": 1427.5605474354484,
+  "n": 455,
+  "AIC": -2835.1210948708967,
+  "BIC": -2793.9181206813873,
+  "params": {
+    ".mean_function.c": [
+      0.018078917730313858,
+      0.053745282329841514,
+      0.04167488146442765,
+      0.05476184463981469,
+      0.041493994959461
+    ],
+    ".kernel.kernels[0].variance": 0.03771234231169827,
+    ".kernel.kernels[0].lengthscales": 0.4132095067482811,
+    ".kernel.kernels[1].variance": 0.037712342316507774,
+    ".kernel.kernels[1].lengthscales": 4.223086999938372,
+    ".likelihood.variance": 7.587154182187555e-05
+  }
+}

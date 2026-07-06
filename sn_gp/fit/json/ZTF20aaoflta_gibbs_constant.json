@@ -1,0 +1,39 @@
+{
+  "name": "ZTF20aaoflta",
+  "kernel": "gibbs",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 2.101860525242955,
+  "t_sd": 9.477641075465282,
+  "w_mean": 0.5617881469542017,
+  "w_sd": 0.08039334206066935,
+  "free_lambda": false,
+  "bands": [
+    "ztfg",
+    "ztfr"
+  ],
+  "k": 8,
+  "lnL": 27.848784543500905,
+  "n": 12,
+  "AIC": -39.69756908700181,
+  "BIC": -35.81831588869781,
+  "params": {
+    ".mean_function.c": [
+      0.047532049522336105,
+      0.08717188477230822
+    ],
+    ".kernel.kernels[0].base.variance": 0.042044811264086844,
+    ".kernel.kernels[0].base.l_min": 0.5613713700207734,
+    ".kernel.kernels[0].base.l_relax": 13.680356693234348,
+    ".kernel.kernels[0].base.width": 15.607328682861018,
+    ".kernel.kernels[0].base.t_peak": 0.0,
+    ".kernel.kernels[1].variance": 0.042044811264644266,
+    ".kernel.kernels[1].lengthscales": 1.8658261512104017,
+    ".likelihood.variance": 1.000069294780252e-06
+  }
+}

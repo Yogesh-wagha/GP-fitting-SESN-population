@@ -1,0 +1,46 @@
+{
+  "name": "ZTF20adadrhw",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": 300.0,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 54.6426256085967,
+  "t_sd": 49.858514451883465,
+  "w_mean": 0.6072017762745314,
+  "w_sd": 0.09994967172437967,
+  "free_lambda": true,
+  "bands": [
+    "sdssg",
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "atlaso",
+    "sdssi",
+    "ztfi"
+  ],
+  "k": 12,
+  "lnL": 1102.9913243072901,
+  "n": 808,
+  "AIC": -2181.9826486145803,
+  "BIC": -2125.647903912327,
+  "params": {
+    ".mean_function.c": [
+      0.33879125896520296,
+      0.3847209997151742,
+      0.42412928128675337,
+      0.5114283655164017,
+      0.44800189177682287,
+      0.4854287755747984,
+      0.6415037980728144
+    ],
+    ".kernel.kernels[0].variance": 0.9397015884151956,
+    ".kernel.kernels[0].lengthscales": 0.30160558365372747,
+    ".kernel.kernels[1].variance": 0.9397015884035649,
+    ".kernel.kernels[1].lengthscales": 1.9787679469253827,
+    ".likelihood.variance": 0.0016347049482520702
+  }
+}

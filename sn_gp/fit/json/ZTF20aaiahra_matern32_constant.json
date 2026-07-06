@@ -1,0 +1,36 @@
+{
+  "name": "ZTF20aaiahra",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 5.2268390201215515,
+  "t_sd": 9.0654088593799,
+  "w_mean": 0.6795152006871237,
+  "w_sd": 0.016293767591595665,
+  "free_lambda": false,
+  "bands": [
+    "ztfr",
+    "atlaso"
+  ],
+  "k": 6,
+  "lnL": 49.74042207465993,
+  "n": 25,
+  "AIC": -87.48084414931986,
+  "BIC": -80.16758920011065,
+  "params": {
+    ".mean_function.c": [
+      0.09029460111250144,
+      0.11507804160611126
+    ],
+    ".kernel.kernels[0].variance": 6.519408276668778e-06,
+    ".kernel.kernels[0].lengthscales": 8.44000954176702,
+    ".kernel.kernels[1].variance": 6.519408276665547e-06,
+    ".kernel.kernels[1].lengthscales": 9.205973950271028,
+    ".likelihood.variance": 0.001094936634662964
+  }
+}

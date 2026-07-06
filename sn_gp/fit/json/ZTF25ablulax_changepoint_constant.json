@@ -1,0 +1,54 @@
+{
+  "name": "ZTF25ablulax",
+  "kernel": "changepoint",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 3.090132005120976,
+  "t_sd": 28.73719507325449,
+  "w_mean": 0.5815063502754525,
+  "w_sd": 0.08119766673311936,
+  "free_lambda": true,
+  "bands": [
+    "sdssg",
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "atlaso",
+    "sdssi",
+    "ztfi"
+  ],
+  "k": 18,
+  "lnL": 1934.9740147278571,
+  "n": 494,
+  "AIC": -3833.9480294557143,
+  "BIC": -3758.3023901463316,
+  "params": {
+    ".mean_function.c": [
+      0.01784655934609943,
+      0.018758575748947962,
+      0.028705422819611425,
+      0.04159005709509214,
+      0.04840033356954195,
+      0.08206254558949701,
+      0.06514737031185751
+    ],
+    ".kernel.kernels[0].base.kernels[0].variance": 0.2084118877010171,
+    ".kernel.kernels[0].base.kernels[0].lengthscales": 0.20631808827756856,
+    ".kernel.kernels[0].base.kernels[1].variance": 2.1559878785044697,
+    ".kernel.kernels[0].base.kernels[1].lengthscales": 2.795117819230473,
+    ".kernel.kernels[0].base.kernels[2].variance": 0.016553581382358705,
+    ".kernel.kernels[0].base.locations": [
+      -0.45450155889344285,
+      0.23943054207943293
+    ],
+    ".kernel.kernels[0].base.steepness": 2.1606173645636386,
+    ".kernel.kernels[1].variance": 0.001868141085514947,
+    ".kernel.kernels[1].lengthscales": 1.69802837948358,
+    ".likelihood.variance": 1.6839240688816475e-05
+  }
+}

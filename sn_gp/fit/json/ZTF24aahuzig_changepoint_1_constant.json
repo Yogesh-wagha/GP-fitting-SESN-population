@@ -1,0 +1,52 @@
+{
+  "name": "ZTF24aahuzig",
+  "kernel": "changepoint_1",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 14.661269002933551,
+  "t_sd": 25.643580071592986,
+  "w_mean": 0.6334442434696308,
+  "w_sd": 0.09847643866173765,
+  "free_lambda": true,
+  "bands": [
+    "sdssg",
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "atlaso",
+    "sdssi",
+    "ztfi"
+  ],
+  "k": 16,
+  "lnL": 324.4435498998716,
+  "n": 103,
+  "AIC": -616.8870997997432,
+  "BIC": -574.731435988069,
+  "params": {
+    ".mean_function.c": [
+      0.05591348006173996,
+      0.04319297740152836,
+      0.11409843850972934,
+      0.08658303201062348,
+      0.09731680265426731,
+      0.11414443290114085,
+      0.09098957496300993
+    ],
+    ".kernel.kernels[0].base.kernels[0].variance": 0.8246404184072786,
+    ".kernel.kernels[0].base.kernels[0].lengthscales": 0.42568881921835167,
+    ".kernel.kernels[0].base.kernels[1].variance": 0.01619245026973946,
+    ".kernel.kernels[0].base.kernels[1].lengthscales": 1.660301109267916,
+    ".kernel.kernels[0].base.locations": [
+      -0.18276970918700275
+    ],
+    ".kernel.kernels[0].base.steepness": 0.6259360133145311,
+    ".kernel.kernels[1].variance": 0.010792026231142875,
+    ".kernel.kernels[1].lengthscales": 9.360254534538917,
+    ".likelihood.variance": 4.780684677006141e-05
+  }
+}

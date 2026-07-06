@@ -1,0 +1,41 @@
+{
+  "name": "ZTF18acbvpzj",
+  "kernel": "gibbs",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 3.1263334213344067,
+  "t_sd": 10.7127904195169,
+  "w_mean": 0.6029962998458661,
+  "w_sd": 0.08328722790542298,
+  "free_lambda": false,
+  "bands": [
+    "ztfg",
+    "ztfr",
+    "atlaso"
+  ],
+  "k": 9,
+  "lnL": 125.91317702841016,
+  "n": 42,
+  "AIC": -233.82635405682032,
+  "BIC": -218.18732749227001,
+  "params": {
+    ".mean_function.c": [
+      0.06285601442413905,
+      0.0668216981831825,
+      0.08026365322377266
+    ],
+    ".kernel.kernels[0].base.variance": 0.025311263404408757,
+    ".kernel.kernels[0].base.l_min": 0.3917844206997375,
+    ".kernel.kernels[0].base.l_relax": 15.335889305245496,
+    ".kernel.kernels[0].base.width": 11.171122693776029,
+    ".kernel.kernels[0].base.t_peak": 0.0,
+    ".kernel.kernels[1].variance": 0.025311263404556878,
+    ".kernel.kernels[1].lengthscales": 1.80099642853203,
+    ".likelihood.variance": 5.2922053623587916e-05
+  }
+}

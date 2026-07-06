@@ -1,0 +1,37 @@
+{
+  "name": "ZTF18aczcumi",
+  "kernel": "gibbs",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": -0.9030301100574434,
+  "t_sd": 5.095049420549312,
+  "w_mean": 0.6421814890148709,
+  "w_sd": 1.0,
+  "free_lambda": false,
+  "bands": [
+    "ztfr"
+  ],
+  "k": 7,
+  "lnL": 30.381925984901983,
+  "n": 10,
+  "AIC": -46.763851969803966,
+  "BIC": -44.64575631884564,
+  "params": {
+    ".mean_function.c": [
+      0.08236905368817285
+    ],
+    ".kernel.kernels[0].base.variance": 0.01408467353507332,
+    ".kernel.kernels[0].base.l_min": 0.39703441643663767,
+    ".kernel.kernels[0].base.l_relax": 15.22879116461129,
+    ".kernel.kernels[0].base.width": 11.433645739702554,
+    ".kernel.kernels[0].base.t_peak": 0.0,
+    ".kernel.kernels[1].variance": 0.014084673535286219,
+    ".kernel.kernels[1].lengthscales": 0.15,
+    ".likelihood.variance": 6.219435836352525e-05
+  }
+}

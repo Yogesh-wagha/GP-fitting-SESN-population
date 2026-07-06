@@ -1,0 +1,40 @@
+{
+  "name": "ZTF25aboftol",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": 100.0,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 21.266547113019914,
+  "t_sd": 24.997479596326013,
+  "w_mean": 0.5748820215851347,
+  "w_sd": 0.07838759208501224,
+  "free_lambda": true,
+  "bands": [
+    "sdssg",
+    "ztfg",
+    "sdssr",
+    "ztfr"
+  ],
+  "k": 9,
+  "lnL": 872.1789432959516,
+  "n": 241,
+  "AIC": -1726.3578865919033,
+  "BIC": -1694.9947141904875,
+  "params": {
+    ".mean_function.c": [
+      0.054050388629168854,
+      0.05548228618382254,
+      0.07637743341761936,
+      0.08713106600688832
+    ],
+    ".kernel.kernels[0].variance": 0.026607807783210022,
+    ".kernel.kernels[0].lengthscales": 0.2752068346174427,
+    ".kernel.kernels[1].variance": 0.02660780778223543,
+    ".kernel.kernels[1].lengthscales": 1.436749203211977,
+    ".likelihood.variance": 1.4167455895284053e-05
+  }
+}

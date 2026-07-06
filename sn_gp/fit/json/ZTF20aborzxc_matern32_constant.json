@@ -1,0 +1,42 @@
+{
+  "name": "ZTF20aborzxc",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 22.062495398088878,
+  "t_sd": 60.99419302146044,
+  "w_mean": 0.6695226044676653,
+  "w_sd": 0.0469378389311175,
+  "free_lambda": true,
+  "bands": [
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "atlaso",
+    "sdssi"
+  ],
+  "k": 10,
+  "lnL": 144.18679256344348,
+  "n": 119,
+  "AIC": -268.37358512688695,
+  "BIC": -240.58235019577165,
+  "params": {
+    ".mean_function.c": [
+      -0.008543190372149633,
+      0.029145359977102686,
+      0.08947018352401019,
+      0.1266646061816903,
+      0.023065867904734822
+    ],
+    ".kernel.kernels[0].variance": 0.21109415398378079,
+    ".kernel.kernels[0].lengthscales": 0.06487549060222447,
+    ".kernel.kernels[1].variance": 0.21109415420730665,
+    ".kernel.kernels[1].lengthscales": 12034.569261017712,
+    ".likelihood.variance": 0.00198846057182816
+  }
+}

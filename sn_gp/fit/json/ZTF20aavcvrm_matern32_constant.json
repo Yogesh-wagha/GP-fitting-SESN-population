@@ -1,0 +1,40 @@
+{
+  "name": "ZTF20aavcvrm",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 11.777947205441397,
+  "t_sd": 16.079632177636725,
+  "w_mean": 0.6439470494575836,
+  "w_sd": 0.0977783425903411,
+  "free_lambda": true,
+  "bands": [
+    "ztfg",
+    "ztfr",
+    "atlaso",
+    "ztfi"
+  ],
+  "k": 9,
+  "lnL": 1376.970851381647,
+  "n": 361,
+  "AIC": -2735.941702763294,
+  "BIC": -2700.941801138298,
+  "params": {
+    ".mean_function.c": [
+      0.02752053609195184,
+      0.038271689717168884,
+      0.07645978577825306,
+      0.04936852424338786
+    ],
+    ".kernel.kernels[0].variance": 0.025908118484480512,
+    ".kernel.kernels[0].lengthscales": 0.8986548165838898,
+    ".kernel.kernels[1].variance": 0.025908118492899118,
+    ".kernel.kernels[1].lengthscales": 6.515252656356813e-05,
+    ".likelihood.variance": 1.715006588877107e-05
+  }
+}

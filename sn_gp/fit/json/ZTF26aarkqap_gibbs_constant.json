@@ -1,0 +1,41 @@
+{
+  "name": "ZTF26aarkqap",
+  "kernel": "gibbs",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 8.159274062704258,
+  "t_sd": 12.188491005604138,
+  "w_mean": 0.5367318312657879,
+  "w_sd": 0.1060551278997385,
+  "free_lambda": false,
+  "bands": [
+    "ztfg",
+    "ztfr",
+    "ztfi"
+  ],
+  "k": 9,
+  "lnL": 1176.4147233627089,
+  "n": 290,
+  "AIC": -2334.8294467254177,
+  "BIC": -2301.800518418593,
+  "params": {
+    ".mean_function.c": [
+      0.10555484335204333,
+      0.15757104553635817,
+      0.16304113356999816
+    ],
+    ".kernel.kernels[0].base.variance": 0.04733744733567436,
+    ".kernel.kernels[0].base.l_min": 0.1446163448227169,
+    ".kernel.kernels[0].base.l_relax": 15.828313679190424,
+    ".kernel.kernels[0].base.width": 9.756696946383052,
+    ".kernel.kernels[0].base.t_peak": 0.0,
+    ".kernel.kernels[1].variance": 0.047337447257402535,
+    ".kernel.kernels[1].lengthscales": 1.4143587676571916,
+    ".likelihood.variance": 9.480607983230962e-06
+  }
+}

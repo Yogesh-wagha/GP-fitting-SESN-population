@@ -1,0 +1,38 @@
+{
+  "name": "ZTF20abkiarz",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": 25.0,
+  "right": 75.0,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 24.218567285260153,
+  "t_sd": 26.12783393485876,
+  "w_mean": 0.5962531510228203,
+  "w_sd": 0.08891824163863866,
+  "free_lambda": false,
+  "bands": [
+    "ztfg",
+    "ztfr",
+    "atlaso"
+  ],
+  "k": 7,
+  "lnL": 264.7773461401247,
+  "n": 156,
+  "AIC": -515.5546922802494,
+  "BIC": -494.2057002295026,
+  "params": {
+    ".mean_function.c": [
+      0.05110031315375635,
+      0.09327773104485029,
+      0.12044610110849714
+    ],
+    ".kernel.kernels[0].variance": 0.08931690277374026,
+    ".kernel.kernels[0].lengthscales": 0.49747444958437387,
+    ".kernel.kernels[1].variance": 0.08931690277352906,
+    ".kernel.kernels[1].lengthscales": 1.686942940342837,
+    ".likelihood.variance": 0.0011314469431651366
+  }
+}

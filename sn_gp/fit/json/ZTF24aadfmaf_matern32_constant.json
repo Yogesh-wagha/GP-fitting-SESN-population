@@ -1,0 +1,48 @@
+{
+  "name": "ZTF24aadfmaf",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 1.5662500713145433,
+  "t_sd": 47.12730487625394,
+  "w_mean": 0.6067758386052938,
+  "w_sd": 0.09545883697811454,
+  "free_lambda": true,
+  "bands": [
+    "sdssu",
+    "sdssg",
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "atlaso",
+    "sdssi",
+    "sdssz"
+  ],
+  "k": 13,
+  "lnL": 786.1735251559596,
+  "n": 346,
+  "AIC": -1546.3470503119192,
+  "BIC": -1496.3433462361688,
+  "params": {
+    ".mean_function.c": [
+      -0.09479523848392124,
+      0.0792275574893842,
+      0.08700771664468954,
+      0.11915019352439722,
+      0.12252004460011233,
+      0.14181993391715741,
+      0.11075787068004031,
+      0.11490772455575879
+    ],
+    ".kernel.kernels[0].variance": 0.09050538484339765,
+    ".kernel.kernels[0].lengthscales": 0.955925244196165,
+    ".kernel.kernels[1].variance": 0.09050538484155399,
+    ".kernel.kernels[1].lengthscales": 6.430273623351944,
+    ".likelihood.variance": 0.00047911069310110606
+  }
+}

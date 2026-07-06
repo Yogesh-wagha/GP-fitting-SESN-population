@@ -1,0 +1,44 @@
+{
+  "name": "ZTF21aartgiv",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 4.158833708351113,
+  "t_sd": 11.781959270098644,
+  "w_mean": 0.6238827749344902,
+  "w_sd": 0.11241612866958721,
+  "free_lambda": true,
+  "bands": [
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "atlaso",
+    "sdssi",
+    "ztfi"
+  ],
+  "k": 11,
+  "lnL": 375.78164167100624,
+  "n": 130,
+  "AIC": -729.5632833420125,
+  "BIC": -698.0204043870011,
+  "params": {
+    ".mean_function.c": [
+      0.06644711249283634,
+      0.1072821161336279,
+      0.10472170281685607,
+      0.10234031129015433,
+      0.10532439553260517,
+      0.0939631552978233
+    ],
+    ".kernel.kernels[0].variance": 0.06625440076495082,
+    ".kernel.kernels[0].lengthscales": 0.8059570443777219,
+    ".kernel.kernels[1].variance": 0.06625440076327355,
+    ".kernel.kernels[1].lengthscales": 3.183851954895485,
+    ".likelihood.variance": 7.453170490234077e-05
+  }
+}

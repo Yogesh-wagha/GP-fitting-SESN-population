@@ -1,0 +1,40 @@
+{
+  "name": "ZTF19aanijpu",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 13.611660244513613,
+  "t_sd": 35.4048604047739,
+  "w_mean": 0.6417483559133741,
+  "w_sd": 0.08603571011405446,
+  "free_lambda": true,
+  "bands": [
+    "ztfg",
+    "ztfr",
+    "atlaso",
+    "ztfi"
+  ],
+  "k": 9,
+  "lnL": 594.9575539140626,
+  "n": 235,
+  "AIC": -1171.9151078281252,
+  "BIC": -1140.7788382008277,
+  "params": {
+    ".mean_function.c": [
+      0.046613665975306855,
+      0.11744783314831984,
+      0.10597327386442781,
+      0.11704635617688637
+    ],
+    ".kernel.kernels[0].variance": 0.10556857355418103,
+    ".kernel.kernels[0].lengthscales": 1.3356133411729754,
+    ".kernel.kernels[1].variance": 0.10556857355465747,
+    ".kernel.kernels[1].lengthscales": 5.268138009639768,
+    ".likelihood.variance": 0.00024238696625063336
+  }
+}

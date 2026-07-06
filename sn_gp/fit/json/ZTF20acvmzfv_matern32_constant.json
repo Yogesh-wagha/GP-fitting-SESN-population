@@ -1,0 +1,44 @@
+{
+  "name": "ZTF20acvmzfv",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 13.319139203923207,
+  "t_sd": 16.449596670567814,
+  "w_mean": 0.61861969612327,
+  "w_sd": 0.07761196584490812,
+  "free_lambda": true,
+  "bands": [
+    "sdssg",
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "atlaso",
+    "sdssi"
+  ],
+  "k": 11,
+  "lnL": 279.70033114134674,
+  "n": 97,
+  "AIC": -537.4006622826935,
+  "BIC": -509.07884151915624,
+  "params": {
+    ".mean_function.c": [
+      0.06246770278470847,
+      0.03924821860357413,
+      0.09079338897909522,
+      0.0994881179271362,
+      0.08424151841191092,
+      0.10363307809641625
+    ],
+    ".kernel.kernels[0].variance": 0.05747353636339596,
+    ".kernel.kernels[0].lengthscales": 0.4949163574850248,
+    ".kernel.kernels[1].variance": 0.05747353636538316,
+    ".kernel.kernels[1].lengthscales": 6.7425166182941245,
+    ".likelihood.variance": 7.09952060968404e-05
+  }
+}

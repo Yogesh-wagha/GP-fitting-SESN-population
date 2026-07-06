@@ -1,0 +1,44 @@
+{
+  "name": "ZTF25aadnogd",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 26.23225851608387,
+  "t_sd": 51.81114450058145,
+  "w_mean": 0.5872741978380601,
+  "w_sd": 0.0857705734376525,
+  "free_lambda": true,
+  "bands": [
+    "sdssg",
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "sdssi",
+    "ztfi"
+  ],
+  "k": 11,
+  "lnL": 683.662340362462,
+  "n": 186,
+  "AIC": -1345.324680724924,
+  "BIC": -1309.841467314079,
+  "params": {
+    ".mean_function.c": [
+      0.05851694370120864,
+      0.05152372207596351,
+      0.1208762858904517,
+      0.12662919318803736,
+      0.13650365149171662,
+      0.1426673600440116
+    ],
+    ".kernel.kernels[0].variance": 0.04710260420041561,
+    ".kernel.kernels[0].lengthscales": 0.24198880443823234,
+    ".kernel.kernels[1].variance": 0.0471026041997675,
+    ".kernel.kernels[1].lengthscales": 2.4704406742446627,
+    ".likelihood.variance": 8.81899676476066e-06
+  }
+}

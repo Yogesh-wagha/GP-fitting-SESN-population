@@ -1,0 +1,44 @@
+{
+  "name": "ZTF21abchjer",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": 100.0,
+  "right": 200.0,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 19.652153028048524,
+  "t_sd": 26.636438164903883,
+  "w_mean": 0.5996292461138716,
+  "w_sd": 0.10847558466926659,
+  "free_lambda": true,
+  "bands": [
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "atlaso",
+    "sdssi",
+    "ztfi"
+  ],
+  "k": 11,
+  "lnL": 478.80109989745944,
+  "n": 147,
+  "AIC": -935.6021997949189,
+  "BIC": -902.7074413403528,
+  "params": {
+    ".mean_function.c": [
+      0.023573537331520858,
+      0.06450554981777987,
+      0.05086137977589119,
+      0.05242013475539647,
+      0.07752343323878312,
+      0.04790259090485017
+    ],
+    ".kernel.kernels[0].variance": 0.02902595977910719,
+    ".kernel.kernels[0].lengthscales": 0.4067098028425993,
+    ".kernel.kernels[1].variance": 0.029025959779655035,
+    ".kernel.kernels[1].lengthscales": 2.2185562973649344,
+    ".likelihood.variance": 3.4318790456498554e-05
+  }
+}

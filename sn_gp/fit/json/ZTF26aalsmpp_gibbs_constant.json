@@ -1,0 +1,41 @@
+{
+  "name": "ZTF26aalsmpp",
+  "kernel": "gibbs",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 6.909142287272218,
+  "t_sd": 18.32447800955014,
+  "w_mean": 0.5882642269150903,
+  "w_sd": 0.1067263895481048,
+  "free_lambda": false,
+  "bands": [
+    "ztfg",
+    "ztfr",
+    "ztfi"
+  ],
+  "k": 9,
+  "lnL": 1721.5539026711992,
+  "n": 494,
+  "AIC": -3425.1078053423985,
+  "BIC": -3387.2849856877074,
+  "params": {
+    ".mean_function.c": [
+      0.05705744517405074,
+      0.08086480960500235,
+      0.07666867681301749
+    ],
+    ".kernel.kernels[0].base.variance": 0.039459193937511225,
+    ".kernel.kernels[0].base.l_min": 0.6882222643036775,
+    ".kernel.kernels[0].base.l_relax": 13.486127139601233,
+    ".kernel.kernels[0].base.width": 16.254598428315617,
+    ".kernel.kernels[0].base.t_peak": 0.0,
+    ".kernel.kernels[1].variance": 0.039459193837385075,
+    ".kernel.kernels[1].lengthscales": 1.4054630783925326,
+    ".likelihood.variance": 4.450875031230202e-05
+  }
+}

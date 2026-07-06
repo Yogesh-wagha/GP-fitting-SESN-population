@@ -1,0 +1,42 @@
+{
+  "name": "ZTF20abusrwm",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 10.92051184090236,
+  "t_sd": 32.9747277391552,
+  "w_mean": 0.6467727120459135,
+  "w_sd": 0.06419144697614501,
+  "free_lambda": true,
+  "bands": [
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "atlaso",
+    "sdssi"
+  ],
+  "k": 10,
+  "lnL": 252.4864282994825,
+  "n": 88,
+  "AIC": -484.972856598965,
+  "BIC": -460.1994884541829,
+  "params": {
+    ".mean_function.c": [
+      0.0005434842037206999,
+      0.040372869357060845,
+      0.03738047985935853,
+      0.04541305736590578,
+      0.04309809199747234
+    ],
+    ".kernel.kernels[0].variance": 0.03385863179515883,
+    ".kernel.kernels[0].lengthscales": 0.6236411175091889,
+    ".kernel.kernels[1].variance": 0.033858631792037755,
+    ".kernel.kernels[1].lengthscales": 6.816954166666597,
+    ".likelihood.variance": 0.00011412352001455696
+  }
+}

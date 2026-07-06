@@ -1,0 +1,44 @@
+{
+  "name": "ZTF21abieuta",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 6.946534404712287,
+  "t_sd": 14.466296824222676,
+  "w_mean": 0.6324785117292487,
+  "w_sd": 0.0962485740936924,
+  "free_lambda": true,
+  "bands": [
+    "sdssu",
+    "sdssg",
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "ztfi"
+  ],
+  "k": 11,
+  "lnL": 566.1523884088629,
+  "n": 129,
+  "AIC": -1110.3047768177257,
+  "BIC": -1078.8468403697473,
+  "params": {
+    ".mean_function.c": [
+      0.013169094736952455,
+      0.06916876095732162,
+      0.04629033434521028,
+      0.10213408504345312,
+      0.10906161604187362,
+      0.09224897988374674
+    ],
+    ".kernel.kernels[0].variance": 0.042394880185799774,
+    ".kernel.kernels[0].lengthscales": 0.0060828077397306205,
+    ".kernel.kernels[1].variance": 0.04239488608015815,
+    ".kernel.kernels[1].lengthscales": 3238.9812192308677,
+    ".likelihood.variance": 1e-06
+  }
+}

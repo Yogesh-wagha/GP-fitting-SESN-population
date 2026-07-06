@@ -1,0 +1,43 @@
+{
+  "name": "ZTF19aalouag",
+  "kernel": "gibbs",
+  "mean": "constant",
+  "gri": true,
+  "left": 125.0,
+  "right": 500.0,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 17.32492371700446,
+  "t_sd": 57.742634168509134,
+  "w_mean": 0.5843439122461607,
+  "w_sd": 0.09454999893253305,
+  "free_lambda": true,
+  "bands": [
+    "ztfg",
+    "ztfr",
+    "atlaso",
+    "ztfi"
+  ],
+  "k": 11,
+  "lnL": 2230.140051090294,
+  "n": 842,
+  "AIC": -4438.280102180588,
+  "BIC": -4386.186522023922,
+  "params": {
+    ".mean_function.c": [
+      0.051621399130126935,
+      0.07131711196710591,
+      0.0743205298015681,
+      0.06528989815977511
+    ],
+    ".kernel.kernels[0].base.variance": 0.0529367679627178,
+    ".kernel.kernels[0].base.l_min": 0.3086825548138169,
+    ".kernel.kernels[0].base.l_relax": 15.344910732089897,
+    ".kernel.kernels[0].base.width": 11.152324599739437,
+    ".kernel.kernels[0].base.t_peak": 0.0,
+    ".kernel.kernels[1].variance": 0.052936767944934376,
+    ".kernel.kernels[1].lengthscales": 11.244327922356979,
+    ".likelihood.variance": 0.0002634274795650484
+  }
+}

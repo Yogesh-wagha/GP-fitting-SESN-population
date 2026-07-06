@@ -1,0 +1,43 @@
+{
+  "name": "ZTF18aboabxv",
+  "kernel": "gibbs",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": -4.291967623313551,
+  "t_sd": 6.760788843005769,
+  "w_mean": 0.6363462313116344,
+  "w_sd": 0.08002382986093778,
+  "free_lambda": true,
+  "bands": [
+    "ztfg",
+    "ztfr",
+    "atlaso",
+    "ztfi"
+  ],
+  "k": 11,
+  "lnL": 148.6013563764556,
+  "n": 51,
+  "AIC": -275.2027127529112,
+  "BIC": -253.95263079294364,
+  "params": {
+    ".mean_function.c": [
+      0.046700345535460645,
+      0.10334170034437307,
+      0.10376831110090305,
+      0.09981509243748402
+    ],
+    ".kernel.kernels[0].base.variance": 0.01681206495304454,
+    ".kernel.kernels[0].base.l_min": 0.33796695427881324,
+    ".kernel.kernels[0].base.l_relax": 6.75098008447201e-15,
+    ".kernel.kernels[0].base.width": 135.66809221378475,
+    ".kernel.kernels[0].base.t_peak": 0.0,
+    ".kernel.kernels[1].variance": 0.01681206493615312,
+    ".kernel.kernels[1].lengthscales": 2.235026722261888,
+    ".likelihood.variance": 9.077510996064717e-05
+  }
+}

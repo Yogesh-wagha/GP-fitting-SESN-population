@@ -1,0 +1,41 @@
+{
+  "name": "ZTF24abqbyxd",
+  "kernel": "gibbs",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 5.527106882039724,
+  "t_sd": 10.717745486580021,
+  "w_mean": 0.6458288060333116,
+  "w_sd": 0.07620232692223051,
+  "free_lambda": false,
+  "bands": [
+    "ztfg",
+    "ztfr",
+    "ztfi"
+  ],
+  "k": 9,
+  "lnL": 117.23002429253944,
+  "n": 28,
+  "AIC": -216.46004858507888,
+  "BIC": -204.47020799350204,
+  "params": {
+    ".mean_function.c": [
+      0.04833109821411218,
+      0.08596103169152597,
+      0.08271706738878933
+    ],
+    ".kernel.kernels[0].base.variance": 0.014228412776319546,
+    ".kernel.kernels[0].base.l_min": 0.11710285405258615,
+    ".kernel.kernels[0].base.l_relax": 0.0004043825893803731,
+    ".kernel.kernels[0].base.width": 73.8159428179448,
+    ".kernel.kernels[0].base.t_peak": 0.0,
+    ".kernel.kernels[1].variance": 0.014228412775902302,
+    ".kernel.kernels[1].lengthscales": 1.9684438265656223,
+    ".likelihood.variance": 1.00000000015023e-06
+  }
+}

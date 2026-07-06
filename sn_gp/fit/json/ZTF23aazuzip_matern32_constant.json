@@ -1,0 +1,38 @@
+{
+  "name": "ZTF23aazuzip",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": -3.5789489498683205,
+  "t_sd": 8.42730142309974,
+  "w_mean": 0.5670683400526128,
+  "w_sd": 0.0794425307173847,
+  "free_lambda": false,
+  "bands": [
+    "ztfg",
+    "sdssr",
+    "ztfr"
+  ],
+  "k": 7,
+  "lnL": 104.21061758753633,
+  "n": 26,
+  "AIC": -194.42123517507267,
+  "BIC": -185.6145594089223,
+  "params": {
+    ".mean_function.c": [
+      0.06018737724096225,
+      0.09843084587575501,
+      0.10371094104298484
+    ],
+    ".kernel.kernels[0].variance": 0.027367925445735443,
+    ".kernel.kernels[0].lengthscales": 0.8005866078653264,
+    ".kernel.kernels[1].variance": 0.027367925445732195,
+    ".kernel.kernels[1].lengthscales": 1.888157371693283,
+    ".likelihood.variance": 1.0000000000000182e-06
+  }
+}

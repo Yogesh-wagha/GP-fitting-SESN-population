@@ -1,0 +1,38 @@
+{
+  "name": "ZTF22abwtqeb",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 31.334471933372022,
+  "t_sd": 26.934525964781514,
+  "w_mean": 0.5929114953602613,
+  "w_sd": 0.1023586302060981,
+  "free_lambda": false,
+  "bands": [
+    "ztfg",
+    "ztfr",
+    "ztfi"
+  ],
+  "k": 7,
+  "lnL": 79.64845560271543,
+  "n": 27,
+  "AIC": -145.29691120543086,
+  "BIC": -136.22605314340055,
+  "params": {
+    ".mean_function.c": [
+      0.1736117948874736,
+      0.20280538140573864,
+      0.11895949485392975
+    ],
+    ".kernel.kernels[0].variance": 0.1370268428849082,
+    ".kernel.kernels[0].lengthscales": 0.9787585343146383,
+    ".kernel.kernels[1].variance": 0.13702684289219944,
+    ".kernel.kernels[1].lengthscales": 1.4654357888335987,
+    ".likelihood.variance": 1.000000033347281e-06
+  }
+}

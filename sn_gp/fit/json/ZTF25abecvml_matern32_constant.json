@@ -1,0 +1,46 @@
+{
+  "name": "ZTF25abecvml",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 12.429287883615766,
+  "t_sd": 19.48938524055712,
+  "w_mean": 0.5900058636085136,
+  "w_sd": 0.10242009877923088,
+  "free_lambda": true,
+  "bands": [
+    "sdssu",
+    "sdssg",
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "sdssi",
+    "sdssz"
+  ],
+  "k": 12,
+  "lnL": 329.5643181428854,
+  "n": 122,
+  "AIC": -635.1286362857708,
+  "BIC": -601.4803837489717,
+  "params": {
+    ".mean_function.c": [
+      -0.017241390009531933,
+      0.03431741931501506,
+      0.04058261015673642,
+      0.06694192668744954,
+      0.07562709896904063,
+      0.07119829369398105,
+      0.08307786211276694
+    ],
+    ".kernel.kernels[0].variance": 0.09307452099757973,
+    ".kernel.kernels[0].lengthscales": 0.7640239125998859,
+    ".kernel.kernels[1].variance": 0.09307452100284522,
+    ".kernel.kernels[1].lengthscales": 4.133928715112209,
+    ".likelihood.variance": 8.910857887464132e-05
+  }
+}

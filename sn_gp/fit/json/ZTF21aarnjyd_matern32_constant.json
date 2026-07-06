@@ -1,0 +1,42 @@
+{
+  "name": "ZTF21aarnjyd",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 867.143517597461,
+  "t_sd": 101.57402169240423,
+  "w_mean": 0.5948376896478444,
+  "w_sd": 0.0979891227235551,
+  "free_lambda": true,
+  "bands": [
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "atlaso",
+    "ztfi"
+  ],
+  "k": 10,
+  "lnL": 2663.05937466227,
+  "n": 896,
+  "AIC": -5306.11874932454,
+  "BIC": -5258.139345194791,
+  "params": {
+    ".mean_function.c": [
+      0.02385326777555084,
+      0.1491770166085807,
+      0.16416773024528603,
+      0.13456702881505878,
+      0.12959858432086283
+    ],
+    ".kernel.kernels[0].variance": 0.13405718656392718,
+    ".kernel.kernels[0].lengthscales": 0.23411314806265615,
+    ".kernel.kernels[1].variance": 0.13405718654233048,
+    ".kernel.kernels[1].lengthscales": 0.5497701060773388,
+    ".likelihood.variance": 0.00010058124316496111
+  }
+}

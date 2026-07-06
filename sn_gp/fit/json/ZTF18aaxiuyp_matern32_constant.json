@@ -1,0 +1,40 @@
+{
+  "name": "ZTF18aaxiuyp",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": 250.0,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 9.62800074679825,
+  "t_sd": 24.009323124220412,
+  "w_mean": 0.5966524888188539,
+  "w_sd": 0.08272631900908307,
+  "free_lambda": true,
+  "bands": [
+    "ztfg",
+    "ztfr",
+    "atlaso",
+    "ztfi"
+  ],
+  "k": 9,
+  "lnL": 1167.1387802835711,
+  "n": 471,
+  "AIC": -2316.2775605671422,
+  "BIC": -2278.8838377209945,
+  "params": {
+    ".mean_function.c": [
+      0.02830734482382698,
+      0.039675083870223574,
+      0.12875602268264194,
+      0.05317706550913708
+    ],
+    ".kernel.kernels[0].variance": 0.05397780176138142,
+    ".kernel.kernels[0].lengthscales": 0.7471789511741719,
+    ".kernel.kernels[1].variance": 0.05397780176329976,
+    ".kernel.kernels[1].lengthscales": 0.006955868071372622,
+    ".likelihood.variance": 0.0003089703082444099
+  }
+}

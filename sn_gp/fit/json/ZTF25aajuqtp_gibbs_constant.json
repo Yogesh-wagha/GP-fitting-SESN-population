@@ -1,0 +1,45 @@
+{
+  "name": "ZTF25aajuqtp",
+  "kernel": "gibbs",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": -402.989944233742,
+  "t_sd": 228.22940914836036,
+  "w_mean": 0.641998330697881,
+  "w_sd": 0.09146070428348753,
+  "free_lambda": true,
+  "bands": [
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "atlaso",
+    "ztfi"
+  ],
+  "k": 12,
+  "lnL": 84.94633438578978,
+  "n": 134,
+  "AIC": -145.89266877157957,
+  "BIC": -111.11859117216864,
+  "params": {
+    ".mean_function.c": [
+      1.4613384319765461,
+      1.7426379348726944,
+      1.5549227518048208,
+      1.5012962213376828,
+      1.5477998369533918
+    ],
+    ".kernel.kernels[0].base.variance": 2.077669481891937,
+    ".kernel.kernels[0].base.l_min": 1.315670365085148,
+    ".kernel.kernels[0].base.l_relax": 0.0,
+    ".kernel.kernels[0].base.width": 4222.052739812534,
+    ".kernel.kernels[0].base.t_peak": 0.0,
+    ".kernel.kernels[1].variance": 2.0776692162366497,
+    ".kernel.kernels[1].lengthscales": 37900.002109373316,
+    ".likelihood.variance": 0.01222812789832354
+  }
+}

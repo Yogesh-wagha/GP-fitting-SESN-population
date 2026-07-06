@@ -1,0 +1,36 @@
+{
+  "name": "ZTF19aailsge",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 31.80293003008701,
+  "t_sd": 40.54477457665196,
+  "w_mean": 0.5939454837784691,
+  "w_sd": 0.0736817150726989,
+  "free_lambda": false,
+  "bands": [
+    "ztfg",
+    "ztfr"
+  ],
+  "k": 6,
+  "lnL": 52.637569622357276,
+  "n": 20,
+  "AIC": -93.27513924471455,
+  "BIC": -87.30074560339061,
+  "params": {
+    ".mean_function.c": [
+      0.022282191438699625,
+      0.04727920048073688
+    ],
+    ".kernel.kernels[0].variance": 0.028804877273938455,
+    ".kernel.kernels[0].lengthscales": 0.39841561469146924,
+    ".kernel.kernels[1].variance": 0.028804877274032897,
+    ".kernel.kernels[1].lengthscales": 2.0357832313213775,
+    ".likelihood.variance": 3.148046059585502e-06
+  }
+}

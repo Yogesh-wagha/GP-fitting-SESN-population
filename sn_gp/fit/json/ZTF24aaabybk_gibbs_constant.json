@@ -1,0 +1,41 @@
+{
+  "name": "ZTF24aaabybk",
+  "kernel": "gibbs",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 7.606768764233446,
+  "t_sd": 12.36114656325457,
+  "w_mean": 0.6496612115186599,
+  "w_sd": 0.11700428030505607,
+  "free_lambda": false,
+  "bands": [
+    "ztfg",
+    "ztfr",
+    "ztfi"
+  ],
+  "k": 9,
+  "lnL": 118.22346958870722,
+  "n": 39,
+  "AIC": -218.44693917741444,
+  "BIC": -203.47488436224762,
+  "params": {
+    ".mean_function.c": [
+      0.0798111712800124,
+      0.11490045375171722,
+      0.09962252931561255
+    ],
+    ".kernel.kernels[0].base.variance": 0.0657934567976699,
+    ".kernel.kernels[0].base.l_min": 0.7590345645327365,
+    ".kernel.kernels[0].base.l_relax": 0.00011850893328555716,
+    ".kernel.kernels[0].base.width": 75.43094217555179,
+    ".kernel.kernels[0].base.t_peak": 0.0,
+    ".kernel.kernels[1].variance": 0.06579345677826419,
+    ".kernel.kernels[1].lengthscales": 1.2820043814543944,
+    ".likelihood.variance": 1.766612890823181e-05
+  }
+}

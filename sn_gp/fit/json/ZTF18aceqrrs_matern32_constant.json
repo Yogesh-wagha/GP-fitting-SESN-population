@@ -1,0 +1,36 @@
+{
+  "name": "ZTF18aceqrrs",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": 200.0,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 34.19855250343208,
+  "t_sd": 25.24509375495122,
+  "w_mean": 0.605874818406827,
+  "w_sd": 0.06722689080949734,
+  "free_lambda": false,
+  "bands": [
+    "ztfg",
+    "ztfr"
+  ],
+  "k": 6,
+  "lnL": 296.1977360486459,
+  "n": 62,
+  "AIC": -580.3954720972918,
+  "BIC": -567.6326657870212,
+  "params": {
+    ".mean_function.c": [
+      0.030132272479650102,
+      0.06474580757535134
+    ],
+    ".kernel.kernels[0].variance": 0.01579683008082664,
+    ".kernel.kernels[0].lengthscales": 0.18030032299509316,
+    ".kernel.kernels[1].variance": 0.01579683007970914,
+    ".kernel.kernels[1].lengthscales": 2.231249998234472,
+    ".likelihood.variance": 1.000005046719906e-06
+  }
+}

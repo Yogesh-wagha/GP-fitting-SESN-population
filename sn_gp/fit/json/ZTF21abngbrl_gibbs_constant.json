@@ -1,0 +1,39 @@
+{
+  "name": "ZTF21abngbrl",
+  "kernel": "gibbs",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 19.778374133215795,
+  "t_sd": 19.512173129501647,
+  "w_mean": 0.5785367598835077,
+  "w_sd": 0.07862934193180095,
+  "free_lambda": false,
+  "bands": [
+    "ztfg",
+    "ztfr"
+  ],
+  "k": 8,
+  "lnL": 216.83350023168063,
+  "n": 48,
+  "AIC": -417.66700046336126,
+  "BIC": -402.69739237609815,
+  "params": {
+    ".mean_function.c": [
+      0.05248650769401266,
+      0.06912607603030153
+    ],
+    ".kernel.kernels[0].base.variance": 0.029331459903941766,
+    ".kernel.kernels[0].base.l_min": 0.16169013401217333,
+    ".kernel.kernels[0].base.l_relax": 11.171636899427572,
+    ".kernel.kernels[0].base.width": 21.63002013281828,
+    ".kernel.kernels[0].base.t_peak": 0.0,
+    ".kernel.kernels[1].variance": 0.029331459701468266,
+    ".kernel.kernels[1].lengthscales": 1.9076847944384716,
+    ".likelihood.variance": 1.0000011167935593e-06
+  }
+}

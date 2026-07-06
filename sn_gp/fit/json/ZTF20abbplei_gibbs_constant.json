@@ -1,0 +1,43 @@
+{
+  "name": "ZTF20abbplei",
+  "kernel": "gibbs",
+  "mean": "constant",
+  "gri": true,
+  "left": 20.0,
+  "right": 150.0,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 38.225280492306105,
+  "t_sd": 37.31117141396956,
+  "w_mean": 0.6023540471173046,
+  "w_sd": 0.10163695106467174,
+  "free_lambda": true,
+  "bands": [
+    "ztfg",
+    "ztfr",
+    "atlaso",
+    "ztfi"
+  ],
+  "k": 11,
+  "lnL": 1005.0826425572928,
+  "n": 424,
+  "AIC": -1988.1652851145857,
+  "BIC": -1943.618217107034,
+  "params": {
+    ".mean_function.c": [
+      0.05596492030401561,
+      0.08873559535132378,
+      0.11815352250567476,
+      0.0898906109122429
+    ],
+    ".kernel.kernels[0].base.variance": 0.09054260606785947,
+    ".kernel.kernels[0].base.l_min": 0.18963498419728164,
+    ".kernel.kernels[0].base.l_relax": 3.927765839650617e-10,
+    ".kernel.kernels[0].base.width": 104.0031087236181,
+    ".kernel.kernels[0].base.t_peak": 0.0,
+    ".kernel.kernels[1].variance": 0.0905426060543843,
+    ".kernel.kernels[1].lengthscales": 2.1383066601540306,
+    ".likelihood.variance": 0.00026736391624681617
+  }
+}

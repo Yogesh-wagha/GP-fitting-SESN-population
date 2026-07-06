@@ -1,0 +1,42 @@
+{
+  "name": "ZTF19acbonaa",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 8.886487257124802,
+  "t_sd": 27.687255451861308,
+  "w_mean": 0.6302270663601648,
+  "w_sd": 0.04290016125738368,
+  "free_lambda": true,
+  "bands": [
+    "sdssg",
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "sdssi"
+  ],
+  "k": 10,
+  "lnL": 1771.897234772283,
+  "n": 451,
+  "AIC": -3523.794469544566,
+  "BIC": -3482.679796149539,
+  "params": {
+    ".mean_function.c": [
+      0.027390830484266538,
+      0.03239837532247362,
+      0.048899793579679864,
+      0.06004208577266604,
+      0.062160377752435846
+    ],
+    ".kernel.kernels[0].variance": 0.030776151867417792,
+    ".kernel.kernels[0].lengthscales": 0.7026150122734632,
+    ".kernel.kernels[1].variance": 0.03077615152563059,
+    ".kernel.kernels[1].lengthscales": 21.7283080346158,
+    ".likelihood.variance": 1.7550951673371577e-05
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "ZTF22abmonux",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 4.7493571837849675,
+  "t_sd": 14.111544739743822,
+  "w_mean": 0.6393340063789844,
+  "w_sd": 0.11629371594833403,
+  "free_lambda": true,
+  "bands": [
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "ztfi"
+  ],
+  "k": 9,
+  "lnL": 166.8615433237685,
+  "n": 61,
+  "AIC": -315.723086647537,
+  "BIC": -296.7252218699772,
+  "params": {
+    ".mean_function.c": [
+      0.03219476262374649,
+      0.14930646291751934,
+      0.10755750924259895,
+      0.11675141752621104
+    ],
+    ".kernel.kernels[0].variance": 0.034870324099785646,
+    ".kernel.kernels[0].lengthscales": 0.7584930914314031,
+    ".kernel.kernels[1].variance": 0.03487032410056978,
+    ".kernel.kernels[1].lengthscales": 2.328343024959391,
+    ".likelihood.variance": 9.40906350023653e-05
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "name": "ZTF25abbzsku",
+  "kernel": "gibbs",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": -7.3551944315916105,
+  "t_sd": 9.56331113885029,
+  "w_mean": 0.6042247403530004,
+  "w_sd": 0.11615565382865344,
+  "free_lambda": true,
+  "bands": [
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "ztfi"
+  ],
+  "k": 11,
+  "lnL": 593.0718396362965,
+  "n": 152,
+  "AIC": -1164.143679272593,
+  "BIC": -1130.8809935432841,
+  "params": {
+    ".mean_function.c": [
+      0.02799465203973389,
+      0.05377570283664406,
+      0.043310900324925544,
+      0.03420432340078101
+    ],
+    ".kernel.kernels[0].base.variance": 0.020423797975047255,
+    ".kernel.kernels[0].base.l_min": 0.9335882664813935,
+    ".kernel.kernels[0].base.l_relax": 13.376472736476613,
+    ".kernel.kernels[0].base.width": 15.98929663836322,
+    ".kernel.kernels[0].base.t_peak": 0.0,
+    ".kernel.kernels[1].variance": 0.020423797962142498,
+    ".kernel.kernels[1].lengthscales": 3.0179754381831825,
+    ".likelihood.variance": 1.6461036690259274e-05
+  }
+}

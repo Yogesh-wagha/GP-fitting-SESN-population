@@ -1,0 +1,43 @@
+{
+  "name": "ZTF22abmonux",
+  "kernel": "gibbs",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 4.7493571837849675,
+  "t_sd": 14.111544739743822,
+  "w_mean": 0.6393340063789844,
+  "w_sd": 0.11629371594833403,
+  "free_lambda": true,
+  "bands": [
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "ztfi"
+  ],
+  "k": 11,
+  "lnL": 167.59036295923676,
+  "n": 61,
+  "AIC": -313.1807259184735,
+  "BIC": -289.9611134125671,
+  "params": {
+    ".mean_function.c": [
+      0.023000749165623984,
+      0.1412122014611301,
+      0.09609939224871601,
+      0.10595843512794971
+    ],
+    ".kernel.kernels[0].base.variance": 0.04161225331028106,
+    ".kernel.kernels[0].base.l_min": 0.9764630489666188,
+    ".kernel.kernels[0].base.l_relax": 5.342904083405701e-11,
+    ".kernel.kernels[0].base.width": 107.1873197660385,
+    ".kernel.kernels[0].base.t_peak": 0.0,
+    ".kernel.kernels[1].variance": 0.04161225330908941,
+    ".kernel.kernels[1].lengthscales": 2.935858049619049,
+    ".likelihood.variance": 0.00012753310475325784
+  }
+}

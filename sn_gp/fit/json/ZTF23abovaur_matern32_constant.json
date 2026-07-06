@@ -1,0 +1,44 @@
+{
+  "name": "ZTF23abovaur",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 33.165399569745034,
+  "t_sd": 29.697841404358144,
+  "w_mean": 0.5826927995636949,
+  "w_sd": 0.09593118380264884,
+  "free_lambda": true,
+  "bands": [
+    "sdssg",
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "sdssi",
+    "ztfi"
+  ],
+  "k": 11,
+  "lnL": 149.92498418422568,
+  "n": 63,
+  "AIC": -277.84996836845136,
+  "BIC": -254.2754863781445,
+  "params": {
+    ".mean_function.c": [
+      0.08323561753092057,
+      0.08459342360103593,
+      0.125114504445892,
+      0.14145764294504118,
+      0.23600514462897282,
+      0.15842661414459017
+    ],
+    ".kernel.kernels[0].variance": 0.084681655005025,
+    ".kernel.kernels[0].lengthscales": 0.5321500548418029,
+    ".kernel.kernels[1].variance": 0.0846816550054559,
+    ".kernel.kernels[1].lengthscales": 4.90961050894222,
+    ".likelihood.variance": 0.0001303299020033819
+  }
+}

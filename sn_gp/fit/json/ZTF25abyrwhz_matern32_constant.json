@@ -1,0 +1,48 @@
+{
+  "name": "ZTF25abyrwhz",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 30.358370757303486,
+  "t_sd": 35.761842916412114,
+  "w_mean": 0.573160330090026,
+  "w_sd": 0.09788163172538368,
+  "free_lambda": true,
+  "bands": [
+    "sdssu",
+    "sdssg",
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "atlaso",
+    "sdssi",
+    "sdssz"
+  ],
+  "k": 13,
+  "lnL": 1325.3187478859131,
+  "n": 395,
+  "AIC": -2624.6374957718263,
+  "BIC": -2572.9119808281116,
+  "params": {
+    ".mean_function.c": [
+      0.09037258662291985,
+      0.06937088876931355,
+      0.06614444830983607,
+      0.061939747793324514,
+      0.05786554895733155,
+      0.045686386234780524,
+      0.05955767337374847,
+      0.05434355242028752
+    ],
+    ".kernel.kernels[0].variance": 0.07070931327696736,
+    ".kernel.kernels[0].lengthscales": 0.677224052059009,
+    ".kernel.kernels[1].variance": 0.07070931329883222,
+    ".kernel.kernels[1].lengthscales": 0.8688790718887269,
+    ".likelihood.variance": 3.0123211534194152e-05
+  }
+}

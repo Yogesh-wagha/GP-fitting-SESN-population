@@ -1,0 +1,41 @@
+{
+  "name": "ZTF19acmelor",
+  "kernel": "gibbs",
+  "mean": "constant",
+  "gri": true,
+  "left": 50.0,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 12.243926306875506,
+  "t_sd": 18.74393989869202,
+  "w_mean": 0.6499240376927603,
+  "w_sd": 0.07321791302600764,
+  "free_lambda": false,
+  "bands": [
+    "ztfg",
+    "ztfr",
+    "atlaso"
+  ],
+  "k": 9,
+  "lnL": 245.94873328782728,
+  "n": 104,
+  "AIC": -473.89746657565456,
+  "BIC": -450.0979484833822,
+  "params": {
+    ".mean_function.c": [
+      0.053746701619634046,
+      0.10333377728854806,
+      0.12372215197145316
+    ],
+    ".kernel.kernels[0].base.variance": 0.048969920331220745,
+    ".kernel.kernels[0].base.l_min": 0.5168441196731576,
+    ".kernel.kernels[0].base.l_relax": 12.48943074323379,
+    ".kernel.kernels[0].base.width": 18.896424317966307,
+    ".kernel.kernels[0].base.t_peak": 0.0,
+    ".kernel.kernels[1].variance": 0.04896992032791968,
+    ".kernel.kernels[1].lengthscales": 2.0486789885245527,
+    ".likelihood.variance": 0.0003251124870730013
+  }
+}

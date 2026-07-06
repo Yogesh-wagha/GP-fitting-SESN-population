@@ -1,0 +1,41 @@
+{
+  "name": "ZTF22abivebe",
+  "kernel": "gibbs",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 0.10980825917144874,
+  "t_sd": 8.380062032300417,
+  "w_mean": 0.5614320611426463,
+  "w_sd": 0.08008793543735897,
+  "free_lambda": false,
+  "bands": [
+    "ztfg",
+    "sdssr",
+    "ztfr"
+  ],
+  "k": 9,
+  "lnL": 230.64237435459768,
+  "n": 66,
+  "AIC": -443.28474870919536,
+  "BIC": -423.57785603095755,
+  "params": {
+    ".mean_function.c": [
+      0.05384479791847345,
+      0.10023175807249574,
+      0.08447404470259855
+    ],
+    ".kernel.kernels[0].base.variance": 0.039661014949985106,
+    ".kernel.kernels[0].base.l_min": 0.4792375229908147,
+    ".kernel.kernels[0].base.l_relax": 16.00657708118261,
+    ".kernel.kernels[0].base.width": 9.3090089770593,
+    ".kernel.kernels[0].base.t_peak": 0.0,
+    ".kernel.kernels[1].variance": 0.03966101494799622,
+    ".kernel.kernels[1].lengthscales": 1.872941276121707,
+    ".likelihood.variance": 1.545838639189723e-05
+  }
+}

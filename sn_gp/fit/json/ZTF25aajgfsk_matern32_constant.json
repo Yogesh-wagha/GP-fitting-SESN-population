@@ -1,0 +1,48 @@
+{
+  "name": "ZTF25aajgfsk",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 9.489755035459611,
+  "t_sd": 15.751151427303961,
+  "w_mean": 0.6316528004143154,
+  "w_sd": 0.10588349468654118,
+  "free_lambda": true,
+  "bands": [
+    "sdssu",
+    "sdssg",
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "atlaso",
+    "sdssi",
+    "sdssz"
+  ],
+  "k": 13,
+  "lnL": 283.1846256948474,
+  "n": 90,
+  "AIC": -540.3692513896948,
+  "BIC": -507.87172567540136,
+  "params": {
+    ".mean_function.c": [
+      0.05918453072208113,
+      0.05912572366210208,
+      0.07105597973142296,
+      0.054315489002479476,
+      0.05376150048327544,
+      0.05236228885128299,
+      0.04143502635828786,
+      0.045290653949175946
+    ],
+    ".kernel.kernels[0].variance": 0.04281724909540156,
+    ".kernel.kernels[0].lengthscales": 1.3830188528590543,
+    ".kernel.kernels[1].variance": 0.04281724909535895,
+    ".kernel.kernels[1].lengthscales": 9.934404388382184,
+    ".likelihood.variance": 6.205936617640664e-05
+  }
+}

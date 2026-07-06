@@ -1,0 +1,40 @@
+{
+  "name": "ZTF24abygyka",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 10.713810560386579,
+  "t_sd": 13.969177170159538,
+  "w_mean": 0.6581048768806526,
+  "w_sd": 0.07283523311529762,
+  "free_lambda": true,
+  "bands": [
+    "ztfg",
+    "ztfr",
+    "atlaso",
+    "ztfi"
+  ],
+  "k": 9,
+  "lnL": 289.69434504682295,
+  "n": 116,
+  "AIC": -561.3886900936459,
+  "BIC": -536.6063783736886,
+  "params": {
+    ".mean_function.c": [
+      0.03848907171688591,
+      0.09403856037833801,
+      0.09152742190256029,
+      0.07050159757338587
+    ],
+    ".kernel.kernels[0].variance": 0.047869520941893645,
+    ".kernel.kernels[0].lengthscales": 0.19870065452093685,
+    ".kernel.kernels[1].variance": 0.04786952094305795,
+    ".kernel.kernels[1].lengthscales": 14.504439602869951,
+    ".likelihood.variance": 0.0001691648055002397
+  }
+}

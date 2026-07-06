@@ -1,0 +1,40 @@
+{
+  "name": "ZTF24abbsuhu",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 11.219739564732613,
+  "t_sd": 10.016517805766036,
+  "w_mean": 0.5321139303554488,
+  "w_sd": 0.08899115066679675,
+  "free_lambda": true,
+  "bands": [
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "ztfi"
+  ],
+  "k": 9,
+  "lnL": 159.55441916510244,
+  "n": 37,
+  "AIC": -301.1088383302049,
+  "BIC": -286.6105771164069,
+  "params": {
+    ".mean_function.c": [
+      0.07811661284429923,
+      0.11356378905461027,
+      0.06743586284470719,
+      0.05525711233494782
+    ],
+    ".kernel.kernels[0].variance": 0.03809425022559431,
+    ".kernel.kernels[0].lengthscales": 0.6885948422200001,
+    ".kernel.kernels[1].variance": 0.03809423050475894,
+    ".kernel.kernels[1].lengthscales": 5026.876271151289,
+    ".likelihood.variance": 1e-06
+  }
+}

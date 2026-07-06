@@ -1,0 +1,39 @@
+{
+  "name": "ZTF18abeamgv",
+  "kernel": "gibbs",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 4.549299494523056,
+  "t_sd": 9.300543227914178,
+  "w_mean": 0.5857651086214188,
+  "w_sd": 0.07673457341311404,
+  "free_lambda": false,
+  "bands": [
+    "ztfg",
+    "ztfr"
+  ],
+  "k": 8,
+  "lnL": 369.71585196895904,
+  "n": 114,
+  "AIC": -723.4317039379181,
+  "BIC": -701.5421163507622,
+  "params": {
+    ".mean_function.c": [
+      0.03180136781309132,
+      0.06411803796740494
+    ],
+    ".kernel.kernels[0].base.variance": 0.03173253768369428,
+    ".kernel.kernels[0].base.l_min": 0.9662456879853552,
+    ".kernel.kernels[0].base.l_relax": 13.017296882828997,
+    ".kernel.kernels[0].base.width": 17.39273143031407,
+    ".kernel.kernels[0].base.t_peak": 0.0,
+    ".kernel.kernels[1].variance": 0.031732537685084126,
+    ".kernel.kernels[1].lengthscales": 1.954790302833231,
+    ".likelihood.variance": 6.215140389356354e-05
+  }
+}

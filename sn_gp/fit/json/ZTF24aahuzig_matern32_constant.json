@@ -1,0 +1,46 @@
+{
+  "name": "ZTF24aahuzig",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 14.661269002933551,
+  "t_sd": 25.643580071592986,
+  "w_mean": 0.6334442434696308,
+  "w_sd": 0.09847643866173765,
+  "free_lambda": true,
+  "bands": [
+    "sdssg",
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "atlaso",
+    "sdssi",
+    "ztfi"
+  ],
+  "k": 12,
+  "lnL": 322.8859520342204,
+  "n": 103,
+  "AIC": -621.7719040684408,
+  "BIC": -590.1551562096852,
+  "params": {
+    ".mean_function.c": [
+      0.059149046499011426,
+      0.0460904268694749,
+      0.11317450161619866,
+      0.08699701305870036,
+      0.09528893239233806,
+      0.11200745016637037,
+      0.08962380374277643
+    ],
+    ".kernel.kernels[0].variance": 0.03706909528798593,
+    ".kernel.kernels[0].lengthscales": 0.36856219744111823,
+    ".kernel.kernels[1].variance": 0.03706909528818045,
+    ".kernel.kernels[1].lengthscales": 6.212509979500243,
+    ".likelihood.variance": 4.753160490693553e-05
+  }
+}

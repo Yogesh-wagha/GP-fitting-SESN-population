@@ -1,0 +1,46 @@
+{
+  "name": "ZTF25ablulax",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 3.090132005120976,
+  "t_sd": 28.73719507325449,
+  "w_mean": 0.5815063502754525,
+  "w_sd": 0.08119766673311936,
+  "free_lambda": true,
+  "bands": [
+    "sdssg",
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "atlaso",
+    "sdssi",
+    "ztfi"
+  ],
+  "k": 12,
+  "lnL": 1914.4672089772516,
+  "n": 494,
+  "AIC": -3804.9344179545033,
+  "BIC": -3754.503991748248,
+  "params": {
+    ".mean_function.c": [
+      0.03639727104654449,
+      0.038310034057792694,
+      0.041881156414123384,
+      0.04814513017603205,
+      0.05083766267377584,
+      0.08801637058795457,
+      0.06970136390074444
+    ],
+    ".kernel.kernels[0].variance": 0.01904168845631268,
+    ".kernel.kernels[0].lengthscales": 0.3921793346169522,
+    ".kernel.kernels[1].variance": 0.01904168852964285,
+    ".kernel.kernels[1].lengthscales": 1.0367536092028413,
+    ".likelihood.variance": 1.650237380999952e-05
+  }
+}
