@@ -21,8 +21,10 @@ import glob
 import pandas as pd
 from flask import (Flask, request, redirect, url_for,
                    send_file, render_template_string, abort)
+import config
 
 HERE     = os.path.dirname(os.path.abspath(__file__))
+RESULTS = config.FIT_ROOT
 SELECTED = os.path.join(RESULTS, "selected_events.csv")
 METRICS  = os.path.join(RESULTS, "fit_metrics.csv")
 SUMDIR   = os.path.join(RESULTS, "summary")
@@ -46,7 +48,7 @@ app = Flask(__name__)
 
 
 def events_order():
-    return list(pd.read_csv(SELECTED, dtype=str)["ZTFID"])
+    return sorted(pd.read_csv(METRICS, dtype=str)["ZTFID"].unique())
 
 def load_metrics():
     if not os.path.exists(METRICS):
