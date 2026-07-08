@@ -18,13 +18,16 @@ from astropy.cosmology import FlatLambdaCDM
 cosmo = FlatLambdaCDM(H0=70, Om0=0.3)
 
 # ---- paths ----
-BASE        = "/home/yogesh1729/myWork/air_phd/gaussian_process_BTS"
+BASE        = "/users/ariywagh/GP_SN/"
 CSV_DIR     = os.path.join(BASE, "BTS_csv")
-BTS_CATALOG = "/home/yogesh1729/myWork/air_phd/BTS_all.csv"
+BTS_CATALOG = "/users/ariywagh/GP_SN/BTS.csv"
 
 G_FILTERS = ["ztfg", "sdssg"]
 R_FILTERS = ["ztfr", "sdssr"]
-MARKERS   = {"ztfg": "o", "sdssg": "s", "ztfr": "o", "sdssr": "s"}
+I_FILTERS = ["ztfi", "sdssi"]
+MARKERS = {"ztfg": "o", "sdssg": "s",
+           "ztfr": "o", "sdssr": "s",
+           "ztfi": "o", "sdssi": "s"}
 
 # ---- cache the catalog so we read it once, not once per plot ----
 _cat = None
@@ -49,7 +52,7 @@ def plot_detections(target, savepath=None):
 
     df = pd.read_csv(os.path.join(CSV_DIR, f"{target}.csv"))
     df = df[df["origin"] != "alert_fp"]
-    df = df[df["filter"].isin(G_FILTERS + R_FILTERS)].copy()
+    df = df[df["filter"].isin(G_FILTERS + R_FILTERS + I_FILTERS)].copy()
 
     # redshift -> absolute mag; fall back to apparent mag if no usable z
     z = pd.to_numeric(_lookup(target, "redshift"), errors="coerce")
@@ -66,7 +69,8 @@ def plot_detections(target, savepath=None):
 
     g = df[df["filter"].isin(G_FILTERS)]
     r = df[df["filter"].isin(R_FILTERS)]
-    bands = {b: d for b, d in (("g", g), ("r", r)) if not d.empty}
+    i = df[df["filter"].isin(I_FILTERS)]
+    bands = {b: d for b, d in (("g", g), ("r", r),) if not d.empty}
 
     if not bands:
         ax.text(0.5, 0.5, f"{target}: no g/r detections", ha="center", va="center")
@@ -85,7 +89,8 @@ def plot_detections(target, savepath=None):
 
     g = df[df["filter"].isin(G_FILTERS)]
     r = df[df["filter"].isin(R_FILTERS)]
-    for sub, color in ((g, "green"), (r, "red")):
+    i = df[df["filter"].isin(I_FILTERS)]
+    for sub, color in ((g, "green"), (r, "red"), (i, "orange")):
         for filt, fd in sub.groupby("filter"):
             ax.errorbar(fd["phase"], fd["y"], yerr=fd["magerr"],
                         fmt=MARKERS.get(filt, "o"), color=color, mfc="none",
