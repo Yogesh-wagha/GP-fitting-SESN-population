@@ -1,10 +1,10 @@
 ZTFID,flag,remarks,lower_cut,upper_cut
 ZTF18aaexyql,ok,,,
 ZTF18aakkrjm,ok,,,
-ZTF18aaqjovh,check,BD 150 DAP,,100
-ZTF18aaxiuyp,check,BD 200 DAP,,250
+ZTF18aaqjovh,check,cut,,100
+ZTF18aaxiuyp,check,cut,,250
 ZTF18abdffeo,ok,,,
-ZTF18abdkkwa,check,BD 200 DAP,,195
+ZTF18abdkkwa,check,cut,,195
 ZTF18abeamgv,ok,,,
 ZTF18abecbks,ok,,,
 ZTF18abeyqpr,ok,,,
@@ -14,13 +14,13 @@ ZTF18abhhnnv,ok,,,
 ZTF18abjyjdz,ok,,,
 ZTF18abkjnqy,ok,,,
 ZTF18aboabxv,ok,,,
-ZTF18abukavn,check,BD 400 DAP,,400
+ZTF18abukavn,check,cut,3,80
 ZTF18abvkmgw,ok,,,
 ZTF18acbvpzj,ok,,,
-ZTF18aceqrrs,check,BD 200 DAP,,200
+ZTF18aceqrrs,check,cut,,200
 ZTF18achcpwu,ok,,,
 ZTF18achdidy,ok,,,
-ZTF18acizepv,check,BD 60 DBP,18,
+ZTF18acizepv,check,cut,40,
 ZTF18acnncve,ok,,,
 ZTF18acsjrbc,ok,,,
 ZTF18acyxnyw,ok,,,
@@ -29,15 +29,15 @@ ZTF18aczqzrj,ok,,,
 ZTF18adasisj,ok,,,
 ZTF18adaykvg,check,epoch,,
 ZTF19aadnhdo,ok,,,250
-ZTF19aafmyow,ok,,,-2
+ZTF19aafmyow,ok,,,210
 ZTF19aailcgs,ok,,,
 ZTF19aailsge,ok,,,
-ZTF19aakirwj,check,,,498
-ZTF19aakpcuw,check,BD 50DBP and 300DAP,,297
+ZTF19aakirwj,check,,,250
+ZTF19aakpcuw,check,cut,20,300
 ZTF19aalfsqm,ok,epoch,,
-ZTF19aalouag,ok,BD 70DBP and 500DAP,,500
-ZTF19aamgghn,ok,BD 500 DAP 80DBP,,747
-ZTF19aamsetj,ok,BD 500DAP,,198
+ZTF19aalouag,ok,cut,125,500
+ZTF19aamgghn,ok,cut,50,500
+ZTF19aamsetj,ok,cut,,198
 ZTF19aanesgt,ok,,,
 ZTF19aanfukh,ok,,,
 ZTF19aanijpu,ok,,,
@@ -49,17 +49,17 @@ ZTF19aavitlq,ok,,,
 ZTF19aavouyw,ok,,,
 ZTF19aavoweu,ok,,,
 ZTF19aawfbtg,ok,,,
-ZTF19aawhzsh,check,BD 250DBP,250,
-ZTF19aawqcgy,check,bad peak,,
+ZTF19aawhzsh,check,cut,250,
+ZTF19aawqcgy,check,peak,1180,-979
 ZTF19aawsday,ok,,,
-ZTF19aaxfcpq,check,BD 50DBP,98,
+ZTF19aaxfcpq,check,cut,98,
 ZTF19aaxzdtw,ok,,,
-ZTF19abafmwj,check,bad peak,,
+ZTF19abafmwj,check,peak,1110,-990
 ZTF19abauylg,ok,,,
 ZTF19abcegvm,ok,,,
-ZTF19abdoior,check,BD 50DBP,97,
+ZTF19abdoior,check,cut,97,
 ZTF19abfiqjg,ok,,,
-ZTF19abfsxpw,check,BD 500 DAP,,500
+ZTF19abfsxpw,check,cut,,500
 ZTF19abfvnns,ok,,,
 ZTF19ablesob,ok,,,
 ZTF19abnacvf,ok,,,
@@ -69,7 +69,7 @@ ZTF19abqqrgy,ok,,,
 ZTF19abqshry,ok,,,
 ZTF19abqwtfu,ok,,,
 ZTF19abqxibq,ok,,,
-ZTF19abtsnyy,ok,"BD 150 DAP, peak has weird stack",,248
+ZTF19abtsnyy,ok,cut,,248
 ZTF19abupned,ok,,,
 ZTF19abvdgqo,ok,,,
 ZTF19abzqywg,ok,,,
@@ -78,37 +78,37 @@ ZTF19abzwaen,ok,,,
 ZTF19acbmojx,ok,,,
 ZTF19acbonaa,ok,bad stack,,
 ZTF19acdabep,ok,,,
-ZTF19aceqjqw,check,BD 500 DAP,,500
+ZTF19aceqjqw,check,cut,,500
 ZTF19aceqvhl,ok,,,
 ZTF19acfwynw,ok,,,
 ZTF19acgjosf,ok,,,
 ZTF19acgjpgh,ok,,,
-ZTF19ackjjwf,check,BD 250 DAP,,250
+ZTF19ackjjwf,check,cut,,250
 ZTF19ackjrru,ok,,,
 ZTF19acllsbq,ok,,,
-ZTF19acmelor,check,BD 50 DBP,50,
+ZTF19acmelor,check,cut,50,
 ZTF19acxmpnz,ok,,,
-ZTF19acyogrm,check,,,98
+ZTF19acyogrm,check,cut,,98
 ZTF19adaivcf,ok,,,
 ZTF19adcfsad,ok,,,
-ZTF20aadzbcf,check,BD 300 DAP,,200
+ZTF20aadzbcf,check,cut,,200
 ZTF20aaekkuv,ok,,,
-ZTF20aaelulu,check,BD 250 DAP and 200 DBP,150,250
+ZTF20aaelulu,check,cut,150,250
 ZTF20aaertpj,ok,,,
 ZTF20aaetirf,check,epoch,,
 ZTF20aafmdzj,ok,,,
-ZTF20aagewqr,ok,evolutions,,
+ZTF20aagewqr,ok,,,
 ZTF20aahbfmf,ok,,,
 ZTF20aaiahra,check,epoch,,
 ZTF20aaiftgi,ok,,,
 ZTF20aaifybu,ok,,,
-ZTF20aaiqiti,check,BD 250 DBP and 300 DAP,500,250
+ZTF20aaiqiti,check,cut,500,250
 ZTF20aajcdad,ok,,,
 ZTF20aakodyh,ok,,,
-ZTF20aalcyih,check,BD 100DBP and 500 DAP,250,500
+ZTF20aalcyih,check,cut,250,500
 ZTF20aalxlis,ok,,,
 ZTF20aamdyln,ok,,,
-ZTF20aammtwx,check,BD 50 DBP,50,
+ZTF20aammtwx,check,cut,50,
 ZTF20aamqmhj,ok,,,
 ZTF20aanvmdt,ok,no g-band evolution,,
 ZTF20aaoflta,ok,,,
@@ -119,33 +119,33 @@ ZTF20aaurfnl,ok,,,
 ZTF20aavcvrm,ok,,,
 ZTF20aavgcnu,ok,,,
 ZTF20aavhyel,ok,,,
-ZTF20aavzffg,check,BD 100 DAP,,200
+ZTF20aavzffg,check,cut,100,200
 ZTF20aaxvzja,ok,,,
-ZTF20aazkjfv,check,BD 400 DAP,,600
+ZTF20aazkjfv,check,cut,400,600
 ZTF20aazpyhy,ok,,,
-ZTF20abaszgh,check,bad peak,,
+ZTF20abaszgh,check,peak,800,-740
 ZTF20abbpkng,ok,,,
-ZTF20abbplei,check,BD 200 DAP and 50DBP,20,150
-ZTF20abcjdwu,check,BD 50 DBP and 100 DAP,200,200
+ZTF20abbplei,check,cut,20,150
+ZTF20abcjdwu,check,cut,200,200
 ZTF20abdnpdo,check,epoch,,
 ZTF20abefbpl,ok,,,
-ZTF20abhlncz,check,BD 100 DBP AND 200 DAP,500,500
+ZTF20abhlncz,check,cut,100,200
 ZTF20abjpvce,ok,,,
-ZTF20abkiarz,check,BD 25DBP,75,
+ZTF20abkiarz,check,cut,25,75
 ZTF20abobpcb,ok,,,
-ZTF20aborzxc,ok,BD 30 DAP,,
+ZTF20aborzxc,ok,cut,,
 ZTF20abpuwxl,ok,,,
 ZTF20abqdkne,ok,,,
 ZTF20abrcnbr,ok,,,
 ZTF20abrmmah,ok,,,
-ZTF20abswdbg,check,BD 175 DAP,,200
+ZTF20abswdbg,check,cut,175,200
 ZTF20abtkjfw,ok,,,
 ZTF20abusrwm,ok,,,
 ZTF20abvquuo,ok,,,
 ZTF20abvvnqh,ok,,,
 ZTF20abwxywy,ok,,,
-ZTF20abxpoxd,check,BD 100DBP AND 500 DAP,200,500
-ZTF20abysxbk,check,bad peak,,
+ZTF20abxpoxd,check,cut,200,500
+ZTF20abysxbk,check,cut,,
 ZTF20abywsut,ok,,,
 ZTF20abzjcdg,ok,,,
 ZTF20abzoeiw,ok,,,
@@ -153,38 +153,38 @@ ZTF20accbsxa,ok,,,
 ZTF20acfqngt,ok,,,
 ZTF20achvlbs,ok,,,
 ZTF20acjbzrh,ok,,,
-ZTF20aclnplo,check,BD 100 DAP,,100
+ZTF20aclnplo,check,cut,,100
 ZTF20acphdcg,ok,,,
-ZTF20acpjqxp,check,"BD 500 DAP, 200 DBP",200,500
+ZTF20acpjqxp,check,cut,200,500
 ZTF20acpyldh,ok,,,
 ZTF20acpzaoa,ok,,,
 ZTF20actekrw,ok,,,
 ZTF20actpqgc,ok,,,
-ZTF20acueziy,check,BD 100 DAP,,100
+ZTF20acueziy,check,cut,,100
 ZTF20acvcxkz,ok,,,
 ZTF20acvebcu,ok,,,
 ZTF20acvmzfv,ok,,,
-ZTF20acwofhd,check,BD 200 DAP,,200
+ZTF20acwofhd,check,cut,,200
 ZTF20acxqxyw,ok,,,
-ZTF20adadrhw,check,"BD 250 DAP, 50DBP",,300
+ZTF20adadrhw,check,cut,,300
 ZTF21aaaosoq,ok,,,
 ZTF21aaarmti,ok,,,
-ZTF21aaaubig,check,BD 50 DBP,100,
-ZTF21aacufip,check,"BD 100 DBP, and 300 DAP",200,400
+ZTF21aaaubig,check,cut,100,
+ZTF21aacufip,check,cut,200,400
 ZTF21aagpymw,ok,,,
 ZTF21aagtpro,ok,,,
 ZTF21aahdqrg,ok,,,
 ZTF21aalhgqi,ok,,,
 ZTF21aalhtgv,ok,,,
 ZTF21aannoix,ok,,,
-ZTF21aanvncv,check,,,500
-ZTF21aaocrlm,check,BD 100 DAP,,100
+ZTF21aanvncv,check,cut,,500
+ZTF21aaocrlm,check,cut,,100
 ZTF21aapecxb,ok,,,
 ZTF21aaqhhfu,ok,,,
 ZTF21aaqldsk,ok,,,
-ZTF21aaqwfqe,ok,BD 100 DAP,,
+ZTF21aaqwfqe,ok,,,
 ZTF21aarmuxl,ok,,,
-ZTF21aarnjyd,check,bad peak,,
+ZTF21aarnjyd,check,peak,,
 ZTF21aartgiv,ok,,,
 ZTF21aaufwyh,ok,,,
 ZTF21aavdqgf,ok,,,
@@ -193,12 +193,12 @@ ZTF21aaxtctv,ok,,,
 ZTF21aaxxihx,ok,,,
 ZTF21aayqrgx,ok,,,
 ZTF21abahiow,ok,,,
-ZTF21abbqeea,check,BD 100 DAP,,300
+ZTF21abbqeea,check,cut,100,300
 ZTF21abccaue,ok,bad r-band peak?,,
 ZTF21abcgaln,ok,,,
 ZTF21abcgnql,ok,,,
-ZTF21abchjer,check,"bd 100 dbp, 200 dap",,200
-ZTF21abcpsjy,check,,,300
+ZTF21abchjer,check,cut,100,200
+ZTF21abcpsjy,check,cut,,300
 ZTF21abdkojo,ok,,,
 ZTF21abdxhgv,ok,,,
 ZTF21abieuta,ok,,,
@@ -215,7 +215,7 @@ ZTF21abraccv,ok,,,
 ZTF21abrqria,ok,,,
 ZTF21abrqrsz,ok,,,
 ZTF21absyjff,ok,,,
-ZTF21abvcugy,ok,bd 40 dap,,
+ZTF21abvcugy,ok,,,
 ZTF21abvcuhk,ok,,,
 ZTF21acbnfos,ok,,,
 ZTF21accwovq,ok,,,
@@ -230,10 +230,10 @@ ZTF21aciwixf,ok,,,
 ZTF21acizqkx,ok,,,
 ZTF21acjxzsa,ok,,,
 ZTF21aclzzhu,ok,,,
-ZTF22aadeuwu,ok,bd 150 dap,,
+ZTF22aadeuwu,ok,cut,,150
 ZTF22aadnjsh,ok,,,
 ZTF22aadoihx,ok,,,
-ZTF22aadqlhy,check,"insane errors, bd 150dap",70,150
+ZTF22aadqlhy,check,cut,70,150
 ZTF22aaebkwd,ok,,,
 ZTF22aaezyos,ok,,,
 ZTF22aagzmcz,ok,,,
@@ -241,7 +241,7 @@ ZTF22aahxaiv,ok,,,
 ZTF22aajakms,ok,,,
 ZTF22aakpyqw,ok,,,
 ZTF22aakyeps,ok,,,
-ZTF22aalfmec,check,bd 60 dap,,60
+ZTF22aalfmec,check,cut,60,60
 ZTF22aaolhhl,ok,,,
 ZTF22aaoolua,ok,,,
 ZTF22aarbard,ok,,,
@@ -260,11 +260,11 @@ ZTF22abfyqsc,ok,,,
 ZTF22abivebe,ok,,,
 ZTF22abjafpr,ok,,,
 ZTF22abkabeh,ok,,,
-ZTF22abkbmob,check,"bd 150 dbp, and 200dap",200,
+ZTF22abkbmob,check,cut,200,
 ZTF22abllclb,ok,,,
 ZTF22abmonux,ok,,,
-ZTF22abnpsou,check,,,
-ZTF22abnvurz,check,bd 200dbp,400,
+ZTF22abnpsou,check,cut,,
+ZTF22abnvurz,check,cut,400,
 ZTF22absibqa,ok,,,
 ZTF22absphuu,ok,,,
 ZTF22abvcnnl,ok,,,
@@ -290,7 +290,7 @@ ZTF23aapbrrq,ok,,,
 ZTF23aaqekiu,ok,,,
 ZTF23aaspcfl,ok,,,
 ZTF23aawtmcf,ok,,,
-ZTF23aaxuvkn,check,bd 100dbp,100,
+ZTF23aaxuvkn,check,cut,100,
 ZTF23aazodoj,ok,,,
 ZTF23aazuzip,ok,,,
 ZTF23abadhsw,ok,,,
@@ -328,7 +328,7 @@ ZTF24aancgyl,ok,,,
 ZTF24aaowjlw,ok,,,
 ZTF24aapadbb,ok,,,
 ZTF24aateouu,ok,,,
-ZTF24aawjwxx,check,bd 50 dbp,200,
+ZTF24aawjwxx,check,cut,200,
 ZTF24aawtoiv,ok,,,
 ZTF24aayikbu,ok,,,
 ZTF24aayimjt,ok,,,
@@ -341,9 +341,9 @@ ZTF24abajmau,ok,,,
 ZTF24abavusp,ok,,,
 ZTF24abbsuhu,ok,,,
 ZTF24abchdsc,ok,,,
-ZTF24abdiwwv,check,bd 100 dbp,200,
-ZTF24abhhzrp,check,bd 100dbp,200,
-ZTF24abhsqly,check,bad peak,,
+ZTF24abdiwwv,check,cut,200,
+ZTF24abhhzrp,check,cut,200,
+ZTF24abhsqly,check,peak,-1104,1194
 ZTF24abiifei,ok,,,
 ZTF24abimpmc,ok,,,
 ZTF24abiwzzc,ok,,,
@@ -352,7 +352,7 @@ ZTF24ablmayf,ok,,,
 ZTF24ablsxza,ok,,,
 ZTF24abltheg,ok,,,
 ZTF24abnafgr,ok,,,
-ZTF24abncuhj,check,bd 100dbp,200,
+ZTF24abncuhj,check,cut,200,
 ZTF24abnsght,ok,,,
 ZTF24abpqghw,ok,,,
 ZTF24abqbyxd,ok,,,
@@ -366,7 +366,7 @@ ZTF24abwmzop,ok,,,
 ZTF24abxxniy,ok,,,
 ZTF24abygyka,ok,,,
 ZTF24abzgggz,ok,,,
-ZTF24abzmhtv,ok,bad peak,,
+ZTF24abzmhtv,ok,peak,,
 ZTF25aaadytl,ok,,,
 ZTF25aaaecsu,ok,,,
 ZTF25aaaeykb,ok,,,
@@ -378,7 +378,7 @@ ZTF25aafedas,ok,,,
 ZTF25aafkxdu,ok,,,
 ZTF25aajbcmc,ok,,,
 ZTF25aajgfsk,ok,,,
-ZTF25aajuqtp,check,bad peak,,
+ZTF25aajuqtp,check,peak,,
 ZTF25aakbbof,ok,,,
 ZTF25aakeqyr,ok,,,
 ZTF25aamplge,ok,,,
@@ -401,7 +401,7 @@ ZTF25ablulax,ok,,,
 ZTF25abmjfcf,ok,,,
 ZTF25abmsmeg,ok,,,
 ZTF25abmtiec,ok,,,
-ZTF25aboftol,check,bd 50dbp,100,
+ZTF25aboftol,check,cut,100,
 ZTF25abqsbxy,ok,,,
 ZTF25abvbjre,ok,,,
 ZTF25abvcnay,ok,,,
@@ -410,7 +410,7 @@ ZTF25abwophe,ok,,,
 ZTF25abxfsza,ok,,,
 ZTF25abyevmr,ok,,,
 ZTF25abyrwhz,ok,,,
-ZTF25abzudli,ok,bad peak,,
+ZTF25abzudli,ok,peak,,
 ZTF25acbzkov,ok,,,
 ZTF25accmopr,ok,,,
 ZTF25acdktzt,ok,,,
