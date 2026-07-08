@@ -82,9 +82,16 @@ def load_best():
     return {r["ZTFID"]: r["best_kernel"] for _, r in d.iterrows()}
 
 def load_types():
-    b = pd.read_csv(os.path.expanduser("~/GP_SN/BTS.csv"))
-    col = "ZTFID" if "ZTFID" in b.columns else b.columns[0]
-    return {str(r[col]): str(r.get("type","")) for _, r in b.iterrows()}
+    import os
+    _HERE = os.path.dirname(os.path.abspath(__file__))
+    # try a couple of sensible local locations, relative to the code
+    for p in (os.path.join(_HERE, "..", "BTS_all.csv"),
+              os.path.join(_HERE, "BTS.csv")):
+        if os.path.exists(p):
+            b = pd.read_csv(p)
+            col = "ZTFID" if "ZTFID" in b.columns else b.columns[0]
+            return {str(r[col]): str(r.get("type", "")) for _, r in b.iterrows()}
+    return {}          # BTS.csv not found -> just show no type, don't crash
 
 @app.route("/")
 def index():
@@ -160,6 +167,15 @@ def goto():
         target = 0
     return redirect(url_for("view", gkey=gkey, i=target))
 
+@app.route("/jump")
+def jump():
+    gkey = request.args.get("gkey", GKEYS[0])
+    try:
+        num = int(request.args.get("n", "1"))
+    except ValueError:
+        num = 1
+    return redirect(url_for("view", gkey=gkey, i=max(0, num - 1)))   # #num is 1-based -> index num-1
+
 @app.route("/save", methods=["POST"])
 def save():
     cur = request.form["cur_gkey"]; z = request.form["zid"]
@@ -203,6 +219,12 @@ TEMPLATE = """
  .item img{display:block;width:100%;max-width:1040px;height:auto;border:1px solid #eee;}
  .miss{color:#b00;font-size:14px;padding:30px;border:1px dashed #b00;}
  .remark{width:100%;margin-top:10px;padding:8px;border:1px solid #bbb;border-radius:4px;font-size:14px;box-sizing:border-box;}
+ .verdict{display:flex;gap:10px;margin:6px 0 12px;}
+ .verdict label{font-size:18px;padding:10px 20px;border:2px solid #bbb;border-radius:8px;
+                cursor:pointer;user-select:none;background:#fafafa;text-transform:capitalize;}
+ .verdict label:hover{background:#eef;}
+ .verdict label.sel{border-color:#1a9c4c;background:#e7f6ec;font-weight:bold;}
+ .verdict input{transform:scale(1.4);margin-right:8px;vertical-align:middle;}
 </style></head><body>
 <form method="post" action="/save">
 <input type="hidden" name="cur_gkey" value="{{gkey}}">
@@ -219,6 +241,8 @@ TEMPLATE = """
   <a class="btn" href="/summary">📊 summary</a>
 </div>
 
+
+
 <div class="bar">
   <span class="info">event {{item.num}} / {{total}}</span>
   <button type="submit" name="nav" value="{{gkey}}:{{prev_i}}">◀ Back</button>
@@ -230,6 +254,14 @@ TEMPLATE = """
     <input class="q" form="searchform" name="q" placeholder="ZTFID…">
     <button form="searchform" type="submit">Go</button>
   </span>
+  
+  <span class="sp"></span>
+  <span>
+    go to #<input class="q" style="width:70px" form="jumpform" name="n"
+                  type="number" min="1" placeholder="42">
+    <button form="jumpform" type="submit">Go</button>
+  </span>
+  <!-- keep your existing ZTFID search box here too if you want both -->
 </div>
 
 <div class="item">
@@ -238,24 +270,25 @@ TEMPLATE = """
       {% if gkey==best_gkey %}<span style="color:#1a9c4c"> — BEST FIT (lowest BIC)</span>{% endif %}
   </h3>
   <div class="mx">{{item.aicbic}}</div>
-  {% if item.exists %}
-    <img src="/plot/{{item.png}}" alt="{{item.zid}}">
-  {% else %}
-    <div class="miss">no fit (failed or not run): {{item.png}}</div>
-  {% endif %}
-  <input class="remark" type="text" name="remark"
-         placeholder="remarks…" value="{{item.remark}}">
 
-  <!-- >>> SNIPPET 2 GOES HERE (right after the remark input, still inside the form) <<< -->
-  <div style="margin-top:8px">
+  <!-- RADIOS NOW ABOVE THE IMAGE, ENLARGED -->
+  <div class="verdict">
     {% for opt in ["good","bad","keep"] %}
-      <label style="margin-right:14px">
+      <label class="{{ 'sel' if verdict==opt else '' }}">
         <input type="radio" name="verdict" value="{{opt}}"
                {{ 'checked' if verdict==opt else '' }}> {{opt}}
       </label>
     {% endfor %}
   </div>
-  <!-- >>> END SNIPPET 2 <<< -->
+
+  {% if item.exists %}
+    <img src="/plot/{{item.png}}" alt="{{item.zid}}">
+  {% else %}
+    <div class="miss">no fit (failed or not run): {{item.png}}</div>
+  {% endif %}
+
+  <input class="remark" type="text" name="remark"
+         placeholder="remarks…" value="{{item.remark}}">
 </div>
 </form>
 
@@ -263,6 +296,9 @@ TEMPLATE = """
 
 <!-- separate form for search so it can be a GET without touching /save -->
 <form id="searchform" method="get" action="/goto">
+  <input type="hidden" name="gkey" value="{{gkey}}">
+</form>
+<form id="jumpform" method="get" action="/jump">
   <input type="hidden" name="gkey" value="{{gkey}}">
 </form>
 </body></html>
