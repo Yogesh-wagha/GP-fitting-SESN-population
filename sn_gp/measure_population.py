@@ -50,6 +50,10 @@ MIN_SIDE   = 2     # >=2 points each side of peak
 BIN_DAYS   = 5.0   # bin width for coverage
 MIN_BINS   = 3     # >=3 occupied bins over the span
 
+# --- rest-frame K-correction ---
+LAMBDA_G_REST_UM = 0.470     # rest-frame g effective wavelength (matches ztfg/sdssg)
+KCORR_BW_SIGN = +1.0         # bandwidth term: M = m_shifted - DM + SIGN*2.5*log10(1+z)
+                             # VALIDATE vs BTS peakabs; set -1.0 if residual grows with z
 
 # =====================================================================
 # selection: best (event, kernel) fit
@@ -151,7 +155,7 @@ def measure_shape(fit, band, n=2000):
         return nan_out
     wave = config.WAVE_EFF_UM[band]
     tg = np.linspace(ph.min(), ph.max(), n)          # band's OWN data span
-    _, mu, _ = fit.predict_grid(tg, wave)
+    _, mu,sd = fit.predict_grid(tg, wave)
     if not np.any(mu > 0):
         return nan_out
     ipk = int(np.argmax(mu)); Fpk = mu[ipk]; tpk = tg[ipk]; half = Fpk / 2.0
@@ -186,7 +190,7 @@ def measure_shape(fit, band, n=2000):
     return dict(peak_flux=float(Fpk), peak_phase=float(tpk),
                 fwhm=fwhm, rise=rise, fade=fade,
                 fwhm_ll=fwhm_ll, is_limit=is_limit,
-                rise_measured=rise_measured, fade_measured=fade_measured)
+                rise_measured=rise_measured, fade_measured=fade_measured, peak_flux_err=float(sd[ipk]),)
 
 
 def flux_to_absmag(flux_mJy, z):
@@ -197,6 +201,60 @@ def flux_to_absmag(flux_mJy, z):
     m_app = -2.5 * np.log10(flux_mJy / F0_mJy)
     dL_pc = cosmo.luminosity_distance(z).to("pc").value
     return m_app - 5.0 * np.log10(dL_pc / 10.0)
+
+def restframe_g_absmag(fit, z, gband, rband):
+    """Rest-frame g-band peak absolute mag via GP evaluated at observed
+       wavelength lambda_g*(1+z) (SED cross-band shift), plus the (1+z)
+       bandwidth K-term. Returns (M, sigma_M, peak_phase, wave_extrap)."""
+    nanout = (np.nan, np.nan, np.nan, False)
+    if not (np.isfinite(z) and z > 0):
+        return nanout
+    lam_obs = LAMBDA_G_REST_UM * (1.0 + z)          # samples rest-frame g
+    spans = []
+    for b in (gband, rband):
+        if b is None:
+            continue
+        ph, _, _ = fit.band_data(b)
+        if ph.size:
+            spans.append((ph.min(), ph.max()))
+    if not spans:
+        return nanout
+    t0 = min(s[0] for s in spans); t1 = max(s[1] for s in spans)
+    obs_waves = [config.WAVE_EFF_UM[b] for b in fit.obj["bands"]]
+    wave_extrap = lam_obs > max(obs_waves) + 1e-6   # beyond reddest band -> extrapolating
+    tg = np.linspace(t0, t1, 2000)
+    _, mu, sd = fit.predict_grid(tg, lam_obs)
+    if not np.any(mu > 0):
+        return nanout
+    ipk = int(np.argmax(mu))
+    fpk, spk, tpk = float(mu[ipk]), float(sd[ipk]), float(tg[ipk])
+    m_shifted = -2.5 * np.log10(fpk / F0_mJy)
+    dL_pc = cosmo.luminosity_distance(z).to("pc").value
+    DM = 5.0 * np.log10(dL_pc / 10.0)
+    M = m_shifted - DM + KCORR_BW_SIGN * 2.5 * np.log10(1.0 + z)
+    sigma_M = (2.5 / np.log(10.0)) * (spk / fpk)    # GP flux sd -> mag error
+    return M, sigma_M, tpk, wave_extrap
+
+
+def absmag_err_at_phase(fit, band, phase, z):
+    """Observed-frame absolute AB mag and 1-sigma error of `band` GP mean at
+       observed `phase`. For colours (DM cancels in the difference, but we keep
+       it so the number is a magnitude). NaN if outside the band's span."""
+    if band is None or not np.isfinite(phase):
+        return np.nan, np.nan
+    ph, _, _ = fit.band_data(band)
+    if ph.size == 0 or phase < ph.min() or phase > ph.max():
+        return np.nan, np.nan
+    wave = config.WAVE_EFF_UM[band]
+    _, mu, sd = fit.predict_grid(np.array([phase]), wave)
+    f, s = float(mu[0]), float(sd[0])
+    if f <= 0 or not (np.isfinite(z) and z > 0):
+        return np.nan, np.nan
+    dL_pc = cosmo.luminosity_distance(z).to("pc").value
+    DM = 5.0 * np.log10(dL_pc / 10.0)
+    M = -2.5 * np.log10(f / F0_mJy) - DM            # observed-frame (no K) for colours
+    sigma_M = (2.5 / np.log(10.0)) * (s / f)
+    return M, sigma_M
 
 def mag_at_phase(fit, band, phase, z):
     """Absolute AB mag of `band`'s GP mean at a specific observed phase.
@@ -274,21 +332,43 @@ def main():
         tpk_g = g["peak_phase"] if g else np.nan
         tpk_r = r["peak_phase"] if r else np.nan
 
-        # --- three colour definitions ---
-        # (3) own-peak (existing): M_g,peak - M_r,peak
+        # per-band peak-mag 1-sigma (propagate GP flux sd at peak)
+        Mg_err = ((2.5/np.log(10)) * g["peak_flux_err"]/g["peak_flux"]
+                  if (g and np.isfinite(g["peak_flux"]) and g["peak_flux"] > 0) else np.nan)
+        Mr_err = ((2.5/np.log(10)) * r["peak_flux_err"]/r["peak_flux"]
+                  if (r and np.isfinite(r["peak_flux"]) and r["peak_flux"] > 0) else np.nan)
+
+        # rest-frame g absolute mag (K-corrected) + error + extrapolation flag
+        M_rest_g, M_rest_g_err, _, kcorr_extrap = restframe_g_absmag(fit, z, gband, rband)
+
+        # ---- colours (observed frame) with 1-sigma errors ----
+        # own-peak
         color_ownpeak = (Mg - Mr) if (np.isfinite(Mg) and np.isfinite(Mr)) else np.nan
-
-        # (1) at r-band peak epoch: m_g(t_r) - m_r(t_r)
-        Mg_at_rpk = mag_at_phase(fit, gband, tpk_r, z)
-        Mr_at_rpk = mag_at_phase(fit, rband, tpk_r, z)   # ~= Mr, but re-eval for consistency
-        color_at_rpeak = ((Mg_at_rpk - Mr_at_rpk)
-                          if (np.isfinite(Mg_at_rpk) and np.isfinite(Mr_at_rpk)) else np.nan)
-
-        # (2) at g-band peak epoch: m_g(t_g) - m_r(t_g)
-        Mg_at_gpk = mag_at_phase(fit, gband, tpk_g, z)   # ~= Mg
-        Mr_at_gpk = mag_at_phase(fit, rband, tpk_g, z)
-        color_at_gpeak = ((Mg_at_gpk - Mr_at_gpk)
-                          if (np.isfinite(Mg_at_gpk) and np.isfinite(Mr_at_gpk)) else np.nan)
+        color_ownpeak_err = (np.hypot(Mg_err, Mr_err)
+                             if np.isfinite(Mg_err) and np.isfinite(Mr_err) else np.nan)
+        # at r-peak epoch
+        mg_rp, mg_rp_e = absmag_err_at_phase(fit, gband, tpk_r, z)
+        mr_rp, mr_rp_e = absmag_err_at_phase(fit, rband, tpk_r, z)
+        color_rpeak = (mg_rp - mr_rp) if (np.isfinite(mg_rp) and np.isfinite(mr_rp)) else np.nan
+        color_rpeak_err = (np.hypot(mg_rp_e, mr_rp_e)
+                           if np.isfinite(mg_rp_e) and np.isfinite(mr_rp_e) else np.nan)
+        # at g-peak epoch
+        mg_gp, mg_gp_e = absmag_err_at_phase(fit, gband, tpk_g, z)
+        mr_gp, mr_gp_e = absmag_err_at_phase(fit, rband, tpk_g, z)
+        color_gpeak = (mg_gp - mr_gp) if (np.isfinite(mg_gp) and np.isfinite(mr_gp)) else np.nan
+        color_gpeak_err = (np.hypot(mg_gp_e, mr_gp_e)
+                           if np.isfinite(mg_gp_e) and np.isfinite(mr_gp_e) else np.nan)
+        # +10 rest-frame days after r-peak  (observed offset = 10*(1+z))
+        zf = (1.0 + z) if np.isfinite(z) and z > 0 else np.nan
+        t_10 = (tpk_r + 10.0 * zf) if (np.isfinite(tpk_r) and np.isfinite(zf)) else np.nan
+        mg_10, mg_10_e = absmag_err_at_phase(fit, gband, t_10, z)
+        mr_10, mr_10_e = absmag_err_at_phase(fit, rband, t_10, z)
+        color_10d = (mg_10 - mr_10) if (np.isfinite(mg_10) and np.isfinite(mr_10)) else np.nan
+        color_10d_err = (np.hypot(mg_10_e, mr_10_e)
+                         if np.isfinite(mg_10_e) and np.isfinite(mr_10_e) else np.nan)
+        
+        
+        
         # rest-frame durations
         zf = (1.0 + z) if np.isfinite(z) and z > 0 else np.nan
         def rest(x): return (x / zf) if (x is not None and np.isfinite(x) and np.isfinite(zf)) else np.nan
@@ -340,9 +420,16 @@ def main():
             fwhm_brightest=((rest(g["fwhm"]) if g else np.nan) if brightest == "g"
                             else (rest(r["fwhm"]) if r else np.nan) if brightest == "r"
                             else np.nan),
-            color_gr=color_ownpeak,              # keep existing name = own-peak difference
-            color_at_rpeak=color_at_rpeak,       # both bands at r-peak epoch
-            color_at_gpeak=color_at_gpeak,       # both bands at g-peak epoch
+            # per-band peak-mag errors
+            M_g_err=Mg_err, M_r_err=Mr_err,
+            # rest-frame g luminosity (K-corrected)
+            M_rest_g=M_rest_g, M_rest_g_err=M_rest_g_err, kcorr_wave_extrap=bool(kcorr_extrap),
+            # colours + errors (observed frame)
+            color_gr=color_ownpeak, color_gr_err=color_ownpeak_err,
+            color_at_rpeak=color_rpeak, color_at_rpeak_err=color_rpeak_err,
+            color_at_gpeak=color_gpeak, color_at_gpeak_err=color_gpeak_err,
+            color_10d=color_10d, color_10d_err=color_10d_err,
+            
         ))
         print(f"[{i}] {z_id:16s} {kern:13s} g={gband or '-':6s} r={rband or '-':6s} "
               f"FWHMr={rows[-1]['fwhm_r']:.1f}  Mr={Mr:.2f}" if np.isfinite(Mr)
