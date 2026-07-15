@@ -220,8 +220,8 @@ def restframe_g_absmag(fit, z, gband, rband):
     if not spans:
         return nanout
     t0 = min(s[0] for s in spans); t1 = max(s[1] for s in spans)
-    obs_waves = [config.WAVE_EFF_UM[b] for b in fit.obj["bands"]]
-    wave_extrap = lam_obs > max(obs_waves) + 1e-6   # beyond reddest band -> extrapolating
+    LAMBDA_R_UM = 0.617
+    wave_extrap = lam_obs > LAMBDA_R_UM + 1e-6
     tg = np.linspace(t0, t1, 2000)
     _, mu, sd = fit.predict_grid(tg, lam_obs)
     if not np.any(mu > 0):
@@ -451,6 +451,15 @@ def main():
                    (df[f"fwhm_{band}_ll"] >= 16)).sum())
         print(f"  {band}: finite={fin}  lower-limits={lim}  "
               f"constraining(>=16d)={con}  plottable={fin + con}")
+    if "M_rest_g" in df.columns:
+        n_rest = int(df["M_rest_g"].notna().sum())
+        n_extrap = int(df["kcorr_wave_extrap"].fillna(False).sum())
+        n_extrap_finite = int((df["kcorr_wave_extrap"].fillna(False) &
+                               df["M_rest_g"].notna()).sum())
+        print(f"  M_rest_g            : {n_rest}/{len(df)} finite  "
+              f"({n_extrap} wave-extrap, {n_extrap_finite} finite)")
+    if "color_10d" in df.columns:
+        print(f"  color_10d           : {int(df['color_10d'].notna().sum())}/{len(df)} finite")
 
 
 if __name__ == "__main__":

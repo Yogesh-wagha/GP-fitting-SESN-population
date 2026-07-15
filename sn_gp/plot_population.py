@@ -89,20 +89,29 @@ def _scatter_by_type(ax, x, y, types):
 
 
 def durlum(df, band, show_limits=False):
+    # luminosity is now the K-corrected rest-frame g magnitude (supervisor's ask)
+    ycol, yerr_col = "M_rest_g", "M_rest_g_err"
     if band == "brightest":
-        xcol, ycol = "fwhm_brightest", "M_brightest"
+        xcol = "fwhm_brightest"
         ll_col, lim_col = "fwhm_brightest_ll", "brightest_is_limit"
-        title = "Duration-luminosity (brightest of g/r)"
     else:
-        xcol, ycol = f"fwhm_{band}", f"M_{band}"
+        xcol = f"fwhm_{band}"
         ll_col, lim_col = f"fwhm_{band}_ll", f"{band}_is_limit"
-        title = f"Duration-luminosity ({band} band)"
+    title = f"Duration-luminosity ({band} FWHM, rest-frame g luminosity)"
 
     fig, ax = plt.subplots(figsize=(7, 5.5))
 
-    # fully-measured -> filled markers
     meas = np.isfinite(df[xcol]) & np.isfinite(df[ycol]) & ~df[lim_col].fillna(False)
-    _scatter_by_type(ax, df[xcol][meas], df[ycol][meas], df["type"][meas])
+    # scatter with y error bars, coloured by type
+    seen = set()
+    for _, r in df[meas].iterrows():
+        s = style_for(r["type"])
+        lbl = s["label"] if s["label"] not in seen else None
+        seen.add(s["label"])
+        yerr = r[yerr_col] if (yerr_col in df.columns and np.isfinite(r[yerr_col])) else None
+        ax.errorbar(r[xcol], r[ycol], yerr=yerr, fmt=s["marker"], color=s["color"],
+                    ms=5, mec="k", mew=0.4, alpha=0.85, elinewidth=0.7,
+                    capsize=1.5, label=lbl)
 
     if show_limits:
         lim = df[lim_col].fillna(False) & np.isfinite(df[ll_col]) & np.isfinite(df[ycol])
@@ -112,23 +121,18 @@ def durlum(df, band, show_limits=False):
             lim &= (constraining | fast)
         else:
             lim &= constraining
-        n_lim = int(lim.sum())
-        seen = set()
-        for xi, yi, t in zip(df[ll_col][lim], df[ycol][lim], df["type"][lim]):
-            s = style_for(t)
-            lbl = f"{s['label']} (limit)" if f"{s['label']} (limit)" not in seen else None
-            seen.add(f"{s['label']} (limit)")
-            ax.scatter(xi, yi, marker=s["marker"], s=26,
-                       facecolors="none", edgecolors=s["color"],
-                       linewidth=1.1, alpha=0.9, label=lbl)
-        print(f"   overlaid {n_lim} hollow lower-limit markers")
+        for _, r in df[lim].iterrows():
+            s = style_for(r["type"])
+            yerr = r[yerr_col] if (yerr_col in df.columns and np.isfinite(r[yerr_col])) else None
+            ax.errorbar(r[ll_col], r[ycol], yerr=yerr, fmt=s["marker"],
+                        mfc="none", mec=s["color"], ms=6, mew=1.1,
+                        alpha=0.9, elinewidth=0.6, capsize=1.5)
+        print(f"   overlaid {int(lim.sum())} hollow lower-limit markers")
 
-    ax.set_xlabel("rest-frame FWHM [days]")
-    ax.set_ylabel("peak absolute magnitude")
+    ax.set_xlabel(f"rest-frame FWHM [days] ({band})")
+    ax.set_ylabel("rest-frame g peak absolute magnitude (K-corrected)")
     ax.invert_yaxis()
     ax.set_title(title)
-    ax.text(0.99, 0.01, "not K-corrected", transform=ax.transAxes,
-            ha="right", va="bottom", fontsize=7, color="grey")
     ax.legend(fontsize=8, title="type", loc="best")
     ax.grid(alpha=0.2)
     out = os.path.join(OUTDIR, f"durlum_{band}{'_lim' if show_limits else ''}.png")
@@ -205,8 +209,8 @@ def main():
                  "lumhist_g", "lumhist_r", "lumhist_brightest",
                  "color_hist", "dtpeak_hist", "all"])
     ap.add_argument("--color-mode", default="rpeak",
-                    choices=["rpeak", "gpeak", "ownpeak"],
-                    help="which colour definition to histogram")
+                    choices=["rpeak", "gpeak", "ownpeak", "10d"],
+                    help="which colour definition for color_hist")
     ap.add_argument("--limits", action="store_true",
         help="overlay constraining lower-limit events as arrows")
     a = ap.parse_args()
@@ -217,10 +221,11 @@ def main():
         elif p == "durlum_r":              durlum(df, "r", show_limits=a.limits)
         elif p == "durlum_brightest":      durlum(df, "brightest", show_limits=a.limits)
         elif p == "color_hist":
-            colmap = {"rpeak": ("color_at_rpeak", "g - r at r-peak epoch"),
-                      "gpeak": ("color_at_gpeak", "g - r at g-peak epoch"),
-                      "ownpeak": ("color_gr", "g - r (own peaks)")}
-            col, lab = colmap[a.color_mode]
+            cmap = {"rpeak": ("color_at_rpeak", "g-r at r-peak"),
+                    "gpeak": ("color_at_gpeak", "g-r at g-peak"),
+                    "ownpeak": ("color_gr", "g-r own-peak"),
+                    "10d": ("color_10d", "g-r at +10d")}
+            col, lab = cmap[a.color_mode]
             _hist_by_type(df, col, f"peak colour  {lab}  [mag]",
                           f"color_hist_{a.color_mode}.png")
         elif p == "dtpeak_hist":
