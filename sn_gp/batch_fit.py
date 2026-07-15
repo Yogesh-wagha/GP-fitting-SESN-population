@@ -86,6 +86,25 @@ def build_pool(cuts):
         pool.append(z)
     return sorted(pool)
 
+REVIEW = os.path.join(config.FIT_ROOT, "fit_review.csv")
+
+def rework_plan():
+    """Return {ZTFID: [kernels_to_refit]} for events that have any remark.
+       kernels = those with verdict 'good'; if none good -> all four kernels."""
+    d = pd.read_csv(REVIEW, dtype=str).fillna("")
+    all_kernels = [k for _, k in CONFIGS]          # gibbs, changepoint, changepoint_1, matern32
+    flagged, goods = {}, {}
+    for _, r in d.iterrows():
+        z = r["ZTFID"]
+        grp = r["group"]                           # e.g. 'gibbs_constant'
+        kern = grp.rsplit("_constant", 1)[0]       # -> 'gibbs' / 'changepoint' / 'changepoint_1' / 'matern32'
+        goods.setdefault(z, set()); flagged.setdefault(z, False)
+        if r["remark"].strip():
+            flagged[z] = True
+        if r["verdict"].strip().lower() == "good":
+            goods[z].add(kern)
+    return {z: (sorted(goods[z]) if goods[z] else list(all_kernels))
+            for z, f in flagged.items() if f}
 
 def select_events(cuts):
     b = pd.read_csv(BTS_LIST)
@@ -95,31 +114,25 @@ def select_events(cuts):
     return sorted([z for z in names if csv_exists(z)])
 
 
-def fit_one(name, mean, kernel, cuts, dry=False):
+def fit_one(name, mean, kernel, cuts, dry=False, force=False):
     info = cuts.get(name, {})
     cmd = [sys.executable, RUN_PY, "--name", name,
            "--kernel", kernel, "--mean_func", mean, "--gri"]
     if info.get("lower"): cmd += ["--left", info["lower"]]
     if info.get("upper"): cmd += ["--right", info["upper"]]
-    ov = config.load_cp_override(name)                 # (d1, d2) or None
-    if ov is not None:
-        d1, d2 = ov
-        s = str(d1) + ("," + str(d2) if d2 is not None else "")
-        cmd += ["--cp_loc", s]
     jpath = os.path.join(config.JSON_DIR, f"{name}_{kernel}_{mean}.json")
-
-    if os.path.exists(jpath):
+    if os.path.exists(jpath) and not force:
         return "cached"
     if dry:
-        print("   " + " ".join(cmd))
-        return "dry"
+        print("   " + " ".join(cmd)); return "dry"
     try:
         subprocess.run(cmd, timeout=TIMEOUT, check=True,
-                       stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                       stdout=subprocess.DEVNULL, stderr=subprocess.PIPE)
         return "ok" if os.path.exists(jpath) else "no_output"
     except subprocess.TimeoutExpired:
         return "timeout"
-    except subprocess.CalledProcessError:
+    except subprocess.CalledProcessError as e:
+        print(f"    ERR {name} {kernel}: {e.stderr.decode()[-300:]}")
         return "error"
 
 
@@ -163,6 +176,10 @@ def main():
     ap.add_argument("--dry-run", action="store_true", help="print commands only")
     ap.add_argument("--compile-only", action="store_true",
                     help="just rebuild fit_metrics.csv from existing JSONs")
+    ap.add_argument("--rework", action="store_true",
+        help="re-fit only events with a remark in fit_review.csv; only their "
+             "'good' kernels (all four if none good); cuts from manual_cuts.csv; "
+             "overwrites existing PNG/JSON.")
     args = ap.parse_args()
 
     cuts = load_cuts()
@@ -171,6 +188,28 @@ def main():
     if args.compile_only:
         compile_metrics(events)
         return
+
+    # ---- REWORK branch (insert here) ----
+    if args.rework:
+        plan = rework_plan()
+        total = sum(len(v) for v in plan.values())
+        print(f"REWORK: {len(plan)} events, {total} (event,kernel) fits\n")
+        for z, kernels in sorted(plan.items()):
+            info = cuts.get(z, {})
+            l, r = info.get("lower", ""), info.get("upper", "")
+            print(f"  {z:16s} kernels={kernels}  left={l or '-'} right={r or '-'}")
+        if args.dry_run:
+            return
+        done = 0
+        for z, kernels in sorted(plan.items()):
+            for kern in kernels:
+                done += 1
+                st = fit_one(z, "constant", kern, cuts, force=True)   # overwrite
+                print(f"[{done}/{total}] {z}  {kern}  -> {st}", flush=True)
+        compile_metrics(events)
+        write_best_fit(events)
+        return
+    # ---- end REWORK branch ----
 
     total, done = len(events) * len(CONFIGS), 0
     for z in events:
@@ -183,6 +222,5 @@ def main():
         compile_metrics(events)
 
     write_best_fit(events)
-
 if __name__ == "__main__":
     main()

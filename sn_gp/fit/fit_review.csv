@@ -15,8 +15,8 @@ changepoint_1_constant,ZTF18abjyjdz,,keep
 changepoint_1_constant,ZTF18abkjnqy,,keep
 changepoint_1_constant,ZTF18aboabxv,,bad
 changepoint_1_constant,ZTF18abukavn,,bad
-changepoint_1_constant,ZTF18abvkmgw,,keep
-changepoint_1_constant,ZTF18acbvpzj,,good
+changepoint_1_constant,ZTF18abvkmgw,,bad
+changepoint_1_constant,ZTF18acbvpzj,,bad
 changepoint_1_constant,ZTF18aceqrrs,,bad
 changepoint_1_constant,ZTF18achcpwu,,bad
 changepoint_1_constant,ZTF18achdidy,sdss,good
@@ -93,7 +93,7 @@ changepoint_1_constant,ZTF19adaivcf,,keep
 changepoint_1_constant,ZTF19adcfsad,,bad
 changepoint_1_constant,ZTF20aadzbcf,,keep
 changepoint_1_constant,ZTF20aaekkuv,,keep
-changepoint_1_constant,ZTF20aaelulu,left 15,bad
+changepoint_1_constant,ZTF20aaelulu,l15,bad
 changepoint_1_constant,ZTF20aaertpj,,bad
 changepoint_1_constant,ZTF20aaetirf,,bad
 changepoint_1_constant,ZTF20aafmdzj,,keep
@@ -156,7 +156,7 @@ changepoint_1_constant,ZTF20acjbzrh,,bad
 changepoint_1_constant,ZTF20aclnplo,,bad
 changepoint_1_constant,ZTF20acphdcg,,bad
 changepoint_1_constant,ZTF20acpjqxp,,keep
-changepoint_1_constant,ZTF20acpyldh,right 100,good
+changepoint_1_constant,ZTF20acpyldh,"r100, sdss_all, ztfi",good
 changepoint_1_constant,ZTF20acpzaoa,,bad
 changepoint_1_constant,ZTF20actekrw,,bad
 changepoint_1_constant,ZTF20actpqgc,,bad
@@ -170,7 +170,7 @@ changepoint_1_constant,ZTF20adadrhw,,bad
 changepoint_1_constant,ZTF21aaaosoq,,bad
 changepoint_1_constant,ZTF21aaarmti,,keep
 changepoint_1_constant,ZTF21aaaubig,,bad
-changepoint_1_constant,ZTF21aacufip,left 20 right 90,good
+changepoint_1_constant,ZTF21aacufip,ok,good
 changepoint_1_constant,ZTF21aagpymw,,keep
 changepoint_1_constant,ZTF21aagtpro,,bad
 changepoint_1_constant,ZTF21aahdqrg,,good
@@ -198,7 +198,7 @@ changepoint_1_constant,ZTF21abccaue,,keep
 changepoint_1_constant,ZTF21abcgaln,,good
 changepoint_1_constant,ZTF21abcgnql,,bad
 changepoint_1_constant,ZTF21abchjer,,bad
-changepoint_1_constant,ZTF21abcpsjy,,good
+changepoint_1_constant,ZTF21abcpsjy,,bad
 changepoint_1_constant,ZTF21abdkojo,,bad
 changepoint_1_constant,ZTF21abdxhgv,,keep
 changepoint_1_constant,ZTF21abieuta,,bad
@@ -220,7 +220,7 @@ changepoint_1_constant,ZTF21abvcuhk,,keep
 changepoint_1_constant,ZTF21acbnfos,,bad
 changepoint_1_constant,ZTF21accwovq,,keep
 changepoint_1_constant,ZTF21acdqgns,,bad
-changepoint_1_constant,ZTF21acdxhuv,,good
+changepoint_1_constant,ZTF21acdxhuv,ok,good
 changepoint_1_constant,ZTF21aceehxt,,keep
 changepoint_1_constant,ZTF21acekmmm,,keep
 changepoint_1_constant,ZTF21acgxypn,,bad
@@ -269,7 +269,7 @@ changepoint_1_constant,ZTF22absibqa,,keep
 changepoint_1_constant,ZTF22absphuu,,bad
 changepoint_1_constant,ZTF22abvcnnl,,keep
 changepoint_1_constant,ZTF22abwtqeb,,good
-changepoint_1_constant,ZTF22abzejiv,,keep
+changepoint_1_constant,ZTF22abzejiv,,bad
 changepoint_1_constant,ZTF23aaahtnj,,bad
 changepoint_1_constant,ZTF23aaaplam,,bad
 changepoint_1_constant,ZTF23aaazffe,,keep
@@ -287,7 +287,7 @@ changepoint_1_constant,ZTF23aamzljd,,keep
 changepoint_1_constant,ZTF23aandvzg,,keep
 changepoint_1_constant,ZTF23aanqoyo,,good
 changepoint_1_constant,ZTF23aapbrrq,,keep
-changepoint_1_constant,ZTF23aaqekiu,,good
+changepoint_1_constant,ZTF23aaqekiu,,keep
 changepoint_1_constant,ZTF23aaspcfl,,bad
 changepoint_1_constant,ZTF23aawtmcf,,keep
 changepoint_1_constant,ZTF23aaxuvkn,,bad
@@ -334,11 +334,12 @@ changepoint_1_constant,ZTF24aayikbu,,
 changepoint_1_constant,ZTF24aayimjt,,
 changepoint_1_constant,ZTF24aaymkrs,,
 changepoint_1_constant,ZTF24aaysowl,,
+changepoint_1_constant,ZTF24aazmqbf,,
 changepoint_1_constant,ZTF24aazqavh,,
 changepoint_1_constant,ZTF24aaztbct,,
 changepoint_1_constant,ZTF24abajmau,,good
 changepoint_1_constant,ZTF24abavusp,,
-changepoint_1_constant,ZTF24abbsuhu,,
+changepoint_1_constant,ZTF24abbsuhu,,good
 changepoint_1_constant,ZTF24abchdsc,,
 changepoint_1_constant,ZTF24abdiwwv,,
 changepoint_1_constant,ZTF24abhhzrp,,
@@ -376,7 +377,7 @@ changepoint_1_constant,ZTF25aafdnuf,,good
 changepoint_1_constant,ZTF25aafedas,,good
 changepoint_1_constant,ZTF25aafkxdu,,
 changepoint_1_constant,ZTF25aajgfsk,,
-changepoint_1_constant,ZTF25aajuqtp,peak,
+changepoint_1_constant,ZTF25aajuqtp,peak,bad
 changepoint_1_constant,ZTF25aakbbof,,
 changepoint_1_constant,ZTF25aakeqyr,,
 changepoint_1_constant,ZTF25aamplge,,
@@ -386,7 +387,7 @@ changepoint_1_constant,ZTF25aaomnws,,
 changepoint_1_constant,ZTF25aarmzhx,,
 changepoint_1_constant,ZTF25aaurzyo,,
 changepoint_1_constant,ZTF25aavahfn,,
-changepoint_1_constant,ZTF25aawaobl,,
+changepoint_1_constant,ZTF25aawaobl,,bad
 changepoint_1_constant,ZTF25aaxegmh,,
 changepoint_1_constant,ZTF25abbzsku,,
 changepoint_1_constant,ZTF25abclliu,,
@@ -401,6 +402,7 @@ changepoint_1_constant,ZTF25abmsmeg,,
 changepoint_1_constant,ZTF25abmtiec,,
 changepoint_1_constant,ZTF25aboftol,,
 changepoint_1_constant,ZTF25abqsbxy,,
+changepoint_1_constant,ZTF25abvcnay,,
 changepoint_1_constant,ZTF25abweqoj,,
 changepoint_1_constant,ZTF25abwophe,,
 changepoint_1_constant,ZTF25abxfsza,,
@@ -423,7 +425,7 @@ changepoint_1_constant,ZTF26aahjdpb,,
 changepoint_1_constant,ZTF26aajnayv,,
 changepoint_1_constant,ZTF26aakdoou,ztfg sdssr sdssi,good
 changepoint_1_constant,ZTF26aalsmpp,,good
-changepoint_1_constant,ZTF26aaqxhgb,,good
+changepoint_1_constant,ZTF26aaqxhgb,,bad
 changepoint_1_constant,ZTF26aarkqap,,
 changepoint_1_constant,ZTF26aatlolu,,
 changepoint_1_constant,ZTF26aaulhci,,
@@ -444,7 +446,7 @@ changepoint_constant,ZTF18abkjnqy,,bad
 changepoint_constant,ZTF18aboabxv,,good
 changepoint_constant,ZTF18abukavn,,bad
 changepoint_constant,ZTF18abvkmgw,,bad
-changepoint_constant,ZTF18acbvpzj,,keep
+changepoint_constant,ZTF18acbvpzj,,bad
 changepoint_constant,ZTF18aceqrrs,,bad
 changepoint_constant,ZTF18achcpwu,,bad
 changepoint_constant,ZTF18achdidy,,bad
@@ -534,7 +536,7 @@ changepoint_constant,ZTF20aaiqiti,,bad
 changepoint_constant,ZTF20aajcdad,,good
 changepoint_constant,ZTF20aakodyh,,bad
 changepoint_constant,ZTF20aalcyih,,bad
-changepoint_constant,ZTF20aalxlis,left 20,good
+changepoint_constant,ZTF20aalxlis,l20 ok,good
 changepoint_constant,ZTF20aamdyln,,bad
 changepoint_constant,ZTF20aammtwx,,bad
 changepoint_constant,ZTF20aamqmhj,,bad
@@ -608,8 +610,8 @@ changepoint_constant,ZTF21aannoix,,bad
 changepoint_constant,ZTF21aanvncv,,keep
 changepoint_constant,ZTF21aaocrlm,,bad
 changepoint_constant,ZTF21aapecxb,,keep
-changepoint_constant,ZTF21aaqhhfu,left 10,good
-changepoint_constant,ZTF21aaqldsk,right 100,good
+changepoint_constant,ZTF21aaqhhfu,l10 ok,good
+changepoint_constant,ZTF21aaqldsk,r100 ok,good
 changepoint_constant,ZTF21aaqwfqe,,bad
 changepoint_constant,ZTF21aarmuxl,,bad
 changepoint_constant,ZTF21aarnjyd,,bad
@@ -638,14 +640,14 @@ changepoint_constant,ZTF21abmlldj,,bad
 changepoint_constant,ZTF21abmxiuf,,bad
 changepoint_constant,ZTF21abngbrl,,bad
 changepoint_constant,ZTF21abplhpw,,keep
-changepoint_constant,ZTF21abpwtde,,keep
+changepoint_constant,ZTF21abpwtde,,bad
 changepoint_constant,ZTF21abraccv,,good
 changepoint_constant,ZTF21abrqria,,bad
 changepoint_constant,ZTF21abrqrsz,,bad
 changepoint_constant,ZTF21absyjff,,bad
 changepoint_constant,ZTF21abvcugy,,bad
 changepoint_constant,ZTF21abvcuhk,,good
-changepoint_constant,ZTF21acbnfos,right 60,good
+changepoint_constant,ZTF21acbnfos,r60 ok,good
 changepoint_constant,ZTF21accwovq,,keep
 changepoint_constant,ZTF21acdqgns,,bad
 changepoint_constant,ZTF21acdxhuv,,keep
@@ -766,7 +768,7 @@ changepoint_constant,ZTF24aazmqbf,,
 changepoint_constant,ZTF24aazqavh,,
 changepoint_constant,ZTF24abajmau,,
 changepoint_constant,ZTF24abavusp,,
-changepoint_constant,ZTF24abbsuhu,,
+changepoint_constant,ZTF24abbsuhu,,keep
 changepoint_constant,ZTF24abchdsc,,
 changepoint_constant,ZTF24abdiwwv,,
 changepoint_constant,ZTF24abhhzrp,,
@@ -804,7 +806,7 @@ changepoint_constant,ZTF25aafdnuf,,bad
 changepoint_constant,ZTF25aafedas,,
 changepoint_constant,ZTF25aafkxdu,,
 changepoint_constant,ZTF25aajgfsk,,
-changepoint_constant,ZTF25aajuqtp,,
+changepoint_constant,ZTF25aajuqtp,,bad
 changepoint_constant,ZTF25aakbbof,,
 changepoint_constant,ZTF25aakeqyr,,
 changepoint_constant,ZTF25aamplge,,
@@ -814,7 +816,7 @@ changepoint_constant,ZTF25aaomnws,,
 changepoint_constant,ZTF25aarmzhx,,
 changepoint_constant,ZTF25aaurzyo,,
 changepoint_constant,ZTF25aavahfn,,
-changepoint_constant,ZTF25aawaobl,,good
+changepoint_constant,ZTF25aawaobl,,keep
 changepoint_constant,ZTF25aaxegmh,,good
 changepoint_constant,ZTF25abbzsku,,
 changepoint_constant,ZTF25abclliu,,
@@ -829,6 +831,7 @@ changepoint_constant,ZTF25abmsmeg,,
 changepoint_constant,ZTF25abmtiec,,
 changepoint_constant,ZTF25aboftol,,
 changepoint_constant,ZTF25abqsbxy,,
+changepoint_constant,ZTF25abvcnay,,
 changepoint_constant,ZTF25abweqoj,,
 changepoint_constant,ZTF25abwophe,,
 changepoint_constant,ZTF25abxfsza,,good
@@ -857,7 +860,7 @@ changepoint_constant,ZTF26aatlolu,,
 changepoint_constant,ZTF26aaulhci,,
 gibbs_constant,ZTF18aaexyql,,good
 gibbs_constant,ZTF18aakkrjm,,good
-gibbs_constant,ZTF18aaqjovh,bandwise,keep
+gibbs_constant,ZTF18aaqjovh,bandwise,good
 gibbs_constant,ZTF18aaxiuyp,,good
 gibbs_constant,ZTF18abdffeo,,bad
 gibbs_constant,ZTF18abdkkwa,,bad
@@ -872,7 +875,7 @@ gibbs_constant,ZTF18abkjnqy,,good
 gibbs_constant,ZTF18aboabxv,,bad
 gibbs_constant,ZTF18abukavn,,keep
 gibbs_constant,ZTF18abvkmgw,undulations,bad
-gibbs_constant,ZTF18acbvpzj,,keep
+gibbs_constant,ZTF18acbvpzj,,bad
 gibbs_constant,ZTF18aceqrrs,,bad
 gibbs_constant,ZTF18achcpwu,,bad
 gibbs_constant,ZTF18achdidy,,bad
@@ -936,7 +939,7 @@ gibbs_constant,ZTF19acbonaa,,good
 gibbs_constant,ZTF19acdabep,,good
 gibbs_constant,ZTF19aceqjqw,,bad
 gibbs_constant,ZTF19aceqvhl,,good
-gibbs_constant,ZTF19acfwynw,right 100,good
+gibbs_constant,ZTF19acfwynw,r100 ok,good
 gibbs_constant,ZTF19acgjosf,,bad
 gibbs_constant,ZTF19acgjpgh,,keep
 gibbs_constant,ZTF19ackjjwf,,good
@@ -976,22 +979,22 @@ gibbs_constant,ZTF20aavcvrm,,keep
 gibbs_constant,ZTF20aavgcnu,,good
 gibbs_constant,ZTF20aavhyel,,good
 gibbs_constant,ZTF20aavzffg,,good
-gibbs_constant,ZTF20aaxvzja,weird peak,bad
-gibbs_constant,ZTF20aazkjfv,right 60 left 25,good
+gibbs_constant,ZTF20aaxvzja,,bad
+gibbs_constant,ZTF20aazkjfv,r60 l25 ok,good
 gibbs_constant,ZTF20aazpyhy,,good
 gibbs_constant,ZTF20abaszgh,,good
 gibbs_constant,ZTF20abbpkng,,keep
-gibbs_constant,ZTF20abbplei,left 15 right 120,good
-gibbs_constant,ZTF20abcjdwu,left 12 right 40,keep
+gibbs_constant,ZTF20abbplei,l15 r120 ok,good
+gibbs_constant,ZTF20abcjdwu,l12 r40,keep
 gibbs_constant,ZTF20abdnpdo,,bad
 gibbs_constant,ZTF20abefbpl,,good
 gibbs_constant,ZTF20abhlncz,,good
 gibbs_constant,ZTF20abjpvce,,keep
 gibbs_constant,ZTF20abkiarz,,good
-gibbs_constant,ZTF20abobpcb,right 270,good
+gibbs_constant,ZTF20abobpcb,r270 ok,good
 gibbs_constant,ZTF20aborzxc,,bad
 gibbs_constant,ZTF20abpuwxl,,good
-gibbs_constant,ZTF20abqdkne,right 45,good
+gibbs_constant,ZTF20abqdkne,r45 ok,good
 gibbs_constant,ZTF20abrcnbr,half_r,good
 gibbs_constant,ZTF20abrmmah,,good
 gibbs_constant,ZTF20abswdbg,,keep
@@ -1009,12 +1012,12 @@ gibbs_constant,ZTF20accbsxa,,keep
 gibbs_constant,ZTF20acfqngt,,good
 gibbs_constant,ZTF20achvlbs,,keep
 gibbs_constant,ZTF20acjbzrh,,keep
-gibbs_constant,ZTF20aclnplo,right 30,keep
+gibbs_constant,ZTF20aclnplo,r30,keep
 gibbs_constant,ZTF20acphdcg,,bad
-gibbs_constant,ZTF20acpjqxp,left 25 right 100,good
+gibbs_constant,ZTF20acpjqxp,l25 r100 ok,good
 gibbs_constant,ZTF20acpyldh,,bad
 gibbs_constant,ZTF20acpzaoa,,good
-gibbs_constant,ZTF20actekrw,right 50,good
+gibbs_constant,ZTF20actekrw,r50 ok,good
 gibbs_constant,ZTF20actpqgc,,keep
 gibbs_constant,ZTF20acueziy,,good
 gibbs_constant,ZTF20acvcxkz,sdssr sdssi,good
@@ -1022,30 +1025,30 @@ gibbs_constant,ZTF20acvebcu,,good
 gibbs_constant,ZTF20acvmzfv,,good
 gibbs_constant,ZTF20acwofhd,,good
 gibbs_constant,ZTF20acxqxyw,,good
-gibbs_constant,ZTF20adadrhw,left 20 right 150,good
-gibbs_constant,ZTF21aaaosoq,left 20,good
+gibbs_constant,ZTF20adadrhw,l20 r150 ok,good
+gibbs_constant,ZTF21aaaosoq,l20 ok,good
 gibbs_constant,ZTF21aaarmti,,good
-gibbs_constant,ZTF21aaaubig,right 200,good
+gibbs_constant,ZTF21aaaubig,r200 ok,good
 gibbs_constant,ZTF21aacufip,,bad
 gibbs_constant,ZTF21aagpymw,,good
 gibbs_constant,ZTF21aagtpro,,keep
 gibbs_constant,ZTF21aahdqrg,,keep
 gibbs_constant,ZTF21aalhgqi,wiggle,keep
-gibbs_constant,ZTF21aalhtgv,overfit,good
+gibbs_constant,ZTF21aalhtgv,,good
 gibbs_constant,ZTF21aannoix,,good
-gibbs_constant,ZTF21aanvncv,right 100,good
+gibbs_constant,ZTF21aanvncv,r100 ok,good
 gibbs_constant,ZTF21aaocrlm,overfit,good
 gibbs_constant,ZTF21aapecxb,,keep
 gibbs_constant,ZTF21aaqhhfu,,bad
 gibbs_constant,ZTF21aaqldsk,,keep
-gibbs_constant,ZTF21aaqwfqe,right 100,good
+gibbs_constant,ZTF21aaqwfqe,r100 ok,good
 gibbs_constant,ZTF21aarmuxl,,good
 gibbs_constant,ZTF21aarnjyd,peak,bad
 gibbs_constant,ZTF21aartgiv,,good
 gibbs_constant,ZTF21aaufwyh,,good
 gibbs_constant,ZTF21aavdqgf,,keep
 gibbs_constant,ZTF21aawogdl,,good
-gibbs_constant,ZTF21aaxtctv,right 50,good
+gibbs_constant,ZTF21aaxtctv,r50 ok,good
 gibbs_constant,ZTF21aaxxihx,,keep
 gibbs_constant,ZTF21aayqrgx,,keep
 gibbs_constant,ZTF21abahiow,,keep
@@ -1054,7 +1057,7 @@ gibbs_constant,ZTF21abccaue,,bad
 gibbs_constant,ZTF21abcgaln,,keep
 gibbs_constant,ZTF21abcgnql,,bad
 gibbs_constant,ZTF21abchjer,,good
-gibbs_constant,ZTF21abcpsjy,,bad
+gibbs_constant,ZTF21abcpsjy,,good
 gibbs_constant,ZTF21abdkojo,,good
 gibbs_constant,ZTF21abdxhgv,,good
 gibbs_constant,ZTF21abieuta,,good
@@ -1062,11 +1065,11 @@ gibbs_constant,ZTF21abimeun,sdssr epoch,good
 gibbs_constant,ZTF21abimnii,,good
 gibbs_constant,ZTF21abklcjq,,bad
 gibbs_constant,ZTF21abmjgwf,,bad
-gibbs_constant,ZTF21abmlldj,right 200,good
+gibbs_constant,ZTF21abmlldj,r200 not okay,bad
 gibbs_constant,ZTF21abmxiuf,,bad
 gibbs_constant,ZTF21abngbrl,,keep
 gibbs_constant,ZTF21abplhpw,,bad
-gibbs_constant,ZTF21abpwtde,,good
+gibbs_constant,ZTF21abpwtde,,bad
 gibbs_constant,ZTF21abraccv,,keep
 gibbs_constant,ZTF21abrqria,sdssr sdssi sdssg,bad
 gibbs_constant,ZTF21abrqrsz,,good
@@ -1091,17 +1094,17 @@ gibbs_constant,ZTF22aadnjsh,,keep
 gibbs_constant,ZTF22aadoihx,,keep
 gibbs_constant,ZTF22aadqlhy,,keep
 gibbs_constant,ZTF22aaebkwd,sdssr,bad
-gibbs_constant,ZTF22aaezyos,right 60,good
+gibbs_constant,ZTF22aaezyos,r60 ok,good
 gibbs_constant,ZTF22aagzmcz,,bad
 gibbs_constant,ZTF22aahxaiv,,good
 gibbs_constant,ZTF22aajakms,,keep
 gibbs_constant,ZTF22aakpyqw,,keep
 gibbs_constant,ZTF22aakyeps,,good
 gibbs_constant,ZTF22aalfmec,,keep
-gibbs_constant,ZTF22aaolhhl,sdssg sdssi,good
+gibbs_constant,ZTF22aaolhhl,ok,good
 gibbs_constant,ZTF22aaoolua,,bad
 gibbs_constant,ZTF22aarbard,,keep
-gibbs_constant,ZTF22aarqrxf,,good
+gibbs_constant,ZTF22aarqrxf,ok,good
 gibbs_constant,ZTF22aarwwyy,,bad
 gibbs_constant,ZTF22aasxgjp,,good
 gibbs_constant,ZTF22aatunnt,,bad
@@ -1120,7 +1123,7 @@ gibbs_constant,ZTF22abkbmob,,keep
 gibbs_constant,ZTF22abllclb,,good
 gibbs_constant,ZTF22abmonux,,keep
 gibbs_constant,ZTF22abnpsou,,bad
-gibbs_constant,ZTF22abnvurz,right 180,good
+gibbs_constant,ZTF22abnvurz,r180,bad
 gibbs_constant,ZTF22absibqa,,keep
 gibbs_constant,ZTF22absphuu,,keep
 gibbs_constant,ZTF22abvcnnl,,bad
@@ -1130,13 +1133,13 @@ gibbs_constant,ZTF23aaahtnj,,keep
 gibbs_constant,ZTF23aaaplam,,bad
 gibbs_constant,ZTF23aaazffe,,good
 gibbs_constant,ZTF23aaccacy,sdssi ztfi,good
-gibbs_constant,ZTF23aadaxfn,right 80,good
+gibbs_constant,ZTF23aadaxfn,r80 ok,good
 gibbs_constant,ZTF23aadtrzd,,keep
 gibbs_constant,ZTF23aaecgwh,,good
 gibbs_constant,ZTF23aaemnzd,,good
 gibbs_constant,ZTF23aafwykt,,keep
 gibbs_constant,ZTF23aahnmag,,keep
-gibbs_constant,ZTF23aajakys,right 40,good
+gibbs_constant,ZTF23aajakys,r40 ok,good
 gibbs_constant,ZTF23aakmewi,,bad
 gibbs_constant,ZTF23aakstht,,keep
 gibbs_constant,ZTF23aamzljd,,keep
@@ -1170,7 +1173,7 @@ gibbs_constant,ZTF24aacjcwl,,
 gibbs_constant,ZTF24aacrbua,,good
 gibbs_constant,ZTF24aadfmaf,,
 gibbs_constant,ZTF24aaeczdw,,good
-gibbs_constant,ZTF24aagfeti,right 170,good
+gibbs_constant,ZTF24aagfeti,r170 ok,good
 gibbs_constant,ZTF24aagkjca,,
 gibbs_constant,ZTF24aagterj,,
 gibbs_constant,ZTF24aagtmbq,,
@@ -1190,6 +1193,7 @@ gibbs_constant,ZTF24aayikbu,,
 gibbs_constant,ZTF24aayimjt,,
 gibbs_constant,ZTF24aaymkrs,,
 gibbs_constant,ZTF24aaysowl,,
+gibbs_constant,ZTF24aazmqbf,,good
 gibbs_constant,ZTF24aazqavh,,good
 gibbs_constant,ZTF24abajmau,,
 gibbs_constant,ZTF24abavusp,,
@@ -1226,13 +1230,13 @@ gibbs_constant,ZTF25aaaecsu,,
 gibbs_constant,ZTF25aaaeykb,,good
 gibbs_constant,ZTF25aabzbve,,good
 gibbs_constant,ZTF25aaccmjq,,good
-gibbs_constant,ZTF25aadnogd,right 100,good
+gibbs_constant,ZTF25aadnogd,r100 ok,good
 gibbs_constant,ZTF25aafdnuf,,
 gibbs_constant,ZTF25aafedas,,
 gibbs_constant,ZTF25aafkxdu,,good
 gibbs_constant,ZTF25aajbcmc,,
 gibbs_constant,ZTF25aajgfsk,,
-gibbs_constant,ZTF25aajuqtp,,
+gibbs_constant,ZTF25aajuqtp,,bad
 gibbs_constant,ZTF25aakbbof,,
 gibbs_constant,ZTF25aakeqyr,,
 gibbs_constant,ZTF25aamplge,,
@@ -1242,7 +1246,7 @@ gibbs_constant,ZTF25aaomnws,,good
 gibbs_constant,ZTF25aarmzhx,,
 gibbs_constant,ZTF25aaurzyo,,
 gibbs_constant,ZTF25aavahfn,,good
-gibbs_constant,ZTF25aawaobl,,
+gibbs_constant,ZTF25aawaobl,,bad
 gibbs_constant,ZTF25aaxegmh,,
 gibbs_constant,ZTF25abbzsku,,good
 gibbs_constant,ZTF25abclliu,,good
@@ -1256,9 +1260,9 @@ gibbs_constant,ZTF25abmjfcf,,
 gibbs_constant,ZTF25abmsmeg,,good
 gibbs_constant,ZTF25abmtiec,,
 gibbs_constant,ZTF25aboftol,,
-gibbs_constant,ZTF25abqsbxy,right 50,good
+gibbs_constant,ZTF25abqsbxy,r50 ok,good
 gibbs_constant,ZTF25abvbjre,,
-gibbs_constant,ZTF25abvcnay,,good
+gibbs_constant,ZTF25abvcnay,,keep
 gibbs_constant,ZTF25abweqoj,,
 gibbs_constant,ZTF25abwophe,,good
 gibbs_constant,ZTF25abxfsza,,
@@ -1379,7 +1383,7 @@ matern32_constant,ZTF19adaivcf,,keep
 matern32_constant,ZTF19adcfsad,,keep
 matern32_constant,ZTF20aadzbcf,,good
 matern32_constant,ZTF20aaekkuv,,good
-matern32_constant,ZTF20aaelulu,left 15 right 130,good
+matern32_constant,ZTF20aaelulu,l15 r130 ok,good
 matern32_constant,ZTF20aaertpj,,good
 matern32_constant,ZTF20aaetirf,,bad
 matern32_constant,ZTF20aafmdzj,,keep
@@ -1404,15 +1408,15 @@ matern32_constant,ZTF20aaurexl,,keep
 matern32_constant,ZTF20aaurfnl,,bad
 matern32_constant,ZTF20aavcvrm,,keep
 matern32_constant,ZTF20aavgcnu,,keep
-matern32_constant,ZTF20aavhyel,right 60,keep
+matern32_constant,ZTF20aavhyel,r60,keep
 matern32_constant,ZTF20aavzffg,,keep
-matern32_constant,ZTF20aaxvzja,,bad
-matern32_constant,ZTF20aazkjfv,right 60 left 25,keep
+matern32_constant,ZTF20aaxvzja,,good
+matern32_constant,ZTF20aazkjfv,r60 l25,keep
 matern32_constant,ZTF20aazpyhy,,keep
 matern32_constant,ZTF20abaszgh,,keep
 matern32_constant,ZTF20abbpkng,,good
 matern32_constant,ZTF20abbplei,,keep
-matern32_constant,ZTF20abcjdwu,left 15 right 25,good
+matern32_constant,ZTF20abcjdwu,l15 r25 ok,good
 matern32_constant,ZTF20abdnpdo,,bad
 matern32_constant,ZTF20abefbpl,,keep
 matern32_constant,ZTF20abhlncz,,keep
@@ -1439,13 +1443,13 @@ matern32_constant,ZTF20accbsxa,,good
 matern32_constant,ZTF20acfqngt,,keep
 matern32_constant,ZTF20achvlbs,,keep
 matern32_constant,ZTF20acjbzrh,,good
-matern32_constant,ZTF20aclnplo,right 30,keep
+matern32_constant,ZTF20aclnplo,r30 ok,good
 matern32_constant,ZTF20acphdcg,,bad
 matern32_constant,ZTF20acpjqxp,,keep
 matern32_constant,ZTF20acpyldh,,bad
 matern32_constant,ZTF20acpzaoa,,keep
-matern32_constant,ZTF20actekrw,right 50,keep
-matern32_constant,ZTF20actpqgc,right 100,good
+matern32_constant,ZTF20actekrw,r50,keep
+matern32_constant,ZTF20actpqgc,r100 ok,good
 matern32_constant,ZTF20acueziy,,keep
 matern32_constant,ZTF20acvcxkz,sdssr sdssi,keep
 matern32_constant,ZTF20acvebcu,,keep
@@ -1470,7 +1474,7 @@ matern32_constant,ZTF21aaqhhfu,,bad
 matern32_constant,ZTF21aaqldsk,,keep
 matern32_constant,ZTF21aaqwfqe,,keep
 matern32_constant,ZTF21aarmuxl,,keep
-matern32_constant,ZTF21aarnjyd,,bad
+matern32_constant,ZTF21aarnjyd,,good
 matern32_constant,ZTF21aartgiv,,keep
 matern32_constant,ZTF21aaufwyh,,keep
 matern32_constant,ZTF21aavdqgf,,keep
@@ -1480,7 +1484,7 @@ matern32_constant,ZTF21aaxxihx,,good
 matern32_constant,ZTF21aayqrgx,,keep
 matern32_constant,ZTF21abahiow,,bad
 matern32_constant,ZTF21abbqeea,,keep
-matern32_constant,ZTF21abccaue,left 25,good
+matern32_constant,ZTF21abccaue,l25 ok,good
 matern32_constant,ZTF21abcgaln,,keep
 matern32_constant,ZTF21abcgnql,,bad
 matern32_constant,ZTF21abchjer,,keep
@@ -1506,7 +1510,7 @@ matern32_constant,ZTF21abvcuhk,,keep
 matern32_constant,ZTF21acbnfos,,keep
 matern32_constant,ZTF21accwovq,,good
 matern32_constant,ZTF21acdqgns,epoch,bad
-matern32_constant,ZTF21acdxhuv,right 60,keep
+matern32_constant,ZTF21acdxhuv,r60,keep
 matern32_constant,ZTF21aceehxt,,good
 matern32_constant,ZTF21acekmmm,,good
 matern32_constant,ZTF21acgxypn,,bad
@@ -1528,10 +1532,10 @@ matern32_constant,ZTF22aajakms,,keep
 matern32_constant,ZTF22aakpyqw,,good
 matern32_constant,ZTF22aakyeps,,bad
 matern32_constant,ZTF22aalfmec,,good
-matern32_constant,ZTF22aaolhhl,right 60,keep
+matern32_constant,ZTF22aaolhhl,r60,keep
 matern32_constant,ZTF22aaoolua,,good
 matern32_constant,ZTF22aarbard,,good
-matern32_constant,ZTF22aarqrxf,right 75,keep
+matern32_constant,ZTF22aarqrxf,r75,keep
 matern32_constant,ZTF22aarwwyy,,good
 matern32_constant,ZTF22aasxgjp,,keep
 matern32_constant,ZTF22aatunnt,,bad
@@ -1550,12 +1554,12 @@ matern32_constant,ZTF22abkbmob,,good
 matern32_constant,ZTF22abllclb,,keep
 matern32_constant,ZTF22abmonux,,good
 matern32_constant,ZTF22abnpsou,,keep
-matern32_constant,ZTF22abnvurz,,keep
+matern32_constant,ZTF22abnvurz,,bad
 matern32_constant,ZTF22absibqa,,good
 matern32_constant,ZTF22absphuu,,good
 matern32_constant,ZTF22abvcnnl,,good
 matern32_constant,ZTF22abwtqeb,,keep
-matern32_constant,ZTF22abzejiv,,good
+matern32_constant,ZTF22abzejiv,,bad
 matern32_constant,ZTF23aaahtnj,,good
 matern32_constant,ZTF23aaaplam,epoch,bad
 matern32_constant,ZTF23aaazffe,,keep
@@ -1572,12 +1576,12 @@ matern32_constant,ZTF23aakstht,,good
 matern32_constant,ZTF23aamzljd,,good
 matern32_constant,ZTF23aandvzg,,keep
 matern32_constant,ZTF23aanqoyo,,bad
-matern32_constant,ZTF23aapbrrq,right 100,good
-matern32_constant,ZTF23aaqekiu,,keep
+matern32_constant,ZTF23aapbrrq,r100 ok,good
+matern32_constant,ZTF23aaqekiu,,good
 matern32_constant,ZTF23aaspcfl,,good
 matern32_constant,ZTF23aawtmcf,,keep
 matern32_constant,ZTF23aaxuvkn,,good
-matern32_constant,ZTF23aazodoj,right 80,good
+matern32_constant,ZTF23aazodoj,r80 ok,good
 matern32_constant,ZTF23aazuzip,,good
 matern32_constant,ZTF23abadhsw,,keep
 matern32_constant,ZTF23abaxlrz,,keep
@@ -1620,11 +1624,12 @@ matern32_constant,ZTF24aayikbu,,
 matern32_constant,ZTF24aayimjt,,
 matern32_constant,ZTF24aaymkrs,,
 matern32_constant,ZTF24aaysowl,,
+matern32_constant,ZTF24aazmqbf,,
 matern32_constant,ZTF24aazqavh,,
 matern32_constant,ZTF24aaztbct,,good
 matern32_constant,ZTF24abajmau,,
 matern32_constant,ZTF24abavusp,half_r,good
-matern32_constant,ZTF24abbsuhu,,good
+matern32_constant,ZTF24abbsuhu,,bad
 matern32_constant,ZTF24abchdsc,,good
 matern32_constant,ZTF24abdiwwv,,
 matern32_constant,ZTF24abhhzrp,,good
@@ -1637,7 +1642,7 @@ matern32_constant,ZTF24ablmayf,,
 matern32_constant,ZTF24ablsxza,,good
 matern32_constant,ZTF24abltheg,,keep
 matern32_constant,ZTF24abnafgr,,
-matern32_constant,ZTF24abncuhj,left 25,good
+matern32_constant,ZTF24abncuhj,l25 ok,good
 matern32_constant,ZTF24abnsght,,good
 matern32_constant,ZTF24abpqghw,,
 matern32_constant,ZTF24abqbyxd,,
@@ -1663,7 +1668,7 @@ matern32_constant,ZTF25aafedas,,
 matern32_constant,ZTF25aafkxdu,,
 matern32_constant,ZTF25aajbcmc,,good
 matern32_constant,ZTF25aajgfsk,,good
-matern32_constant,ZTF25aajuqtp,,
+matern32_constant,ZTF25aajuqtp,,good
 matern32_constant,ZTF25aakbbof,,good
 matern32_constant,ZTF25aakeqyr,,good
 matern32_constant,ZTF25aamplge,,good
@@ -1673,7 +1678,7 @@ matern32_constant,ZTF25aaomnws,,
 matern32_constant,ZTF25aarmzhx,,good
 matern32_constant,ZTF25aaurzyo,,good
 matern32_constant,ZTF25aavahfn,,
-matern32_constant,ZTF25aawaobl,,
+matern32_constant,ZTF25aawaobl,,good
 matern32_constant,ZTF25aaxegmh,,
 matern32_constant,ZTF25abbzsku,,
 matern32_constant,ZTF25abclliu,,
@@ -1683,13 +1688,13 @@ matern32_constant,ZTF25abixhdc,,
 matern32_constant,ZTF25abkwytp,,
 matern32_constant,ZTF25ablgkgi,,
 matern32_constant,ZTF25ablulax,,
-matern32_constant,ZTF25abmjfcf,left 20 right 60,good
+matern32_constant,ZTF25abmjfcf,l20 r60 ok,good
 matern32_constant,ZTF25abmsmeg,,
 matern32_constant,ZTF25abmtiec,,good
 matern32_constant,ZTF25aboftol,,good
 matern32_constant,ZTF25abqsbxy,,
 matern32_constant,ZTF25abvbjre,,good
-matern32_constant,ZTF25abvcnay,,
+matern32_constant,ZTF25abvcnay,,good
 matern32_constant,ZTF25abweqoj,,
 matern32_constant,ZTF25abwophe,,
 matern32_constant,ZTF25abxfsza,,
@@ -1700,7 +1705,7 @@ matern32_constant,ZTF25acbzkov,,
 matern32_constant,ZTF25accmopr,,good
 matern32_constant,ZTF25acdktzt,,
 matern32_constant,ZTF25acemaph,,
-matern32_constant,ZTF25aceopyo,right 10,good
+matern32_constant,ZTF25aceopyo,r10 not,good
 matern32_constant,ZTF25acgdfwz,,good
 matern32_constant,ZTF26aaakmmc,,
 matern32_constant,ZTF26aadqfik,,
