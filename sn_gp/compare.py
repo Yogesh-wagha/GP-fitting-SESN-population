@@ -24,6 +24,15 @@ import pandas as pd
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+plt.rcParams.update({
+    "font.size":        14,   # base size (default 10) — everything scales from this
+    "axes.titlesize":   16,   # plot title
+    "axes.labelsize":   15,   # x/y axis labels
+    "xtick.labelsize":  13,   # tick numbers
+    "ytick.labelsize":  13,
+    "legend.fontsize":  12,   # legend text
+    "legend.title_fontsize": 13,
+})
 
 import config
 import measure_population as mp
@@ -87,7 +96,7 @@ def _panel_pair(x, y, types, xlabel, ylabel, title, out, invert=False):
     line = [lo - pad, hi + pad]
     ax.plot(line, line, "k--", lw=1, alpha=0.7, label="1:1")
     ax.set_ylabel(ylabel); ax.set_title(title)
-    ax.legend(fontsize=8, loc="best")
+    ax.legend(fontsize=10, loc="best")
     ax.grid(alpha=0.2)
 
     resid = y - x
@@ -97,7 +106,7 @@ def _panel_pair(x, y, types, xlabel, ylabel, title, out, invert=False):
     axr.axhline(med, color="crimson", lw=1, ls="-", alpha=0.7,
                 label=f"median = {med:+.2f}")
     axr.set_xlabel(xlabel); axr.set_ylabel("GP - Linear")
-    axr.legend(fontsize=7, loc="best")
+    axr.legend(fontsize=10, loc="best")
     axr.grid(alpha=0.2)
 
     if invert:
@@ -108,11 +117,11 @@ def _panel_pair(x, y, types, xlabel, ylabel, title, out, invert=False):
     scatter = np.std(resid)
     ax.text(0.02, 0.98,
             f"n = {len(x)}\nr = {r:.3f}\nmedian off = {med:+.2f}\nrms = {scatter:.2f}",
-            transform=ax.transAxes, va="top", ha="left", fontsize=8,
+            transform=ax.transAxes, va="top", ha="left", fontsize=10,
             bbox=dict(boxstyle="round,pad=0.4", fc="white", ec="k", lw=0.6))
 
     fig.tight_layout()
-    fig.savefig(out, dpi=150); plt.close(fig)
+    fig.savefig(out, dpi=300); plt.close(fig)
     print(f"wrote {out}  (n={len(x)}, r={r:.3f}, median offset={med:+.2f}, rms={scatter:.2f})")
 
 
@@ -139,7 +148,7 @@ def main():
         # extinction makes intrinsic brighter (more negative); K-corr likewise per Perley sign
         M_mine = M_mine - kcorr - av.fillna(0.0)
         corr_tag = "_corr"
-        ylab = "GP peak abs mag (K+A_V corrected)"
+        ylab = "GP peak abs mag (K-corrected)"
     else:
         corr_tag = ""
         ylab = "GP peak abs mag (no K, no A_V)"
