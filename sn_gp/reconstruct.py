@@ -150,7 +150,7 @@ def _validate(name, kernel, mean):
                     mfc="none", elinewidth=0.6, capsize=1.5)
     ax.axhline(0, color="grey", lw=0.6, ls=":")
     ax.set_xlabel("phase [days]"); ax.set_ylabel("flux [mJy]")
-    ax.set_title(f"RECONSTRUCTED  {name}  {kernel}+{mean}")
+    ax.set_title(f"{name}  {kernel}+{mean}")
     ax.legend(fontsize=7)
     out = f"validate_{name}_{kernel}_{mean}.png"
     fig.tight_layout(); fig.savefig(out, dpi=150); plt.close(fig)

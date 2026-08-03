@@ -1,20 +1,17 @@
 """
-plot_cdf.py  --  empirical cumulative distribution (CDF) plots by SN type,
-for duration (rest-frame FWHM) and colour.
+plot_cdf.py  --  empirical CDF plots by SN type for duration, colour, luminosity.
+Plain step CDFs, one curve per type, coloured by scheme.
 
-    python plot_cdf.py --plot duration            # rest-frame FWHM CDF, brightest band
-    python plot_cdf.py --plot duration --band r    # r-band FWHM
-    python plot_cdf.py --plot color                # colour CDF (own-peak by default)
+    python plot_cdf.py --plot duration
+    python plot_cdf.py --plot duration --band r
+    python plot_cdf.py --plot color --color-mode 10d     # g-r at +10d
     python plot_cdf.py --plot color --color-mode rpeak
+    python plot_cdf.py --plot luminosity                  # M_rest_g CDF
     python plot_cdf.py --plot all
-    python plot_cdf.py --plot duration --separate  # ALSO write one PNG per type
 
-Overlaid CDF curves, one per type, coloured by your scheme. Vertical separation
-between curves indicates distributional differences (what a KS test quantifies).
-
-Duration CDF uses MEASURED FWHMs only (lower limits excluded); the count of
-excluded limits is printed. For a censored-data CDF (Kaplan-Meier) see the note
-in cdf_duration().
+Duration = rest-frame FWHM. Luminosity = K-corrected rest-frame g abs mag.
+Colours are observed-frame. Duration CDF uses measured FWHMs only (lower
+limits excluded).
 """
 
 import os
@@ -24,7 +21,17 @@ import pandas as pd
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-
+import matplotlib.cm as cm
+import matplotlib.colors as mcolors
+plt.rcParams.update({
+    "font.size":        14,   # base size (default 10) — everything scales from this
+    "axes.titlesize":   16,   # plot title
+    "axes.labelsize":   15,   # x/y axis labels
+    "xtick.labelsize":  13,   # tick numbers
+    "ytick.labelsize":  13,
+    "legend.fontsize":  12,   # legend text
+    "legend.title_fontsize": 13,
+})
 import config
 
 CSV = os.path.join(config.FIT_ROOT, "population_measurements.csv")
@@ -34,13 +41,15 @@ os.makedirs(OUTDIR, exist_ok=True)
 TYPE_COLOR = {
     "SN Ic-BL": "#FF0000", "SN Ic-BL?": "#FF0000",
     "SN Ic": "#3300FF", "SN Ib": "#FFA600", "SN Ib/c": "#E100FF",
-    "SLSN-I": "#00FF44",
+    "SLSN-I": "#3DC566ED",
 }
 TYPE_LABEL = {
     "SN Ic-BL": "Ic-BL", "SN Ic-BL?": "Ic-BL?", "SN Ic": "Ic",
     "SN Ib": "Ib", "SN Ib/c": "Ib/c", "SLSN-I": "SLSN-I",
 }
 TYPE_ORDER = ["SN Ic", "SN Ib", "SN Ib/c", "SN Ic-BL", "SN Ic-BL?", "SLSN-I"]
+
+COLOR_SCAN_PHASES = np.arange(-10.0, 10.0001, 2.5)   # must match measure_population
 
 
 def _load():
@@ -49,117 +58,131 @@ def _load():
     return pd.read_csv(CSV)
 
 
-def _ecdf(values):
-    """Return (x_sorted, cdf) for a step ECDF."""
-    v = np.sort(np.asarray(values, float))
-    n = v.size
-    y = np.arange(1, n + 1) / n
-    return v, y
-
-
-def _cdf_figure(df, col, xlabel, title, out, invert_x=False, separate=False):
+def _cdf_figure(df, col, xlabel, title, out, invert_x=False):
     sub = df[np.isfinite(df[col])]
     if sub.empty:
         print(f"no finite {col}; skipping {title}"); return
 
-    # overlaid figure
     fig, ax = plt.subplots(figsize=(7, 5.5))
     for t in TYPE_ORDER:
-        d = sub.loc[sub["type"] == t, col].values
-        if d.size < 2:                              # need >=2 points for a meaningful CDF
+        v = pd.to_numeric(sub.loc[sub["type"] == t, col], errors="coerce").dropna().values
+        if v.size < 2:
             continue
-        x, y = _ecdf(d)
-        # draw as a step, extend to 0 and 1 at the ends
+        x = np.sort(v)
+        y = np.arange(1, x.size + 1) / x.size
         ax.plot(np.concatenate([[x[0]], x]), np.concatenate([[0], y]),
                 drawstyle="steps-post", color=TYPE_COLOR[t], lw=2.0,
-                label=f"{TYPE_LABEL[t]} (n={d.size})")
+                label=f"{TYPE_LABEL[t]} (n={v.size})")
     ax.set_xlabel(xlabel); ax.set_ylabel("cumulative fraction")
     ax.set_ylim(0, 1.02)
     if invert_x:
         ax.invert_xaxis()
     ax.set_title(title)
-    ax.legend(fontsize=8, title="type", loc="best")
+    ax.legend(fontsize=10, title="type", loc="best")
     ax.grid(alpha=0.2)
     fig.tight_layout(); fig.savefig(out, dpi=300); plt.close(fig)
-    print(f"wrote {out}  ({len(sub)} events across types)")
+    print(f"wrote {out}  ({len(sub)} events)")
 
-    if separate:
-        base, ext = os.path.splitext(out)
-        for t in TYPE_ORDER:
-            d = sub.loc[sub["type"] == t, col].values
-            if d.size < 2:
-                continue
-            x, y = _ecdf(d)
-            fig, ax = plt.subplots(figsize=(6, 4.5))
-            ax.plot(np.concatenate([[x[0]], x]), np.concatenate([[0], y]),
-                    drawstyle="steps-post", color=TYPE_COLOR[t], lw=2.2)
-            ax.set_xlabel(xlabel); ax.set_ylabel("cumulative fraction")
-            ax.set_ylim(0, 1.02)
-            if invert_x:
-                ax.invert_xaxis()
-            ax.set_title(f"{title} -- {TYPE_LABEL[t]} (n={d.size})")
-            ax.grid(alpha=0.2)
-            outi = f"{base}_{TYPE_LABEL[t].replace('/', '')}{ext}"
-            fig.tight_layout(); fig.savefig(outi, dpi=200); plt.close(fig)
-            print(f"  wrote {outi}")
-
-
-def cdf_duration(df, band, separate=False):
-    col = "fwhm_brightest" if band == "brightest" else f"fwhm_{band}"
-    lim_col = "brightest_is_limit" if band == "brightest" else f"{band}_is_limit"
-    # measured only (exclude lower limits)
-    n_lim = int((df[lim_col].fillna(False) &
-                 ~np.isfinite(df[col])).sum()) if lim_col in df.columns else 0
-    n_lim_total = int(df[lim_col].fillna(False).sum()) if lim_col in df.columns else 0
-    print(f"duration CDF ({band}): excluding {n_lim_total} lower-limit events "
-          f"(measured-only CDF; see KM note for censored version)")
-    _cdf_figure(df, col,
-                "rest-frame FWHM [days]",
-                f"Duration CDF ({band} band, measured only)",
-                os.path.join(OUTDIR, f"cdf_duration_{band}.png"),
-                invert_x=False, separate=separate)
-    # ---- Kaplan-Meier note ----
-    # To include lower limits properly, fit a KM survival curve per type treating
-    # is_limit events as right-censored at fwhm_ll, then plot 1 - S(t). Requires
-    # e.g. lifelines.KaplanMeierFitter. Left as an extension if a censored CDF is
-    # needed for a quantitative claim.
-
-
-def cdf_color(df, color_mode, separate=False):
-    colmap = {"rpeak": ("color_at_rpeak", "g - r at r-peak epoch"),
-              "gpeak": ("color_at_gpeak", "g - r at g-peak epoch"),
-              "ownpeak": ("color_gr", "g - r (own peaks)")}
-    if color_mode not in colmap:
-        color_mode = "ownpeak"
-    col, lab = colmap[color_mode]
-    if col not in df.columns:
-        print(f"column {col} not in CSV (re-run measure_population with the new "
-              f"colour columns); falling back to color_gr")
-        col, lab = "color_gr", "g - r (own peaks)"
-    _cdf_figure(df, col,
-                f"colour  {lab}  [mag]",
-                f"Colour CDF ({lab})",
-                os.path.join(OUTDIR, f"cdf_color_{color_mode}.png"),
-                invert_x=False, separate=separate)
-
+def cdf_colorevol(df, sn_type, cmap_name="viridis"):
+    """For ONE SN type, draw a CDF of g-r at each scanned epoch (-10..+10 d),
+       coloured by phase via a sequential colormap + colorbar (days)."""
+    cols = [f"color_p{p:+.1f}" for p in COLOR_SCAN_PHASES]
+    missing = [c for c in cols if c not in df.columns]
+    if missing:
+        raise SystemExit(f"missing scan columns {missing[:3]}... "
+                         f"re-run measure_population.py with COLOR_SCAN_PHASES")
+    sub = df[df["type"] == sn_type]
+    if sub.empty:
+        print(f"no events of type {sn_type}; skipping"); return
+ 
+    cmap = plt.get_cmap(cmap_name)
+    norm = mcolors.Normalize(vmin=COLOR_SCAN_PHASES.min(), vmax=COLOR_SCAN_PHASES.max())
+ 
+    fig, ax = plt.subplots(figsize=(7, 5.5))
+    n_drawn = 0
+    for p, col in zip(COLOR_SCAN_PHASES, cols):
+        v = pd.to_numeric(sub[col], errors="coerce").dropna().values
+        if v.size < 3:                                  # skip epochs with too few events
+            continue
+        x = np.sort(v); y = np.arange(1, x.size + 1) / x.size
+        ax.plot(np.concatenate([[x[0]], x]), np.concatenate([[0], y]),
+                drawstyle="steps-post", color=cmap(norm(p)), lw=2.0)
+        n_drawn += 1
+    if n_drawn == 0:
+        print(f"{sn_type}: no epoch with >=3 events; skipping"); plt.close(fig); return
+ 
+    sm = cm.ScalarMappable(norm=norm, cmap=cmap); sm.set_array([])
+    cbar = fig.colorbar(sm, ax=ax)
+    cbar.set_label("phase relative to r-peak [rest-frame days]")
+ 
+    lab = TYPE_LABEL.get(sn_type, sn_type)
+    ax.set_xlabel("colour  g - r  [mag]"); ax.set_ylabel("cumulative fraction")
+    ax.set_ylim(0, 1.02)
+    ax.set_title(f"Colour evolution CDF  --  {lab}  ({len(sub)} events)")
+    ax.grid(alpha=0.2)
+    tag = lab.replace("/", "")
+    out = os.path.join(OUTDIR, f"cdf_colorevol_{tag}.png")
+    fig.tight_layout(); fig.savefig(out, dpi=300); plt.close(fig)
+    print(f"wrote {out}  ({n_drawn} epochs drawn)")
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--plot", required=True,
-                    choices=["duration", "color", "all"])
+                    choices=["duration", "color", "luminosity", "dtpeak", "rise", "all", "colorevol"])
+    
+    ap.add_argument("--type", nargs="+", default=None, help="SN type(s) for colorevol, e.g. 'SN Ib' 'SN Ic'")
+
     ap.add_argument("--band", default="brightest", choices=["g", "r", "brightest"])
+
+    ap.add_argument("--cmap", default="viridis", help="colormap for phase (e.g. cool, plasma)")
+
     ap.add_argument("--color-mode", default="ownpeak",
-                    choices=["rpeak", "gpeak", "ownpeak"])
-    ap.add_argument("--separate", action="store_true",
-                    help="ALSO write one CDF per type as separate PNGs")
+                    choices=["rpeak", "gpeak", "ownpeak", "10d"])
+    
     a = ap.parse_args()
     df = _load()
 
     if a.plot in ("duration", "all"):
-        cdf_duration(df, a.band, separate=a.separate)
+        col = "fwhm_brightest" if a.band == "brightest" else f"fwhm_{a.band}"
+        _cdf_figure(df, col,
+                    f"rest-frame FWHM [days] ({a.band})",
+                    f"Duration CDF ({a.band} band)",
+                    os.path.join(OUTDIR, f"cdf_duration_{a.band}.png"))
+
+    if a.plot in ("rise", "all"):
+        band = a.band if a.band != "brightest" else "r"    # rise measured per-band; default r
+        col = f"rise_{band}"
+        _cdf_figure(df, col, f"rest-frame rise time [days] ({band})",
+                    f"Rise-time CDF ({band} band)",
+                    os.path.join(OUTDIR, f"cdf_rise_{band}.png"))
+
     if a.plot in ("color", "all"):
-        cdf_color(df, a.color_mode, separate=a.separate)
+        cmap = {"rpeak": ("color_at_rpeak", "g-r at r-peak"),
+                "gpeak": ("color_at_gpeak", "g-r at g-peak"),
+                "ownpeak": ("color_gr", "g-r own-peak"),
+                "10d": ("color_10d", "g-r at +10d")}
+        col, lab = cmap[a.color_mode]
+        _cdf_figure(df, col,
+                    f"colour  {lab}  [mag]",
+                    f"Colour CDF ({lab})",
+                    os.path.join(OUTDIR, f"cdf_color_{a.color_mode}.png"))
 
+    if a.plot in ("luminosity", "all"):
+        _cdf_figure(df, "M_rest_g",
+                    "rest-frame g peak absolute magnitude (K-corrected)",
+                    "Luminosity CDF (rest-frame g)",
+                    os.path.join(OUTDIR, "cdf_luminosity.png"),
+                    invert_x=True)
 
+    if a.plot in ("dtpeak", "all"):
+        _cdf_figure(df, "dt_peak_g_minus_r",
+                    "peak-time separation  t_g - t_r  [days]",
+                    "Peak-separation CDF (g - r)",
+                    os.path.join(OUTDIR, "cdf_dtpeak.png"))
+
+    if a.plot == "colorevol":
+      types = a.type if a.type else TYPE_ORDER
+      for t in types:
+          cdf_colorevol(df, t, cmap_name=a.cmap)
 if __name__ == "__main__":
     main()

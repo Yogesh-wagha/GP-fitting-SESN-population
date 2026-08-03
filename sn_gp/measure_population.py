@@ -55,6 +55,8 @@ LAMBDA_G_REST_UM = 0.470     # rest-frame g effective wavelength (matches ztfg/s
 KCORR_BW_SIGN = +1.0         # bandwidth term: M = m_shifted - DM + SIGN*2.5*log10(1+z)
                              # VALIDATE vs BTS peakabs; set -1.0 if residual grows with z
 
+
+COLOR_SCAN_PHASES = np.arange(-10.0, 10.0001, 2.5)   # rest-frame days vs r-peak
 # =====================================================================
 # selection: best (event, kernel) fit
 # =====================================================================
@@ -371,6 +373,16 @@ def main():
         
         # rest-frame durations
         zf = (1.0 + z) if np.isfinite(z) and z > 0 else np.nan
+
+        # colour scanned from -10 to +10 rest-frame days about r-peak (2.5-d steps)
+        color_scan = {}
+        for p in COLOR_SCAN_PHASES:
+            t_obs = (tpk_r + p * zf) if (np.isfinite(tpk_r) and np.isfinite(zf)) else np.nan
+            mg_p, _ = absmag_err_at_phase(fit, gband, t_obs, z)
+            mr_p, _ = absmag_err_at_phase(fit, rband, t_obs, z)
+            color_scan[f"color_p{p:+.1f}"] = ((mg_p - mr_p)
+                if (np.isfinite(mg_p) and np.isfinite(mr_p)) else np.nan)
+
         def rest(x): return (x / zf) if (x is not None and np.isfinite(x) and np.isfinite(zf)) else np.nan
 
         # which band is intrinsically brightest (more negative abs mag)
@@ -429,6 +441,7 @@ def main():
             color_at_rpeak=color_rpeak, color_at_rpeak_err=color_rpeak_err,
             color_at_gpeak=color_gpeak, color_at_gpeak_err=color_gpeak_err,
             color_10d=color_10d, color_10d_err=color_10d_err,
+            **color_scan,
             
         ))
         print(f"[{i}] {z_id:16s} {kern:13s} g={gband or '-':6s} r={rband or '-':6s} "
