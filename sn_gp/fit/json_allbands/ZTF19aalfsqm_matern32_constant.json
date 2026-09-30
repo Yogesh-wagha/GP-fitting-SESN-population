@@ -1,0 +1,38 @@
+{
+  "name": "ZTF19aalfsqm",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": -0.28315520516554943,
+  "t_sd": 5.032961528021577,
+  "w_mean": 0.6789769552407624,
+  "w_sd": 0.02573742118071454,
+  "free_lambda": false,
+  "bands": [
+    "ztfr",
+    "atlaso",
+    "ztfi"
+  ],
+  "k": 7,
+  "lnL": 107.86164487421371,
+  "n": 39,
+  "AIC": -201.72328974842742,
+  "BIC": -190.0783582255199,
+  "params": {
+    ".mean_function.c": [
+      0.08060663136014362,
+      0.08665328239031389,
+      0.07936063630506827
+    ],
+    ".kernel.kernels[0].variance": 0.0206710276594373,
+    ".kernel.kernels[0].lengthscales": 0.6679022746357267,
+    ".kernel.kernels[1].variance": 0.02067102765932701,
+    ".kernel.kernels[1].lengthscales": 5.828089727668496,
+    ".likelihood.variance": 0.00014554321813614962
+  }
+}

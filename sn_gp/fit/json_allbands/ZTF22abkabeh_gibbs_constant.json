@@ -1,0 +1,43 @@
+{
+  "name": "ZTF22abkabeh",
+  "kernel": "gibbs",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": -0.8919124249078991,
+  "t_sd": 13.424827916116184,
+  "w_mean": 0.615603082096854,
+  "w_sd": 0.09968052983629302,
+  "free_lambda": true,
+  "bands": [
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "ztfi"
+  ],
+  "k": 11,
+  "lnL": 961.2593344401187,
+  "n": 259,
+  "AIC": -1900.5186688802373,
+  "BIC": -1861.3935602015424,
+  "params": {
+    ".mean_function.c": [
+      0.01724108743507713,
+      0.05466648430923018,
+      0.06272302833963053,
+      0.08871837327097741
+    ],
+    ".kernel.kernels[0].base.variance": 0.028789428352878378,
+    ".kernel.kernels[0].base.l_min": 0.37196830281229093,
+    ".kernel.kernels[0].base.l_relax": 15.400658924848578,
+    ".kernel.kernels[0].base.width": 10.971544549700589,
+    ".kernel.kernels[0].base.t_peak": 0.0,
+    ".kernel.kernels[1].variance": 0.028789428341965573,
+    ".kernel.kernels[1].lengthscales": 3.098127673573529,
+    ".likelihood.variance": 2.2488993559375712e-05
+  }
+}

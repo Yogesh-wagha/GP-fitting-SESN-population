@@ -2,41 +2,39 @@
   "name": "ZTF24aacjcwl",
   "kernel": "changepoint_1",
   "mean": "constant",
-  "gri": true,
+  "bands_mode": "gri",
   "left": null,
   "right": null,
   "gap_l": null,
   "gap_r": null,
   "cp_days": null,
-  "t_mean": -0.9423945892945325,
-  "t_sd": 8.362403520985936,
-  "w_mean": 0.6083316607787994,
-  "w_sd": 0.06554991051514288,
+  "t_mean": -1.1832877864750724,
+  "t_sd": 9.39691955162615,
+  "w_mean": 0.6421814890148708,
+  "w_sd": 1.1102230246251565e-16,
   "free_lambda": false,
   "bands": [
-    "ztfg",
     "ztfr"
   ],
-  "k": 10,
-  "lnL": 58.323022942181865,
-  "n": 19,
-  "AIC": -96.64604588436373,
-  "BIC": -87.20165609269932,
+  "k": 9,
+  "lnL": 45.97368576757255,
+  "n": 15,
+  "AIC": -73.9473715351451,
+  "BIC": -67.5749197252252,
   "params": {
     ".mean_function.c": [
-      0.012420608386775547,
-      0.05380832817698066
+      0.053544699531777075
     ],
-    ".kernel.kernels[0].base.kernels[0].variance": 10.205245009189387,
-    ".kernel.kernels[0].base.kernels[0].lengthscales": 1.041369909021292,
-    ".kernel.kernels[0].base.kernels[1].variance": 5.139112029202547e-09,
-    ".kernel.kernels[0].base.kernels[1].lengthscales": 5.626908192340812e-05,
+    ".kernel.kernels[0].base.kernels[0].variance": 22.195273594702673,
+    ".kernel.kernels[0].base.kernels[0].lengthscales": 1.1246995808436575,
+    ".kernel.kernels[0].base.kernels[1].variance": 5.680235385044835e-15,
+    ".kernel.kernels[0].base.kernels[1].lengthscales": 5.1274150456342506e-14,
     ".kernel.kernels[0].base.locations": [
-      1.1902830590443285
+      1.129669468760906
     ],
-    ".kernel.kernels[0].base.steepness": 16.072679345583907,
-    ".kernel.kernels[1].variance": 0.0002853574281220682,
-    ".kernel.kernels[1].lengthscales": 2.288332643342786,
-    ".likelihood.variance": 3.205014944557068e-05
+    ".kernel.kernels[0].base.steepness": 23.07957586626375,
+    ".kernel.kernels[1].variance": 0.00020029031175578004,
+    ".kernel.kernels[1].lengthscales": 1351079888211148.8,
+    ".likelihood.variance": 3.028207696705301e-05
   }
 }

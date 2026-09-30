@@ -2,43 +2,41 @@
   "name": "ZTF21abvcugy",
   "kernel": "changepoint_1",
   "mean": "constant",
-  "gri": true,
+  "bands_mode": "gri",
   "left": null,
   "right": null,
   "gap_l": null,
   "gap_r": null,
   "cp_days": null,
-  "t_mean": 9.701861224387203,
-  "t_sd": 27.368819932217033,
-  "w_mean": 0.5591050700878746,
-  "w_sd": 0.07910335790231475,
+  "t_mean": 4.171813517800922,
+  "t_sd": 7.766318484898921,
+  "w_mean": 0.5551985287525075,
+  "w_sd": 0.08012282059213648,
   "free_lambda": false,
   "bands": [
     "ztfg",
-    "sdssr",
     "ztfr"
   ],
-  "k": 11,
-  "lnL": 316.3274802308748,
-  "n": 65,
-  "AIC": -610.6549604617496,
-  "BIC": -586.7367004928976,
+  "k": 10,
+  "lnL": 299.8624366274315,
+  "n": 61,
+  "AIC": -579.724873254863,
+  "BIC": -558.6161346131299,
   "params": {
     ".mean_function.c": [
-      0.018530826855112172,
-      0.012171648614923054,
-      0.04169500187180473
+      0.1346504372951051,
+      0.1486125406036695
     ],
-    ".kernel.kernels[0].base.kernels[0].variance": 2.009391866267709,
-    ".kernel.kernels[0].base.kernels[0].lengthscales": 0.9272980520735673,
-    ".kernel.kernels[0].base.kernels[1].variance": 0.0021470495919114875,
-    ".kernel.kernels[0].base.kernels[1].lengthscales": 0.0009509199752072557,
+    ".kernel.kernels[0].base.kernels[0].variance": 0.001809744681116261,
+    ".kernel.kernels[0].base.kernels[0].lengthscales": 0.21826185139680898,
+    ".kernel.kernels[0].base.kernels[1].variance": 1.177346794816356,
+    ".kernel.kernels[0].base.kernels[1].lengthscales": 4.003652575214521,
     ".kernel.kernels[0].base.locations": [
-      -0.029229368491058685
+      0.7504141072467926
     ],
-    ".kernel.kernels[0].base.steepness": 6.795324462881406,
-    ".kernel.kernels[1].variance": 0.004295087913026596,
-    ".kernel.kernels[1].lengthscales": 1.8962532562174663,
+    ".kernel.kernels[0].base.steepness": 0.8876768736569671,
+    ".kernel.kernels[1].variance": 0.02283200808204675,
+    ".kernel.kernels[1].lengthscales": 1.8721258050009473,
     ".likelihood.variance": 1e-06
   }
 }

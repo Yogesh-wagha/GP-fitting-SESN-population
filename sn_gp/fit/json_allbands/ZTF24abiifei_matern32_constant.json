@@ -1,0 +1,36 @@
+{
+  "name": "ZTF24abiifei",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": -9.781735645586235,
+  "t_sd": 14.29285220918097,
+  "w_mean": 0.6037324993336811,
+  "w_sd": 0.068583968616214,
+  "free_lambda": false,
+  "bands": [
+    "ztfg",
+    "ztfr"
+  ],
+  "k": 6,
+  "lnL": 171.5667476375296,
+  "n": 46,
+  "AIC": -331.1334952750592,
+  "BIC": -320.16164689612464,
+  "params": {
+    ".mean_function.c": [
+      0.054851040967814416,
+      0.07793867093257276
+    ],
+    ".kernel.kernels[0].variance": 0.022221979117842662,
+    ".kernel.kernels[0].lengthscales": 0.4755817546322465,
+    ".kernel.kernels[1].variance": 0.02222197912909188,
+    ".kernel.kernels[1].lengthscales": 2.187100032653088,
+    ".likelihood.variance": 5.404166479436413e-06
+  }
+}

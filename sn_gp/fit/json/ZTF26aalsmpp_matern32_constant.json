@@ -2,7 +2,7 @@
   "name": "ZTF26aalsmpp",
   "kernel": "matern32",
   "mean": "constant",
-  "gri": true,
+  "bands_mode": "gri",
   "left": null,
   "right": null,
   "gap_l": null,
@@ -19,20 +19,20 @@
     "ztfi"
   ],
   "k": 7,
-  "lnL": 1720.3564839852338,
+  "lnL": 1720.356483985235,
   "n": 494,
-  "AIC": -3426.7129679704676,
-  "BIC": -3397.2952193501524,
+  "AIC": -3426.71296797047,
+  "BIC": -3397.2952193501546,
   "params": {
     ".mean_function.c": [
-      0.04910045667093784,
-      0.06928220573597008,
-      0.07114737763219066
+      0.04910045667465917,
+      0.0692822057362089,
+      0.07114737763257194
     ],
-    ".kernel.kernels[0].variance": 0.043295109009718453,
-    ".kernel.kernels[0].lengthscales": 1.303244673310068,
-    ".kernel.kernels[1].variance": 0.043295109019013685,
+    ".kernel.kernels[0].variance": 0.04329510901609544,
+    ".kernel.kernels[0].lengthscales": 1.3032446732396652,
+    ".kernel.kernels[1].variance": 0.043295109009710606,
     ".kernel.kernels[1].lengthscales": 1.4054630783925326,
-    ".likelihood.variance": 4.197748720189374e-05
+    ".likelihood.variance": 4.197748720174183e-05
   }
 }

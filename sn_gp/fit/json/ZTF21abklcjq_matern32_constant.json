@@ -2,7 +2,7 @@
   "name": "ZTF21abklcjq",
   "kernel": "matern32",
   "mean": "constant",
-  "gri": true,
+  "bands_mode": "gri",
   "left": null,
   "right": null,
   "gap_l": null,
@@ -19,20 +19,20 @@
     "ztfi"
   ],
   "k": 7,
-  "lnL": 2031.8673202296718,
+  "lnL": 2031.8673202296754,
   "n": 518,
-  "AIC": -4049.7346404593436,
-  "BIC": -4019.984813763527,
+  "AIC": -4049.734640459351,
+  "BIC": -4019.9848137635345,
   "params": {
     ".mean_function.c": [
-      0.0325642464579009,
-      0.06626889200668963,
-      0.06889560607627794
+      0.03256424645566841,
+      0.06626889200609716,
+      0.06889560607215207
     ],
-    ".kernel.kernels[0].variance": 0.023195215698609335,
-    ".kernel.kernels[0].lengthscales": 0.5149602325676668,
-    ".kernel.kernels[1].variance": 0.023195215678326914,
+    ".kernel.kernels[0].variance": 0.023195215701162897,
+    ".kernel.kernels[0].lengthscales": 0.5149602325584621,
+    ".kernel.kernels[1].variance": 0.023195215676173643,
     ".kernel.kernels[1].lengthscales": 1.6202266918080452,
-    ".likelihood.variance": 1.498909898817599e-05
+    ".likelihood.variance": 1.4989098987700271e-05
   }
 }

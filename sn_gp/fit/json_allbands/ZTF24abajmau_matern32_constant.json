@@ -1,0 +1,44 @@
+{
+  "name": "ZTF24abajmau",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 11.97173260519087,
+  "t_sd": 25.99322762893582,
+  "w_mean": 0.6401908625307066,
+  "w_sd": 0.10763869338111359,
+  "free_lambda": true,
+  "bands": [
+    "sdssg",
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "sdssi",
+    "ztfi"
+  ],
+  "k": 11,
+  "lnL": 904.7642648684492,
+  "n": 225,
+  "AIC": -1787.5285297368985,
+  "BIC": -1749.95142531265,
+  "params": {
+    ".mean_function.c": [
+      0.02386013879609634,
+      0.022963589021444086,
+      0.044593799572720215,
+      0.044758385751811805,
+      0.0602844237911737,
+      0.04576512107883185
+    ],
+    ".kernel.kernels[0].variance": 0.01709301794514149,
+    ".kernel.kernels[0].lengthscales": 0.21703507421838214,
+    ".kernel.kernels[1].variance": 0.01709301794611188,
+    ".kernel.kernels[1].lengthscales": 2.6477553036079984,
+    ".likelihood.variance": 5.016809879996324e-06
+  }
+}

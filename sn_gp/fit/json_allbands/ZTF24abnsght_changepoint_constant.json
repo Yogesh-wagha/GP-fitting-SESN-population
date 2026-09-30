@@ -1,0 +1,44 @@
+{
+  "name": "ZTF24abnsght",
+  "kernel": "changepoint",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 2.860457597599844,
+  "t_sd": 13.35413308487835,
+  "w_mean": 0.5514813082284746,
+  "w_sd": 0.079729909840446,
+  "free_lambda": false,
+  "bands": [
+    "ztfg",
+    "ztfr"
+  ],
+  "k": 12,
+  "lnL": 150.75937111480636,
+  "n": 39,
+  "AIC": -277.5187422296127,
+  "BIC": -257.55600247605696,
+  "params": {
+    ".mean_function.c": [
+      0.04074176513166018,
+      0.10452926911587061
+    ],
+    ".kernel.kernels[0].base.kernels[0].variance": 0.7376313237286892,
+    ".kernel.kernels[0].base.kernels[0].lengthscales": 7.544112481917797e-22,
+    ".kernel.kernels[0].base.kernels[1].variance": 87.01419353904686,
+    ".kernel.kernels[0].base.kernels[1].lengthscales": 0.8212787979649605,
+    ".kernel.kernels[0].base.kernels[2].variance": 1.3225325644939122e-56,
+    ".kernel.kernels[0].base.locations": [
+      -0.9630320078330263,
+      0.5346278636808572
+    ],
+    ".kernel.kernels[0].base.steepness": 1.8295647935988653,
+    ".kernel.kernels[1].variance": 0.000240014513156327,
+    ".kernel.kernels[1].lengthscales": 1.8813516822002831,
+    ".likelihood.variance": 1e-06
+  }
+}

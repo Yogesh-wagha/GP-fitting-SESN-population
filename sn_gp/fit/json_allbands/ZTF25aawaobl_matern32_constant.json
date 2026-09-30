@@ -1,0 +1,38 @@
+{
+  "name": "ZTF25aawaobl",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 6.135976361325736,
+  "t_sd": 10.813162198411117,
+  "w_mean": 0.5829220250444779,
+  "w_sd": 0.07706898837524324,
+  "free_lambda": false,
+  "bands": [
+    "ztfg",
+    "sdssr",
+    "ztfr"
+  ],
+  "k": 7,
+  "lnL": 374.62999785944226,
+  "n": 126,
+  "AIC": -735.2599957188845,
+  "BIC": -715.4060223702242,
+  "params": {
+    ".mean_function.c": [
+      0.035675706880127896,
+      0.043913722613968906,
+      0.08752008242797038
+    ],
+    ".kernel.kernels[0].variance": 0.12460506738858021,
+    ".kernel.kernels[0].lengthscales": 1.3321026147245902,
+    ".kernel.kernels[1].variance": 0.12460506738618378,
+    ".kernel.kernels[1].lengthscales": 1.9463081475737167,
+    ".likelihood.variance": 5.167566430547147e-05
+  }
+}

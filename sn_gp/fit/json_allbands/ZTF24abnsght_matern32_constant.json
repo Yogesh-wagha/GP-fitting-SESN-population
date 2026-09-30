@@ -1,0 +1,36 @@
+{
+  "name": "ZTF24abnsght",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 2.860457597599844,
+  "t_sd": 13.35413308487835,
+  "w_mean": 0.5514813082284746,
+  "w_sd": 0.079729909840446,
+  "free_lambda": false,
+  "bands": [
+    "ztfg",
+    "ztfr"
+  ],
+  "k": 6,
+  "lnL": 147.69362060426823,
+  "n": 39,
+  "AIC": -283.38724120853647,
+  "BIC": -273.4058713317586,
+  "params": {
+    ".mean_function.c": [
+      0.0886182814040146,
+      0.16581753342597735
+    ],
+    ".kernel.kernels[0].variance": 0.043457479573966167,
+    ".kernel.kernels[0].lengthscales": 0.46605092323688424,
+    ".kernel.kernels[1].variance": 0.04345747960780512,
+    ".kernel.kernels[1].lengthscales": 1.8813516822002831,
+    ".likelihood.variance": 1.0000253538285093e-06
+  }
+}

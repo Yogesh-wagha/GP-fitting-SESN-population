@@ -1,0 +1,41 @@
+{
+  "name": "ZTF19aawsday",
+  "kernel": "gibbs",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 15.456840240611335,
+  "t_sd": 24.19812129532872,
+  "w_mean": 0.633805570956214,
+  "w_sd": 0.07528885355464038,
+  "free_lambda": false,
+  "bands": [
+    "ztfg",
+    "ztfr",
+    "atlaso"
+  ],
+  "k": 9,
+  "lnL": 136.74427834108207,
+  "n": 54,
+  "AIC": -255.48855668216413,
+  "BIC": -237.58770026308565,
+  "params": {
+    ".mean_function.c": [
+      0.04947535231332859,
+      0.08415744333953581,
+      0.09021352650053442
+    ],
+    ".kernel.kernels[0].base.variance": 0.03669310980090712,
+    ".kernel.kernels[0].base.l_min": 0.42393694303118984,
+    ".kernel.kernels[0].base.l_relax": 16.24969010675853,
+    ".kernel.kernels[0].base.width": 8.684940086376509,
+    ".kernel.kernels[0].base.t_peak": 0.0,
+    ".kernel.kernels[1].variance": 0.03669310979948029,
+    ".kernel.kernels[1].lengthscales": 1.9923267909922218,
+    ".likelihood.variance": 0.00018922015895102948
+  }
+}

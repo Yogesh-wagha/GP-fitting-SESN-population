@@ -1,0 +1,40 @@
+{
+  "name": "ZTF19ablesob",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 10.98671718200301,
+  "t_sd": 21.63299636699641,
+  "w_mean": 0.5991679967292597,
+  "w_sd": 0.10023686649171683,
+  "free_lambda": true,
+  "bands": [
+    "ztfg",
+    "ztfr",
+    "atlaso",
+    "ztfi"
+  ],
+  "k": 9,
+  "lnL": 835.8981896774587,
+  "n": 260,
+  "AIC": -1653.7963793549175,
+  "BIC": -1621.7502446757778,
+  "params": {
+    ".mean_function.c": [
+      0.04565816444149621,
+      0.0602345884483806,
+      0.19318770198779917,
+      0.05402282460895479
+    ],
+    ".kernel.kernels[0].variance": 0.1146380126632693,
+    ".kernel.kernels[0].lengthscales": 1.1997943349053166,
+    ".kernel.kernels[1].variance": 0.1146380126909911,
+    ".kernel.kernels[1].lengthscales": 0.017664211712037796,
+    ".likelihood.variance": 3.5485825774041265e-05
+  }
+}

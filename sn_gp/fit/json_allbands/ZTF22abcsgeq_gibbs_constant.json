@@ -1,0 +1,41 @@
+{
+  "name": "ZTF22abcsgeq",
+  "kernel": "gibbs",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": -1.9174884401261807,
+  "t_sd": 4.120442899744774,
+  "w_mean": 0.5910123933982194,
+  "w_sd": 0.12074015674267193,
+  "free_lambda": false,
+  "bands": [
+    "ztfg",
+    "ztfr",
+    "ztfi"
+  ],
+  "k": 9,
+  "lnL": 43.38889445847363,
+  "n": 10,
+  "AIC": -68.77778891694726,
+  "BIC": -66.05452308000085,
+  "params": {
+    ".mean_function.c": [
+      0.07085958706452863,
+      0.18281940258765506,
+      0.17706040681751278
+    ],
+    ".kernel.kernels[0].base.variance": 0.00808021872818207,
+    ".kernel.kernels[0].base.l_min": 0.6473127921731535,
+    ".kernel.kernels[0].base.l_relax": 2.195033748195049e-26,
+    ".kernel.kernels[0].base.width": 197.36047404735035,
+    ".kernel.kernels[0].base.t_peak": 0.0,
+    ".kernel.kernels[1].variance": 0.008080218728165507,
+    ".kernel.kernels[1].lengthscales": 1.2423372972729219,
+    ".likelihood.variance": 1.000000001303537e-06
+  }
+}

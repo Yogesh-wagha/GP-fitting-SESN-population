@@ -1,0 +1,41 @@
+{
+  "name": "ZTF20abbpkng",
+  "kernel": "gibbs",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 1.1831001749837013,
+  "t_sd": 17.80983067002163,
+  "w_mean": 0.6366910890993551,
+  "w_sd": 0.07953324005559143,
+  "free_lambda": false,
+  "bands": [
+    "ztfg",
+    "ztfr",
+    "atlaso"
+  ],
+  "k": 9,
+  "lnL": 202.02687229896458,
+  "n": 80,
+  "AIC": -386.05374459792915,
+  "BIC": -364.6155048858642,
+  "params": {
+    ".mean_function.c": [
+      0.04488676950362364,
+      0.0824362482315849,
+      0.08111505172105136
+    ],
+    ".kernel.kernels[0].base.variance": 0.01627898806997592,
+    ".kernel.kernels[0].base.l_min": 0.3047500640229689,
+    ".kernel.kernels[0].base.l_relax": 12.32875641146998,
+    ".kernel.kernels[0].base.width": 18.888012775923073,
+    ".kernel.kernels[0].base.t_peak": 0.0,
+    ".kernel.kernels[1].variance": 0.016278988068579563,
+    ".kernel.kernels[1].lengthscales": 1.88600388837616,
+    ".likelihood.variance": 0.0002825207112699355
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "ZTF21abccaue",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": 25.0,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": -2.056954690825465,
+  "t_sd": 14.798727285623794,
+  "w_mean": 0.5674836798844781,
+  "w_sd": 0.09687017852143424,
+  "free_lambda": true,
+  "bands": [
+    "ztfg",
+    "ztfr",
+    "atlaso",
+    "ztfi"
+  ],
+  "k": 9,
+  "lnL": 624.9399554733308,
+  "n": 209,
+  "AIC": -1231.8799109466615,
+  "BIC": -1201.7989026789783,
+  "params": {
+    ".mean_function.c": [
+      0.0838251498597304,
+      0.11738143382520635,
+      0.0940236456637642,
+      0.09217909803882099
+    ],
+    ".kernel.kernels[0].variance": 0.020344354873559064,
+    ".kernel.kernels[0].lengthscales": 0.1573543812169615,
+    ".kernel.kernels[1].variance": 0.020344354875233655,
+    ".kernel.kernels[1].lengthscales": 1.3563370326634878,
+    ".likelihood.variance": 7.75424567253581e-05
+  }
+}

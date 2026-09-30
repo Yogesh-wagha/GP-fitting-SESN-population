@@ -1,0 +1,44 @@
+{
+  "name": "ZTF25abmtiec",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 2.13045669732923,
+  "t_sd": 6.893131363304266,
+  "w_mean": 0.5714288869633515,
+  "w_sd": 0.08560047061075757,
+  "free_lambda": true,
+  "bands": [
+    "sdssg",
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "atlaso",
+    "sdssi"
+  ],
+  "k": 11,
+  "lnL": 144.3872360314659,
+  "n": 35,
+  "AIC": -266.7744720629318,
+  "BIC": -249.66564338654825,
+  "params": {
+    ".mean_function.c": [
+      0.02710546233467895,
+      0.032303109277278357,
+      0.07075038993815162,
+      0.06899989356225235,
+      0.07961470540030041,
+      0.05808259863921647
+    ],
+    ".kernel.kernels[0].variance": 0.056097582310172645,
+    ".kernel.kernels[0].lengthscales": 1.269642966106935,
+    ".kernel.kernels[1].variance": 0.056097582307384805,
+    ".kernel.kernels[1].lengthscales": 13.535019300103805,
+    ".likelihood.variance": 1.000000000487988e-06
+  }
+}

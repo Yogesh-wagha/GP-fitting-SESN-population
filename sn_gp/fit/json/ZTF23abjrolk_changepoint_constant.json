@@ -2,51 +2,45 @@
   "name": "ZTF23abjrolk",
   "kernel": "changepoint",
   "mean": "constant",
-  "gri": true,
+  "bands_mode": "gri",
   "left": null,
   "right": null,
   "gap_l": null,
   "gap_r": null,
   "cp_days": null,
-  "t_mean": 4.452936640614671,
-  "t_sd": 11.726179962800954,
-  "w_mean": 0.6056219370980322,
-  "w_sd": 0.09569450685407858,
-  "free_lambda": true,
+  "t_mean": 4.685613108579475,
+  "t_sd": 12.58896278182597,
+  "w_mean": 0.5831902514644948,
+  "w_sd": 0.0747275126619734,
+  "free_lambda": false,
   "bands": [
-    "sdssg",
     "ztfg",
     "sdssr",
-    "ztfr",
-    "sdssi",
-    "ztfi"
+    "ztfr"
   ],
-  "k": 17,
-  "lnL": 169.70761767103448,
-  "n": 54,
-  "AIC": -305.41523534206897,
-  "BIC": -271.6025065504763,
+  "k": 13,
+  "lnL": 144.14738418675896,
+  "n": 46,
+  "AIC": -262.2947683735179,
+  "BIC": -238.52243021915967,
   "params": {
     ".mean_function.c": [
-      0.03834060614120592,
-      0.03533831777729304,
-      0.06796746167322085,
-      0.0841859560789192,
-      0.08071650137862188,
-      0.06262266694639972
+      0.03331223086222047,
+      0.06679734233826295,
+      0.08473591726001611
     ],
-    ".kernel.kernels[0].base.kernels[0].variance": 0.088653273942363,
-    ".kernel.kernels[0].base.kernels[0].lengthscales": 5.717336077178515,
-    ".kernel.kernels[0].base.kernels[1].variance": 2.172047764335222,
-    ".kernel.kernels[0].base.kernels[1].lengthscales": 0.8790268922404721,
-    ".kernel.kernels[0].base.kernels[2].variance": 0.02356209371901988,
+    ".kernel.kernels[0].base.kernels[0].variance": 0.00028106911405095884,
+    ".kernel.kernels[0].base.kernels[0].lengthscales": 6.194101823584439,
+    ".kernel.kernels[0].base.kernels[1].variance": 5.591219891633815,
+    ".kernel.kernels[0].base.kernels[1].lengthscales": 0.9698327336004072,
+    ".kernel.kernels[0].base.kernels[2].variance": 0.07814306541527724,
     ".kernel.kernels[0].base.locations": [
-      -1.209743705315364,
-      0.47202519758418066
+      -1.1660589357261548,
+      0.4209817190688995
     ],
-    ".kernel.kernels[0].base.steepness": 4.300592466658583,
-    ".kernel.kernels[1].variance": 0.0032072677152757763,
-    ".kernel.kernels[1].lengthscales": 2.9603756517000552,
-    ".likelihood.variance": 2.515553947605243e-05
+    ".kernel.kernels[0].base.steepness": 5.169817454341286,
+    ".kernel.kernels[1].variance": 0.0011236432387067615,
+    ".kernel.kernels[1].lengthscales": 2.00729282504716,
+    ".likelihood.variance": 2.9637379883137924e-05
   }
 }

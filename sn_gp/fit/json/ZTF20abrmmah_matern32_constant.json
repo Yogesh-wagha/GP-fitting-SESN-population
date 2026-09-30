@@ -2,37 +2,35 @@
   "name": "ZTF20abrmmah",
   "kernel": "matern32",
   "mean": "constant",
-  "gri": true,
+  "bands_mode": "gri",
   "left": null,
   "right": null,
   "gap_l": null,
   "gap_r": null,
   "cp_days": null,
-  "t_mean": -2.6917408681519737,
-  "t_sd": 9.548633207555282,
-  "w_mean": 0.6349132933054383,
-  "w_sd": 0.07889131859070621,
+  "t_mean": -2.734593827446753,
+  "t_sd": 10.9234790958283,
+  "w_mean": 0.5690966325960806,
+  "w_sd": 0.08006044894519539,
   "free_lambda": false,
   "bands": [
     "ztfg",
-    "ztfr",
-    "atlaso"
+    "ztfr"
   ],
-  "k": 7,
-  "lnL": 133.75092463046147,
-  "n": 50,
-  "AIC": -253.50184926092294,
-  "BIC": -240.11768822292592,
+  "k": 6,
+  "lnL": 88.25714131553843,
+  "n": 22,
+  "AIC": -164.51428263107687,
+  "BIC": -157.96802791092696,
   "params": {
     ".mean_function.c": [
-      0.05383376387963413,
-      0.06399911339624259,
-      0.07485655658656097
+      0.04741745001888988,
+      0.057797907254238626
     ],
-    ".kernel.kernels[0].variance": 0.03623743641201791,
-    ".kernel.kernels[0].lengthscales": 0.8685028311976257,
-    ".kernel.kernels[1].variance": 0.03623743641207252,
-    ".kernel.kernels[1].lengthscales": 1.9013498909583537,
-    ".likelihood.variance": 0.00011799632856604187
+    ".kernel.kernels[0].variance": 0.040434515208682825,
+    ".kernel.kernels[0].lengthscales": 0.9469042198530668,
+    ".kernel.kernels[1].variance": 0.040434515208615684,
+    ".kernel.kernels[1].lengthscales": 1.8735842975684667,
+    ".likelihood.variance": 1.000057408313518e-06
   }
 }

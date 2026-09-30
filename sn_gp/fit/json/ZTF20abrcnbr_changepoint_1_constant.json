@@ -2,43 +2,39 @@
   "name": "ZTF20abrcnbr",
   "kernel": "changepoint_1",
   "mean": "constant",
-  "gri": true,
+  "bands_mode": "gri",
   "left": null,
   "right": null,
   "gap_l": null,
   "gap_r": null,
   "cp_days": null,
-  "t_mean": 3.1537529306006036,
-  "t_sd": 2.5294063327832172,
-  "w_mean": 0.6183674387615488,
-  "w_sd": 0.09174694180235353,
+  "t_mean": 3.9523015716123546,
+  "t_sd": 2.7838255262721976,
+  "w_mean": 0.4813948048935322,
+  "w_sd": 1.0,
   "free_lambda": false,
   "bands": [
-    "ztfg",
-    "ztfr",
-    "atlaso"
+    "ztfg"
   ],
-  "k": 11,
-  "lnL": 61.463201650921924,
-  "n": 23,
-  "AIC": -100.92640330184385,
-  "BIC": -88.4359669266232,
+  "k": 9,
+  "lnL": 27.35537471229803,
+  "n": 7,
+  "AIC": -36.71074942459606,
+  "BIC": -37.197558083098244,
   "params": {
     ".mean_function.c": [
-      0.11473216502434354,
-      0.11828348513228966,
-      0.10255159081396231
+      0.030160802738595574
     ],
-    ".kernel.kernels[0].base.kernels[0].variance": 9.238989862780003e-65,
-    ".kernel.kernels[0].base.kernels[0].lengthscales": 2.0909580191203526e-46,
-    ".kernel.kernels[0].base.kernels[1].variance": 103.18243502355436,
-    ".kernel.kernels[0].base.kernels[1].lengthscales": 824.7470519156366,
+    ".kernel.kernels[0].base.kernels[0].variance": 5001.869548522096,
+    ".kernel.kernels[0].base.kernels[0].lengthscales": 4710.227512284907,
+    ".kernel.kernels[0].base.kernels[1].variance": 0.0,
+    ".kernel.kernels[0].base.kernels[1].lengthscales": 2077.054481084585,
     ".kernel.kernels[0].base.locations": [
-      0.5709764700717255
+      0.06553484556256839
     ],
-    ".kernel.kernels[0].base.steepness": 3.0644733667131403,
-    ".kernel.kernels[1].variance": 3.0677174051611114e-05,
-    ".kernel.kernels[1].lengthscales": 1.6349318795076409,
-    ".likelihood.variance": 0.00019581043972098435
+    ".kernel.kernels[0].base.steepness": 2.199735360843146,
+    ".kernel.kernels[1].variance": 1.848209124253527e-06,
+    ".kernel.kernels[1].lengthscales": 0.15,
+    ".likelihood.variance": 7.337872861585241e-06
   }
 }

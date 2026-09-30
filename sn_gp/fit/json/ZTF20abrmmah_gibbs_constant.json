@@ -2,40 +2,38 @@
   "name": "ZTF20abrmmah",
   "kernel": "gibbs",
   "mean": "constant",
-  "gri": true,
+  "bands_mode": "gri",
   "left": null,
   "right": null,
   "gap_l": null,
   "gap_r": null,
   "cp_days": null,
-  "t_mean": -2.6917408681519737,
-  "t_sd": 9.548633207555282,
-  "w_mean": 0.6349132933054383,
-  "w_sd": 0.07889131859070621,
+  "t_mean": -2.734593827446753,
+  "t_sd": 10.9234790958283,
+  "w_mean": 0.5690966325960806,
+  "w_sd": 0.08006044894519539,
   "free_lambda": false,
   "bands": [
     "ztfg",
-    "ztfr",
-    "atlaso"
+    "ztfr"
   ],
-  "k": 9,
-  "lnL": 134.549745075771,
-  "n": 50,
-  "AIC": -251.099490151542,
-  "BIC": -233.8912831026887,
+  "k": 8,
+  "lnL": 90.5681182510307,
+  "n": 22,
+  "AIC": -165.1362365020614,
+  "BIC": -156.40789687519487,
   "params": {
     ".mean_function.c": [
-      0.05751682121176902,
-      0.07001614147436197,
-      0.08080979290665209
+      0.048404814231721584,
+      0.05973461070253839
     ],
-    ".kernel.kernels[0].base.variance": 0.035237885045716344,
-    ".kernel.kernels[0].base.l_min": 0.5681030636440766,
-    ".kernel.kernels[0].base.l_relax": 14.021987460459838,
-    ".kernel.kernels[0].base.width": 14.585636070229034,
+    ".kernel.kernels[0].base.variance": 0.04111409717902646,
+    ".kernel.kernels[0].base.l_min": 0.658097365425346,
+    ".kernel.kernels[0].base.l_relax": 14.294502774789862,
+    ".kernel.kernels[0].base.width": 13.905359720341162,
     ".kernel.kernels[0].base.t_peak": 0.0,
-    ".kernel.kernels[1].variance": 0.03523788504644724,
-    ".kernel.kernels[1].lengthscales": 1.9013498909583537,
-    ".likelihood.variance": 0.00012241026772060617
+    ".kernel.kernels[1].variance": 0.04111409718168269,
+    ".kernel.kernels[1].lengthscales": 1.8735842975684667,
+    ".likelihood.variance": 1.0004204517974734e-06
   }
 }

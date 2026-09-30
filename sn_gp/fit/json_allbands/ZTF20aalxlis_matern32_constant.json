@@ -1,0 +1,40 @@
+{
+  "name": "ZTF20aalxlis",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 42.07513932616715,
+  "t_sd": 43.14221913201965,
+  "w_mean": 0.6184269005396129,
+  "w_sd": 0.10834702086691309,
+  "free_lambda": true,
+  "bands": [
+    "ztfg",
+    "ztfr",
+    "atlaso",
+    "ztfi"
+  ],
+  "k": 9,
+  "lnL": 1015.4714433231735,
+  "n": 458,
+  "AIC": -2012.942886646347,
+  "BIC": -1975.8010639893193,
+  "params": {
+    ".mean_function.c": [
+      0.2138887938412294,
+      0.26149116333581857,
+      0.2174694689379478,
+      0.19696004097467487
+    ],
+    ".kernel.kernels[0].variance": 0.2838323707799809,
+    ".kernel.kernels[0].lengthscales": 0.28597699754182937,
+    ".kernel.kernels[1].variance": 0.2838323707734274,
+    ".kernel.kernels[1].lengthscales": 3.819283310305934,
+    ".likelihood.variance": 0.00022308136440660269
+  }
+}

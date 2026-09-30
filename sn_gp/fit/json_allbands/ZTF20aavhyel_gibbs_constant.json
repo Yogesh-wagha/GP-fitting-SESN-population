@@ -1,0 +1,41 @@
+{
+  "name": "ZTF20aavhyel",
+  "kernel": "gibbs",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": 60.0,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 17.005891024798423,
+  "t_sd": 21.14393378216901,
+  "w_mean": 0.6521613797941723,
+  "w_sd": 0.06918138063542872,
+  "free_lambda": false,
+  "bands": [
+    "ztfg",
+    "ztfr",
+    "atlaso"
+  ],
+  "k": 9,
+  "lnL": 244.0475379645373,
+  "n": 104,
+  "AIC": -470.0950759290746,
+  "BIC": -446.29555783680223,
+  "params": {
+    ".mean_function.c": [
+      0.062261924977849645,
+      0.10032980336619236,
+      0.11085516580530819
+    ],
+    ".kernel.kernels[0].base.variance": 0.0578629560021888,
+    ".kernel.kernels[0].base.l_min": 0.5517519132776657,
+    ".kernel.kernels[0].base.l_relax": 0.0001569015301296378,
+    ".kernel.kernels[0].base.width": 76.36100818693761,
+    ".kernel.kernels[0].base.t_peak": 0.0,
+    ".kernel.kernels[1].variance": 0.057862956001530096,
+    ".kernel.kernels[1].lengthscales": 2.168213450241306,
+    ".likelihood.variance": 0.00031395326414110125
+  }
+}

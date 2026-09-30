@@ -1,0 +1,41 @@
+{
+  "name": "ZTF22aarbard",
+  "kernel": "gibbs",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 8.022154680438641,
+  "t_sd": 16.319081894644626,
+  "w_mean": 0.57192362431841,
+  "w_sd": 0.07948874074467918,
+  "free_lambda": false,
+  "bands": [
+    "ztfg",
+    "sdssr",
+    "ztfr"
+  ],
+  "k": 9,
+  "lnL": 568.506674310848,
+  "n": 154,
+  "AIC": -1119.013348621696,
+  "BIC": -1091.6807751999734,
+  "params": {
+    ".mean_function.c": [
+      0.019428530422349287,
+      0.0452591548845457,
+      0.05471542306573486
+    ],
+    ".kernel.kernels[0].base.variance": 0.04885047407788554,
+    ".kernel.kernels[0].base.l_min": 0.6319079049059009,
+    ".kernel.kernels[0].base.l_relax": 12.369156244920775,
+    ".kernel.kernels[0].base.width": 19.251259420405976,
+    ".kernel.kernels[0].base.t_peak": 0.0,
+    ".kernel.kernels[1].variance": 0.04885047407290979,
+    ".kernel.kernels[1].lengthscales": 1.88705970927135,
+    ".likelihood.variance": 2.10865793757188e-05
+  }
+}

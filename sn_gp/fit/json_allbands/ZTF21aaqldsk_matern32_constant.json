@@ -1,0 +1,42 @@
+{
+  "name": "ZTF21aaqldsk",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 15.493165133035406,
+  "t_sd": 18.970616435569422,
+  "w_mean": 0.6080784786958259,
+  "w_sd": 0.09132443806710368,
+  "free_lambda": true,
+  "bands": [
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "atlaso",
+    "ztfi"
+  ],
+  "k": 10,
+  "lnL": 2957.4356403070747,
+  "n": 752,
+  "AIC": -5894.871280614149,
+  "BIC": -5848.643917374651,
+  "params": {
+    ".mean_function.c": [
+      0.033003944151163825,
+      0.04982229270594336,
+      0.05944351309439182,
+      0.0642364422601903,
+      0.07000106412743766
+    ],
+    ".kernel.kernels[0].variance": 0.026550387673603053,
+    ".kernel.kernels[0].lengthscales": 0.332801579187274,
+    ".kernel.kernels[1].variance": 0.026550387661910608,
+    ".kernel.kernels[1].lengthscales": 2.0061169582003786,
+    ".likelihood.variance": 1.3956334152393665e-05
+  }
+}

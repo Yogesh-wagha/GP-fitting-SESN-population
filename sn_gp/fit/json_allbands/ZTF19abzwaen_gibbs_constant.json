@@ -1,0 +1,39 @@
+{
+  "name": "ZTF19abzwaen",
+  "kernel": "gibbs",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 18.47336345561357,
+  "t_sd": 12.570887661947578,
+  "w_mean": 0.5786146604087602,
+  "w_sd": 0.07861270821341385,
+  "free_lambda": false,
+  "bands": [
+    "ztfg",
+    "ztfr"
+  ],
+  "k": 8,
+  "lnL": 134.95737529360883,
+  "n": 43,
+  "AIC": -253.91475058721767,
+  "BIC": -239.82514966166917,
+  "params": {
+    ".mean_function.c": [
+      0.06163984660461186,
+      0.150417667924691
+    ],
+    ".kernel.kernels[0].base.variance": 0.07070914895272483,
+    ".kernel.kernels[0].base.l_min": 0.4385899411675044,
+    ".kernel.kernels[0].base.l_relax": 11.242262697702797,
+    ".kernel.kernels[0].base.width": 22.322534719959148,
+    ".kernel.kernels[0].base.t_peak": 0.0,
+    ".kernel.kernels[1].variance": 0.07070914895754112,
+    ".kernel.kernels[1].lengthscales": 1.9080884428098763,
+    ".likelihood.variance": 1.009285076070782e-05
+  }
+}

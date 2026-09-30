@@ -1,0 +1,52 @@
+{
+  "name": "ZTF24abajmau",
+  "kernel": "changepoint",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 11.97173260519087,
+  "t_sd": 25.99322762893582,
+  "w_mean": 0.6401908625307066,
+  "w_sd": 0.10763869338111359,
+  "free_lambda": true,
+  "bands": [
+    "sdssg",
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "sdssi",
+    "ztfi"
+  ],
+  "k": 17,
+  "lnL": 908.0406558382284,
+  "n": 225,
+  "AIC": -1782.0813116764568,
+  "BIC": -1724.0076048389817,
+  "params": {
+    ".mean_function.c": [
+      0.02491960596649165,
+      0.02399487378708269,
+      0.044809423226820196,
+      0.0453137865555476,
+      0.06132994327446244,
+      0.046884189158425536
+    ],
+    ".kernel.kernels[0].base.kernels[0].variance": 0.000216200255473943,
+    ".kernel.kernels[0].base.kernels[0].lengthscales": 4.297319095295091,
+    ".kernel.kernels[0].base.kernels[1].variance": 4.726389470825737,
+    ".kernel.kernels[0].base.kernels[1].lengthscales": 0.2066369545533932,
+    ".kernel.kernels[0].base.kernels[2].variance": 0.018295434990557385,
+    ".kernel.kernels[0].base.locations": [
+      -0.6319593393769445,
+      -0.07685555947543914
+    ],
+    ".kernel.kernels[0].base.steepness": 0.7547967574179627,
+    ".kernel.kernels[1].variance": 0.0007584973880823344,
+    ".kernel.kernels[1].lengthscales": 2.357927303568419,
+    ".likelihood.variance": 5.079746071058267e-06
+  }
+}

@@ -2,41 +2,39 @@
   "name": "ZTF23abbskff",
   "kernel": "changepoint_1",
   "mean": "constant",
-  "gri": true,
+  "bands_mode": "gri",
   "left": null,
   "right": null,
   "gap_l": null,
   "gap_r": null,
   "cp_days": null,
-  "t_mean": -2.8310016452920865,
-  "t_sd": 6.800996753156107,
-  "w_mean": 0.6275645177311127,
-  "w_sd": 0.046222921749950845,
+  "t_mean": -2.516226809843647,
+  "t_sd": 7.056131897345485,
+  "w_mean": 0.6421814890148708,
+  "w_sd": 1.1102230246251565e-16,
   "free_lambda": false,
   "bands": [
-    "ztfg",
     "ztfr"
   ],
-  "k": 10,
-  "lnL": 95.51987562106632,
-  "n": 22,
-  "AIC": -171.03975124213264,
-  "BIC": -160.12932670854948,
+  "k": 9,
+  "lnL": 86.54557971308162,
+  "n": 20,
+  "AIC": -155.09115942616324,
+  "BIC": -146.12956896417734,
   "params": {
     ".mean_function.c": [
-      0.02667255905545318,
-      0.08756574621646827
+      0.08744275214368112
     ],
-    ".kernel.kernels[0].base.kernels[0].variance": 0.9320997299262945,
-    ".kernel.kernels[0].base.kernels[0].lengthscales": 0.010642978280542698,
-    ".kernel.kernels[0].base.kernels[1].variance": 0.0003948220266628743,
-    ".kernel.kernels[0].base.kernels[1].lengthscales": 4.6133681694031505,
+    ".kernel.kernels[0].base.kernels[0].variance": 41.72999664246216,
+    ".kernel.kernels[0].base.kernels[0].lengthscales": 0.010920934359024869,
+    ".kernel.kernels[0].base.kernels[1].variance": 1.7787445205845183e-30,
+    ".kernel.kernels[0].base.kernels[1].lengthscales": 16.446456794347462,
     ".kernel.kernels[0].base.locations": [
-      1.013789842533257
+      -1.0594975114771126
     ],
-    ".kernel.kernels[0].base.steepness": 0.26596122536668515,
-    ".kernel.kernels[1].variance": 0.0006019922827641185,
-    ".kernel.kernels[1].lengthscales": 3.245143195651831,
-    ".likelihood.variance": 1.0000007033254032e-06
+    ".kernel.kernels[0].base.steepness": 0.2751944718846755,
+    ".kernel.kernels[1].variance": 2.58687473377211e-05,
+    ".kernel.kernels[1].lengthscales": 1351079888211148.8,
+    ".likelihood.variance": 1e-06
   }
 }

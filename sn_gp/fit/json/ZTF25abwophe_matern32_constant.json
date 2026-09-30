@@ -2,7 +2,7 @@
   "name": "ZTF25abwophe",
   "kernel": "matern32",
   "mean": "constant",
-  "gri": true,
+  "bands_mode": "gri",
   "left": null,
   "right": null,
   "gap_l": null,

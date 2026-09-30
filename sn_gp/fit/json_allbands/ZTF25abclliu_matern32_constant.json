@@ -1,0 +1,40 @@
+{
+  "name": "ZTF25abclliu",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 6.103892286363138,
+  "t_sd": 33.08950066567823,
+  "w_mean": 0.5614313482446898,
+  "w_sd": 0.08140612410311554,
+  "free_lambda": true,
+  "bands": [
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "sdssi"
+  ],
+  "k": 9,
+  "lnL": 451.7051310774759,
+  "n": 119,
+  "AIC": -885.4102621549519,
+  "BIC": -860.3981507169481,
+  "params": {
+    ".mean_function.c": [
+      0.03516907838316588,
+      0.08235863759017893,
+      0.06830670955919264,
+      0.11937744773168803
+    ],
+    ".kernel.kernels[0].variance": 0.022885182875585285,
+    ".kernel.kernels[0].lengthscales": 0.842800782216276,
+    ".kernel.kernels[1].variance": 0.022885182880871446,
+    ".kernel.kernels[1].lengthscales": 3.487351259806079,
+    ".likelihood.variance": 1.3995970457467725e-05
+  }
+}

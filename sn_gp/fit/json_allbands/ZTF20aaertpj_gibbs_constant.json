@@ -1,0 +1,41 @@
+{
+  "name": "ZTF20aaertpj",
+  "kernel": "gibbs",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 7.922784086722696,
+  "t_sd": 18.02983260283424,
+  "w_mean": 0.6358442522529986,
+  "w_sd": 0.07832247991144609,
+  "free_lambda": false,
+  "bands": [
+    "ztfg",
+    "ztfr",
+    "atlaso"
+  ],
+  "k": 9,
+  "lnL": 127.56612424330208,
+  "n": 46,
+  "AIC": -237.13224848660417,
+  "BIC": -220.67447591820232,
+  "params": {
+    ".mean_function.c": [
+      0.033212335689576516,
+      0.06049144391011227,
+      0.08018870447467444
+    ],
+    ".kernel.kernels[0].base.variance": 0.036554317639110635,
+    ".kernel.kernels[0].base.l_min": 0.5852534138148751,
+    ".kernel.kernels[0].base.l_relax": 6.336388324694526e-05,
+    ".kernel.kernels[0].base.width": 76.81793938488656,
+    ".kernel.kernels[0].base.t_peak": 0.0,
+    ".kernel.kernels[1].variance": 0.03655431763921264,
+    ".kernel.kernels[1].lengthscales": 1.9151589705738994,
+    ".likelihood.variance": 0.00010207397297226342
+  }
+}

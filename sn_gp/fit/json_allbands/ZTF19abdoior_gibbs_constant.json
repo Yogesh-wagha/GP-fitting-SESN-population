@@ -1,0 +1,43 @@
+{
+  "name": "ZTF19abdoior",
+  "kernel": "gibbs",
+  "mean": "constant",
+  "gri": true,
+  "left": 97.0,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 8.40421464502595,
+  "t_sd": 16.879494176780803,
+  "w_mean": 0.5781612953959039,
+  "w_sd": 0.09633627460768542,
+  "free_lambda": true,
+  "bands": [
+    "ztfg",
+    "ztfr",
+    "atlaso",
+    "ztfi"
+  ],
+  "k": 11,
+  "lnL": 994.1251606875007,
+  "n": 336,
+  "AIC": -1966.2503213750015,
+  "BIC": -1924.2620986154063,
+  "params": {
+    ".mean_function.c": [
+      0.11432520982117352,
+      0.13776059782717423,
+      0.1362692231805721,
+      0.13857938718696158
+    ],
+    ".kernel.kernels[0].base.variance": 0.17733953799353686,
+    ".kernel.kernels[0].base.l_min": 0.6708186405568577,
+    ".kernel.kernels[0].base.l_relax": 12.940286713176683,
+    ".kernel.kernels[0].base.width": 17.633613453429103,
+    ".kernel.kernels[0].base.t_peak": 0.0,
+    ".kernel.kernels[1].variance": 0.1773395379612265,
+    ".kernel.kernels[1].lengthscales": 24.72827627946959,
+    ".likelihood.variance": 0.00011584761653111994
+  }
+}

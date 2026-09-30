@@ -181,7 +181,7 @@ changepoint_1_constant,ZTF21aanvncv,,keep
 changepoint_1_constant,ZTF21aaocrlm,,bad
 changepoint_1_constant,ZTF21aapecxb,half_r,good
 changepoint_1_constant,ZTF21aaqhhfu,,bad
-changepoint_1_constant,ZTF21aaqldsk,,bad
+changepoint_1_constant,ZTF21aaqldsk,,good
 changepoint_1_constant,ZTF21aaqwfqe,,bad
 changepoint_1_constant,ZTF21aarmuxl,,bad
 changepoint_1_constant,ZTF21aarnjyd,,bad
@@ -611,7 +611,7 @@ changepoint_constant,ZTF21aanvncv,,keep
 changepoint_constant,ZTF21aaocrlm,,bad
 changepoint_constant,ZTF21aapecxb,,keep
 changepoint_constant,ZTF21aaqhhfu,l10 ok,good
-changepoint_constant,ZTF21aaqldsk,r100 ok,good
+changepoint_constant,ZTF21aaqldsk,r100 ok,bad
 changepoint_constant,ZTF21aaqwfqe,,bad
 changepoint_constant,ZTF21aarmuxl,,bad
 changepoint_constant,ZTF21aarnjyd,,bad

@@ -1,0 +1,48 @@
+{
+  "name": "ZTF22abnvurz",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": 400.0,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 42.41467723644324,
+  "t_sd": 126.33647615408337,
+  "w_mean": 0.6176234464358972,
+  "w_sd": 0.10441770748789249,
+  "free_lambda": true,
+  "bands": [
+    "sdssu",
+    "sdssg",
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "sdssi",
+    "ztfi",
+    "sdssz"
+  ],
+  "k": 13,
+  "lnL": 196.87555777657667,
+  "n": 588,
+  "AIC": -367.75111555315334,
+  "BIC": -310.85366523047117,
+  "params": {
+    ".mean_function.c": [
+      -0.7055520914272017,
+      0.34641984503727313,
+      0.30993188862589677,
+      0.8705359819427615,
+      0.9121179641474503,
+      0.9584325190468684,
+      1.2547409548219244,
+      1.908035084346028
+    ],
+    ".kernel.kernels[0].variance": 1.0771564338397734,
+    ".kernel.kernels[0].lengthscales": 0.061559587121586816,
+    ".kernel.kernels[1].variance": 1.0771564338388517,
+    ".kernel.kernels[1].lengthscales": 2.578507635968522,
+    ".likelihood.variance": 0.006255479289422602
+  }
+}

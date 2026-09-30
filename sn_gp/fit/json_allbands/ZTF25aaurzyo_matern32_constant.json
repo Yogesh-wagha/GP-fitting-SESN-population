@@ -1,0 +1,42 @@
+{
+  "name": "ZTF25aaurzyo",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 7.223055422158693,
+  "t_sd": 5.6755165569833235,
+  "w_mean": 0.572203606550867,
+  "w_sd": 0.08947185859772018,
+  "free_lambda": true,
+  "bands": [
+    "sdssg",
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "sdssi"
+  ],
+  "k": 10,
+  "lnL": 238.23615604782944,
+  "n": 63,
+  "AIC": -456.4723120956589,
+  "BIC": -435.04096483174357,
+  "params": {
+    ".mean_function.c": [
+      0.04619865499643763,
+      0.04313516901789759,
+      0.041585309438212543,
+      0.03963085529727831,
+      0.04272053633069432
+    ],
+    ".kernel.kernels[0].variance": 0.05126008169928661,
+    ".kernel.kernels[0].lengthscales": 0.8305653316036787,
+    ".kernel.kernels[1].variance": 0.05126008172370215,
+    ".kernel.kernels[1].lengthscales": 12.778163940906708,
+    ".likelihood.variance": 5.134448649132157e-06
+  }
+}

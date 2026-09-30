@@ -1,0 +1,38 @@
+{
+  "name": "ZTF20aaelulu",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": 15.0,
+  "right": 130.0,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 34.0980430594953,
+  "t_sd": 28.919053039368166,
+  "w_mean": 0.617086330454566,
+  "w_sd": 0.11933544762711872,
+  "free_lambda": false,
+  "bands": [
+    "ztfg",
+    "ztfr",
+    "ztfi"
+  ],
+  "k": 7,
+  "lnL": 411.0941942604529,
+  "n": 567,
+  "AIC": -808.1883885209058,
+  "BIC": -777.8058733948116,
+  "params": {
+    ".mean_function.c": [
+      0.5931282035704831,
+      0.9579862482788553,
+      1.0104626950136504
+    ],
+    ".kernel.kernels[0].variance": 2.2583960552139355,
+    ".kernel.kernels[0].lengthscales": 0.5562025911689994,
+    ".kernel.kernels[1].variance": 2.2583960550735296,
+    ".kernel.kernels[1].lengthscales": 1.2569609699600508,
+    ".likelihood.variance": 0.004885842833104904
+  }
+}

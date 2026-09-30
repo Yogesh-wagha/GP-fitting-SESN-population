@@ -1,0 +1,48 @@
+{
+  "name": "ZTF26aatlolu",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 11.413102674742266,
+  "t_sd": 10.848079512442162,
+  "w_mean": 0.6216426133871465,
+  "w_sd": 0.13057020966528066,
+  "free_lambda": true,
+  "bands": [
+    "sdssu",
+    "sdssg",
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "sdssi",
+    "ztfi",
+    "sdssz"
+  ],
+  "k": 13,
+  "lnL": 1009.0401941391917,
+  "n": 229,
+  "AIC": -1992.0803882783835,
+  "BIC": -1947.4420022321783,
+  "params": {
+    ".mean_function.c": [
+      0.05844383116416188,
+      0.07484041031763025,
+      0.0710428848890475,
+      0.07744022672374662,
+      0.07634911760453089,
+      0.06685641212393642,
+      0.07029008619563067,
+      0.051098676667813064
+    ],
+    ".kernel.kernels[0].variance": 0.021583455801604038,
+    ".kernel.kernels[0].lengthscales": 0.20273905296384884,
+    ".kernel.kernels[1].variance": 0.021583455780209586,
+    ".kernel.kernels[1].lengthscales": 2.009246654895349,
+    ".likelihood.variance": 1.0009890016475735e-06
+  }
+}

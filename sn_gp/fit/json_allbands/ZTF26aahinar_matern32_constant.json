@@ -1,0 +1,46 @@
+{
+  "name": "ZTF26aahinar",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 23.457938446641172,
+  "t_sd": 26.36803290081689,
+  "w_mean": 0.6379870457560589,
+  "w_sd": 0.11793377631941936,
+  "free_lambda": true,
+  "bands": [
+    "sdssg",
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "atlaso",
+    "sdssi",
+    "ztfi"
+  ],
+  "k": 12,
+  "lnL": 902.3835492074786,
+  "n": 364,
+  "AIC": -1780.7670984149572,
+  "BIC": -1734.0012520033163,
+  "params": {
+    ".mean_function.c": [
+      0.11185827224334777,
+      0.09147650419094523,
+      0.12417507770812565,
+      0.1335064289537665,
+      0.10247779277373821,
+      0.16258661526085091,
+      0.12795184489271957
+    ],
+    ".kernel.kernels[0].variance": 0.13946360813320177,
+    ".kernel.kernels[0].lengthscales": 0.9229445186112906,
+    ".kernel.kernels[1].variance": 0.13946360813706904,
+    ".kernel.kernels[1].lengthscales": 2.6087264910508874,
+    ".likelihood.variance": 0.00025423254913389234
+  }
+}

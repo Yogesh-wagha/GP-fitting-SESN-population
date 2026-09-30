@@ -1,0 +1,44 @@
+{
+  "name": "ZTF22aatunnt",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 7.7792156108563075,
+  "t_sd": 20.642055230814076,
+  "w_mean": 0.6509102559381788,
+  "w_sd": 0.11268378335601481,
+  "free_lambda": true,
+  "bands": [
+    "sdssg",
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "sdssi",
+    "ztfi"
+  ],
+  "k": 11,
+  "lnL": 633.4924716424728,
+  "n": 147,
+  "AIC": -1244.9849432849455,
+  "BIC": -1212.0901848303795,
+  "params": {
+    ".mean_function.c": [
+      0.014219232683468804,
+      0.03623676740720094,
+      0.06547536725680363,
+      0.06919683873032234,
+      0.07208544569045988,
+      0.07966869551698005
+    ],
+    ".kernel.kernels[0].variance": 0.027716533802200672,
+    ".kernel.kernels[0].lengthscales": 0.3254614828283661,
+    ".kernel.kernels[1].variance": 0.02771653387587363,
+    ".kernel.kernels[1].lengthscales": 4.844375264088195,
+    ".likelihood.variance": 1.7216489936025616e-06
+  }
+}

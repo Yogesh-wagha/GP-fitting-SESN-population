@@ -2,7 +2,7 @@
   "name": "ZTF22aadnjsh",
   "kernel": "changepoint",
   "mean": "constant",
-  "gri": true,
+  "bands_mode": "gri",
   "left": null,
   "right": null,
   "gap_l": null,

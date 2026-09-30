@@ -2,7 +2,7 @@
   "name": "ZTF26aalsmpp",
   "kernel": "gibbs",
   "mean": "constant",
-  "gri": true,
+  "bands_mode": "gri",
   "left": null,
   "right": null,
   "gap_l": null,
@@ -19,23 +19,23 @@
     "ztfi"
   ],
   "k": 9,
-  "lnL": 1721.5539026711992,
+  "lnL": 1721.553902671982,
   "n": 494,
-  "AIC": -3425.1078053423985,
-  "BIC": -3387.2849856877074,
+  "AIC": -3425.107805343964,
+  "BIC": -3387.284985689273,
   "params": {
     ".mean_function.c": [
-      0.05705744517405074,
-      0.08086480960500235,
-      0.07666867681301749
+      0.05705744683043462,
+      0.08086481122173497,
+      0.0766686786994872
     ],
-    ".kernel.kernels[0].base.variance": 0.039459193937511225,
-    ".kernel.kernels[0].base.l_min": 0.6882222643036775,
-    ".kernel.kernels[0].base.l_relax": 13.486127139601233,
-    ".kernel.kernels[0].base.width": 16.254598428315617,
+    ".kernel.kernels[0].base.variance": 0.03945919276957579,
+    ".kernel.kernels[0].base.l_min": 0.6882222385570257,
+    ".kernel.kernels[0].base.l_relax": 13.486127103785481,
+    ".kernel.kernels[0].base.width": 16.25459852781673,
     ".kernel.kernels[0].base.t_peak": 0.0,
-    ".kernel.kernels[1].variance": 0.039459193837385075,
+    ".kernel.kernels[1].variance": 0.039459192821266295,
     ".kernel.kernels[1].lengthscales": 1.4054630783925326,
-    ".likelihood.variance": 4.450875031230202e-05
+    ".likelihood.variance": 4.4508750220419135e-05
   }
 }

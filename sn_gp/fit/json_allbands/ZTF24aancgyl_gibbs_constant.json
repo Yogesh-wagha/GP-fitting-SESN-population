@@ -1,0 +1,45 @@
+{
+  "name": "ZTF24aancgyl",
+  "kernel": "gibbs",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 10.982834300152781,
+  "t_sd": 20.73821579830545,
+  "w_mean": 0.5997691930484361,
+  "w_sd": 0.0726381126817514,
+  "free_lambda": true,
+  "bands": [
+    "sdssg",
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "atlaso"
+  ],
+  "k": 12,
+  "lnL": 228.73801998753603,
+  "n": 86,
+  "AIC": -433.47603997507207,
+  "BIC": -404.02387242003,
+  "params": {
+    ".mean_function.c": [
+      0.0904962438003963,
+      0.06963888528860489,
+      0.20978624992561795,
+      0.17841417564022888,
+      0.18154829053128327
+    ],
+    ".kernel.kernels[0].base.variance": 0.1036474853496826,
+    ".kernel.kernels[0].base.l_min": 0.12314369537926953,
+    ".kernel.kernels[0].base.l_relax": 15.44722757243942,
+    ".kernel.kernels[0].base.width": 10.89736967288855,
+    ".kernel.kernels[0].base.t_peak": 0.0,
+    ".kernel.kernels[1].variance": 0.10364748535941536,
+    ".kernel.kernels[1].lengthscales": 8.081115816299297,
+    ".likelihood.variance": 4.060711210381546e-05
+  }
+}

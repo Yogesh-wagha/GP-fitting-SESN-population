@@ -1,0 +1,50 @@
+{
+  "name": "ZTF19abpbopt",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 10.528194157182106,
+  "t_sd": 23.90844905923677,
+  "w_mean": 0.5801438114676556,
+  "w_sd": 0.10229579417669127,
+  "free_lambda": true,
+  "bands": [
+    "sdssu",
+    "sdssg",
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "atlaso",
+    "sdssi",
+    "ztfi",
+    "sdssz"
+  ],
+  "k": 14,
+  "lnL": 1412.8809984179247,
+  "n": 523,
+  "AIC": -2797.7619968358495,
+  "BIC": -2738.1278563389405,
+  "params": {
+    ".mean_function.c": [
+      0.06548673688762306,
+      0.11075748289768717,
+      0.12348239598019795,
+      0.13070000546838081,
+      0.14109816676011608,
+      0.13470279487461853,
+      0.10807772639523917,
+      0.13525636401613936,
+      0.09019156283284464
+    ],
+    ".kernel.kernels[0].variance": 0.17332688380672123,
+    ".kernel.kernels[0].lengthscales": 1.2891641795258617,
+    ".kernel.kernels[1].variance": 0.17332688379698002,
+    ".kernel.kernels[1].lengthscales": 6.364250043591143,
+    ".likelihood.variance": 0.000186614717639064
+  }
+}

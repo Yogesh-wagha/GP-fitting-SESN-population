@@ -2,7 +2,7 @@
   "name": "ZTF20aaelulu",
   "kernel": "matern32",
   "mean": "constant",
-  "gri": true,
+  "bands_mode": "gri",
   "left": 15.0,
   "right": 130.0,
   "gap_l": null,
@@ -19,20 +19,20 @@
     "ztfi"
   ],
   "k": 7,
-  "lnL": 411.0941942604529,
+  "lnL": 411.09419426062937,
   "n": 567,
-  "AIC": -808.1883885209058,
-  "BIC": -777.8058733948116,
+  "AIC": -808.1883885212587,
+  "BIC": -777.8058733951644,
   "params": {
     ".mean_function.c": [
-      0.5931282035704831,
-      0.9579862482788553,
-      1.0104626950136504
+      0.593128197041389,
+      0.9579862389915444,
+      1.0104626860414438
     ],
-    ".kernel.kernels[0].variance": 2.2583960552139355,
-    ".kernel.kernels[0].lengthscales": 0.5562025911689994,
-    ".kernel.kernels[1].variance": 2.2583960550735296,
+    ".kernel.kernels[0].variance": 2.2583960643832306,
+    ".kernel.kernels[0].lengthscales": 0.5562025928689716,
+    ".kernel.kernels[1].variance": 2.2583960644258285,
     ".kernel.kernels[1].lengthscales": 1.2569609699600508,
-    ".likelihood.variance": 0.004885842833104904
+    ".likelihood.variance": 0.004885842832775697
   }
 }

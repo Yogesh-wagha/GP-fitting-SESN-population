@@ -1,0 +1,44 @@
+{
+  "name": "ZTF18achdidy",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 37.38412394523538,
+  "t_sd": 36.27227530675086,
+  "w_mean": 0.5872990292864856,
+  "w_sd": 0.0949669175995763,
+  "free_lambda": true,
+  "bands": [
+    "sdssg",
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "atlaso",
+    "sdssi"
+  ],
+  "k": 11,
+  "lnL": 143.30418132045554,
+  "n": 51,
+  "AIC": -264.6083626409111,
+  "BIC": -243.3582806809435,
+  "params": {
+    ".mean_function.c": [
+      0.014131289313233866,
+      0.06921738763319589,
+      0.010243141627064906,
+      0.05492629049530058,
+      0.1327089213335559,
+      0.01565931917216172
+    ],
+    ".kernel.kernels[0].variance": 0.02733426700641541,
+    ".kernel.kernels[0].lengthscales": 0.4488975735267775,
+    ".kernel.kernels[1].variance": 0.027334267006431094,
+    ".kernel.kernels[1].lengthscales": 0.010573642253889452,
+    ".likelihood.variance": 4.110023392308722e-05
+  }
+}

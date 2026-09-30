@@ -2,41 +2,37 @@
   "name": "ZTF20abusrwm",
   "kernel": "matern32",
   "mean": "constant",
-  "gri": true,
+  "bands_mode": "gri",
   "left": null,
   "right": null,
   "gap_l": null,
   "gap_r": null,
   "cp_days": null,
-  "t_mean": 10.92051184090236,
-  "t_sd": 32.9747277391552,
-  "w_mean": 0.6467727120459135,
-  "w_sd": 0.06419144697614501,
-  "free_lambda": true,
+  "t_mean": 20.870943534126926,
+  "t_sd": 39.85737676186025,
+  "w_mean": 0.5995259567565961,
+  "w_sd": 0.06757800828002802,
+  "free_lambda": false,
   "bands": [
     "ztfg",
     "sdssr",
-    "ztfr",
-    "atlaso",
-    "sdssi"
+    "ztfr"
   ],
-  "k": 10,
-  "lnL": 252.4864282994825,
-  "n": 88,
-  "AIC": -484.972856598965,
-  "BIC": -460.1994884541829,
+  "k": 7,
+  "lnL": 137.79821468124047,
+  "n": 41,
+  "AIC": -261.59642936248093,
+  "BIC": -249.6014248955508,
   "params": {
     ".mean_function.c": [
-      0.0005434842037206999,
-      0.040372869357060845,
-      0.03738047985935853,
-      0.04541305736590578,
-      0.04309809199747234
+      0.0182006751730731,
+      0.039699628016593345,
+      0.03740387496714956
     ],
-    ".kernel.kernels[0].variance": 0.03385863179515883,
-    ".kernel.kernels[0].lengthscales": 0.6236411175091889,
-    ".kernel.kernels[1].variance": 0.033858631792037755,
-    ".kernel.kernels[1].lengthscales": 6.816954166666597,
-    ".likelihood.variance": 0.00011412352001455696
+    ".kernel.kernels[0].variance": 0.03159523364155431,
+    ".kernel.kernels[0].lengthscales": 0.4806394615701408,
+    ".kernel.kernels[1].variance": 0.03159523364081952,
+    ".kernel.kernels[1].lengthscales": 2.2196570129506306,
+    ".likelihood.variance": 1.0721144502308783e-05
   }
 }

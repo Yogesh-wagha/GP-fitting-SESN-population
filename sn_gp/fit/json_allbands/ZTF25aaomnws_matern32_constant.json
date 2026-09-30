@@ -1,0 +1,38 @@
+{
+  "name": "ZTF25aaomnws",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 11.16806560677203,
+  "t_sd": 20.032591259012104,
+  "w_mean": 0.564926882350135,
+  "w_sd": 0.08095352992299523,
+  "free_lambda": false,
+  "bands": [
+    "ztfg",
+    "ztfr",
+    "atlaso"
+  ],
+  "k": 7,
+  "lnL": 358.4378083783552,
+  "n": 91,
+  "AIC": -702.8756167567104,
+  "BIC": -685.2996002110925,
+  "params": {
+    ".mean_function.c": [
+      0.07294424647179885,
+      0.09258496687360371,
+      0.06833745464867029
+    ],
+    ".kernel.kernels[0].variance": 0.019538687530360876,
+    ".kernel.kernels[0].lengthscales": 0.2656502045642374,
+    ".kernel.kernels[1].variance": 0.019538687529877287,
+    ".kernel.kernels[1].lengthscales": 1.8529148777413817,
+    ".likelihood.variance": 2.1031518874868107e-06
+  }
+}

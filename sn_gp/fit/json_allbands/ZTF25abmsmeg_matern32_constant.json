@@ -1,0 +1,44 @@
+{
+  "name": "ZTF25abmsmeg",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 35.80783640239212,
+  "t_sd": 33.22537814800196,
+  "w_mean": 0.5698099341627224,
+  "w_sd": 0.08720654401391158,
+  "free_lambda": true,
+  "bands": [
+    "sdssu",
+    "sdssg",
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "sdssi"
+  ],
+  "k": 11,
+  "lnL": 308.7747795826002,
+  "n": 134,
+  "AIC": -595.5495591652004,
+  "BIC": -563.6733213657404,
+  "params": {
+    ".mean_function.c": [
+      -0.08334225463431992,
+      0.09143203853685823,
+      0.0850997621066505,
+      0.24643464546712687,
+      0.26263767048743447,
+      0.3927076402260402
+    ],
+    ".kernel.kernels[0].variance": 0.4892509938388372,
+    ".kernel.kernels[0].lengthscales": 0.5918519332436026,
+    ".kernel.kernels[1].variance": 0.4892509938995754,
+    ".kernel.kernels[1].lengthscales": 3.969049323404239,
+    ".likelihood.variance": 1.8203403790125964e-05
+  }
+}

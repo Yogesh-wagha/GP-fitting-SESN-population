@@ -1,0 +1,40 @@
+{
+  "name": "ZTF24abltheg",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 11.023451542854309,
+  "t_sd": 10.79008805032828,
+  "w_mean": 0.5951519473955198,
+  "w_sd": 0.08086451736814336,
+  "free_lambda": true,
+  "bands": [
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "ztfi"
+  ],
+  "k": 9,
+  "lnL": 141.317454051332,
+  "n": 35,
+  "AIC": -264.634908102664,
+  "BIC": -250.63677554925926,
+  "params": {
+    ".mean_function.c": [
+      0.02826416280876347,
+      0.0957618336834843,
+      0.08624283466188858,
+      0.07515606379842427
+    ],
+    ".kernel.kernels[0].variance": 0.03874325822197587,
+    ".kernel.kernels[0].lengthscales": 1.0295642851938533,
+    ".kernel.kernels[1].variance": 0.03874325822664313,
+    ".kernel.kernels[1].lengthscales": 2.7190165193001565,
+    ".likelihood.variance": 1e-06
+  }
+}

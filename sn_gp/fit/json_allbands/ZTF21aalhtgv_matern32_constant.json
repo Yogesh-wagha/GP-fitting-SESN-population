@@ -1,0 +1,38 @@
+{
+  "name": "ZTF21aalhtgv",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 10.96593537271126,
+  "t_sd": 25.37636424127688,
+  "w_mean": 0.5913372916527576,
+  "w_sd": 0.08933000110287193,
+  "free_lambda": false,
+  "bands": [
+    "ztfg",
+    "ztfr",
+    "atlaso"
+  ],
+  "k": 7,
+  "lnL": 747.4002369508057,
+  "n": 229,
+  "AIC": -1480.8004739016114,
+  "BIC": -1456.7644198767318,
+  "params": {
+    ".mean_function.c": [
+      0.06729211727693837,
+      0.07707814755461993,
+      0.08184583672825052
+    ],
+    ".kernel.kernels[0].variance": 0.02346970026066667,
+    ".kernel.kernels[0].lengthscales": 0.21416186110647326,
+    ".kernel.kernels[1].variance": 0.023469700260775005,
+    ".kernel.kernels[1].lengthscales": 1.679167112370914,
+    ".likelihood.variance": 3.9120263957739894e-05
+  }
+}

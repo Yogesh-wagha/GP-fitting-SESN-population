@@ -2,7 +2,7 @@
   "name": "ZTF19aadnhdo",
   "kernel": "matern32",
   "mean": "constant",
-  "gri": true,
+  "bands_mode": "gri",
   "left": null,
   "right": 250.0,
   "gap_l": null,

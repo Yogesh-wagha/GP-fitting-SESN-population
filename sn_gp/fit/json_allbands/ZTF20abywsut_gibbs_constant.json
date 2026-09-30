@@ -1,0 +1,41 @@
+{
+  "name": "ZTF20abywsut",
+  "kernel": "gibbs",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 6.282859332603276,
+  "t_sd": 13.810925944436947,
+  "w_mean": 0.6407889050006771,
+  "w_sd": 0.07533284744922412,
+  "free_lambda": false,
+  "bands": [
+    "ztfg",
+    "ztfr",
+    "atlaso"
+  ],
+  "k": 9,
+  "lnL": 262.7016555317976,
+  "n": 92,
+  "AIC": -507.4033110635952,
+  "BIC": -484.70721387015385,
+  "params": {
+    ".mean_function.c": [
+      0.057654389979302785,
+      0.08860975231929996,
+      0.08702964914150818
+    ],
+    ".kernel.kernels[0].base.variance": 0.04090213501481816,
+    ".kernel.kernels[0].base.l_min": 0.6379670476211553,
+    ".kernel.kernels[0].base.l_relax": 0.0007794858561120236,
+    ".kernel.kernels[0].base.width": 71.46202294787139,
+    ".kernel.kernels[0].base.t_peak": 0.0,
+    ".kernel.kernels[1].variance": 0.04090213497573325,
+    ".kernel.kernels[1].lengthscales": 1.9911632850610492,
+    ".likelihood.variance": 0.00010362257940668115
+  }
+}

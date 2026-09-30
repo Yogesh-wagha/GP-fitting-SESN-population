@@ -1,0 +1,43 @@
+{
+  "name": "ZTF23abhyxpr",
+  "kernel": "gibbs",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 9.100340788095089,
+  "t_sd": 27.17333592889368,
+  "w_mean": 0.6146602885947343,
+  "w_sd": 0.10333916759993503,
+  "free_lambda": true,
+  "bands": [
+    "ztfg",
+    "ztfr",
+    "atlaso",
+    "ztfi"
+  ],
+  "k": 11,
+  "lnL": -124.41034955352042,
+  "n": 58,
+  "AIC": 270.8206991070408,
+  "BIC": 293.48557222305146,
+  "params": {
+    ".mean_function.c": [
+      0.19523664208414646,
+      0.34257775037430493,
+      3.9616782230417638,
+      0.4084097478268913
+    ],
+    ".kernel.kernels[0].base.variance": 0.0004430572589294834,
+    ".kernel.kernels[0].base.l_min": 3.9030799287826827,
+    ".kernel.kernels[0].base.l_relax": 15.010162871482306,
+    ".kernel.kernels[0].base.width": 11.974860261830848,
+    ".kernel.kernels[0].base.t_peak": 0.0,
+    ".kernel.kernels[1].variance": 0.0004430572589342151,
+    ".kernel.kernels[1].lengthscales": 1.203088133734111,
+    ".likelihood.variance": 4.272205898048547
+  }
+}

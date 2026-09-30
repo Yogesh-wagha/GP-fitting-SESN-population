@@ -1,0 +1,48 @@
+{
+  "name": "ZTF19abauylg",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 17.528721174244524,
+  "t_sd": 20.24153753423501,
+  "w_mean": 0.6230352980751234,
+  "w_sd": 0.09383150640671921,
+  "free_lambda": true,
+  "bands": [
+    "sdssg",
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "atlaso",
+    "sdssi",
+    "ztfi",
+    "sdssz"
+  ],
+  "k": 13,
+  "lnL": 444.854292014212,
+  "n": 214,
+  "AIC": -863.708584028424,
+  "BIC": -819.9508958331398,
+  "params": {
+    ".mean_function.c": [
+      0.07839856184240937,
+      0.07420195741157702,
+      0.1482516641872622,
+      0.14774431951416636,
+      0.12981980265099338,
+      0.0975289333803522,
+      0.14987811985707128,
+      0.19759012396769376
+    ],
+    ".kernel.kernels[0].variance": 0.2471209087955916,
+    ".kernel.kernels[0].lengthscales": 0.8075124975911934,
+    ".kernel.kernels[1].variance": 0.2471209087991159,
+    ".kernel.kernels[1].lengthscales": 9.343209281992271,
+    ".likelihood.variance": 0.0004434116999455383
+  }
+}

@@ -2,7 +2,7 @@
   "name": "ZTF21abraccv",
   "kernel": "matern32",
   "mean": "constant",
-  "gri": true,
+  "bands_mode": "gri",
   "left": null,
   "right": null,
   "gap_l": null,
@@ -22,23 +22,23 @@
     "ztfi"
   ],
   "k": 11,
-  "lnL": 2889.3448209368903,
+  "lnL": 2889.344843676752,
   "n": 703,
-  "AIC": -5756.689641873781,
-  "BIC": -5706.580716063863,
+  "AIC": -5756.689687353504,
+  "BIC": -5706.580761543587,
   "params": {
     ".mean_function.c": [
-      0.08537113397373354,
-      0.07772078290994473,
-      0.16540482587835859,
-      0.16412341702437286,
-      0.14232502581292927,
-      0.16150326803865553
+      0.08532743356581807,
+      0.07768914755831735,
+      0.16540050549274243,
+      0.16410611876058212,
+      0.14231061753672464,
+      0.16150748676526805
     ],
-    ".kernel.kernels[0].variance": 0.10224962101658218,
-    ".kernel.kernels[0].lengthscales": 0.003225764824394845,
-    ".kernel.kernels[1].variance": 0.10224962105798413,
-    ".kernel.kernels[1].lengthscales": 4.024752570940476,
-    ".likelihood.variance": 1.0000000000078962e-06
+    ".kernel.kernels[0].variance": 0.10225496570732882,
+    ".kernel.kernels[0].lengthscales": 0.003224235795831246,
+    ".kernel.kernels[1].variance": 0.10225496596651674,
+    ".kernel.kernels[1].lengthscales": 4.026376648287198,
+    ".likelihood.variance": 1.0000000000000016e-06
   }
 }

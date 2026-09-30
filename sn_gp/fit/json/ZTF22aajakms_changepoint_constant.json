@@ -2,47 +2,45 @@
   "name": "ZTF22aajakms",
   "kernel": "changepoint",
   "mean": "constant",
-  "gri": true,
+  "bands_mode": "gri",
   "left": null,
   "right": null,
   "gap_l": null,
   "gap_r": null,
   "cp_days": null,
-  "t_mean": 3.497813129475283,
-  "t_sd": 9.382556215095413,
-  "w_mean": 0.612403986315492,
-  "w_sd": 0.09434994232958206,
-  "free_lambda": true,
+  "t_mean": 3.533873058645131,
+  "t_sd": 9.424037353065401,
+  "w_mean": 0.6123392869429483,
+  "w_sd": 0.09483287232521118,
+  "free_lambda": false,
   "bands": [
     "ztfg",
-    "sdssr",
     "ztfr",
     "ztfi"
   ],
-  "k": 15,
-  "lnL": 461.8052387907418,
-  "n": 98,
-  "AIC": -893.6104775814836,
-  "BIC": -854.835965401425,
+  "k": 13,
+  "lnL": 456.8482611564692,
+  "n": 97,
+  "AIC": -887.6965223129384,
+  "BIC": -854.2252795923945,
   "params": {
     ".mean_function.c": [
-      0.04699091570946029,
-      0.13700686524416059,
-      0.08920469930174667,
-      0.09420606711851645
+      0.06323248408018434,
+      0.09900932599234386,
+      0.09774049144867782
     ],
-    ".kernel.kernels[0].base.kernels[0].variance": 1.0051466821676733,
-    ".kernel.kernels[0].base.kernels[0].lengthscales": 0.004708721571558617,
-    ".kernel.kernels[0].base.kernels[1].variance": 0.010476228196419348,
-    ".kernel.kernels[0].base.kernels[1].lengthscales": 6.53967394544148,
-    ".kernel.kernels[0].base.kernels[2].variance": 0.33873737396152803,
+    ".kernel.kernels[0].base.kernels[0].variance": 0.6797548220753142,
+    ".kernel.kernels[0].base.kernels[0].lengthscales": 0.004027984365418054,
+    ".kernel.kernels[0].base.kernels[1].variance": 0.003403388676264831,
+    ".kernel.kernels[0].base.kernels[1].lengthscales": 11.022174415525795,
+    ".kernel.kernels[0].base.kernels[2].variance": 1.001995658392407,
     ".kernel.kernels[0].base.locations": [
-      0.33987263374953963,
-      0.6640304403579912
+      -0.459816073046314,
+      -0.45981607300115546
     ],
-    ".kernel.kernels[0].base.steepness": 4.3918240203577055,
-    ".kernel.kernels[1].variance": 0.0010619420498594499,
-    ".kernel.kernels[1].lengthscales": 10.108783053614593,
-    ".likelihood.variance": 1.001217824351006e-06
+    ".kernel.kernels[0].base.steepness": 1.4049136789446628,
+    ".kernel.kernels[1].variance": 0.0020886386301274882,
+    ".kernel.kernels[1].lengthscales": 1.581730009037412,
+    ".likelihood.variance": 1.0000000000000002e-06
   }
 }

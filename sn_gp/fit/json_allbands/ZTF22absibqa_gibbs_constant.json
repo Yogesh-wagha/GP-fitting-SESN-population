@@ -1,0 +1,43 @@
+{
+  "name": "ZTF22absibqa",
+  "kernel": "gibbs",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": -1.1333257361508335,
+  "t_sd": 9.07383381177861,
+  "w_mean": 0.605064594657922,
+  "w_sd": 0.07265937353905785,
+  "free_lambda": true,
+  "bands": [
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "sdssi"
+  ],
+  "k": 11,
+  "lnL": 120.44265466173984,
+  "n": 33,
+  "AIC": -218.88530932347967,
+  "BIC": -202.4237261473484,
+  "params": {
+    ".mean_function.c": [
+      0.04889723075179954,
+      0.16037580187001316,
+      0.17351915164891826,
+      0.2507933516983249
+    ],
+    ".kernel.kernels[0].base.variance": 0.06762191715680117,
+    ".kernel.kernels[0].base.l_min": 0.2567533327804411,
+    ".kernel.kernels[0].base.l_relax": 15.780285863598927,
+    ".kernel.kernels[0].base.width": 9.897509673852259,
+    ".kernel.kernels[0].base.t_peak": 0.0,
+    ".kernel.kernels[1].variance": 0.06762191714962451,
+    ".kernel.kernels[1].lengthscales": 8.780363278819655,
+    ".likelihood.variance": 1.0000000000000019e-06
+  }
+}

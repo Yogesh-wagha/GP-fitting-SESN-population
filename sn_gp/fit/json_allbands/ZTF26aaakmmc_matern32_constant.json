@@ -1,0 +1,50 @@
+{
+  "name": "ZTF26aaakmmc",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 2.7723460693469764,
+  "t_sd": 15.421537307489244,
+  "w_mean": 0.5885425827094828,
+  "w_sd": 0.11260977834925388,
+  "free_lambda": true,
+  "bands": [
+    "sdssu",
+    "sdssg",
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "atlaso",
+    "sdssi",
+    "ztfi",
+    "sdssz"
+  ],
+  "k": 14,
+  "lnL": 491.1750236225189,
+  "n": 134,
+  "AIC": -954.3500472450378,
+  "BIC": -913.780290045725,
+  "params": {
+    ".mean_function.c": [
+      0.11093481892279328,
+      0.08517597007442856,
+      0.07827188496132961,
+      0.06660247635996316,
+      0.07286866904974518,
+      0.07482877182588436,
+      0.0580225577920588,
+      0.06993458806927193,
+      0.054059053164345124
+    ],
+    ".kernel.kernels[0].variance": 0.03381803106742794,
+    ".kernel.kernels[0].lengthscales": 0.5589137247857556,
+    ".kernel.kernels[1].variance": 0.03381803106312876,
+    ".kernel.kernels[1].lengthscales": 2.3803328752540813,
+    ".likelihood.variance": 9.742504760957996e-06
+  }
+}

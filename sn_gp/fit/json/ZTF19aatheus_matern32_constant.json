@@ -2,7 +2,7 @@
   "name": "ZTF19aatheus",
   "kernel": "matern32",
   "mean": "constant",
-  "gri": true,
+  "bands_mode": "gri",
   "left": null,
   "right": null,
   "gap_l": null,
@@ -19,20 +19,20 @@
     "ztfi"
   ],
   "k": 7,
-  "lnL": 821.3133087420248,
+  "lnL": 821.3133087420151,
   "n": 379,
-  "AIC": -1628.6266174840496,
-  "BIC": -1601.0638640484726,
+  "AIC": -1628.6266174840302,
+  "BIC": -1601.0638640484533,
   "params": {
     ".mean_function.c": [
-      0.17764728645036243,
-      0.24591774669276303,
-      0.21460121270369434
+      0.1776472864501537,
+      0.24591774669304475,
+      0.2146012127040014
     ],
-    ".kernel.kernels[0].variance": 0.22965539803329568,
-    ".kernel.kernels[0].lengthscales": 0.6365193002794274,
-    ".kernel.kernels[1].variance": 0.22965539803975155,
+    ".kernel.kernels[0].variance": 0.2296553980327147,
+    ".kernel.kernels[0].lengthscales": 0.6365193002792991,
+    ".kernel.kernels[1].variance": 0.22965539804046456,
     ".kernel.kernels[1].lengthscales": 1.6529575334311493,
-    ".likelihood.variance": 0.0003717969379228981
+    ".likelihood.variance": 0.00037179693792286256
   }
 }

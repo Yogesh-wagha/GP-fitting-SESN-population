@@ -1,0 +1,41 @@
+{
+  "name": "ZTF21abimeun",
+  "kernel": "gibbs",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": -3.2884617437803536,
+  "t_sd": 5.647982338435104,
+  "w_mean": 0.5759866822813237,
+  "w_sd": 0.07748146186681912,
+  "free_lambda": false,
+  "bands": [
+    "ztfg",
+    "sdssr",
+    "ztfr"
+  ],
+  "k": 9,
+  "lnL": 115.78279913110956,
+  "n": 25,
+  "AIC": -213.5655982622191,
+  "BIC": -202.5957158384053,
+  "params": {
+    ".mean_function.c": [
+      0.05107346302420237,
+      0.10275359609401684,
+      0.11767638927723721
+    ],
+    ".kernel.kernels[0].base.variance": 0.021623126658446633,
+    ".kernel.kernels[0].base.l_min": 0.6511116647652677,
+    ".kernel.kernels[0].base.l_relax": 5.418568821725562e-11,
+    ".kernel.kernels[0].base.width": 104.58376719550355,
+    ".kernel.kernels[0].base.t_peak": 0.0,
+    ".kernel.kernels[1].variance": 0.02162312667421325,
+    ".kernel.kernels[1].lengthscales": 1.9359469528057063,
+    ".likelihood.variance": 1.00000008453078e-06
+  }
+}

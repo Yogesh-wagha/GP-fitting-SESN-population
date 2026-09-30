@@ -1,0 +1,60 @@
+{
+  "name": "ZTF18abfzhct",
+  "kernel": "matern32",
+  "mean": "villar",
+  "bands_mode": "gri",
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 19.110031941155807,
+  "t_sd": 21.357110664983335,
+  "w_mean": 0.575806914786845,
+  "w_sd": 0.07916162956974947,
+  "free_lambda": false,
+  "bands": [
+    "ztfg",
+    "ztfr"
+  ],
+  "k": 18,
+  "lnL": 1040.978191569447,
+  "n": 281,
+  "AIC": -2045.9563831388941,
+  "BIC": -1980.4659990908867,
+  "params": {
+    ".mean_function.y0": [
+      1.6920095484767834,
+      0.18051656292324075
+    ],
+    ".mean_function.beta": [
+      -0.4811759987840091,
+      -0.05046131026727217
+    ],
+    ".mean_function.g0": [
+      -1.3984560577946001,
+      0.8235355548612381
+    ],
+    ".mean_function.t0": [
+      -0.9497517898298148,
+      -1.0143097612943888
+    ],
+    ".mean_function.sigma": [
+      1.712579325291732,
+      0.48636621962896387
+    ],
+    ".mean_function.tau": [
+      -1.126355548809408,
+      0.33052499469231106
+    ],
+    ".mean_function.theta": [
+      0.24256227615448914,
+      1.1830197733992374
+    ],
+    ".kernel.kernels[0].variance": 0.0050258807167225744,
+    ".kernel.kernels[0].lengthscales": 0.05074624413786563,
+    ".kernel.kernels[1].variance": 0.005025880715696766,
+    ".kernel.kernels[1].lengthscales": 1.8948574052260347,
+    ".likelihood.variance": 2.2933817763173894e-05
+  }
+}

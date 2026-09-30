@@ -1,0 +1,40 @@
+{
+  "name": "ZTF18aczcumi",
+  "kernel": "changepoint_1",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": -0.9030301100574434,
+  "t_sd": 5.095049420549312,
+  "w_mean": 0.6421814890148709,
+  "w_sd": 1.0,
+  "free_lambda": false,
+  "bands": [
+    "ztfr"
+  ],
+  "k": 9,
+  "lnL": 30.28714057771967,
+  "n": 10,
+  "AIC": -42.57428115543934,
+  "BIC": -39.85101531849293,
+  "params": {
+    ".mean_function.c": [
+      0.08247580015283361
+    ],
+    ".kernel.kernels[0].base.kernels[0].variance": 18.038759555981322,
+    ".kernel.kernels[0].base.kernels[0].lengthscales": 0.45735002566855953,
+    ".kernel.kernels[0].base.kernels[1].variance": 1.920678639177106e-13,
+    ".kernel.kernels[0].base.kernels[1].lengthscales": 7.652199057179907e-08,
+    ".kernel.kernels[0].base.locations": [
+      2.1399262700397146
+    ],
+    ".kernel.kernels[0].base.steepness": 7.933711608007419e-05,
+    ".kernel.kernels[1].variance": 4.282126017783703e-05,
+    ".kernel.kernels[1].lengthscales": 0.15,
+    ".likelihood.variance": 6.274691500347785e-05
+  }
+}

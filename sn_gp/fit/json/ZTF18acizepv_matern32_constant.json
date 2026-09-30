@@ -2,7 +2,7 @@
   "name": "ZTF18acizepv",
   "kernel": "matern32",
   "mean": "constant",
-  "gri": true,
+  "bands_mode": "gri",
   "left": 40.0,
   "right": null,
   "gap_l": null,

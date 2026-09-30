@@ -1,0 +1,43 @@
+{
+  "name": "ZTF20aaiqiti",
+  "kernel": "gibbs",
+  "mean": "constant",
+  "gri": true,
+  "left": 500.0,
+  "right": 250.0,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 17.903512173529617,
+  "t_sd": 26.708748251664698,
+  "w_mean": 0.6351807449889417,
+  "w_sd": 0.11108912201108657,
+  "free_lambda": true,
+  "bands": [
+    "ztfg",
+    "ztfr",
+    "atlaso",
+    "ztfi"
+  ],
+  "k": 11,
+  "lnL": 1010.5788029740216,
+  "n": 310,
+  "AIC": -1999.1576059480433,
+  "BIC": -1958.0553106757723,
+  "params": {
+    ".mean_function.c": [
+      0.018337140530254717,
+      0.043413387170626525,
+      0.047797647582855235,
+      0.04274824311390687
+    ],
+    ".kernel.kernels[0].base.variance": 0.03412802009520756,
+    ".kernel.kernels[0].base.l_min": 0.23068457557209318,
+    ".kernel.kernels[0].base.l_relax": 12.975118631135253,
+    ".kernel.kernels[0].base.width": 17.58803609088207,
+    ".kernel.kernels[0].base.t_peak": 0.0,
+    ".kernel.kernels[1].variance": 0.03412802008840594,
+    ".kernel.kernels[1].lengthscales": 1.403691101497892,
+    ".likelihood.variance": 4.976201586107462e-05
+  }
+}

@@ -2,39 +2,37 @@
   "name": "ZTF24abavusp",
   "kernel": "matern32",
   "mean": "constant",
-  "gri": true,
+  "bands_mode": "gri",
   "left": null,
   "right": null,
   "gap_l": null,
   "gap_r": null,
   "cp_days": null,
-  "t_mean": 10.373265228644446,
-  "t_sd": 8.656198374608671,
-  "w_mean": 0.5895556438151861,
-  "w_sd": 0.09562245649030479,
-  "free_lambda": true,
+  "t_mean": 10.463467534980484,
+  "t_sd": 8.639300007330183,
+  "w_mean": 0.5893023900618206,
+  "w_sd": 0.09599856392601273,
+  "free_lambda": false,
   "bands": [
     "ztfg",
-    "sdssr",
     "ztfr",
     "ztfi"
   ],
-  "k": 9,
-  "lnL": 349.1836078618274,
-  "n": 116,
-  "AIC": -680.3672157236548,
-  "BIC": -655.5849040036975,
+  "k": 7,
+  "lnL": 342.21231171294573,
+  "n": 115,
+  "AIC": -670.4246234258915,
+  "BIC": -651.2100985273487,
   "params": {
     ".mean_function.c": [
-      0.047705439469211235,
-      0.2294840253060659,
-      0.10513573326110785,
-      0.11433529388569229
+      0.048316765032695407,
+      0.10233732317533868,
+      0.11259074791490702
     ],
-    ".kernel.kernels[0].variance": 0.03205267588662436,
-    ".kernel.kernels[0].lengthscales": 1.2229635131175107,
-    ".kernel.kernels[1].variance": 0.03205267588752659,
-    ".kernel.kernels[1].lengthscales": 4.74482030743873,
-    ".likelihood.variance": 9.30774862597372e-05
+    ".kernel.kernels[0].variance": 0.030518421993265047,
+    ".kernel.kernels[0].lengthscales": 1.7727317508163711,
+    ".kernel.kernels[1].variance": 0.030518421992979102,
+    ".kernel.kernels[1].lengthscales": 1.5625233739497064,
+    ".likelihood.variance": 0.0001010886028067338
   }
 }

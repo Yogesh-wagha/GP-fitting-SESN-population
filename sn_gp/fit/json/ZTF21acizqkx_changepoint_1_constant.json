@@ -2,41 +2,39 @@
   "name": "ZTF21acizqkx",
   "kernel": "changepoint_1",
   "mean": "constant",
-  "gri": true,
+  "bands_mode": "gri",
   "left": null,
   "right": null,
   "gap_l": null,
   "gap_r": null,
   "cp_days": null,
-  "t_mean": 3.9181318116264747,
-  "t_sd": 5.066978586973669,
-  "w_mean": 0.6043493280451441,
-  "w_sd": 0.06820289811897864,
+  "t_mean": 4.659271738312852,
+  "t_sd": 5.006814972599414,
+  "w_mean": 0.6421814890148709,
+  "w_sd": 1.0,
   "free_lambda": false,
   "bands": [
-    "ztfg",
     "ztfr"
   ],
-  "k": 10,
-  "lnL": 79.80888208112664,
-  "n": 17,
-  "AIC": -139.61776416225328,
-  "BIC": -131.28563072169112,
+  "k": 9,
+  "lnL": 62.74127118693611,
+  "n": 13,
+  "AIC": -107.48254237387222,
+  "BIC": -102.39799815671839,
   "params": {
     ".mean_function.c": [
-      0.04539163105610375,
-      0.07758316103823612
+      0.08415301091765447
     ],
-    ".kernel.kernels[0].base.kernels[0].variance": 59.2425188886225,
-    ".kernel.kernels[0].base.kernels[0].lengthscales": 2.2868388307893488e-07,
-    ".kernel.kernels[0].base.kernels[1].variance": 2.6400404270402192e-33,
-    ".kernel.kernels[0].base.kernels[1].lengthscales": 6.776381348893409e-62,
+    ".kernel.kernels[0].base.kernels[0].variance": 0.01596932405125854,
+    ".kernel.kernels[0].base.kernels[0].lengthscales": 0.6077887253231836,
+    ".kernel.kernels[0].base.kernels[1].variance": 0.16169350807151267,
+    ".kernel.kernels[0].base.kernels[1].lengthscales": 0.3390106466317725,
     ".kernel.kernels[0].base.locations": [
-      1.0039708249037598
+      0.051868018340653466
     ],
-    ".kernel.kernels[0].base.steepness": 25.472274558012554,
-    ".kernel.kernels[1].variance": 4.9064167593488154e-06,
-    ".kernel.kernels[1].lengthscales": 2.1993200309219687,
-    ".likelihood.variance": 1.0000000353393358e-06
+    ".kernel.kernels[0].base.steepness": 0.06046732727403201,
+    ".kernel.kernels[1].variance": 0.0014617081718774332,
+    ".kernel.kernels[1].lengthscales": 0.15,
+    ".likelihood.variance": 1.0002727695376512e-06
   }
 }

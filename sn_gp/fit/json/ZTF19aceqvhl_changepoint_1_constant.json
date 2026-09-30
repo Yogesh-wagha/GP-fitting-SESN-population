@@ -2,41 +2,39 @@
   "name": "ZTF19aceqvhl",
   "kernel": "changepoint_1",
   "mean": "constant",
-  "gri": true,
+  "bands_mode": "gri",
   "left": null,
   "right": null,
   "gap_l": null,
   "gap_r": null,
   "cp_days": null,
-  "t_mean": 4.592665926677485,
-  "t_sd": 8.945093810363762,
-  "w_mean": 0.5993050399158473,
-  "w_sd": 0.07110254700211667,
+  "t_mean": 7.719178263605996,
+  "t_sd": 8.49010148306217,
+  "w_mean": 0.642181489014871,
+  "w_sd": 1.1102230246251565e-16,
   "free_lambda": false,
   "bands": [
-    "ztfg",
     "ztfr"
   ],
-  "k": 10,
-  "lnL": 60.13492256441765,
-  "n": 15,
-  "AIC": -100.2698451288353,
-  "BIC": -93.1893431178132,
+  "k": 9,
+  "lnL": 34.196074462395686,
+  "n": 11,
+  "AIC": -50.39214892479137,
+  "BIC": -46.81109146960603,
   "params": {
     ".mean_function.c": [
-      0.05617877255398075,
-      0.10390478191326297
+      0.0602885772201847
     ],
-    ".kernel.kernels[0].base.kernels[0].variance": 0.04384464998646067,
-    ".kernel.kernels[0].base.kernels[0].lengthscales": 2.938242092133012e-05,
-    ".kernel.kernels[0].base.kernels[1].variance": 0.5044442135962062,
-    ".kernel.kernels[0].base.kernels[1].lengthscales": 5.004655608373685,
+    ".kernel.kernels[0].base.kernels[0].variance": 3.509846137756073,
+    ".kernel.kernels[0].base.kernels[0].lengthscales": 4.347565556968881,
+    ".kernel.kernels[0].base.kernels[1].variance": 2.2375498365144906e-05,
+    ".kernel.kernels[0].base.kernels[1].lengthscales": 0.00023990445492257196,
     ".kernel.kernels[0].base.locations": [
-      0.6045008477522764
+      0.2686440344323417
     ],
-    ".kernel.kernels[0].base.steepness": 1.624888714120601,
-    ".kernel.kernels[1].variance": 0.005024972023430537,
-    ".kernel.kernels[1].lengthscales": 2.1096290684992565,
-    ".likelihood.variance": 1.0000000004536475e-06
+    ".kernel.kernels[0].base.steepness": 3.6605991371751108,
+    ".kernel.kernels[1].variance": 0.0005735878562531419,
+    ".kernel.kernels[1].lengthscales": 1351079888211148.8,
+    ".likelihood.variance": 6.394293962168347e-05
   }
 }

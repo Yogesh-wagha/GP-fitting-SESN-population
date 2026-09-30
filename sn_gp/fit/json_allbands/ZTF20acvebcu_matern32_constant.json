@@ -1,0 +1,38 @@
+{
+  "name": "ZTF20acvebcu",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 26.671690275884217,
+  "t_sd": 32.86654489732978,
+  "w_mean": 0.6090206229701228,
+  "w_sd": 0.08152727328971232,
+  "free_lambda": false,
+  "bands": [
+    "ztfg",
+    "ztfr",
+    "atlaso"
+  ],
+  "k": 7,
+  "lnL": 364.0352988117997,
+  "n": 136,
+  "AIC": -714.0705976235994,
+  "BIC": -693.682013423447,
+  "params": {
+    ".mean_function.c": [
+      0.05019762817936399,
+      0.07989724635016345,
+      0.07406244872617855
+    ],
+    ".kernel.kernels[0].variance": 0.041141777521473,
+    ".kernel.kernels[0].lengthscales": 0.5721379124418459,
+    ".kernel.kernels[1].variance": 0.04114177752359799,
+    ".kernel.kernels[1].lengthscales": 1.8398750988146693,
+    ".likelihood.variance": 0.00015210346230255952
+  }
+}

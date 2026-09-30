@@ -1,0 +1,40 @@
+{
+  "name": "ZTF25abcydiy",
+  "kernel": "matern32",
+  "mean": "constant",
+  "gri": true,
+  "left": null,
+  "right": null,
+  "gap_l": null,
+  "gap_r": null,
+  "cp_days": null,
+  "t_mean": 11.755469025578492,
+  "t_sd": 19.03989704830188,
+  "w_mean": 0.6195206554208218,
+  "w_sd": 0.11323674733335248,
+  "free_lambda": true,
+  "bands": [
+    "ztfg",
+    "sdssr",
+    "ztfr",
+    "ztfi"
+  ],
+  "k": 9,
+  "lnL": 1131.1577729459768,
+  "n": 309,
+  "AIC": -2244.3155458919537,
+  "BIC": -2210.715474399874,
+  "params": {
+    ".mean_function.c": [
+      0.050199759578661525,
+      0.05115620666162992,
+      0.054290359748197195,
+      0.04753121128802468
+    ],
+    ".kernel.kernels[0].variance": 0.04265497571180506,
+    ".kernel.kernels[0].lengthscales": 1.269709021987624,
+    ".kernel.kernels[1].variance": 0.04265497572611666,
+    ".kernel.kernels[1].lengthscales": 11.754549088728332,
+    ".likelihood.variance": 2.807787290448554e-05
+  }
+}
