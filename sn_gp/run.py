@@ -1,13 +1,13 @@
 """
 run.py  --  fit ONE object with ONE (kernel, mean) pair and plot it.
 
-    python3 run.py --name ZTF25acemaph --kernel matern32 --mean_func constant --gri
+    python3 run.py --name ZTF18aaxiuyp --kernel matern32 --mean_func villar --bands gri
 
 Group 1 (vary kernel, mean=constant): loop kernels yourself:
     for K in se matern32 matern52 rq rq_se changepoint; do
         python3 run.py --name <obj> --kernel $K --mean_func constant; done
 Group 2 (vary mean, kernel=matern52):
-    for M in constant polynomial bazin; do
+    for M in constant polynomial bazin villar; do
         python3 run.py --name <obj> --kernel matern52 --mean_func $M; done
 """
 
@@ -28,18 +28,45 @@ os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"   # hide TF info/warning/error spam
 os.environ["CUDA_VISIBLE_DEVICES"] = "-1"   # don't even probe for a GPU
 warnings.filterwarnings("ignore")     # quiet optimizer chatter for now
 
+GRI_LETTERS = ("g", "r", "i")
 
-def fit_object(name, kernel_name, mean_name, gri=False, left=None, right=None,
+def _band_letter(b):
+    n = str(b).split("::")[-1]
+    for p in ("sdss", "ztf", "atlas", "ps1"):
+        if n.startswith(p):
+            n = n[len(p):]
+    return n[:1].lower() if n else ""
+MIN_BAND_POINTS = 5      # bands with fewer surviving points are dropped from the fit
+
+def fit_object(name, kernel_name, mean_name, bands_mode="gri", left=None, right=None,
                gap_l=None, gap_r=None, cp_days=None):
     obj = config.load_object(name)
     t = obj["t"]
     mask = np.ones(len(t), dtype=bool)
     if left  is not None: mask &= (t >= -left)
     if right is not None: mask &= (t <=  right)
-    # subset every per-point array consistently
+
+    # ---- band selection: THIS NOW AFFECTS THE FIT, not just the plot ----
+    if bands_mode == "gri":
+        letters = np.array([_band_letter(f) for f in obj["df"]["filter"]])
+        mask &= np.isin(letters, list(GRI_LETTERS))
+
+    # ---- drop sparse bands (counted AFTER the phase/band cuts) ----
+    filt = obj["df"]["filter"].to_numpy()
+    counts = {}
+    for f in filt[mask]:
+        counts[f] = counts.get(f, 0) + 1
+    sparse = [f for f, c in counts.items() if c < MIN_BAND_POINTS]
+    if sparse:
+        print(f"  dropping sparse bands (<{MIN_BAND_POINTS} pts): "
+              + ", ".join(f"{f}({counts[f]})" for f in sorted(sparse)))
+        mask &= ~np.isin(filt, sparse)
+
     for key in ("t", "w", "y", "yerr"):
         obj[key] = obj[key][mask]
     obj["df"] = obj["df"].iloc[mask].reset_index(drop=True)
+    if len(obj["df"]) == 0:
+        raise SystemExit(f"{name}: no photometry left after cuts + bands={bands_mode}")
     obj["bands"] = sorted(obj["df"]["filter"].unique(),
                           key=lambda f: config.WAVE_EFF_UM[f])
     obj["n_bands"] = len(obj["bands"])
@@ -117,10 +144,12 @@ def fit_object(name, kernel_name, mean_name, gri=False, left=None, right=None,
     def _params(mdl):
         return {path: np.array(p).tolist()
                 for path, p in gpflow.utilities.parameter_dict(mdl).items()}
-
+    
+    tag = "" if bands_mode == "gri" else "_all"
     os.makedirs(config.JSON_DIR, exist_ok=True)
     record = dict(
-        name=name, kernel=kernel_name, mean=mean_name, gri=bool(gri),
+        name=name, kernel=kernel_name, mean=mean_name,
+        bands_mode=bands_mode,
         left=left, right=right, gap_l=gap_l, gap_r=gap_r,
         cp_days=list(cp_days) if cp_days else None,
         t_mean=float(tstd.mu), t_sd=float(tstd.sd),
@@ -131,7 +160,7 @@ def fit_object(name, kernel_name, mean_name, gri=False, left=None, right=None,
         params=_params(model),
     )
     with open(os.path.join(config.JSON_DIR,
-              f"{name}_{kernel_name}_{mean_name}.json"), "w") as f:
+              f"{name}_{kernel_name}_{mean_name}{tag}.json"), "w") as f:
         json.dump(record, f, indent=2)
 
     print(f"\n{name}  kernel={kernel_name}  mean={mean_name}  "
@@ -152,8 +181,10 @@ def fit_object(name, kernel_name, mean_name, gri=False, left=None, right=None,
         t0_std = float(np.ravel(model.mean_function.t0.numpy())[0])
         t0_phase = tstd.inverse(t0_std)        # standardized time -> phase [days]
 
+    outdir = config.FIG_DIR if bands_mode == "gri" else os.path.join(config.FIG_DIR, "allbands")
+    os.makedirs(outdir, exist_ok=True)
     plotting.plot_fit(obj, predict_slice, m, kernel_name, mean_name,
-                      gri=gri, t0_phase=t0_phase, outdir=config.FIG_DIR)
+                      gri=(bands_mode == "gri"), t0_phase=t0_phase, outdir=outdir)
     return model, m
 
 
@@ -164,9 +195,9 @@ def main():
     ap.add_argument("--kernel", required=True,
         choices=["se", "matern32", "matern52", "rq", "rq_se", "changepoint", "gibbs", "changepoint_1"])
     ap.add_argument("--mean_func", required=True,
-                    choices=["constant", "polynomial", "bazin"])
-    ap.add_argument("--gri", action="store_true",
-                    help="show only the six g/r/i bands on a 3x2 grid")
+                    choices=["constant", "polynomial", "bazin", "villar"])
+    ap.add_argument("--bands", choices=["gri", "all"], default="gri",
+                help="which filters go INTO the fit (default gri)")
     ap.add_argument("--left",  type=float, default=None,
                 help="keep phase >= peak - left (accepts negatives)")
     ap.add_argument("--right", type=float, default=None,
@@ -186,9 +217,9 @@ def main():
     if args.cp_loc:
         parts = [float(x) for x in args.cp_loc.split(",")]
         cp_days = (parts[0], parts[1] if len(parts) > 1 else None)
-    fit_object(args.name, args.kernel, args.mean_func, gri=args.gri,
-               left=args.left, right=args.right,
-               gap_l=args.gap_l, gap_r=args.gap_r, cp_days=cp_days)
+    fit_object(args.name, args.kernel, args.mean_func, bands_mode=args.bands,
+            left=args.left, right=args.right,
+            gap_l=args.gap_l, gap_r=args.gap_r, cp_days=cp_days)
 
 
 if __name__ == "__main__":

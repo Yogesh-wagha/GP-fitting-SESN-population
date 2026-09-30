@@ -5,10 +5,10 @@ Writes standalone .html files (no server / display needed): generate on the
 cluster, scp the .html to your laptop, open it, hover any point to see the
 supernova name, redshift, type, kernel and filter. Ideal for chasing outliers.
 
-    python plot_population_html.py --plot durlum_r
-    python plot_population_html.py --plot durlum_g
-    python plot_population_html.py --plot durlum_brightest
-    python plot_population_html.py --plot all
+    python plot_html.py --plot durlum_r
+    python plot_html.py --plot durlum_g
+    python plot_html.py --plot durlum_brightest
+    python plot_html.py --plot all
 
 Colour = coarse type group (your scheme); marker shape = fine subtype.
 Duration = rest-frame FWHM [days]; luminosity = peak absolute mag (y inverted).

@@ -57,6 +57,19 @@ KCORR_BW_SIGN = +1.0         # bandwidth term: M = m_shifted - DM + SIGN*2.5*log
 
 
 COLOR_SCAN_PHASES = np.arange(-10.0, 10.0001, 2.5)   # rest-frame days vs r-peak
+
+# colour at r-band luminosity stages: mag fainter than r-peak.
+# negative = rise side, positive = decline side.
+COLOR_MAG_LEVELS = np.round(np.arange(-1.0, 1.5001, 0.1), 1) + 0.0
+
+# --- Milky Way (Galactic) extinction ---
+A_G_OVER_A_V = 1.2    # A_g / A_V for MW law, R_V=3.1 (Fitzpatrick99); rest-frame g band
+
+# --- new shape/colour descriptors ---
+TAIL_WINDOW    = (30.0, 60.0)   # rest-frame days after peak for the tail-slope fit
+TAIL_MIN_SPAN  = 10.0           # need >= this many rest-frame days of coverage
+DM_DAYS        = 15.0           # Delta-m15
+
 # =====================================================================
 # selection: best (event, kernel) fit
 # =====================================================================
@@ -144,23 +157,26 @@ def pick_filter(fit, filters):
 # =====================================================================
 # FWHM / rise / fade on the GP mean
 # =====================================================================
-def measure_shape(fit, band, n=2000):
-    """Measure on the GP mean within THIS band's own observed span (first to
-       last detection), so a crossing is never found in an extrapolated region.
-       If a side doesn't cross half-max within that span, that side is a lower
-       limit (true crossing lies beyond the observed data), so fwhm_ll <= true FWHM."""
+def measure_shape(fit, band, n=2000, t_ref=None):
+    """Measure on the GP mean within THIS band's own observed span.
+       t_ref: phase used as the zero-point for the rise/fade split (e.g. the
+       r-band GP peak). If None/NaN, the band's own peak is used. The band's
+       own peak phase and flux are still reported regardless."""
     ph, _, _ = fit.band_data(band)
     nan_out = dict(peak_flux=np.nan, peak_phase=np.nan, fwhm=np.nan,
                    rise=np.nan, fade=np.nan, fwhm_ll=np.nan, is_limit=False,
-                   rise_measured=False, fade_measured=False)
+                   rise_measured=False, fade_measured=False, peak_flux_err=np.nan)
     if ph.size == 0:
         return nan_out
     wave = config.WAVE_EFF_UM[band]
-    tg = np.linspace(ph.min(), ph.max(), n)          # band's OWN data span
-    _, mu,sd = fit.predict_grid(tg, wave)
+    tg = np.linspace(ph.min(), ph.max(), n)
+    _, mu, sd = fit.predict_grid(tg, wave)
     if not np.any(mu > 0):
         return nan_out
     ipk = int(np.argmax(mu)); Fpk = mu[ipk]; tpk = tg[ipk]; half = Fpk / 2.0
+
+    # zero-point for the rise/fade split (r-band peak by default)
+    t_zero = float(t_ref) if (t_ref is not None and np.isfinite(t_ref)) else tpk
 
     tL = np.nan
     below = np.where(mu[:ipk + 1] < half)[0]
@@ -178,21 +194,22 @@ def measure_shape(fit, band, n=2000):
             f0, f1 = mu[j - 1], mu[j]; t0, t1 = tg[j - 1], tg[j]
             tR = t0 + (half - f0) * (t1 - t0) / (f1 - f0) if f1 != f0 else t1
 
-    rise = tpk - tL if np.isfinite(tL) else np.nan
-    fade = tR - tpk if np.isfinite(tR) else np.nan
+    rise = t_zero - tL if np.isfinite(tL) else np.nan      # relative to t_zero
+    fade = tR - t_zero if np.isfinite(tR) else np.nan
     fwhm = (rise + fade) if (np.isfinite(rise) and np.isfinite(fade)) else np.nan
 
     rise_measured = np.isfinite(rise)
     fade_measured = np.isfinite(fade)
     is_limit = not (rise_measured and fade_measured)
-    r_part = rise if rise_measured else (tpk - tg[0])      # anchor to band data extent
-    f_part = fade if fade_measured else (tg[-1] - tpk)
-    fwhm_ll = r_part + f_part                              # true FWHM >= fwhm_ll
+    r_part = rise if rise_measured else (t_zero - tg[0])
+    f_part = fade if fade_measured else (tg[-1] - t_zero)
+    fwhm_ll = r_part + f_part
 
-    return dict(peak_flux=float(Fpk), peak_phase=float(tpk),
+    return dict(peak_flux=float(Fpk), peak_phase=float(tpk),   # band's OWN peak
                 fwhm=fwhm, rise=rise, fade=fade,
                 fwhm_ll=fwhm_ll, is_limit=is_limit,
-                rise_measured=rise_measured, fade_measured=fade_measured, peak_flux_err=float(sd[ipk]),)
+                rise_measured=rise_measured, fade_measured=fade_measured,
+                peak_flux_err=float(sd[ipk]))
 
 
 def flux_to_absmag(flux_mJy, z):
@@ -258,6 +275,93 @@ def absmag_err_at_phase(fit, band, phase, z):
     sigma_M = (2.5 / np.log(10.0)) * (s / f)
     return M, sigma_M
 
+def tail_slope(fit, band, tpk, z, n=400):
+    """Linear slope of the GP-mean magnitude over the late window
+       (TAIL_WINDOW, rest-frame days after peak), in mag per rest-frame day.
+       Positive = fading. Also returns the covered span and how many real data
+       points fall inside the window (a trust indicator). NaN if coverage is
+       too short -- never extrapolates past the band's data."""
+    if band is None or not np.isfinite(tpk) or not (np.isfinite(z) and z > 0):
+        return np.nan, np.nan, 0
+    zf = 1.0 + z
+    ph, _, _ = fit.band_data(band)
+    if ph.size == 0:
+        return np.nan, np.nan, 0
+    t_lo, t_hi = tpk + TAIL_WINDOW[0] * zf, tpk + TAIL_WINDOW[1] * zf
+    t_lo_c, t_hi_c = max(t_lo, ph.min()), min(t_hi, ph.max())   # clip to data
+    if t_hi_c <= t_lo_c:
+        return np.nan, np.nan, 0
+    span_rest = (t_hi_c - t_lo_c) / zf
+    if span_rest < TAIL_MIN_SPAN:
+        return np.nan, np.nan, 0
+    wave = config.WAVE_EFF_UM[band]
+    tg = np.linspace(t_lo_c, t_hi_c, n)
+    _, mu, _ = fit.predict_grid(tg, wave)
+    ok = mu > 0
+    if ok.sum() < 10:
+        return np.nan, np.nan, 0
+    mag = -2.5 * np.log10(mu[ok] / F0_mJy)
+    t_rest = (tg[ok] - tpk) / zf
+    slope = float(np.polyfit(t_rest, mag, 1)[0])
+    n_pts = int(np.sum((ph >= t_lo_c) & (ph <= t_hi_c)))
+    return slope, float(span_rest), n_pts
+
+
+def delta_m(fit, band, tpk, z, days=DM_DAYS):
+    """m(peak + `days` rest-frame) - m(peak). Positive = declined by that much.
+       NaN if the epoch falls outside the band's observed span."""
+    if band is None or not np.isfinite(tpk) or not (np.isfinite(z) and z > 0):
+        return np.nan
+    zf = 1.0 + z
+    ph, _, _ = fit.band_data(band)
+    if ph.size == 0:
+        return np.nan
+    t_later = tpk + days * zf
+    if t_later > ph.max() or tpk < ph.min():
+        return np.nan
+    wave = config.WAVE_EFF_UM[band]
+    _, mu, _ = fit.predict_grid(np.array([tpk, t_later]), wave)
+    f_pk, f_l = float(mu[0]), float(mu[1])
+    if f_pk <= 0 or f_l <= 0:
+        return np.nan
+    return float(-2.5 * np.log10(f_l / f_pk))
+
+def phase_at_mag_offset(fit, band, dm, n=2000):
+    """Observed phase where `band`'s GP mean is |dm| mag FAINTER than its peak.
+       dm < 0 -> rise side (before peak); dm > 0 -> decline side; dm == 0 -> peak.
+       NaN if that level isn't reached within the band's own observed span."""
+    if band is None or not np.isfinite(dm):
+        return np.nan
+    ph, _, _ = fit.band_data(band)
+    if ph.size == 0:
+        return np.nan
+    wave = config.WAVE_EFF_UM[band]
+    tg = np.linspace(ph.min(), ph.max(), n)
+    _, mu, _ = fit.predict_grid(tg, wave)
+    if not np.any(mu > 0):
+        return np.nan
+    ipk = int(np.argmax(mu)); Fpk = mu[ipk]; tpk = tg[ipk]
+    if dm == 0:
+        return float(tpk)
+    target = Fpk * 10 ** (-abs(dm) / 2.5)          # fainter than peak
+    if dm < 0:                                      # rise: last crossing before peak
+        seg_t, seg_f = tg[:ipk + 1], mu[:ipk + 1]
+        below = np.where(seg_f < target)[0]
+        if below.size == 0 or below[-1] + 1 > ipk:
+            return np.nan
+        i0 = below[-1]
+        f0, f1, t0, t1 = seg_f[i0], seg_f[i0 + 1], seg_t[i0], seg_t[i0 + 1]
+    else:                                           # decline: first crossing after peak
+        seg_t, seg_f = tg[ipk:], mu[ipk:]
+        below = np.where(seg_f < target)[0]
+        if below.size == 0 or below[0] == 0:
+            return np.nan
+        j = below[0]
+        f0, f1, t0, t1 = seg_f[j - 1], seg_f[j], seg_t[j - 1], seg_t[j]
+    if f1 == f0:
+        return float(t0)
+    return float(t0 + (target - f0) * (t1 - t0) / (f1 - f0))
+
 def mag_at_phase(fit, band, phase, z):
     """Absolute AB mag of `band`'s GP mean at a specific observed phase.
        Used for fixed-epoch colours (e.g. both bands at the r-band peak time).
@@ -281,6 +385,11 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--limit", type=int, default=None,
                     help="process only the first N chosen events (testing)")
+    ap.add_argument("--events", nargs="+", default=None,
+                    help="measure only these ZTFIDs")
+    ap.add_argument("--append", action="store_true",
+                    help="with --events: update those rows in the existing CSV "
+                         "instead of writing a CSV containing only them")
     args = ap.parse_args()
 
     review = load_review()
@@ -296,18 +405,26 @@ def main():
         except (TypeError, ValueError):
             return np.nan                    # '-', '', NaN, or any non-numeric
 
+    avcol = "A_V" if "A_V" in bts.columns else None
     meta = {str(r[idcol]): (str(r.get("type", "")),
-                            _safe_z(r[zcol]) if zcol else np.nan)
+                            _safe_z(r[zcol]) if zcol else np.nan,
+                            _safe_z(r[avcol]) if avcol else np.nan)   # A_V (reuse _safe_z: numeric or NaN)
             for _, r in bts.iterrows()}
 
     items = sorted(chosen.items())
+    if args.events:
+        want = set(args.events)
+        items = [(z, k) for z, k in items if z in want]
+        missing = want - {z for z, _ in items}
+        if missing:
+            print(f"WARNING: not in the chosen-fit set (dropped or unreviewed): "
+                  f"{sorted(missing)}")
     if args.limit:
         items = items[:args.limit]
-    print(f"{len(items)} events to measure\n")
 
     rows = []
     for i, (z_id, kern) in enumerate(items, 1):
-        sn_type, z = meta.get(z_id, ("", np.nan))
+        sn_type, z, a_v = meta.get(z_id, ("", np.nan, np.nan))
         try:
             fit = reconstruct.load_fit(
                 os.path.join(config.JSON_DIR, f"{z_id}_{kern}_constant.json"))
@@ -318,9 +435,21 @@ def main():
         gband = pick_filter(fit, G_FILTERS)
         rband = pick_filter(fit, R_FILTERS)
 
-        g = measure_shape(fit, gband) if gband else None
+        # r FIRST: its GP peak is the time reference for everything
         r = measure_shape(fit, rband) if rband else None
+        tpk_r = r["peak_phase"] if r else np.nan          # r-band GP maximum
+        g = measure_shape(fit, gband, t_ref=tpk_r) if gband else None
+        tpk_g = g["peak_phase"] if g else np.nan          # g's OWN peak (for dt_peak only)
 
+
+        # normalised rise/fade: fraction of FWHM (frame-independent, (1+z) cancels)
+        def _frac(part, whole):
+            return (part / whole) if (np.isfinite(part) and np.isfinite(whole)
+                                      and whole > 0) else np.nan
+        rise_frac_g = _frac(g["rise"], g["fwhm"]) if g else np.nan
+        fade_frac_g = _frac(g["fade"], g["fwhm"]) if g else np.nan
+        rise_frac_r = _frac(r["rise"], r["fwhm"]) if r else np.nan
+        fade_frac_r = _frac(r["fade"], r["fwhm"]) if r else np.nan
         # per-band absolute peak mag
         Mg = flux_to_absmag(g["peak_flux"], z) if g else np.nan
         Mr = flux_to_absmag(r["peak_flux"], z) if r else np.nan
@@ -330,9 +459,6 @@ def main():
         dt_peak = ((g["peak_phase"] - r["peak_phase"])
                    if (g and r and np.isfinite(g["peak_phase"]) and np.isfinite(r["peak_phase"]))
                    else np.nan)
-        # peak epochs (observed phase) of each band
-        tpk_g = g["peak_phase"] if g else np.nan
-        tpk_r = r["peak_phase"] if r else np.nan
 
         # per-band peak-mag 1-sigma (propagate GP flux sd at peak)
         Mg_err = ((2.5/np.log(10)) * g["peak_flux_err"]/g["peak_flux"]
@@ -342,6 +468,9 @@ def main():
 
         # rest-frame g absolute mag (K-corrected) + error + extrapolation flag
         M_rest_g, M_rest_g_err, _, kcorr_extrap = restframe_g_absmag(fit, z, gband, rband)
+        # Milky Way extinction correction (add back extinction -> intrinsically brighter)
+        A_g = (A_G_OVER_A_V * a_v) if np.isfinite(a_v) else 0.0
+        M_rest_g_mw = M_rest_g - A_g if np.isfinite(M_rest_g) else np.nan
 
         # ---- colours (observed frame) with 1-sigma errors ----
         # own-peak
@@ -382,8 +511,52 @@ def main():
             mr_p, _ = absmag_err_at_phase(fit, rband, t_obs, z)
             color_scan[f"color_p{p:+.1f}"] = ((mg_p - mr_p)
                 if (np.isfinite(mg_p) and np.isfinite(mr_p)) else np.nan)
+        # --- tail slope (r and g), mag per rest-frame day ---
+        tail_r, tail_r_span, tail_r_npts = tail_slope(fit, rband, tpk_r, z)
+        tail_g, tail_g_span, tail_g_npts = tail_slope(fit, gband, tpk_r, z)   # was tpk_g
 
+        # --- Delta-m15 in each band ---
+        dm15_r = delta_m(fit, rband, tpk_r, z)
+        dm15_g = delta_m(fit, gband, tpk_r, z)                                # was tpk_g
+        # --- colour rate: slope of g-r over 0 -> +10 rest-frame days ---
+        _rp, _rc = [], []
+        for p in (0.0, 2.5, 5.0, 7.5, 10.0):
+            c = color_scan.get(f"color_p{p:+.1f}", np.nan)
+            if np.isfinite(c):
+                _rp.append(p); _rc.append(c)
+        color_rate = float(np.polyfit(_rp, _rc, 1)[0]) if len(_rp) >= 3 else np.nan
+
+
+        # --- colour CHANGE (difference, not rate) over each window ---
+        def _c(p):
+            return color_scan.get(f"color_p{p:+.1f}", np.nan)
+
+        _c_pre, _c_pk, _c_post = _c(-10.0), _c(0.0), _c(10.0)
+
+        def _diff(a, b):
+            """a - b, NaN if either is missing."""
+            return (a - b) if (np.isfinite(a) and np.isfinite(b)) else np.nan
+
+        dcolor_pre  = _diff(_c_pk, _c_pre)     # peak minus -10d  (change over the rise)
+        dcolor_post = _diff(_c_post, _c_pk)    # +10d minus peak  (change over the decline)
+        dcolor_full = _diff(_c_post, _c_pre)   # +10d minus -10d  (total change)
+
+        # colour at r-band luminosity stages (|dm| mag fainter than r-peak)
+        color_mag_scan = {}
+        for dm in COLOR_MAG_LEVELS:
+            t_dm = phase_at_mag_offset(fit, rband, dm)
+            mg_d, _ = absmag_err_at_phase(fit, gband, t_dm, z)
+            mr_d, _ = absmag_err_at_phase(fit, rband, t_dm, z)
+            color_mag_scan[f"color_m{dm:+.1f}"] = ((mg_d - mr_d)
+                if (np.isfinite(mg_d) and np.isfinite(mr_d)) else np.nan)
+            
         def rest(x): return (x / zf) if (x is not None and np.isfinite(x) and np.isfinite(zf)) else np.nan
+
+        # --- duration ratio g/r (frame-independent) ---
+        _fg = rest(g["fwhm"]) if g else np.nan
+        _fr = rest(r["fwhm"]) if r else np.nan
+        fwhm_ratio_gr = (_fg / _fr if (np.isfinite(_fg) and np.isfinite(_fr) and _fr > 0)
+                         else np.nan)
 
         # which band is intrinsically brightest (more negative abs mag)
         if np.isfinite(Mg) and np.isfinite(Mr):
@@ -435,25 +608,54 @@ def main():
             # per-band peak-mag errors
             M_g_err=Mg_err, M_r_err=Mr_err,
             # rest-frame g luminosity (K-corrected)
-            M_rest_g=M_rest_g, M_rest_g_err=M_rest_g_err, kcorr_wave_extrap=bool(kcorr_extrap),
+            M_rest_g = M_rest_g, M_rest_g_err=M_rest_g_err, kcorr_wave_extrap=bool(kcorr_extrap),
+                        A_V=a_v, A_g=A_g,
+                        M_rest_g_mw=M_rest_g_mw,      # K-corrected AND Milky-Way-extinction-corrected
             # colours + errors (observed frame)
             color_gr=color_ownpeak, color_gr_err=color_ownpeak_err,
             color_at_rpeak=color_rpeak, color_at_rpeak_err=color_rpeak_err,
             color_at_gpeak=color_gpeak, color_at_gpeak_err=color_gpeak_err,
             color_10d=color_10d, color_10d_err=color_10d_err,
-            **color_scan,
-            
+            # normalised shape (rise/fwhm, fade/fwhm) per band
+            rise_frac_g=rise_frac_g, fade_frac_g=fade_frac_g,
+            rise_frac_r=rise_frac_r, fade_frac_r=fade_frac_r,
+            **color_scan,**color_mag_scan,
+                       
+            tail_slope_r=tail_r, tail_slope_r_span=tail_r_span, tail_slope_r_npts=tail_r_npts,
+            tail_slope_g=tail_g, tail_slope_g_span=tail_g_span, tail_slope_g_npts=tail_g_npts,
+            dm15_r=dm15_r, dm15_g=dm15_g,
+            fwhm_ratio_gr=fwhm_ratio_gr,
+            color_rate=color_rate,
+            # signed colour change over each window
+            dcolor_pre=dcolor_pre, dcolor_post=dcolor_post, dcolor_full=dcolor_full,
+            # unsigned magnitude of the change
+            dcolor_pre_abs=abs(dcolor_pre) if np.isfinite(dcolor_pre) else np.nan,
+            dcolor_post_abs=abs(dcolor_post) if np.isfinite(dcolor_post) else np.nan,
+            dcolor_full_abs=abs(dcolor_full) if np.isfinite(dcolor_full) else np.nan,
         ))
         print(f"[{i}] {z_id:16s} {kern:13s} g={gband or '-':6s} r={rband or '-':6s} "
               f"FWHMr={rows[-1]['fwhm_r']:.1f}  Mr={Mr:.2f}" if np.isfinite(Mr)
               else f"[{i}] {z_id:16s} {kern:13s} g={gband or '-':6s} r={rband or '-':6s}  (r NaN)")
 
     df = pd.DataFrame(rows)
-    df.to_csv(OUT, index=False)
-    print(f"\nwrote {OUT}: {len(df)} events")
+    if args.events and args.append and os.path.exists(OUT):
+        old = pd.read_csv(OUT)
+        old = old[~old["ZTFID"].isin(df["ZTFID"])]          # drop the re-measured rows
+        df = pd.concat([old, df], ignore_index=True).sort_values("ZTFID")
+        df.to_csv(OUT, index=False)
+        print(f"\nupdated {OUT}: {len(rows)} rows replaced, {len(df)} total")
+    elif args.events:
+        out = OUT.replace(".csv", "_subset.csv")
+        df.to_csv(out, index=False)
+        print(f"\nwrote {out}: {len(df)} events (subset; use --append to merge into {OUT})")
+    else:
+        df.to_csv(OUT, index=False)
+        print(f"\nwrote {OUT}: {len(df)} events")
+
     # quick coverage report
-    for c in ("fwhm_g", "fwhm_r", "M_g", "M_r", "color_gr", "dt_peak_g_minus_r", "color_at_rpeak", "color_at_gpeak"):
-        print(f"  {c:20s}: {int(df[c].notna().sum())}/{len(df)} finite")
+    if not args.events:
+        for c in ("fwhm_g", "fwhm_r", "M_g", "M_r", "color_gr", "dt_peak_g_minus_r", "color_at_rpeak", "color_at_gpeak"):
+            print(f"  {c:20s}: {int(df[c].notna().sum())}/{len(df)} finite")
 
     # lower-limit recovery (the payoff of the band-own-span change)
     for band in ("g", "r"):

@@ -12,9 +12,9 @@ This is a CONSISTENCY check, not a 1:1 expectation -- known offsets exist:
     single-band FWHM on the GP mean. Expect correlation with scatter.
   * Confirm BTS 'duration' frame (obs vs rest) first; --bts-dur-frame sets it.
 
-    python compare_to_bts.py --band r
-    python compare_to_bts.py --band brightest --apply-corr
-    python compare_to_bts.py --band r --bts-dur-frame obs
+    python compare.py --band r
+    python compare.py --band brightest --apply-corr
+    python compare.py --band r --bts-dur-frame obs
 """
 
 import os

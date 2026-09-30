@@ -72,13 +72,34 @@ def _rebuild_obj(rec):
     """Reload the object and re-apply the SAME cuts run.py used, so X/Y match."""
     obj = config.load_object(rec["name"])
     t = obj["t"]
-    mask = np.ones(len(t), dtype=bool)
+    mask = np.ones(len(t), dtype=bool)                      # create mask FIRST
+
     if rec.get("left")  is not None: mask &= (t >= -float(rec["left"]))
     if rec.get("right") is not None: mask &= (t <=  float(rec["right"]))
-    # interior gap (only if it was actually used; None -> skip, matches run.py)
     if rec.get("gap_l") is not None and rec.get("gap_r") is not None:
         gl, gr = float(rec["gap_l"]), float(rec["gap_r"])
         mask &= ~((t > gl) & (t < gr))
+
+    filt = obj["df"]["filter"].to_numpy()
+
+    # replicate the gri band selection used at fit time
+    if rec.get("bands_mode", "all") == "gri":
+        def _bl(b):
+            n = str(b).split("::")[-1]
+            for p in ("sdss", "ztf", "atlas", "ps1"):
+                if n.startswith(p): n = n[len(p):]
+            return n[:1].lower() if n else ""
+        letters = np.array([_bl(f) for f in filt])
+        mask &= np.isin(letters, ["g", "r", "i"])
+
+    # replicate the sparse-band drop (counts AFTER the phase + band cuts)
+    counts = {}
+    for f in filt[mask]:
+        counts[f] = counts.get(f, 0) + 1
+    sparse = [f for f, c in counts.items() if c < 5]        # MIN_BAND_POINTS
+    if sparse:
+        mask &= ~np.isin(filt, sparse)
+
     for key in ("t", "w", "y", "yerr"):
         obj[key] = obj[key][mask]
     obj["df"] = obj["df"].iloc[mask].reset_index(drop=True)

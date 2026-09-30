@@ -114,13 +114,14 @@ def select_events(cuts):
     return sorted([z for z in names if csv_exists(z)])
 
 
-def fit_one(name, mean, kernel, cuts, dry=False, force=False):
+def fit_one(name, mean, kernel, cuts, dry=False, force=False, bands="gri"):
     info = cuts.get(name, {})
     cmd = [sys.executable, RUN_PY, "--name", name,
-           "--kernel", kernel, "--mean_func", mean, "--gri"]
+           "--kernel", kernel, "--mean_func", mean, "--bands", bands]
     if info.get("lower"): cmd += ["--left", info["lower"]]
     if info.get("upper"): cmd += ["--right", info["upper"]]
-    jpath = os.path.join(config.JSON_DIR, f"{name}_{kernel}_{mean}.json")
+    tag = "" if bands == "gri" else "_all"
+    jpath = os.path.join(config.JSON_DIR, f"{name}_{kernel}_{mean}{tag}.json")
     if os.path.exists(jpath) and not force:
         return "cached"
     if dry:
@@ -176,10 +177,17 @@ def main():
     ap.add_argument("--dry-run", action="store_true", help="print commands only")
     ap.add_argument("--compile-only", action="store_true",
                     help="just rebuild fit_metrics.csv from existing JSONs")
+    ap.add_argument("--bands", choices=["gri", "all"], default="gri")
     ap.add_argument("--rework", action="store_true",
         help="re-fit only events with a remark in fit_review.csv; only their "
              "'good' kernels (all four if none good); cuts from manual_cuts.csv; "
              "overwrites existing PNG/JSON.")
+    ap.add_argument("--events", nargs="+", default=None,
+                    help="fit only these ZTFIDs (space-separated); overrides the full pool")
+    ap.add_argument("--kernels", nargs="+", default=None,
+                    help="restrict to these kernels (default: all four)")
+    ap.add_argument("--force", action="store_true",
+                    help="re-fit even if the JSON already exists (overwrite)")
     args = ap.parse_args()
 
     cuts = load_cuts()
@@ -187,6 +195,28 @@ def main():
 
     if args.compile_only:
         compile_metrics(events)
+        return
+
+    if args.events:
+        kernels_use = args.kernels or [k for _, k in CONFIGS]
+        total = len(args.events) * len(kernels_use)
+        print(f"TARGETED: {len(args.events)} events x {len(kernels_use)} kernels "
+              f"= {total} fits  (force={args.force})\n")
+        for z in args.events:
+            info = cuts.get(z, {})
+            print(f"  {z:16s} kernels={kernels_use}  "
+                  f"left={info.get('lower') or '-'} right={info.get('upper') or '-'}")
+            if not csv_exists(z):
+                print(f"    WARNING: no photometry CSV for {z}")
+        if args.dry_run:
+            return
+        done = 0
+        for z in args.events:
+            for kern in kernels_use:
+                done += 1
+                st = fit_one(z, "constant", kern, cuts,
+                             force=args.force, bands=args.bands)
+                print(f"[{done}/{total}] {z}  {kern}  -> {st}", flush=True)
         return
 
     # ---- REWORK branch (insert here) ----
